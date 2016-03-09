@@ -1,0 +1,8317 @@
+﻿# Grammar Rule Definition file
+# May 2006
+#
+# ==========================================================================
+#
+# Notes on Format
+#
+# <key> 	This is a command that will be interpreted by the parser
+# [key] 	Takes whatever is currently set in the resolved slot-filler for the component "key"
+# {key} 	Refers to the grammar rule referred to by "key". Also used for counters
+# (key) 	Refers to a link to the lexicon, and would include word type, the word label, and any 
+#         	other information on form, etc. 
+# 
+# |key|	A variable
+#
+#
+# A note on the component costs
+# ==========================
+# These are set by a number after each component in a template.
+# 5 is high cost, 1 is low. 0 means no cost associated with this component.
+# -1 is a wildcard, accepting a cost pressumaby set at a higher lever (functions)
+# If not set, defaults to 3.
+#
+# ==========================================================================
+#
+# Rules for a specific Lesson
+# ============================
+#
+<rule DESU_SIMPLE1>
+	<form verbForm>
+		<setting>
+			present pos neg polite statement		
+			<condition [Verb] == is_also>
+				FORM neg off
+			</condition>
+		</setting>
+		<setting>
+			present pos polite question		
+			<condition [Subject] =group= ingroup>
+				FORM question off
+				FORM statement on
+				FORM neg on
+			</condition>
+		</setting>
+	</form>
+	<template>
+		{Subject 1 4} [Complement 1 4] {Verb 4 2} 
+	</template>
+	<rule Subject>
+		<template>
+			[Subject -1 -1] {Particle 3 1}
+			<restriction [Subject] =group= person>
+				{Person -1 -1 [Subject]} {Particle 3 1}
+			</restriction>
+			<restriction [Subject] =group= definitiveA>
+				[Subject 4 2] {Particle 3 1}
+			</restriction>
+		</template>
+		<rule Particle>
+			<template>
+				{ParticleSUBJ -1 -1}
+				<restriction [Verb] == is_also>
+					(particle も -1 -1)
+				</restriction>				
+			</template>
+		</rule>
+	</rule>
+	<rule Verb>
+		<template>
+			<vrule basic verbForm>			
+				(verb です -1 -1) 
+			</vrule>
+		</template>	
+	</rule>
+</rule>
+#
+<rule ADJ_SIMPLE_STANDARD1>
+	<form adjectiveForm>
+		<setting>
+			present pos neg polite statement		
+			<condition [Verb] == is_also>
+				FORM neg off
+			</condition>
+		</setting>
+	</form>
+	<template>
+		[Definitive 1 4] {Subject 1 4} {Adjective 1 4} {Adjective2 1 4}
+	</template>
+	<rule Subject>
+		<template>
+			[Subject -1 -1] {Particle 3 1}
+		</template>
+		<rule Particle>
+			<template>
+				{ParticleSUBJ -1 -1}
+				<restriction [Verb] == is_also>
+					(particle も -1 -1)
+				</restriction>				
+			</template>
+		</rule>
+	</rule>
+	<rule Adjective>
+		<template>
+			<arule standard adjectiveForm>
+				[Adjective -1 -1] 
+			</arule>
+			<restriction [Adjective2] exists>
+				{ConnectiveAdjective -1 -1}
+			</restriction>
+		</template>
+		<rule ConnectiveAdjective>
+			<template>	
+				<arule connective adjectiveForm>
+					[Adjective -1 -1] 
+				</arule>
+			</template>
+		</rule>		
+	</rule>
+	<rule Adjective2>
+		<template>
+			<arule standard adjectiveForm>
+				[Adjective -1 -1] 
+			</arule>
+		</template>	
+	</rule>
+</rule>
+#
+<rule ADJ_SIMPLE>
+	<form adjectiveForm>
+		<setting>
+			present pos neg polite statement			
+		</setting>
+	</form>
+	<template>
+		{Definitive 1 4} {Subject 1 4} {Adjective 1 4}
+	</template>
+	<rule Definitive>
+		<template>
+			[Definitive -1 -1]			
+		</template>	
+	</rule>	
+	<rule Adjective>
+		<template>
+			<arule standard adjectiveForm>
+				[Adjective -1 -1] 
+			</arule>
+		</template>	
+	</rule>
+</rule>
+#
+<rule ADJ_SIMPLE_MODIFIER1>
+	<form adjectiveForm>
+		<setting>
+			present pos polite statement
+		</setting>
+	</form>
+	<form verbForm>
+		<setting>
+			present pos neg polite statement question		
+		</setting>
+	</form>
+	<template>
+		{Definitive 1 4} {Adjective 1 4} {Adjective2 1 4} [Complement 1 4] {Verb 1 4}
+	</template>
+	<rule Definitive>
+		<template>
+			[Definitive -1 -1] {Particle 3 1}
+		</template>
+		<rule Particle>
+			<template>
+				{ParticleSUBJ -1 -1}
+				<restriction [Verb] == is_also>
+					(particle も -1 -1)
+				</restriction>				
+			</template>
+		</rule>
+	</rule>
+	<rule Adjective>
+		<template>
+			<arule modifier adjectiveForm>
+				[Adjective -1 -1] 
+			</arule>
+			<restriction [Adjective2] exists>
+				{ConnectiveAdjective -1 -1}
+			</restriction>
+		</template>
+		<rule ConnectiveAdjective>
+			<template>	
+				<arule connective adjectiveForm>
+					[Adjective -1 -1] 
+				</arule>
+			</template>
+		</rule>	
+	</rule>	
+	<rule Adjective2>
+		<template>
+			<arule modifier adjectiveForm>
+				[Adjective2 -1 -1] 
+			</arule>
+		</template>	
+	</rule>
+	<rule Verb>
+		<template>
+			<vrule basic verbForm>			
+				(verb です -1 -1) 
+			</vrule>
+		</template>	
+	</rule>
+</rule>
+#
+<rule ADJV_SUKI1>
+	<form adjectiveForm>
+		<setting>
+			present pos neg polite statement		
+		</setting>
+	</form>
+	<template>
+		{Subject 1 4} {Object 1 4} {Adjective 1 4}
+	</template>
+	<rule Subject>
+		<template>
+			[Subject -1 -1] {SUBJ_PARTICAL -1 -1}
+		</template>
+		<rule SUBJ_PARTICAL>
+			<description> Particle
+			<template>
+			(particle は -1 -1)			
+			</template>
+		</rule>
+	</rule>
+	<rule Object>
+		<template>
+			[Object -1 -1] {OBJ_PARTICAL 3 1}
+		</template>
+		<rule OBJ_PARTICAL>
+			<description> Particle
+			<template>
+			(particle が -1 -1)			
+			</template>
+		</rule>
+	</rule>
+	<rule Adjective>
+		<template>
+			<arule standard adjectiveForm>
+				[Adjective -1 -1]
+			</arule>			
+		</template>
+	</rule>	
+</rule>
+#
+<rule ADJV_SUKI2>
+	<form adjectiveForm>
+		<setting>
+			present pos neg polite statement		
+		</setting>
+	</form>
+	<form verbForm>
+		<setting>
+			present pos plain statement		
+		</setting>
+	</form>
+	<template>
+		{Subject 1 4} {Object 1 4} {Verb 1 4} {FormalNoun 3 1} {SUBJPartical 1 4} {Adjective 1 4}
+	</template>
+	 <rule Subject>
+		<template>
+			[Subject -1 -1] {SUBJ_PARTICAL -1 -1}
+		</template>
+		<rule SUBJ_PARTICAL>
+			<description> Particle
+			<template>
+			(particle は -1 -1)			
+			</template>
+		</rule>
+	</rule>	 
+	<rule Object>
+		<template>
+			[Object -1 -1] {OBJ_PARTICAL 3 1}
+		</template>
+		<rule OBJ_PARTICAL>
+			<description> Particle
+			<template>
+			(particle を -1 -1)			
+			</template>
+		</rule>		
+	</rule>
+	<rule Verb>
+		<template>
+			<vrule basic verbForm>			
+				[Verb -1 -1] 
+			</vrule>
+		</template>
+	</rule>	
+	<rule FormalNoun>
+		<description>FormalNoun
+		<template>
+			(partical の -1 -1)
+			(misc こと -1 -1)
+		</template>
+	</rule>
+	<rule SUBJPartical>
+			<template>
+			(particle が -1 -1)			
+			</template>
+		</rule>
+	<rule Adjective>
+		<template>
+			<arule standard adjectiveForm>
+				[Adjective -1 -1]
+			</arule>			
+		</template>
+	</rule>	
+</rule>
+#
+<rule ADJADJVERB_ADJV>	
+	<form verbForm>
+		<setting>
+			# SATO fix
+			past pos polite statement		
+#			past pos neg polite statement		
+		</setting>
+	</form>
+	<form adjectiveForm>
+		<setting>
+			past present pos polite statement		
+		</setting>
+	</form>
+	<template>
+		{Subject 1 4} {Adjective 1 4} {Verb 1 4}
+	</template>
+	<rule Subject>
+		<template>
+			[Subject -1 -1] {ParticleSUBJ -1 -1}
+		</template>
+	</rule>
+	<rule Adjective>
+		<template>
+			<arule adverb adjectiveForm>
+				[Adjective -1 -1] 
+			</arule>			
+		</template>
+	</rule>
+	<rule Verb>
+		<template>
+			<vrule basic verbForm>			
+				[Verb -1 -1] 
+			</vrule>
+		</template>	
+	</rule>
+</rule>
+#
+<rule ACTION_SIMPLE1>
+	<form verbForm>
+		<setting>
+			past present pos neg polite statement question
+			<condition [Subject] =group= I>
+				FORM question off
+				FORM statement on
+				FORM neg off
+			</condition>
+		</setting>
+	</form>
+	<template>
+		{Subject 1 4} {WithA 1 4} {When 2 4} {How 1 4} {Destination 1 4} {Where 1 4} {WhereNi 1 4} {To 1 4} {What 1 4} {Verb 4 2}	
+		<restriction [With] exists>
+			{Subject 1 4} {WithA 1 4} {When 2 4} {How 1 4} {Destination 1 4} {Where 1 4} {To 1 4} {What 1 4} {Verb 4 2}	
+			{SubjectB 1 4} {WithB 1 4} {When 2 4} {How 1 4} {Destination 1 4} {Where 1 4} {To 1 4} {What 1 4} {Verb 4 2}	
+		</restriction>
+	</template>
+	<rule Subject>
+		<description Subject>
+		<template>
+			[Subject -1 -1] {ParticleSUBJ 3 1}
+			<restriction [Subject] =group= person>
+				{Person -1 -1 [Subject]} {ParticleSUBJ 3 1}
+			</restriction>			
+		</template>	
+	</rule>
+	<rule SubjectB>
+		<description Subject>
+		<template>
+			[Subject -1 -1] {ParticleSUBJ 3 1}
+			<restriction [Subject] =group= person>
+				{Person -1 -1 [Subject]} {Particle 3 1}
+			</restriction>			
+		</template>	
+		<rule Particle>
+			<template>
+				(particle と -1 -1)
+			</template>
+		</rule>
+	</rule>
+	<rule Verb>
+		<template>
+			<vrule basic verbForm>										
+				[Verb -1 -1]				
+			</vrule>
+		</template>
+	</rule>
+</rule>
+#
+<rule INVITATION1>
+	<form verbForm>
+		<setting>
+			present pos polite statement question
+		</setting>
+	</form>
+	<template>
+		{When 2 4} {How 1 3} {Destination 1 4} {Where 1 3} {What 1 4} {Verb 4 2}
+	</template>
+	<rule Verb>
+		<template>
+			<vrule mashou verbForm>
+				[Verb -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+#
+<rule COUNTERS1>
+	<form verbForm>
+		<setting>
+			present past pos polite statement
+		</setting>
+	</form>
+	<template>
+		{Subject 1 4} {What 2 4} {Quantity 5 4} {Verb 5 2}
+	</template>
+	<rule Subject>
+		<template>
+			[Subject -1 -1] {Particle 4 2}
+			<restriction [Subject] =group= person>
+				{Person -1 -1 [Subject]} {ParticleSUBJ 3 1}
+			</restriction>			
+		</template>	
+	</rule>
+	<rule Quantity>
+		<template>
+			<counter>
+				<form [What]>
+					[Quantity -1 -1]
+				</form>
+			</counter>
+		</template>
+	</rule>
+	<rule Verb>
+		<template>
+			<vrule basic verbForm>
+				[Verb -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+#
+<rule COUNTERS2>
+	<form verbForm>
+		<setting>
+			present pos plain statement
+		</setting>
+	</form>
+	<template>
+#		{What1 2 4} {Quantity1 5 4} {What2 2 4} {Quantity2 5 4} {Please 1 2}
+		{What1 2 4} {Quantity1 5 4} {Verb 1 2}
+#		{What1 2 4} {Quantity1 5 4} {What2 2 4} {Quantity2 5 4} {Verb 1 2}
+	</template>
+	<rule What1>
+		<description> 1st Object
+		<template>
+			[What -1 -1] {Particle 2 1}
+		</template>
+		<rule Particle>
+			<template>
+				(particle を -1 -1)
+			</template>
+		</rule>
+	</rule>
+	<rule Quantity1>
+		<description> Quantity
+		<template>
+			<counter>
+				<form [What]>
+					[Quantity -1 -1]
+				</form>
+			</counter>
+		</template>
+	</rule>
+#	<rule What2>
+#		<description> 2nd Object
+#		<template>
+#			{Particle1 2 1} [What2 -1 -1] {Particle2 2 1}
+#		</template>
+#
+#		<rule Particle1>
+#			<description> Particle
+#			<template>
+#				<restriction [What2] exists>
+#						(particle と -1 -1)
+#				</restriction>
+#			</template>
+#		</rule>
+#
+#		<rule Particle2>
+#			<description> Particle
+#			<template>
+#				(particle を -1 -1)
+#			</template>
+#		</rule>
+#	</rule>	
+#	
+#	<rule Quantity2>
+#		<description> Quantity
+#		<template>
+#			<counter>
+#				<form [What2]>
+#					[Quantity2 -1 -1]
+#				</form>
+#			</counter>
+#		</template>
+#	</rule>
+#	<rule Please>
+#		<template>
+#			(misc ください 1 2)
+#		</template>
+#	</rule>
+	<rule Verb>
+		<template>
+			<vrule basic verbForm>
+				[Verb -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+#
+<rule GIVING1>
+	<form verbForm>
+		<setting>
+			present past pos polite statement question
+			<condition [Subject] =group= I>
+				FORM question off
+			</condition>
+			<condition [Who] =group= I>
+				FORM question off
+			</condition>
+		</setting>
+	</form>
+	<template>
+		{Giver 1 4} {Receiver 1 4} {What 1 3} {Verb 5 4}	
+		<restriction [Who] =group= ingroup>
+			{Giver 1 4} {Receiver 1 4} {What 1 3} {VerbALT 5 4}	
+		</restriction>
+	</template>
+	<rule Giver>
+		<template>
+			{Person -1 -1 [Subject]} {ParticleSUBJ 4 2}
+		</template>	
+	</rule>
+	<rule Receiver>
+		<template>
+			<restriction [Who] !group= I>
+				{Person -1 -1 [Who]} {Particle 5 2}
+			</restriction>			
+		</template>	
+		<rule Particle>
+			<template>
+				(particle に -1 -1)
+			</template>
+		</rule>
+	</rule>
+	<rule Verb>
+		<description> Verb
+		<template>
+			<vrule basic verbForm>
+				(verb あげる -1 -1) 
+			</vrule>
+		</template>
+	</rule>
+	<rule VerbALT>
+		<description> Verb
+		<template>
+			<vrule basic verbForm>
+				(verb くれる -1 -1) 
+			</vrule>
+		</template>
+	</rule>
+</rule>
+#
+<rule RECEIVING1>
+	<form verbForm>
+		<setting>
+			present past pos polite statement question
+			<condition [Subject] =group= I>
+				FORM question off
+			</condition>
+		</setting>
+	</form>
+	<template>
+		{Subject 1 4} {Who 1 4} {What 1 3} {Verb 5 4}
+	</template>
+	<rule Subject>
+		<template>
+			<restriction [Subject] !group= I>
+				{Person -1 -1 [Subject]} {Particle 5 3}
+			</restriction>
+		</template>	
+		<rule Particle>
+			<template>
+				(particle は -1 -1)
+				(particle が -1 -1)
+			</template>
+		</rule>
+	</rule>
+	<rule Who>
+		<template>
+			{Person -1 -1 [Who]} {Particle 4 1}
+		</template>	
+		<rule Particle>
+			<template>
+				(particle に -1 -1)
+				(particle から -1 -1)
+			</template>
+		</rule>
+	</rule>
+	<rule Verb>
+		<description> Verb
+		<template>
+			<vrule basic verbForm>
+				(verb もらう -1 -1) 
+			</vrule>
+		</template>
+	</rule>
+</rule>
+#
+<rule CAUSATIVE1>
+	<form verbForm>
+		<setting>
+			present past pos polite statement question
+		</setting>
+	</form>
+	<template>
+		{Subject 1 4} {Who 1 4} {Destination 1 4} {What 1 4} {Verb 5 2}
+	</template>
+	<rule Subject>
+		<template>
+			[Subject -1 -1] {ParticleSUBJ 3 1}
+			<restriction [Subject] =group= person>
+				{Person -1 -1 [Subject]} {ParticleSUBJ 3 1}
+			</restriction>	
+		</template>	
+	</rule>
+	<rule Who>
+		<template>
+			[Who -1 -1] {Particle 5 2}
+			<restriction [Who] =group= person>
+				{Person -1 -1 [Who]} {Particle 4 1}
+			</restriction>
+		</template>	
+		<rule Particle>
+			<template>
+				(particle に -1 -1)
+			</template>
+		</rule>
+	</rule>
+	<rule Verb>
+		<template>
+			<vrule causative-basic verbForm>
+				[Verb -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+#
+<rule CAUSATIVE2>
+	<form verbForm>
+		<setting>
+			present pos polite statement
+		</setting>
+	</form>
+	<template>
+		{Destination 1 4} {What 1 4} {Verb 5 2}
+	</template>
+	<rule Verb>
+		<template>
+			<vrule causative-request verbForm>	
+				[Verb -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+#
+<rule REQUEST_VERB1>
+	<form verbForm>
+		<setting>
+			present pos polite
+		</setting>
+		<setting>
+			present pos neg polite
+		</setting>
+	</form>
+	<template>
+		{WithA 1 4} {When 2 4} {Destination 1 4} {Where 1 3} {Transport 1 4} {To 1 3} {What 1 4} {Who 1 4} {Verb 5 3}
+	</template>
+	<rule Verb>
+		<template>
+			<vrule please verbForm>
+				[Verb -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Who>
+		<template>
+			[Who] {Particle 3 1}
+			<restriction [Who] exists>
+				{Person -1 -1 [Who]} {Particle 3 1}
+			</restriction>
+		</template>
+		<rule Particle>
+			<template>
+				(particle を -1 -1)
+			</template>
+		</rule>
+	</rule>
+</rule>
+#
+<rule REQUEST_VERB2>
+	<form verbForm>
+		<setting>
+			present neg polite
+		</setting>
+	</form>
+	<template>
+		{WithA 1 4} {When 2 4} {Destination 1 4} {Where 1 3} {Transport 1 4} {To 1 3} {What 1 4} {Who 1 4} {Verb 5 3}
+	</template>
+	<rule Verb>
+		<template>
+			<vrule please verbForm>
+				[Verb -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Who>
+		<template>
+			[Who] {Particle 3 1}
+			<restriction [Who] exists>
+				{Person -1 -1 [Who]} {Particle 3 1}
+			</restriction>
+		</template>
+		<rule Particle>
+			<template>
+				(particle を -1 -1)
+			</template>
+		</rule>
+	</rule>
+</rule>
+#
+<rule REQUEST_OBJ1>
+	<template>
+		{What 1 4} {Please 2 3}
+	</template>
+	<rule Please>
+		<template>
+			(misc ください -1 -1)
+		</template>
+	</rule>
+</rule>
+#
+<rule Rel_Position>
+	<form verbForm>
+		<setting>
+			present pos neg polite statement
+		</setting>
+		<setting>
+			present pos polite question
+		</setting>
+	</form>
+	<template>
+		{Subject 1 3} {Reference 2 3} {Location 4 4} {Verb 4 2}
+	</template>
+	<rule Subject>
+		<template>
+			[Subject -1 -1] {ParticleSUBJ 3 1}
+		</template>
+	</rule>
+	<rule Reference>
+		<template>
+			{Object -1 -1} {Particle 3 1}
+		</template>
+		<rule Object>
+			<description> Room Obj.
+			<template>
+				 (noun テレビ -1)	 
+				<restriction [Where] == above_window>
+					(noun window -1 -1)
+				</restriction>	
+				<restriction [Where] == below_window>
+					(noun window -1 -1) 
+				</restriction>	
+				<restriction [Where] == on_bookshelf>
+					(noun bookshelf -1 -1) 
+				</restriction>	
+				<restriction [Where] == in_bookshelf>
+					(noun bookshelf -1 -1) 
+				</restriction>	
+				<restriction [Where] == on_table>
+					(noun table -1 -1) 
+				</restriction>	
+				<restriction [Where] == below_table>
+					(noun table -1 -1)
+				</restriction>
+				<restriction [Where] == infront_tv>
+					(noun television -1 -1) 
+				</restriction>
+				<restriction [Where] == above_tv>
+					(noun television -1 -1) 
+				</restriction>
+				<restriction [Where] == next_to_tv>
+					(noun television -1 -1) 	
+				</restriction>
+				<restriction [Where] == on_bed>
+					(noun bed -1 -1) 	
+				</restriction>
+				<restriction [Where] == under_bed>
+					(noun bed -1 -1) 	
+				</restriction>
+				<restriction [Where] == on_shelf>
+					(noun shelf -1 -1) 	
+				</restriction>
+				<restriction [Where] == on_drawer>
+					(noun drawer -1 -1) 	
+				</restriction>
+				<restriction [Where] == in_drawer>
+					(noun drawer -1 -1) 	
+				</restriction>
+				<restriction [Where] == next_to_clock>
+					(noun とけい -1 -1) 	
+				</restriction>
+				<restriction [Where] == under_clock>
+					(noun とけい -1 -1) 	
+				</restriction>			
+			</template>
+		</rule>
+		<rule Particle>
+			<template>
+				(particle の -1 1)
+			</template>
+		</rule>
+	</rule>
+	<rule Location>
+		<template>
+			{Place -1 -1} {Particle 3 1}
+		</template>
+		<rule Place>
+			<description> Rel. Location
+			<template>
+				 (position 上 -1)	 
+				<restriction [Where] == above_window>
+					 (position 上 -1 -1)
+				 </restriction>	
+				<restriction [Where] == below_window>
+					 (position 下 -1 -1)
+				</restriction>	
+				<restriction [Where] == on_bookshelf>
+					(position 上 -1 -1) 
+				</restriction>	
+				<restriction [Where] == in_bookshelf>
+					(position 中 -1 -1) 
+				</restriction>	
+				<restriction [Where] == on_table>
+					(position 上 -1 -1) 
+				</restriction>	
+				<restriction [Where] == below_table>
+					(position 下 -1 -1)
+				</restriction>
+				<restriction [Where] == infront_tv>
+					(position 前 -1 -1) 
+				</restriction>
+				<restriction [Where] == above_tv>
+					(position 上 -1 -1)
+				</restriction>
+				<restriction [Where] == next_to_tv>
+					(position となり -1)
+					(position 左 -1 -1)
+				</restriction>
+				<restriction [Where] == on_bed>
+					(position 上 -1 -1)	
+				</restriction>
+				<restriction [Where] == under_bed>
+					(position 下 -1 -1)	
+				</restriction>
+				<restriction [Where] == on_shelf>
+					(position 上 -1 -1)
+				</restriction>
+				<restriction [Where] == on_drawer>
+					(position 上 -1 -1)
+				</restriction>
+				<restriction [Where] == in_drawer>
+					(position 中 -1 -1)
+				</restriction>
+				<restriction [Where] == next_to_clock>
+					(position となり -1 -1)
+					(position 右 -1 -1)
+				</restriction>
+				<restriction [Where] == under_clock>
+					(position 下 -1 -1)
+				</restriction>	
+			</template>
+		</rule>
+		<rule Particle>
+			<template>
+				(particle に -1 -1)
+			</template>
+		</rule>
+	</rule>
+	<rule Verb>
+		<template>
+			<vrule basic verbForm>
+				(verb ある -1 -1)					
+			</vrule>
+		</template>	
+	</rule>
+</rule>
+#
+<rule person_position>
+	<form verbForm>
+		<setting>
+			present pos neg polite statement
+		</setting>
+		<setting>
+			present pos polite question
+		</setting>
+	</form>
+	<template>
+		{Subject 1 3} {Location 1 4} {Verb 4 1}
+	</template>
+	<rule Subject>
+		<template>
+			{Person -1 -1 [Subject]} {ParticleSUBJ 2 1}		
+		</template>	
+	</rule>
+	<rule Location>
+		<template>
+			[Where -1 -1] {Particle 3 1}
+		</template>
+		<rule Particle>
+			<template>
+				(particle に -1 -1)
+			</template>
+		</rule>	
+	</rule>
+	<rule Verb>
+		<template>
+			<vrule basic verbForm>
+				(verb be:animate -1 -1)							
+			</vrule>
+		</template>	
+	</rule>	
+</rule>
+#
+<rule PERMIT>
+	<form adjectiveForm>
+		<setting>
+			present pos polite question		
+		</setting>
+	</form>
+	<form verbForm>
+		<setting>
+			present pos plain statement		
+		</setting>
+	</form>
+	<template>
+		{Destination 1 4} {What 1 4} {Verb1 1 4} {Adjective 5 3}
+	</template>
+	<rule Verb1>
+		<template>
+			{Verb2 3 1} {ParticleVerb 3 1}
+		</template>
+　　　　　　　　<rule Verb2>
+		 <description> Verb
+		 <template>
+			<vrule please verbForm>			
+				[Verb -1 -1] 
+			</vrule>
+		 </template>	
+	        </rule>
+		<rule ParticleVerb>
+			<description> Particle
+			<template>
+				(particle も -1 -1)
+			</template>
+	　　　　</rule>	
+	</rule>	
+	<rule Adjective>
+		<template>
+			<arule standard adjectiveForm>
+				(adjective いい -1 -1)
+			</arule>			
+		</template>
+	</rule>
+</rule>
+#
+<rule FORBIT>
+	<form verbForm>
+		<setting>
+			present neg polite statement		
+		</setting>
+	</form>
+	<form TeForm>
+		<setting>
+			present pos plain statement		
+		</setting>
+	</form>
+	<template>
+		{When 1 4} {Destination 1 4} {What 1 4} {Verb1 1 4} {Part 5 3}
+	</template>
+	<rule Verb1>
+		<template>
+			{Verb2 3 1} {Particle 3 1}
+		</template>
+　　　　　　　　<rule Verb2>
+		<template>
+			<description> Verb
+			<vrule please TeForm>
+				[Verb -1 -1]
+			</vrule>
+		</template>	
+	        </rule>
+		<rule Particle>
+			<description> Particle
+			<template>
+				(particle は -1 -1)
+			</template>
+	　　　　</rule>	
+	</rule>
+	<rule Part>
+	        <description> VerbParticle
+		<template>
+			<vrule basic verbForm>
+				(verb いける -1 -1) 
+			</vrule>			
+		</template>
+	</rule>
+</rule>
+#
+<rule ACTION_SIMPLE_ing>
+	<form verbForm>
+		<setting>
+			present pos plain polite statement
+		</setting>		
+	</form>
+	<template>
+		{Subject 1 4} {WithA 1 4} {When 2 4} {How 1 4} {Destination 1 4} {Where 1 4} {To 1 4} {Who} {What 1 4} {Verb 4 2}	
+		<restriction [With] exists>
+			{Subject 1 4} {WithA 1 4} {When 2 4} {How 1 4} {Destination 1 4} {Where 1 4} {To 1 4} {What 1 4} {Verb 4 2}	
+			{SubjectB 1 4} {WithB 1 4} {When 2 4} {How 1 4} {Destination 1 4} {Where 1 4} {To 1 4} {What 1 4} {Verb 4 2}	
+		</restriction>
+	</template>
+	<rule Subject>
+		<description Subject>
+		<template>
+			[Subject -1 -1] {ParticleSUBJ 3 1}
+			<restriction [Subject] =group= person>
+				{Person -1 -1 [Subject]} {ParticleSUBJ 3 1}
+			</restriction>			
+		</template>	
+	</rule>
+	<rule SubjectB>
+		<description Subject>
+		<template>
+			[Subject -1 -1] {ParticleSUBJ 3 1}
+			<restriction [Subject] =group= person>
+				{Person -1 -1 [Subject]} {Particle 3 1}
+			</restriction>			
+		</template>	
+		<rule Particle>
+			<template>
+				(particle と -1 -1)
+			</template>
+		</rule>
+	</rule>
+	 <rule Who>
+		<template>
+			[Who] {Particle 3 1}
+			<restriction [Who] exists>
+				{Person -1 -1 [Who]} {Particle 3 1}
+			</restriction>
+		</template>
+		<rule Particle>
+			<template>
+				(particle を -1 -1)
+			</template>
+		</rule>
+	</rule>
+	<rule Verb>
+		<template>
+			<vrule doing verbForm>										
+				[Verb -1 -1]				
+			</vrule>
+		</template>
+	</rule>
+</rule>
+#
+<rule GOTODO>
+	<form verbForm>
+		<setting>
+			present pos polite statement		
+		</setting>
+	</form>
+	<form NiForm>
+		<setting>
+			present pos polite statement		
+		</setting>
+	</form>
+	<template>
+		{What 1 4} {Verb1 1 4} {VerbParticle 1 4}
+	</template>	
+	<rule Verb1>
+		<template>
+			{Verb2 3 1} {Particle 3 1}
+		</template>
+　　　　　　　　<rule Verb2>
+		<template>
+		　　　　<description> Action
+			<vrule masu  NiForm>			
+				[Verb -1 -1] 
+			</vrule>
+		</template>	
+	        </rule>
+		<rule Particle>
+			<description> Particle
+			<template>
+				(particle に -1 -1)
+			</template>
+	　　　　</rule> 
+	</rule>	
+	 <rule VerbParticle>
+	        <description> VerbParticle
+		<template>
+			<vrule basic verbForm>
+				(verb 行く -1 -1) 
+			</vrule>			
+		</template>
+	</rule>
+</rule>
+#
+<rule easy>
+	<form adjForm>
+		<setting>
+			present pos plain polite statement question			
+		</setting>
+	</form>
+	<form NiForm>
+		<setting>
+			present pos polite statement		
+		</setting>
+	</form>
+	<template>
+		{Subject 1 4} {What 1 4} {Verb1 1 4} {VerbParticle 1 4}
+	</template>
+	    <rule Subject>
+		<template>
+			{SubjectComplex 3 1} {ParticleSUBJ 3 1}			
+		</template>
+		<rule SubjectComplex>
+			<template>
+				{Definative 2 1} [Subject -1 -1]
+			</template>
+			<rule Definative>
+			<template>
+				(definative この -1 -1)
+			</template>
+			</rule>	
+		</rule>
+	</rule>
+	　　　<rule Verb1>
+		<template>
+		　　　　<description> Action
+			<vrule masu  NiForm>			
+				[Verb -1 -1] 
+			</vrule>
+		</template>	
+	        </rule>
+	      <rule VerbParticle>
+	        <description> Ajective
+		<template>
+			<vrule standard adjForm>
+				(adjective 易い -1 -1) 
+			</vrule>			
+		</template>
+	      </rule>
+</rule>
+#
+<rule difficult>
+	<form adjForm>
+		<setting>
+			present pos plain polite statement question			
+		</setting>
+	</form>
+	<form NiForm>
+		<setting>
+			present pos polite statement		
+		</setting>
+	</form>
+	<template>
+		{Subject 1 4} {What 1 4} {Verb1 1 4} {VerbParticle 1 4}
+	</template>
+	    <rule Subject>
+		<template>
+			{SubjectComplex 3 1} {ParticleSUBJ 3 1}			
+		</template>
+		<rule SubjectComplex>
+			<template>
+				{Definative 2 1} [Subject -1 -1]
+			</template>
+			<rule Definative>
+			<template>
+				(definative この -1 -1)
+			</template>
+			</rule>	
+		</rule>
+	   </rule>
+	　　　<rule Verb1>
+		<template>
+		　　　　<description> Action
+			<vrule masu  NiForm>			
+				[Verb -1 -1] 
+			</vrule>
+		</template>	
+	        </rule>	
+	      <rule VerbParticle>
+	        <description> Ajective
+		<template>
+			<vrule standard adjForm>
+				(adjective にくい -1 -1) 
+			</vrule>			
+		</template>
+	      </rule>
+</rule>
+#
+#========================================================================================
+# Generic Rules
+# ========================================================================================
+# 
+<rule Subject>
+		<template>
+			[Subject -1 -1] {Particle 3 1}
+			<restriction [Subject] =group= person>
+				{Person -1 -1 [Subject]} {Particle 3 1}
+			</restriction>			
+		</template>
+		<rule Particle>	
+			<template>
+				(particle は -1 -1)	
+			</template>
+		</rule>		
+	</rule>
+#
+<rule Person value>
+	<template>
+		|value -1 -1|
+		<restriction |value| =group= name>
+			|value -1 -1| {suffix 0 0}
+		</restriction>
+	</template>
+	<rule suffix>
+		<template>
+			(postfix さん 0 0)
+		</template>
+	</rule>
+</rule>
+#
+<rule When>
+	<template>
+		[When -1 -1] {Particle 3 1}
+	</template>	
+	<rule Particle>
+		<template>	 		　　
+		(particle に -1 -1)						
+		</template>
+	</rule>
+</rule>
+#
+<rule WhenAbs>
+	<template>
+		[When -1 -1]
+	</template>
+</rule>
+#
+<rule Where>
+	<template>
+		[Where -1 -1] {Particle 3 1}
+	</template>	
+	<rule Particle>
+		<template>
+			(particle で -1 -1)
+		</template>
+	</rule>
+</rule>
+#    
+<rule WhereNi>
+	<description Where>
+	<template>
+		[WhereNi -1 -1] {Particle 3 1}
+	</template>	
+	<rule Particle>
+		<template>
+			(particle に -1 -1)
+		</template>
+	</rule>
+</rule>
+#
+<rule How>
+	<template>
+		[How -1 -1] {Particle 3 1}
+	</template>	
+	<rule Particle>
+		<template>
+			(particle で -1 -1)
+		</template>
+	</rule>
+</rule>
+#
+<rule Transport>
+	<template>
+		[Transport -1 -1] {Particle 3 1}
+	</template>	
+	<rule Particle>
+		<template>
+			(particle に -1 -1)
+		</template>
+	</rule>
+</rule>
+#
+<rule Destination>
+	<template>
+		[Destination -1 -1] {Particle 3 2}
+	</template>	
+	<rule Particle>
+		<template>
+			(particle へ -1 -1)
+			(particle に -1 -1)			
+		</template>
+	</rule>
+</rule>
+#
+<rule WithA>
+	<description With>
+	<template>
+		[With] {Particle 3 1}
+		<restriction [With] exists>
+			{Person -1 -1 [With]} {Particle 3 1}
+			{Person -1 -1 [With]} {Particle 3 1} {Together 1 1}
+		</restriction>
+	</template>
+	<rule Particle>
+		<template>
+			(particle と -1 -1)
+		</template>
+	</rule>
+	<rule Together>
+		<template>
+			(noun いっしょ -1 -1) {Particle -1 -1}
+		</template>
+		<rule Particle>
+			<template>
+				(particle に -1 -1)
+			</template>
+		</rule>
+	</rule>
+</rule>
+#
+<rule WithB>
+	<description With>
+	<template>
+		[With] {Particle 3 1}
+		<restriction [With] exists>
+			{Person -1 -1 [With]} {Particle 3 1}
+			{Person -1 -1 [With]} {Particle 3 1} {Together 1 1}
+		</restriction>
+	</template>
+	<rule Particle>
+		<template>
+			(particle は -1 -1)
+			(particle が -1 -1)
+		</template>
+	</rule>
+	<rule Together>
+		<template>
+			(noun いっしょ -1 -1) {Particle -1 -1}
+		</template>
+		<rule Particle>
+			<template>
+				(particle に -1 -1)
+			</template>
+		</rule>
+	</rule>
+</rule>
+#	
+<rule To>
+	<template>
+		[To -1 -1] {Particle 3 1}		
+	</template>
+	<rule Particle>
+		<template>
+			(particle に -1 -1)			
+		</template>
+	</rule>
+</rule>
+#
+<rule What>
+	<template>
+		[What -1 -1] {Particle 3 1}
+	</template>
+	<rule Particle>
+		<template>
+			(particle を -1 -1)
+		</template>
+	</rule>
+</rule>
+#
+<rule ParticleSUBJ>
+	<description> Particle	
+	<template>
+		(particle は -1 -1)	
+	</template>
+</rule>
+# Lesson 4 BEGIN
+<rule lesson4-1>
+	<form form3>
+		<setting>
+			present past pos neg plain polite
+		</setting>
+	</form>
+	<template>
+		{Subject1 1 4} {Particle1 1 4} {Adjective1 1 4} { 1 4} {GFXBG1 1 4}
+	</template>
+	<rule Subject1>
+		<description>Subject
+		<template>
+				[Subject1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+				<restriction [Particle1] == ha>
+					(Particle は -1 -1)
+				</restriction>
+				<restriction [Particle1] == mo>
+					(Particle も -1 -1)
+				</restriction>
+		</template>
+	</rule>
+	<rule Adjective1>
+		<description>Adjective
+		<template>
+			<arule standard form3>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+	<rule GFXBG1>
+		<description>GFXBG
+		<template>
+				[GFXBG1 -1 -1]
+		</template>
+	</rule>
+</rule>
+<rule lesson4-2>
+	<form form4>
+		<setting>
+			present pos plain polite
+		</setting>
+	</form>
+	<template>
+		{Description1 1 4} {Subject1 1 4} {Particle1 1 4} {Adjective1 1 4} {GFXBG1 1 4}
+	</template>
+	<rule Description1>
+		<description>Description
+		<template>
+				[Description1 -1 -1]
+		</template>
+	</rule>
+	<rule Subject1>
+		<description>Subject
+		<template>
+				[Subject1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+				<restriction [Particle1] == ha>
+					(Particle は -1 -1)
+				</restriction>
+				<restriction [Particle1] == mo>
+					(Particle も -1 -1)
+				</restriction>
+		</template>
+	</rule>
+	<rule Adjective1>
+		<description>Adjective
+		<template>
+			<arule standard form4>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+	<rule GFXBG1>
+		<description>GFXBG
+		<template>
+				[GFXBG1 -1 -1]
+		</template>
+	</rule>
+</rule>
+<rule lesson4-3>
+	<form form4>
+		<setting>
+			present pos neg plain polite
+		</setting>
+	</form>
+	<template>
+		{Description1 1 4} {Subject1 1 4} {Particle1 1 4} {Adjective1 1 4} {GFXBG1 1 4}
+	</template>
+	<rule Description1>
+		<description>Description
+		<template>
+				[Description1 -1 -1]
+		</template>
+	</rule>
+	<rule Subject1>
+		<description>Subject
+		<template>
+				[Subject1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+				<restriction [Particle1] == ha>
+					(Particle は -1 -1)
+				</restriction>
+				<restriction [Particle1] == mo>
+					(Particle も -1 -1)
+				</restriction>
+		</template>
+	</rule>
+	<rule Adjective1>
+		<description>Adjective
+		<template>
+			<arule standard form4>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+	<rule GFXBG1>
+		<description>GFXBG
+		<template>
+				[GFXBG1 -1 -1]
+		</template>
+	</rule>
+</rule>
+<rule lesson4-4>
+	<form form5>
+		<setting>
+			present past pos plain polite
+		</setting>
+	</form>
+	<form form3>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Description1 1 4} {Particle1 1 4} {Adjective1 1 4} {Object1 1 4} {Verb1 1 4}
+	</template>
+	<rule Description1>
+		<description>Description
+		<template>
+				[Description1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+				<restriction [Particle1] == ha>
+					(Particle は -1 -1)
+				</restriction>
+				<restriction [Particle1] == mo>
+					(Particle も -1 -1)
+				</restriction>
+		</template>
+	</rule>
+	<rule Adjective1>
+		<description>Adjective
+		<template>
+			<arule modifier form3>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form5>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson4-5>
+	<form form6>
+		<setting>
+			present pos plain polite
+		</setting>
+	</form>
+	<form form4>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<form form3>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Description1 1 4} {Particle1 1 4} {Adjective1 1 4} {Adjective2 1 4} {Object1 1 4} {Verb1 1 4} {GFXBG1 1 4}
+	</template>
+	<rule Description1>
+		<description>Description
+		<template>
+				[Description1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Adjective1>
+		<description>Adjective
+		<template>
+			<arule connective form3>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+	<rule Adjective2>
+		<description>Adjective
+		<template>
+			<arule modifier form4>
+				[Adjective2 -1 -1]
+			</arule>
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form6>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule GFXBG1>
+		<description>GFXBG
+		<template>
+				[GFXBG1 -1 -1]
+		</template>
+	</rule>
+</rule>
+# Lesson 4 END
+# Lesson 5 BEGIN
+<rule lesson5-1>
+	<form form5>
+		<setting>
+			present pos neg polite
+		</setting>
+	</form>
+	<template>
+		{Subject1 1 4} {Particle1 1 4} {Object1 1 4} {Particle2 1 4} {Adjective1 1 4}
+	</template>
+	<rule Subject1>
+		<description>Subject
+		<template>
+				[Subject1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Adjective1>
+		<description>Adjective
+		<template>
+			<arule standard form5>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+</rule>
+<rule lesson5-2>
+	<form form7>
+		<setting>
+			present pos neg polite
+		</setting>
+	</form>
+	<form form5>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Subject1 1 4} {Particle1 1 4} {Object1 1 4} {Particle2 1 4} {Verb1 1 4} {Particle3 1 4} {Adjective1 1 4}
+	</template>
+	<rule Subject1>
+		<description>Subject
+		<template>
+				[Subject1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form5>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Particle3>
+		<description>Particle
+		<template>
+				[Particle3 -1 -1]
+		</template>
+	</rule>
+	<rule Adjective1>
+		<description>Adjective
+		<template>
+			<arule standard form7>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+</rule>
+# Lesson 5 END
+# Lesson 7 BEGIN
+<rule lesson7-1>
+	<form form3>
+		<setting>
+			present pos plain 
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Adjective1 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Adjective1>
+		<description>Adjective
+		<template>
+			<arule standard form3>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+</rule>
+<rule lesson7-2>
+	<form form3>
+		<setting>
+			present pos neg polite
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Verb1 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule please form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson7-3>
+	<form form3>
+		<setting>
+			present neg polite
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Verb1 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule please form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson7-4>
+	<form form3>
+		<setting>
+			present pos neg polite
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Verb1 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule please form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+# Lesson 7 END
+# Lesson 9 BEGIN
+<rule lesson9-1>
+	<form form5>
+		<setting>
+			present past pos plain polite 
+		</setting>
+	</form>
+	<form form1>
+		<setting>
+			present pos plain 
+		</setting>
+	</form>
+	<template>
+		{Adjective1 1 4} {Particle1 1 4} {Object1 1 4} {Particle2 1 4} {Verb1 1 4}
+	</template>
+	<rule Adjective1>
+		<description>Adjective
+		<template>
+			<arule standard form1>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form5>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson9-2>
+	<form form5>
+		<setting>
+			present past pos plain polite 
+		</setting>
+	</form>
+	<form form1>
+		<setting>
+			present pos plain 
+		</setting>
+	</form>
+	<template>
+		{Adjective1 1 4} {Particle1 1 4} {Object1 1 4} {Particle2 1 4} {Verb1 1 4}
+	</template>
+	<rule Adjective1>
+		<description>Adjective
+		<template>
+			<arule standard form1>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form5>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson9-3>
+	<form form7>
+		<setting>
+			present past neg polite
+		</setting>
+	</form>
+	<form form3>
+		<setting>
+			present past pos plain
+		</setting>
+	</form>
+	<template>
+		{Subject1 1 4} {Particle1 1 4} {Adjective1 1 4} {Particle2 1 4} {Object1 1 4} {Particle3 1 4} {Verb1 1 4}
+	</template>
+	<rule Subject1>
+		<description>Subject
+		<template>
+				[Subject1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Adjective1>
+		<description>Adjective
+		<template>
+			<arule standard form3>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle3>
+		<description>Particle
+		<template>
+				[Particle3 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form7>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson9-4>
+	<form form5>
+		<setting>
+			present past pos plain polite 
+		</setting>
+	</form>
+	<template>
+		{Time1 1 4} {Particle1 1 4} {Object1 1 4} {Particle2 1 4} {Verb1 1 4}
+	</template>
+	<rule Time1>
+		<description>Time
+		<template>
+				[Time1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Object1>
+		<description>destination
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form5>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson9-5>
+	<form form5>
+		<setting>
+			present pos plain polite
+		</setting>
+	</form>
+	<template>
+		{Subject1 1 4} {Particle1 1 4} {Subject2 1 4} {Particle2 1 4} {Adjective1 1 4}
+	</template>
+	<rule Subject1>
+		<description>Owner
+		<template>
+				[Subject1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Subject2>
+		<description>Subject
+		<template>
+				[Subject2 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Adjective1>
+		<description>Adjective
+		<template>
+			<arule ndadesu form5>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+</rule>
+<rule lesson9-6>
+	<form form7>
+		<setting>
+			present pos plain polite
+		</setting>
+	</form>
+	<template>
+		{Time1 1 4} {Particle1 1 4} {DetailedTime1 1 4} {Particle2 1 4} {Object1 1 4} {Particle3 1 4} {Verb1 1 4}
+	</template>
+	<rule Time1>
+		<description>Time
+		<template>
+				[Time1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule DetailedTime1>
+		<description>DetailedTime
+		<template>
+				[DetailedTime1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle3>
+		<description>Particle
+		<template>
+				[Particle3 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule ndadesu form7>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson9-7>
+	<form form4>
+		<setting>
+			present pos plain polite
+		</setting>
+	</form>
+	<template>
+		{Time1 1 4} {Object1 1 4} {Particle1 1 4} {Verb1 1 4}
+	</template>
+	<rule Time1>
+		<description>Time
+		<template>
+				[Time1 -1 -1]
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule ndadesu form4>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson9-8>
+	<form form4>
+		<setting>
+			present pos plain polite
+		</setting>
+	</form>
+	<template>
+		{Subject1 1 4} {Particle1 1 4} {Object1 1 4} {Verb1 1 4}
+	</template>
+	<rule Subject1>
+		<description>Subject
+		<template>
+				[Subject1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule ndadesu form4>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+# Lesson 9 END
+# Lesson 11 BEGIN
+<rule lesson11-1>
+	<form form5>
+		<setting>
+			present past pos neg plain polite statement question
+		</setting>
+	</form>
+	<form form3>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Verb1 1 4} {Particle2 1 4} {Verb2 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule renyou1 form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule basic form5>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson11-2>
+	<form form5>
+		<setting>
+			present past pos neg plain polite statement question
+		</setting>
+	</form>
+	<form form3>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Verb1 1 4} {Particle2 1 4} {Verb2 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule renyou1 form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule basic form5>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+# Lesson 11 END
+# Lesson 12 BEGIN
+<rule lesson12-1>
+	<form form7>
+		<setting>
+			present past pos neg plain polite
+		</setting>
+	</form>
+	<form form6>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Subject1 1 4} {Particle1 1 4} {Adverb1 1 4} {Object1 1 4} {Particle2 1 4} {Verb1 1 4} {Verb2 1 4}
+	</template>
+	<rule Subject1>
+		<description>Subject
+		<template>
+				[Subject1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Adverb1>
+		<description>Adverb
+		<template>
+				[Adverb1 -1 -1]
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule renyoute form6>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule basic form7>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson12-2>
+	<form form5>
+		<setting>
+			present past pos neg plain polite
+		</setting>
+	</form>
+	<form form4>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Subject1 1 4} {Particle1 1 4} {Adverb1 1 4} {Verb1 1 4} {Verb2 1 4}
+	</template>
+	<rule Subject1>
+		<description>Subject
+		<template>
+				[Subject1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Adverb1>
+		<description>Adverb
+		<template>
+				[Adverb1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule renyoute form4>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule basic form5>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson12-3>
+	<form form7>
+		<setting>
+			past pos polite plain
+		</setting>
+	</form>
+	<form form6>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Subject1 1 4} {Particle1 1 4} {Adverb1 1 4} {Object1 1 4} {Particle2 1 4} {Verb1 1 4} {Verb2 1 4}
+	</template>
+	<rule Subject1>
+		<description>Subject
+		<template>
+				[Subject1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Adverb1>
+		<description>Adverb
+		<template>
+				[Adverb1 -1 -1]
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule renyou1 form6>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule basic form7>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson12-4>
+	<form form6>
+		<setting>
+			present neg polite plain
+		</setting>
+	</form>
+	<template>
+		{Subject1 1 4} {Particle1 1 4} {Adverb1 1 4} {Object1 1 4} {Particle2 1 4} {Verb1 1 4}
+	</template>
+	<rule Subject1>
+		<description>Subject
+		<template>
+				[Subject1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Adverb1>
+		<description>Adverb
+		<template>
+				[Adverb1 -1 -1]
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form6>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson12-5>
+	<form form7>
+		<setting>
+			past pos polite plain
+		</setting>
+	</form>
+	<form form6>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Adverb1 1 4} {Particle1 1 4} {Object2 1 4} {Particle2 1 4} {Verb1 1 4} {Verb2 1 4}
+	</template>
+	<rule Object1>
+		<description>Time
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Adverb1>
+		<description>Adverb
+		<template>
+				[Adverb1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Object2>
+		<description>Object
+		<template>
+				[Object2 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule renyou1 form6>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule basic form7>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson12-6>
+	<form form7>
+		<setting>
+			past pos polite plain
+		</setting>
+	</form>
+	<form form6>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Adverb1 1 4} {Particle1 1 4} {Object2 1 4} {Particle2 1 4} {Verb1 1 4} {Verb2 1 4}
+	</template>
+	<rule Object1>
+		<description>Time
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Adverb1>
+		<description>Adverb
+		<template>
+				[Adverb1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Object2>
+		<description>Object
+		<template>
+				[Object2 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule renyou1 form6>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule basic form7>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson12-7>
+	<form form6>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Adverb1 1 4} {Particle1 1 4} {Object2 1 4} {Particle2 1 4} {Verb1 1 4}
+	</template>
+	<rule Object1>
+		<description>Time
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Adverb1>
+		<description>Adverb
+		<template>
+				[Adverb1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Object2>
+		<description>Object
+		<template>
+				[Object2 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form6>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+# Lesson 12 END
+# Lesson 13 BEGIN
+<rule lesson13-1>
+	<form form5>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Subject1 1 4} {Particle1 1 4} {Object1 1 4} {Particle2 1 4} {Adjective1 1 4}
+	</template>
+	<rule Subject1>
+		<description>Subject
+		<template>
+				[Subject1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Adjective1>
+		<description>Adjective
+		<template>
+			<arule standard form5>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+</rule>
+<rule lesson13-2>
+	<form form4>
+		<setting>
+			present pos neg plain polite 
+		</setting>
+	</form>
+	<form form3>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Subject1 1 4} {Particle1 1 4} {Adjective1 1 4} {Verb1 1 4}
+	</template>
+	<rule Subject1>
+		<description>Subject
+		<template>
+				[Subject1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Adjective1>
+		<description>Adjective
+		<template>
+			<arule stem form3>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form4>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson13-3>
+	<form form6>
+		<setting>
+			present pos plain polite 
+		</setting>
+	</form>
+	<form form5>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Subject1 1 4} {Particle1 1 4} {Object1 1 4} {Particle2 1 4} {Adjective1 1 4} {Verb1 1 4}
+	</template>
+	<rule Subject1>
+		<description>Subject
+		<template>
+				[Subject1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Adjective1>
+		<description>Adjective
+		<template>
+			<arule stem form5>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form6>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson13-4>
+	<form form11>
+		<setting>
+			present pos question
+		</setting>
+	</form>
+	<form form10>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Description1 1 4} {Particle1 1 4} {Object1 1 4} {Particle2 1 4} {Object2 1 4} {Particle3 1 4} {Object3 1 4} {Particle4 1 4} {Adverb1 1 4} {Adjective1 1 4} {Verb1 1 4}
+	</template>
+	<rule Description1>
+		<description>Description
+		<template>
+				[Description1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Object2>
+		<description>IN
+		<template>
+				[Object2 -1 -1]
+		</template>
+	</rule>
+	<rule Particle3>
+		<description>Particle
+		<template>
+				[Particle3 -1 -1]
+		</template>
+	</rule>
+	<rule Object3>
+		<description>Pronoun
+		<template>
+				[Object3 -1 -1]
+		</template>
+	</rule>
+	<rule Particle4>
+		<description>Particle
+		<template>
+				[Particle4 -1 -1]
+		</template>
+	</rule>
+	<rule Adverb1>
+		<description>MOST
+		<template>
+				[Adverb1 -1 -1]
+		</template>
+	</rule>
+	<rule Adjective1>
+		<description>Adjective
+		<template>
+			<arule stem form10>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form11>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson13-5>
+	<form form9>
+		<setting>
+			present pos question
+		</setting>
+	</form>
+	<form form8>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Object2 1 4} {Particle2 1 4} {Object3 1 4} {Particle3 1 4} {Adverb1 1 4} {Adjective1 1 4} {Verb1 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Object2>
+		<description>IN
+		<template>
+				[Object2 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Object3>
+		<description>Pronoun
+		<template>
+				[Object3 -1 -1]
+		</template>
+	</rule>
+	<rule Particle3>
+		<description>Particle
+		<template>
+				[Particle3 -1 -1]
+		</template>
+	</rule>
+	<rule Adverb1>
+		<description>MOST
+		<template>
+				[Adverb1 -1 -1]
+		</template>
+	</rule>
+	<rule Adjective1>
+		<description>Adjective
+		<template>
+			<arule stem form8>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form9>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson13-6>
+	<form form8>
+		<setting>
+			pos polite question
+		</setting>
+	</form>
+	<form form7>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Object2 1 4} {Particle2 1 4} {Object3 1 4} {Particle3 1 4} {Adjective1 1 4} {Verb1 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Object2>
+		<description>Object
+		<template>
+				[Object2 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Object3>
+		<description>Pronoun
+		<template>
+				[Object3 -1 -1]
+		</template>
+	</rule>
+	<rule Particle3>
+		<description>Particle
+		<template>
+				[Particle3 -1 -1]
+		</template>
+	</rule>
+	<rule Adjective1>
+		<description>Adjective
+		<template>
+			<arule stem form7>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form8>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson13-7>
+	<form form8>
+		<setting>
+			pos polite question
+		</setting>
+	</form>
+	<form form7>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Object2 1 4} {Particle2 1 4} {Object3 1 4} {Particle3 1 4} {Adjective1 1 4} {Verb1 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Object2>
+		<description>Object
+		<template>
+				[Object2 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Object3>
+		<description>Pronoun
+		<template>
+				[Object3 -1 -1]
+		</template>
+	</rule>
+	<rule Particle3>
+		<description>Particle
+		<template>
+				[Particle3 -1 -1]
+		</template>
+	</rule>
+	<rule Adjective1>
+		<description>Adjective
+		<template>
+			<arule stem form7>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form8>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+# Lesson 13 END
+# Lesson 14 BEGIN
+<rule lesson14-1>
+	<form form6>
+		<setting>
+			present past pos neg plain plolite
+		</setting>
+	</form>
+	<form form5>
+		<setting>
+			present pos plain 
+		</setting>
+	</form>
+	<template>
+		{Subject1 1 4} {Particle1 1 4} {Object1 1 4} {Particle2 1 4} {Verb1 1 4} {Adjective1 1 4}
+	</template>
+	<rule Subject1>
+		<description>Subject
+		<template>
+				[Subject1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule renyou1 form5>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Adjective1>
+		<description>Adjective
+		<template>
+			<arule standard form6>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+</rule>
+<rule lesson14-2>
+	<form form7>
+		<setting>
+			present past pos plain polite
+		</setting>
+	</form>
+	<form form5>
+		<setting>
+			present pos plain 
+		</setting>
+	</form>
+	<template>
+		{Subject1 1 4} {Particle1 1 4} {Object1 1 4} {Particle2 1 4} {Verb1 1 4} {Adverb1 1 4} {Verb2 1 4}
+	</template>
+	<rule Subject1>
+		<description>Subject
+		<template>
+				[Subject1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule shushi form5>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Adverb1>
+		<description>Adverb
+		<template>
+				[Adverb1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule basic form7>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson14-3>
+	<form form6>
+		<setting>
+			present past pos plain polite
+		</setting>
+	</form>
+	<form form3>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Subject1 1 4} {Particle1 1 4} {Adjective1 1 4} {Object1 1 4} {Particle2 1 4} {Adjective2 1 4}
+	</template>
+	<rule Subject1>
+		<description>Subject
+		<template>
+				[Subject1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Adjective1>
+		<description>Adjective
+		<template>
+			<arule standard form3>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Adjective2>
+		<description>Adjective
+		<template>
+			<arule standard form6>
+				[Adjective2 -1 -1]
+			</arule>
+		</template>
+	</rule>
+</rule>
+<rule lesson14-4>
+	<form form8>
+		<setting>
+			present past pos neg plain plolite
+		</setting>
+	</form>
+	<form form7>
+		<setting>
+			present pos plain 
+		</setting>
+	</form>
+	<template>
+		{Subject1 1 4} {Particle1 1 4} {Object1 1 4} {Particle2 1 4} {Object2 1 4} {Particle3 1 4} {Verb1 1 4} {Adjective1 1 4}
+	</template>
+	<rule Subject1>
+		<description>Subject
+		<template>
+				[Subject1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Object2>
+		<description>Object
+		<template>
+				[Object2 -1 -1]
+		</template>
+	</rule>
+	<rule Particle3>
+		<description>Particle
+		<template>
+				[Particle3 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule renyoute form7>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Adjective1>
+		<description>Adjective
+		<template>
+			<arule standard form8>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+</rule>
+# Lesson 14 END
+# Lesson 15 BEGIN
+<rule lesson15-1>
+	<form form7>
+		<setting>
+			past present pos plain polite statement
+		</setting>
+	</form>
+	<form form6>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<form form3>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Verb1 1 4} {Object2 1 4} {Particle2 1 4} {Verb2 1 4} {Verb3 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule tari form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Object2>
+		<description>Object
+		<template>
+				[Object2 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule tari form6>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Verb3>
+		<description>Verb
+		<template>
+			<vrule basic form7>
+				[Verb3 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson15-2>
+	<form form7>
+		<setting>
+			past present pos plain polite statement
+		</setting>
+	</form>
+	<form form6>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<form form3>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Verb1 1 4} {Object2 1 4} {Particle2 1 4} {Verb2 1 4} {Verb3 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule tari form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Object2>
+		<description>Object
+		<template>
+				[Object2 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule tari form6>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Verb3>
+		<description>Verb
+		<template>
+			<vrule basic form7>
+				[Verb3 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson15-3>
+	<form form7>
+		<setting>
+			past present pos plain polite statement
+		</setting>
+	</form>
+	<form form6>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<form form3>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Verb1 1 4} {Object2 1 4} {Particle2 1 4} {Verb2 1 4} {Verb3 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule tari form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Object2>
+		<description>Object
+		<template>
+				[Object2 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule tari form6>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Verb3>
+		<description>Verb
+		<template>
+			<vrule basic form7>
+				[Verb3 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson15-4>
+	<form form7>
+		<setting>
+			past present pos plain polite statement
+		</setting>
+	</form>
+	<form form6>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<form form3>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Verb1 1 4} {Object2 1 4} {Particle2 1 4} {Verb2 1 4} {Verb3 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule tari form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Object2>
+		<description>Object
+		<template>
+				[Object2 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule tari form6>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Verb3>
+		<description>Verb
+		<template>
+			<vrule basic form7>
+				[Verb3 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson15-5>
+	<form form5>
+		<setting>
+			past present pos plain polite statement
+		</setting>
+	</form>
+	<form form4>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<form form3>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Verb1 1 4} {Verb2 1 4} {Verb3 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule tari form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule tari form4>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Verb3>
+		<description>Verb
+		<template>
+			<vrule basic form5>
+				[Verb3 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson15-6>
+	<form form5>
+		<setting>
+			past present pos plain polite statement
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Object2 1 4} {Particle2 1 4} {Verb1 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Object2>
+		<description>Object
+		<template>
+				[Object2 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form5>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson15-7>
+	<form form5>
+		<setting>
+			past present pos plain polite statement
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Object2 1 4} {Particle2 1 4} {Verb1 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Object2>
+		<description>Object
+		<template>
+				[Object2 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form5>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson15-8>
+	<form form5>
+		<setting>
+			present pos plain polite statement
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Object2 1 4} {Particle2 1 4} {Adjective1 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Object2>
+		<description>Object
+		<template>
+				[Object2 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Adjective1>
+		<description>Adjective
+		<template>
+			<arule standard form5>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+</rule>
+<rule lesson15-9>
+	<form form5>
+		<setting>
+			past present pos plain polite statement
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Object2 1 4} {Particle2 1 4} {Verb1 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Object2>
+		<description>Object
+		<template>
+				[Object2 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form5>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+# Lesson 15 END
+# Lesson 16 BEGIN
+<rule lesson16-1>
+	<form form6>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<form form5>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<form form3>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Subject1 1 4} {Particle1 1 4} {Verb1 1 4} {Particle2 1 4} {Adjective1 1 4} {Verb2 1 4}
+	</template>
+	<rule Subject1>
+		<description>Subject
+		<template>
+				[Subject1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Adjective1>
+		<description>Adjective
+		<template>
+			<arule adverb form5>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule basic form6>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson16-2>
+	<form form6>
+		<setting>
+			present neg plain
+		</setting>
+	</form>
+	<form form2>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Adverb1 1 4} {Adjective1 1 4} {Particle1 1 4} {Object1 1 4} {Particle2 1 4} {Verb1 1 4}
+	</template>
+	<rule Adverb1>
+		<description>Adverb
+		<template>
+				[Adverb1 -1 -1]
+		</template>
+	</rule>
+	<rule Adjective1>
+		<description>Adjective
+		<template>
+			<arule standard form2>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form6>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson16-3>
+	<form form8>
+		<setting>
+			present neg plain
+		</setting>
+	</form>
+	<form form4>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Adverb1 1 4} {Object1 1 4} {Particle1 1 4} {Verb1 1 4} {Particle2 1 4} {Object2 1 4} {Particle3 1 4} {Verb2 1 4}
+	</template>
+	<rule Adverb1>
+		<description>Adverb
+		<template>
+				[Adverb1 -1 -1]
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule renyou2 form4>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Object2>
+		<description>Object
+		<template>
+				[Object2 -1 -1]
+		</template>
+	</rule>
+	<rule Particle3>
+		<description>Particle
+		<template>
+				[Particle3 -1 -1]
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule basic form8>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson16-4>
+	<form form7>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<form form3>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Subject1 1 4} {Particle1 1 4} {Verb1 1 4} {Particle2 1 4} {Object1 1 4} {Particle3 1 4} {Verb2 1 4}
+	</template>
+	<rule Subject1>
+		<description>Subject
+		<template>
+				[Subject1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule katei form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle3>
+		<description>Particle
+		<template>
+				[Particle3 -1 -1]
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule basic form7>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+# Lesson 16 END
+# Lesson 17 BEGIN
+<rule lesson17-1>
+	<form form5>
+		<setting>
+			present past pos plain polite
+		</setting>
+	</form>
+	<form form4>
+		<setting>
+			past pos plain
+		</setting>
+	</form>
+	<form form1>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Adjective1 1 4} {Object1 1 4} {Particle1 1 4} {Verb1 1 4} {Adjective2 1 4}
+	</template>
+	<rule Adjective1>
+		<description>Adjective
+		<template>
+			<arule adverb form1>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form4>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Adjective2>
+		<description>Adjective
+		<template>
+			<arule standard form5>
+				[Adjective2 -1 -1]
+			</arule>
+		</template>
+	</rule>
+</rule>
+<rule lesson17-2>
+	<form form5>
+		<setting>
+			present pos plain polite
+		</setting>
+	</form>
+	<form form4>
+		<setting>
+			past pos plain
+		</setting>
+	</form>
+	<form form1>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Adjective1 1 4} {Object1 1 4} {Particle1 1 4} {Verb1 1 4} {Adjective2 1 4}
+	</template>
+	<rule Adjective1>
+		<description>Adjective
+		<template>
+			<arule adverb form1>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form4>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Adjective2>
+		<description>Adjective
+		<template>
+			<arule standard form5>
+				[Adjective2 -1 -1]
+			</arule>
+		</template>
+	</rule>
+</rule>
+<rule lesson17-3>
+	<form form6>
+		<setting>
+			present past neg plain
+		</setting>
+	</form>
+	<form form5>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Time1 1 4} {Particle1 1 4} {Object1 1 4} {Particle2 1 4} {Verb1 1 4} {Verb2 1 4}
+	</template>
+	<rule Time1>
+		<description>Time
+		<template>
+				[Time1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule nakereba form5>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule basic form6>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson17-4>
+	<form form8>
+		<setting>
+			present pos plain polite
+		</setting>
+	</form>
+	<form form7>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Object2 1 4} {Particle2 1 4} {Object3 1 4} {Particle3 1 4} {Verb1 1 4} {Adjective1 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Object2>
+		<description>Things
+		<template>
+				[Object2 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>About
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Object3>
+		<description>Object
+		<template>
+				[Object3 -1 -1]
+		</template>
+	</rule>
+	<rule Particle3>
+		<description>Particle
+		<template>
+				[Particle3 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule taradara form7>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Adjective1>
+		<description>Adjective
+		<template>
+			<arule standard form8>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+</rule>
+# Lesson 17 END
+# Lesson 18 BEGIN
+<rule lesson18-1>
+	<form form8>
+		<setting>
+			past pos plain
+		</setting>
+	</form>
+	<form form3>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Verb1 1 4} {Object2 1 4} {Particle2 1 4} {Object3 1 4} {Particle3 1 4} {Verb2 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Object2>
+		<description>Object
+		<template>
+				[Object2 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Object3>
+		<description>Object
+		<template>
+				[Object3 -1 -1]
+		</template>
+	</rule>
+	<rule Particle3>
+		<description>Particle
+		<template>
+				[Particle3 -1 -1]
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule basic form8>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson18-2>
+	<form form8>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<form form3>
+		<setting>
+			past pos plain
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Verb1 1 4} {Object2 1 4} {Particle2 1 4} {Object3 1 4} {Particle3 1 4} {Verb2 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Object2>
+		<description>Object
+		<template>
+				[Object2 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Object3>
+		<description>Object
+		<template>
+				[Object3 -1 -1]
+		</template>
+	</rule>
+	<rule Particle3>
+		<description>Particle
+		<template>
+				[Particle3 -1 -1]
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule basic form8>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson18-3>
+	<form form7>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<form form3>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Subject1 1 4} {Particle1 1 4} {Verb1 1 4} {Particle2 1 4} {Object1 1 4} {Particle3 1 4} {Verb2 1 4}
+	</template>
+	<rule Subject1>
+		<description>Subject
+		<template>
+				[Subject1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule renyoute form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle3>
+		<description>Particle
+		<template>
+				[Particle3 -1 -1]
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule basic form7>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson18-4>
+	<form form7>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<form form3>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Verb1 1 4} {Particle2 1 4} {Object2 1 4} {Particle3 1 4} {Verb2 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule renyou1 form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Object2>
+		<description>Object
+		<template>
+				[Object2 -1 -1]
+		</template>
+	</rule>
+	<rule Particle3>
+		<description>Particle
+		<template>
+				[Particle3 -1 -1]
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule basic form7>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson18-5>
+	<form form7>
+		<setting>
+			past pos plain
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Object2 1 4} {Particle2 1 4} {Object3 1 4} {Particle3 1 4} {Verb1 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Object2>
+		<description>Object
+		<template>
+				[Object2 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Object3>
+		<description>Object
+		<template>
+				[Object3 -1 -1]
+		</template>
+	</rule>
+	<rule Particle3>
+		<description>Particle
+		<template>
+				[Particle3 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form7>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson18-6>
+	<form form9>
+		<setting>
+			present past pos plain
+		</setting>
+	</form>
+	<template>
+		{Time1 1 4} {Particle1 1 4} {DetailedTime1 1 4} {Object1 1 4} {Subject1 1 4} {Particle2 1 4} {Object2 1 4} {Particle3 1 4} {Verb1 1 4}
+	</template>
+	<rule Time1>
+		<description>Time
+		<template>
+				[Time1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule DetailedTime1>
+		<description>DetailedTime
+		<template>
+				[DetailedTime1 -1 -1]
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Subject1>
+		<description>Subject
+		<template>
+				[Subject1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Object2>
+		<description>Object
+		<template>
+				[Object2 -1 -1]
+		</template>
+	</rule>
+	<rule Particle3>
+		<description>Particle
+		<template>
+				[Particle3 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form9>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson18-7>
+	<form form6>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Time1 1 4} {Particle1 1 4} {Particle2 1 4} {Object1 1 4} {Particle3 1 4} {Verb1 1 4}
+	</template>
+	<rule Time1>
+		<description>Time
+		<template>
+				[Time1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle3>
+		<description>Particle
+		<template>
+				[Particle3 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form6>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+# Lesson 18 END
+# Lesson 19 BEGIN
+<rule lesson19-1>
+	<form form4>
+		<setting>
+			present pos plain polite
+		</setting>
+	</form>
+	<template>
+		{Place1 1 4} {Particle1 1 4} {Adverb1 1 4} {Verb1 1 4}
+	</template>
+	<rule Place1>
+		<description>Place
+		<template>
+				[Place1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Adverb1>
+		<description>Adverb
+		<template>
+				[Adverb1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule mitai form4>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson19-2>
+	<form form3>
+		<setting>
+			present pos plain polite
+		</setting>
+	</form>
+	<template>
+		{Place1 1 4} {Particle1 1 4} {Verb1 1 4}
+	</template>
+	<rule Place1>
+		<description>Place
+		<template>
+				[Place1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule mitai form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson19-3>
+	<form form7>
+		<setting>
+			present pos plain polite
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Object2 1 4} {Particle2 1 4} {Object3 1 4} {Particle3 1 4} {Verb1 1 4}
+	</template>
+	<rule Object1>
+		<description>Obj(with)
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Object2>
+		<description>Obj(of)
+		<template>
+				[Object2 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Object3>
+		<description>Object
+		<template>
+				[Object3 -1 -1]
+		</template>
+	</rule>
+	<rule Particle3>
+		<description>Particle
+		<template>
+				[Particle3 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule mitai form7>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson19-4>
+	<form form3>
+		<setting>
+			present pos polite statement
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Verb1 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule oku form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson19-5>
+	<form form3>
+		<setting>
+			present pos polite statement
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Verb1 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule oku form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson19-6>
+	<form form2>
+		<setting>
+			present pos plain polite statement
+		</setting>
+	</form>
+	<template>
+		{Adverb1 1 4} {Verb1 1 4}
+	</template>
+	<rule Adverb1>
+		<description>Adverb
+		<template>
+				[Adverb1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule oku form2>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson19-7>
+	<form form3>
+		<setting>
+			pos plain polite statement past
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Verb1 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule simau form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson19-8>
+	<form form4>
+		<setting>
+			pos plain polite statement past
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Adverb1 1 4} {Verb1 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Adverb1>
+		<description>Adverb
+		<template>
+				[Adverb1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule simau form4>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson19-9>
+	<form form4>
+		<setting>
+			pos plain polite statement past
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Adverb1 1 4} {Verb1 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Adverb1>
+		<description>Adverb
+		<template>
+				[Adverb1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule simau form4>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+# Lesson 19 END
+# Lesson 20 BEGIN
+<rule lesson20-1>
+	<form form4>
+		<setting>
+			present pos polite plain statement
+		</setting>
+	</form>
+	<form form3>
+		<setting>
+			present pos plain 
+		</setting>
+	</form>
+	<template>
+		{Subject1 1 4} {Particle1 1 4} {Adjective1 1 4} {Adjective2 1 4}
+	</template>
+	<rule Subject1>
+		<description>Subject
+		<template>
+				[Subject1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Adjective1>
+		<description>Adjective
+		<template>
+			<arule stem form3>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+	<rule Adjective2>
+		<description>Verb
+		<template>
+			<arule standard form4>
+				[Adjective2 -1 -1]
+			</arule>
+		</template>
+	</rule>
+</rule>
+<rule lesson20-2>
+	<form form4>
+		<setting>
+			present pos plain polite
+		</setting>
+	</form>
+	<template>
+		{Time1 1 4} {Particle1 1 4} {Object1 1 4} {Verb1 1 4}
+	</template>
+	<rule Time1>
+		<description>Time
+		<template>
+				[Time1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule mashou form4>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson20-3>
+	<form form5>
+		<setting>
+			present pos plain polite 
+		</setting>
+	</form>
+	<template>
+		{Subject1 1 4} {Particle1 1 4} {Object1 1 4} {Particle2 1 4} {Verb1 1 4}
+	</template>
+	<rule Subject1>
+		<description>Subject
+		<template>
+				[Subject1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form5>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson20-4>
+	<form form6>
+		<setting>
+			present pos statement
+		</setting>
+	</form>
+	<form form5>
+		<setting>
+			present pos plain statement
+		</setting>
+	</form>
+	<template>
+		{Subject1 1 4} {Particle1 1 4} {Object1 1 4} {Particle2 1 4} {Verb1 1 4} {Adjective1 1 4}
+	</template>
+	<rule Subject1>
+		<description>Subject
+		<template>
+				[Subject1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form5>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Adjective1>
+		<description>Verb
+		<template>
+			<arule standard form6>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+</rule>
+<rule lesson20-5>
+	<form form7>
+		<setting>
+			present past pos polite plain
+		</setting>
+	</form>
+	<form form5>
+		<setting>
+			present pos plain statement  
+		</setting>
+	</form>
+	<template>
+		{Subject1 1 4} {Particle1 1 4} {Object1 1 4} {Particle2 1 4} {Verb1 1 4} {Particle3 1 4} {Verb2 1 4}
+	</template>
+	<rule Subject1>
+		<description>Subject
+		<template>
+				[Subject1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form5>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Particle3>
+		<description>Particle
+		<template>
+				[Particle3 -1 -1]
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule basic form7>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson20-6>
+	<form form6>
+		<setting>
+			present plain neg statement
+		</setting>
+	</form>
+	<form form4>
+		<setting>
+			present pos plain statement
+		</setting>
+	</form>
+	<template>
+		{Description1 1 4} {Subject1 1 4} {Particle1 1 4} {Adjective1 1 4} {Particle2 1 4} {Verb1 1 4}
+	</template>
+	<rule Description1>
+		<description>Description
+		<template>
+				[Description1 -1 -1]
+		</template>
+	</rule>
+	<rule Subject1>
+		<description>Subject
+		<template>
+				[Subject1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Adjective1>
+		<description>Adjective
+		<template>
+			<arule standard form4>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form6>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson20-7>
+	<form form6>
+		<setting>
+			present past pos polite plain statement
+		</setting>
+	</form>
+	<form form5>
+		<setting>
+			present pos plain statement
+		</setting>
+	</form>
+	<template>
+		{Owner1 1 4} {Particle1 1 4} {Subject1 1 4} {Particle2 1 4} {Adjective1 1 4} {Adjective2 1 4}
+	</template>
+	<rule Owner1>
+		<description>Owner
+		<template>
+				[Owner1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Subject1>
+		<description>Subject
+		<template>
+				[Subject1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Adjective1>
+		<description>Adjective
+		<template>
+			<arule modifier form5>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+	<rule Adjective2>
+		<description>Verb
+		<template>
+			<arule standard form6>
+				[Adjective2 -1 -1]
+			</arule>
+		</template>
+	</rule>
+</rule>
+# Lesson 20 END
+# Lesson 22 BEGIN
+<rule lesson22-1>
+	<form form7>
+		<setting>
+			present pos plain polite statement question
+		</setting>
+	</form>
+	<template>
+		{Subject1 1 4} {Particle1 1 4} {Particle2 1 4} {Particle3 1 4} {Object1 1 4} {Particle4 1 4} {Verb1 1 4}
+	</template>
+	<rule Subject1>
+		<description>Subject
+		<template>
+				[Subject1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Particle3>
+		<description>Particle
+		<template>
+				[Particle3 -1 -1]
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle4>
+		<description>Particle
+		<template>
+				[Particle4 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form7>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson22-2>
+	<form form7>
+		<setting>
+			present pos polite statement question
+		</setting>
+	</form>
+	<template>
+		{Subject1 1 4} {Particle1 1 4} {Particle2 1 4} {Particle3 1 4} {Object1 1 4} {Particle4 1 4} {Verb1 1 4}
+	</template>
+	<rule Subject1>
+		<description>Subject
+		<template>
+				[Subject1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Particle3>
+		<description>Particle
+		<template>
+				[Particle3 -1 -1]
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle4>
+		<description>Particle
+		<template>
+				[Particle4 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form7>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson22-3>
+	<form form7>
+		<setting>
+			present pos polite statement question
+		</setting>
+	</form>
+	<template>
+		{Subject1 1 4} {Particle1 1 4} {Particle2 1 4} {Particle3 1 4} {Object1 1 4} {Particle4 1 4} {Verb1 1 4}
+	</template>
+	<rule Subject1>
+		<description>Subject
+		<template>
+				[Subject1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Particle3>
+		<description>Particle
+		<template>
+				[Particle3 -1 -1]
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle4>
+		<description>Particle
+		<template>
+				[Particle4 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form7>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson22-4>
+	<form form7>
+		<setting>
+			present pos neg polite statement
+		</setting>
+	</form>
+	<template>
+		{Subject1 1 4} {Particle1 1 4} {Particle2 1 4} {Particle3 1 4} {Object1 1 4} {Particle4 1 4} {Verb1 1 4}
+	</template>
+	<rule Subject1>
+		<description>Subject
+		<template>
+				[Subject1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Particle3>
+		<description>Particle
+		<template>
+				[Particle3 -1 -1]
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle4>
+		<description>Particle
+		<template>
+				[Particle4 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form7>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson22-5>
+	<form form7>
+		<setting>
+			present pos polite statement question
+		</setting>
+	</form>
+	<template>
+		{Subject1 1 4} {Particle1 1 4} {Particle2 1 4} {Particle3 1 4} {Object1 1 4} {Particle4 1 4} {Verb1 1 4}
+	</template>
+	<rule Subject1>
+		<description>Subject
+		<template>
+				[Subject1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Particle3>
+		<description>Particle
+		<template>
+				[Particle3 -1 -1]
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle4>
+		<description>Particle
+		<template>
+				[Particle4 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form7>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+# Lesson 22 END
+# Lesson 23 BEGIN
+<rule lesson23-1>
+	<form form5>
+		<setting>
+			present pos plain polite
+		</setting>
+	</form>
+	<form form3>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Verb1 1 4} {Particle2 1 4} {Adjective1 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Adjective1>
+		<description>Adjective
+		<template>
+			<arule standard form5>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+</rule>
+<rule lesson23-2>
+	<form form7>
+		<setting>
+			present pos plain polite
+		</setting>
+	</form>
+	<form form5>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Place1 1 4} {Particle2 1 4} {Verb1 1 4} {Particle3 1 4} {Adjective1 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Place1>
+		<description>Place
+		<template>
+				[Place1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form5>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Particle3>
+		<description>Particle
+		<template>
+				[Particle3 -1 -1]
+		</template>
+	</rule>
+	<rule Adjective1>
+		<description>Adjective
+		<template>
+			<arule standard form7>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+</rule>
+<rule lesson23-3>
+	<form form7>
+		<setting>
+			past pos plain polite
+		</setting>
+	</form>
+	<form form5>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Adverb1 1 4} {Particle2 1 4} {Verb1 1 4} {Particle3 1 4} {Adjective1 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Adverb1>
+		<description>Adverb
+		<template>
+				[Adverb1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule katei form5>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Particle3>
+		<description>Particle
+		<template>
+				[Particle3 -1 -1]
+		</template>
+	</rule>
+	<rule Adjective1>
+		<description>Adjective
+		<template>
+			<arule standard form7>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+</rule>
+<rule lesson23-4>
+	<form form5>
+		<setting>
+			past pos plain polite
+		</setting>
+	</form>
+	<form form3>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Verb1 1 4} {Particle2 1 4} {Adjective1 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule katei form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Adjective1>
+		<description>Adjective
+		<template>
+			<arule standard form5>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+</rule>
+<rule lesson23-5>
+	<form form5>
+		<setting>
+			past pos plain polite
+		</setting>
+	</form>
+	<form form4>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Description1 1 4} {Object1 1 4} {Particle1 1 4} {Verb1 1 4} {Adjective1 1 4}
+	</template>
+	<rule Description1>
+		<description>Description
+		<template>
+				[Description1 -1 -1]
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule renyoute form4>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Adjective1>
+		<description>Adjective
+		<template>
+			<arule standard form5>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+</rule>
+<rule lesson23-6>
+	<form form5>
+		<setting>
+			past pos plain polite
+		</setting>
+	</form>
+	<form form4>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Description1 1 4} {Object1 1 4} {Particle1 1 4} {Verb1 1 4} {Adjective1 1 4}
+	</template>
+	<rule Description1>
+		<description>Description
+		<template>
+				[Description1 -1 -1]
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule renyoute form4>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Adjective1>
+		<description>Adjective
+		<template>
+			<arule standard form5>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+</rule>
+<rule lesson23-7>
+	<form form5>
+		<setting>
+			past pos plain polite
+		</setting>
+	</form>
+	<form form4>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Description1 1 4} {Object1 1 4} {Particle1 1 4} {Verb1 1 4} {Adjective1 1 4}
+	</template>
+	<rule Description1>
+		<description>Description
+		<template>
+				[Description1 -1 -1]
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule renyoute form4>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Adjective1>
+		<description>Adjective
+		<template>
+			<arule standard form5>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+</rule>
+# Lesson 23 END
+# Lesson 25 BEGIN
+<rule lesson25-1>
+	<form form1>
+		<setting>
+			present neg plain polite
+		</setting>
+	</form>
+	<form form3>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Verb1 1 4} {Particle1 1 4} {Verb2 1 4} {GFXBG1 1 4}
+	</template>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form1>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule basic form3>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule GFXBG1>
+		<description>GFXBG
+		<template>
+				[GFXBG1 -1 -1]
+		</template>
+	</rule>
+</rule>
+<rule lesson25-2>
+	<form form4>
+		<setting>
+			present pos polite plain
+		</setting>
+	</form>
+	<form form2>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Time1 1 4} {Verb1 1 4} {Particle1 1 4} {Verb2 1 4} {GFXBG1 1 4}
+	</template>
+	<rule Time1>
+		<description>Time
+		<template>
+				[Time1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form2>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule basic form4>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule GFXBG1>
+		<description>GFXBG
+		<template>
+				[GFXBG1 -1 -1]
+		</template>
+	</rule>
+</rule>
+<rule lesson25-3>
+	<form form3>
+		<setting>
+			present pos statement plain
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Verb1 1 4} {Object2 1 4} { 1 4} {GFXBG1 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Object2>
+		<description>Object
+		<template>
+				[Object2 -1 -1]
+		</template>
+	</rule>
+	<rule GFXBG1>
+		<description>GFXBG
+		<template>
+				[GFXBG1 -1 -1]
+		</template>
+	</rule>
+</rule>
+<rule lesson25-4>
+	<form form5>
+		<setting>
+			present pos neg plain polite
+		</setting>
+	</form>
+	<form form3>
+		<setting>
+			present pos neg plain
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Adjective1 1 4} {Particle2 1 4} {Verb1 1 4} { 1 4} {GFXBG1 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Adjective1>
+		<description>Adjective
+		<template>
+			<arule standard form3>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form5>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule GFXBG1>
+		<description>GFXBG
+		<template>
+				[GFXBG1 -1 -1]
+		</template>
+	</rule>
+</rule>
+<rule lesson25-5>
+	<form form3>
+		<setting>
+			present pos neg plain
+		</setting>
+	</form>
+	<form form5>
+		<setting>
+			present pos neg plain
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Adjective1 1 4} {Particle2 1 4} {Verb1 1 4} { 1 4} {GFXBG1 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Adjective1>
+		<description>Adjective
+		<template>
+			<arule standard form3>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form5>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule GFXBG1>
+		<description>GFXBG
+		<template>
+				[GFXBG1 -1 -1]
+		</template>
+	</rule>
+</rule>
+<rule lesson25-6>
+	<form form3>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<form form5>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Verb1 1 4} {Particle2 1 4} {Verb2 1 4} { 1 4} {GFXBG1 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule basic form5>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule GFXBG1>
+		<description>GFXBG
+		<template>
+				[GFXBG1 -1 -1]
+		</template>
+	</rule>
+</rule>
+<rule lesson25-7>
+	<form form5>
+		<setting>
+			present pos polite statement
+		</setting>
+	</form>
+	<form form3>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Adjective1 1 4} {Particle2 1 4} {Verb1 1 4} {GFXBG1 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Adjective1>
+		<description>Adjective
+		<template>
+			<arule standard form3>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form5>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule GFXBG1>
+		<description>GFXBG
+		<template>
+				[GFXBG1 -1 -1]
+		</template>
+	</rule>
+</rule>
+<rule lesson25-8>
+	<form form5>
+		<setting>
+			present pos neg plain polite
+		</setting>
+	</form>
+	<form form3>
+		<setting>
+			present pos neg plain
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Verb1 1 4} {Particle2 1 4} {Verb2 1 4} {GFXBG1 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule basic form5>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule GFXBG1>
+		<description>GFXBG
+		<template>
+				[GFXBG1 -1 -1]
+		</template>
+	</rule>
+</rule>
+<rule lesson25-9>
+	<form form5>
+		<setting>
+			present pos plain polite
+		</setting>
+	</form>
+	<form form3>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Place1 1 4} {Particle1 1 4} {Verb1 1 4} {Particle2 1 4} {Verb2 1 4} { 1 4} {GFXBG1 1 4}
+	</template>
+	<rule Place1>
+		<description>Place
+		<template>
+				[Place1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule mashou form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule basic form5>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule GFXBG1>
+		<description>GFXBG
+		<template>
+				[GFXBG1 -1 -1]
+		</template>
+	</rule>
+</rule>
+<rule lesson25-10>
+	<form form5>
+		<setting>
+			present pos plain polite
+		</setting>
+	</form>
+	<form form3>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Verb1 1 4} {Particle2 1 4} {Verb2 1 4} { 1 4} {GFXBG1 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule mitai form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule basic form5>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule GFXBG1>
+		<description>GFXBG
+		<template>
+				[GFXBG1 -1 -1]
+		</template>
+	</rule>
+</rule>
+<rule lesson25-11>
+	<form form7>
+		<setting>
+			present pos plain 
+		</setting>
+	</form>
+	<form form5>
+		<setting>
+			present present pos neg plain
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Object2 1 4} {Particle2 1 4} {Verb1 1 4} {Particle3 1 4} {Verb2 1 4} {GFXBG1 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Object2>
+		<description>Object
+		<template>
+				[Object2 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form5>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Particle3>
+		<description>Particle
+		<template>
+				[Particle3 -1 -1]
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule basic form7>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule GFXBG1>
+		<description>GFXBG
+		<template>
+				[GFXBG1 -1 -1]
+		</template>
+	</rule>
+</rule>
+# Lesson 25 END
+# Lesson 26 BEGIN
+<rule lesson26-1>
+	<form form7>
+		<setting>
+			present neg plain polite 
+		</setting>
+	</form>
+	<form form3>
+		<setting>
+			present pos plain 
+		</setting>
+	</form>
+	<template>
+		{Subject1 1 4} {Particle1 1 4} {Adjective1 1 4} {Particle2 1 4} {Object1 1 4} {Particle3 1 4} {Verb1 1 4} { 1 4} {GFXBG1 1 4}
+	</template>
+	<rule Subject1>
+		<description>Subject
+		<template>
+				[Subject1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Adjective1>
+		<description>Adjective
+		<template>
+			<arule modifier form3>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle3>
+		<description>Particle
+		<template>
+				[Particle3 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form7>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule GFXBG1>
+		<description>GFXBG
+		<template>
+				[GFXBG1 -1 -1]
+		</template>
+	</rule>
+</rule>
+<rule lesson26-2>
+	<form form9>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<form form4>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Subject1 1 4} {Particle1 1 4} {Object1 1 4} {Verb1 1 4} {Particle2 1 4} {Subject2 1 4} {Particle3 1 4} {Object2 1 4} {Verb2 1 4} { 1 4} {GFXBG1 1 4}
+	</template>
+	<rule Subject1>
+		<description>Subject
+		<template>
+				[Subject1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule rentai form4>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Subject2>
+		<description>Subject
+		<template>
+				[Subject2 -1 -1]
+		</template>
+	</rule>
+	<rule Particle3>
+		<description>Particle
+		<template>
+				[Particle3 -1 -1]
+		</template>
+	</rule>
+	<rule Object2>
+		<description>Object
+		<template>
+				[Object2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule basic form9>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule GFXBG1>
+		<description>GFXBG
+		<template>
+				[GFXBG1 -1 -1]
+		</template>
+	</rule>
+</rule>
+<rule lesson26-3>
+	<form form9>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<form form4>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Subject1 1 4} {Particle1 1 4} {Object1 1 4} {Verb1 1 4} {Particle2 1 4} {Subject2 1 4} {Particle3 1 4} {Object2 1 4} {Verb2 1 4} { 1 4} {GFXBG1 1 4}
+	</template>
+	<rule Subject1>
+		<description>Subject
+		<template>
+				[Subject1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule rentai form4>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Subject2>
+		<description>Subject
+		<template>
+				[Subject2 -1 -1]
+		</template>
+	</rule>
+	<rule Particle3>
+		<description>Particle
+		<template>
+				[Particle3 -1 -1]
+		</template>
+	</rule>
+	<rule Object2>
+		<description>Object
+		<template>
+				[Object2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule basic form9>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule GFXBG1>
+		<description>GFXBG
+		<template>
+				[GFXBG1 -1 -1]
+		</template>
+	</rule>
+</rule>
+<rule lesson26-4>
+	<form form7>
+		<setting>
+			present neg plain polite 
+		</setting>
+	</form>
+	<form form3>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Time1 1 4} {Particle1 1 4} {Verb1 1 4} {Particle2 1 4} {Object1 1 4} {Particle3 1 4} {Verb2 1 4} { 1 4} { 1 4} {GFXBG1 1 4}
+	</template>
+	<rule Time1>
+		<description>Time
+		<template>
+				[Time1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule doing form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle3>
+		<description>Particle
+		<template>
+				[Particle3 -1 -1]
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule basic form7>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule GFXBG1>
+		<description>GFXBG
+		<template>
+				[GFXBG1 -1 -1]
+		</template>
+	</rule>
+</rule>
+<rule lesson26-5>
+	<form form7>
+		<setting>
+			present neg plain 
+		</setting>
+	</form>
+	<form form3>
+		<setting>
+			present pos plain 
+		</setting>
+	</form>
+	<template>
+		{Subject1 1 4} {Particle1 1 4} {Verb1 1 4} {Particle2 1 4} {Subject2 1 4} {Particle3 1 4} {Verb2 1 4} { 1 4} {GFXBG1 1 4}
+	</template>
+	<rule Subject1>
+		<description>Subject
+		<template>
+				[Subject1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Subject2>
+		<description>Subject
+		<template>
+				[Subject2 -1 -1]
+		</template>
+	</rule>
+	<rule Particle3>
+		<description>Particle
+		<template>
+				[Particle3 -1 -1]
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule basic form7>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule GFXBG1>
+		<description>GFXBG
+		<template>
+				[GFXBG1 -1 -1]
+		</template>
+	</rule>
+</rule>
+<rule lesson26-6>
+	<form form7>
+		<setting>
+			present past pos plain polite
+		</setting>
+	</form>
+	<form form6>
+		<setting>
+			present pos plain 
+		</setting>
+	</form>
+	<template>
+		{Subject1 1 4} {Particle1 1 4} {Object1 1 4} {Particle2 1 4} {Particle3 1 4} {Verb1 1 4} {Adjective1 1 4}
+	</template>
+	<rule Subject1>
+		<description>Subject
+		<template>
+				[Subject1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Particle3>
+		<description>Particle
+		<template>
+				[Particle3 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule renyoutemo form6>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Adjective1>
+		<description>Adjective
+		<template>
+			<arule standard form7>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+</rule>
+<rule lesson26-7>
+	<form form4>
+		<setting>
+			present pos plain polite
+		</setting>
+	</form>
+	<form form3>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Place1 1 4} {Particle1 1 4} {Verb1 1 4} {Adjective1 1 4} { 1 4} { 1 4} {GFXBG1 1 4}
+	</template>
+	<rule Place1>
+		<description>Place
+		<template>
+				[Place1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule renyoutemo form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Adjective1>
+		<description>Adjective
+		<template>
+			<arule standard form4>
+				[Adjective1 -1 -1]
+			</arule>
+		</template>
+	</rule>
+	<rule GFXBG1>
+		<description>GFXBG
+		<template>
+				[GFXBG1 -1 -1]
+		</template>
+	</rule>
+</rule>
+# Lesson 26 END
+# Lesson 27 BEGIN
+<rule lesson27-1>
+	<form form6>
+		<setting>
+			present past pos plain polite
+		</setting>
+	</form>
+	<form form3>
+		<setting>
+			present pos neg plain
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Verb1 1 4} {Adverb1 1 4} {Particle2 1 4} {Verb2 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Adverb1>
+		<description>Adverb
+		<template>
+				[Adverb1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule basic form6>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson27-2>
+	<form form6>
+		<setting>
+			present past pos plain polite
+		</setting>
+	</form>
+	<form form3>
+		<setting>
+			present pos neg plain
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Verb1 1 4} {Adverb1 1 4} {Particle2 1 4} {Verb2 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Adverb1>
+		<description>Adverb
+		<template>
+				[Adverb1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule basic form6>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson27-3>
+	<form form6>
+		<setting>
+			present past pos plain polite
+		</setting>
+	</form>
+	<form form3>
+		<setting>
+			present pos neg plain
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Verb1 1 4} {Adverb1 1 4} {Particle2 1 4} {Verb2 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Adverb1>
+		<description>Adverb
+		<template>
+				[Adverb1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule basic form6>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson27-4>
+	<form form6>
+		<setting>
+			present past pos plain polite
+		</setting>
+	</form>
+	<form form3>
+		<setting>
+			present pos neg plain
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Verb1 1 4} {Adverb1 1 4} {Particle2 1 4} {Verb2 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Adverb1>
+		<description>Adverb
+		<template>
+				[Adverb1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule basic form6>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson27-5>
+	<form form6>
+		<setting>
+			present past pos plain polite
+		</setting>
+	</form>
+	<form form3>
+		<setting>
+			present pos neg plain
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Verb1 1 4} {Adverb1 1 4} {Particle2 1 4} {Verb2 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Adverb1>
+		<description>Adverb
+		<template>
+				[Adverb1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule basic form6>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson27-6>
+	<form form6>
+		<setting>
+			present past pos plain polite
+		</setting>
+	</form>
+	<form form3>
+		<setting>
+			present pos neg plain
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Verb1 1 4} {Adverb1 1 4} {Particle2 1 4} {Verb2 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Adverb1>
+		<description>Adverb
+		<template>
+				[Adverb1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule basic form6>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson27-7>
+	<form form5>
+		<setting>
+			present past pos plain polite
+		</setting>
+	</form>
+	<form form2>
+		<setting>
+			present pos neg plain
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Verb1 1 4} {Adverb1 1 4} {Particle1 1 4} {Verb2 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form2>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Adverb1>
+		<description>Adverb
+		<template>
+				[Adverb1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule basic form5>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson27-8>
+	<form form6>
+		<setting>
+			present past pos plain polite
+		</setting>
+	</form>
+	<form form3>
+		<setting>
+			present pos neg plain
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Verb1 1 4} {Adverb1 1 4} {Particle2 1 4} {Verb2 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Adverb1>
+		<description>Adverb
+		<template>
+				[Adverb1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule basic form6>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson27-9>
+	<form form6>
+		<setting>
+			present past pos plain polite
+		</setting>
+	</form>
+	<form form3>
+		<setting>
+			present pos neg plain
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Verb1 1 4} {Adverb1 1 4} {Particle2 1 4} {Verb2 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Adverb1>
+		<description>Adverb
+		<template>
+				[Adverb1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule basic form6>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson27-10>
+	<form form6>
+		<setting>
+			present past pos plain polite
+		</setting>
+	</form>
+	<form form3>
+		<setting>
+			present pos neg plain
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Verb1 1 4} {Adverb1 1 4} {Particle2 1 4} {Verb2 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Adverb1>
+		<description>Adverb
+		<template>
+				[Adverb1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule basic form6>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson27-11>
+	<form form6>
+		<setting>
+			present past pos plain polite
+		</setting>
+	</form>
+	<form form3>
+		<setting>
+			present pos neg plain
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Verb1 1 4} {Adverb1 1 4} {Particle2 1 4} {Verb2 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Adverb1>
+		<description>Adverb
+		<template>
+				[Adverb1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule basic form6>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+# Lesson 27 END
+# Lesson 29 BEGIN
+<rule lesson29-1>
+	<form form3>
+		<setting>
+			present past pos plain polite
+		</setting>
+	</form>
+	<template>
+		{Place1 1 4} {Particle1 1 4} {Verb1 1 4} {GFXBG1 1 4}
+	</template>
+	<rule Place1>
+		<description>Place
+		<template>
+				[Place1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule reru form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule GFXBG1>
+		<description>GFXBG
+		<template>
+				[GFXBG1 -1 -1]
+		</template>
+	</rule>
+</rule>
+<rule lesson29-2>
+	<form form3>
+		<setting>
+			present past pos plain polite
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Verb1 1 4} {GFXBG1 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule reru form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule GFXBG1>
+		<description>GFXBG
+		<template>
+				[GFXBG1 -1 -1]
+		</template>
+	</rule>
+</rule>
+<rule lesson29-3>
+	<form form3>
+		<setting>
+			present past pos plain polite
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Verb1 1 4} {GFXBG1 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule reru form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule GFXBG1>
+		<description>GFXBG
+		<template>
+				[GFXBG1 -1 -1]
+		</template>
+	</rule>
+</rule>
+<rule lesson29-4>
+	<form form3>
+		<setting>
+			past pos polite statement
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Verb1 1 4} { 1 4} {GFXBG1 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule reru form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule GFXBG1>
+		<description>GFXBG
+		<template>
+				[GFXBG1 -1 -1]
+		</template>
+	</rule>
+</rule>
+<rule lesson29-5>
+	<form form5>
+		<setting>
+			past pos polite statement
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Object2 1 4} {Particle2 1 4} {Verb1 1 4} { 1 4} {GFXBG1 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Object2>
+		<description>Object
+		<template>
+				[Object2 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule reru form5>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule GFXBG1>
+		<description>GFXBG
+		<template>
+				[GFXBG1 -1 -1]
+		</template>
+	</rule>
+</rule>
+<rule lesson29-6>
+	<form form7>
+		<setting>
+			present past pos plain polite statement
+		</setting>
+	</form>
+	<template>
+		{Subject1 1 4} {Particle1 1 4} {Object1 1 4} {Particle2 1 4} {Object2 1 4} {Particle3 1 4} {Verb1 1 4} { 1 4} {GFXBG1 1 4}
+	</template>
+	<rule Subject1>
+		<description>Subject
+		<template>
+				[Subject1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle2>
+		<description>Particle
+		<template>
+				[Particle2 -1 -1]
+		</template>
+	</rule>
+	<rule Object2>
+		<description>Object
+		<template>
+				[Object2 -1 -1]
+		</template>
+	</rule>
+	<rule Particle3>
+		<description>Particle
+		<template>
+				[Particle3 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule reru form7>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule GFXBG1>
+		<description>GFXBG
+		<template>
+				[GFXBG1 -1 -1]
+		</template>
+	</rule>
+</rule>
+# Lesson 29 END
+# Lesson 30 BEGIN
+<rule lesson30-1>
+	<form form3>
+		<setting>
+			present pos plain
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Verb1 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson30-2>
+	<form >
+		<setting>
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4}
+	</template>
+	<rule Object1>
+		<description>Verb
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+</rule>
+<rule lesson30-3>
+	<form form3>
+		<setting>
+			present pos neg plain polite
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Verb1 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson30-4>
+	<form form3>
+		<setting>
+			present pos neg plain polite
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Verb1 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson30-5>
+	<form form3>
+		<setting>
+			present pos neg plain polite
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Verb1 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson30-6>
+	<form form3>
+		<setting>
+			present pos neg plain polite
+		</setting>
+	</form>
+	<template>
+		{Object1 1 4} {Particle1 1 4} {Verb1 1 4}
+	</template>
+	<rule Object1>
+		<description>Object
+		<template>
+				[Object1 -1 -1]
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form3>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson30-7>
+	<form form3>
+		<setting>
+			past pos plain
+		</setting>
+	</form>
+	<form form1>
+		<setting>
+			present neg plain polite
+		</setting>
+	</form>
+	<template>
+		{Verb1 1 4} {Particle1 1 4} {Verb2 1 4}
+	</template>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form1>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule basic form3>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+<rule lesson30-8>
+	<form form4>
+		<setting>
+			past pos polite
+		</setting>
+	</form>
+	<form form2>
+		<setting>
+			present pos polite
+		</setting>
+	</form>
+	<template>
+		{Time1 1 4} {Verb1 1 4} {Particle1 1 4} {Verb2 1 4}
+	</template>
+	<rule Time1>
+		<description>Time
+		<template>
+				[Time1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb1>
+		<description>Verb
+		<template>
+			<vrule basic form2>
+				[Verb1 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+	<rule Particle1>
+		<description>Particle
+		<template>
+				[Particle1 -1 -1]
+		</template>
+	</rule>
+	<rule Verb2>
+		<description>Verb
+		<template>
+			<vrule basic form4>
+				[Verb2 -1 -1]
+			</vrule>
+		</template>
+	</rule>
+</rule>
+# Lesson 30 END
+-eof

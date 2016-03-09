@@ -1,0 +1,31 @@
+<Configuration>
+  <session name="systeminfo">
+    <entry name="laststudent" value="quyet" />
+  </session>
+  <session name="default">
+    <entry name="langform" value="kana" />
+    <entry name="label" value="eng" />
+    <entry name="weightoption" value="grammar" />
+  </session>
+  <session name="quyet">
+    <entry name="quyet" value="1234" />
+    <entry name="weightoption" value="grammar" />
+    <entry name="label" value="eng" />
+    <entry name="langform" value="romaji" />
+    <entry name="input" value="speech" />
+  </session>
+  <session name="test">
+    <entry name="test" value="1234" />
+    <entry name="langform" value="kana" />
+    <entry name="label" value="eng" />
+    <entry name="weightoption" value="grammar" />
+    <entry name="input" value="typing" />
+  </session>
+  <session name="hai">
+    <entry name="hai" value="1" />
+    <entry name="langform" value="kana" />
+    <entry name="label" value="eng" />
+    <entry name="weightoption" value="grammar" />
+    <entry name="input" value="typing" />
+  </session>
+</Configuration>

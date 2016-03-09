@@ -1,0 +1,154 @@
+#
+# This file contains the help text (English) that is given to the student when an error is detected
+# The text allows the following wildcards:
+#
+# [TARGWORD] 		- this will be replaced by the target word string
+# [OBSWORD] 		- this will be replaced by the observed word string
+# [TARGENG] 		- this will be replaced by the target word's English meaning
+# [OBSENG] 		- this will be replaced by the target word's English meaning
+# [TARGGENENG] 	- this will be replaced by the target word's generic English meaning
+# [TARGTYPE] 		- this will be replaced by the target word's type (NOUN, etc)
+# [OBSTYPE] 		- this will be replaced by the observed word's type (NOUN, etc)
+# [SHAREDGROUPS]	- this will be replaced by the common semantic groups shared by two words
+#
+# - Each Error sub type has a string defined for it.
+# - They may also have strings defined whose inclusion varies on the spelling value.  If included
+#    these are appended to the main description string
+#
+###################################################################################
+#
+<type> SUBS0
+You have replaced the word [TARGWORD] ([TARGENG]) 
+with [OBSWORD] ([OBSENG]).  Both of these words have a 
+very similar meaning [(TARGGENENG)] but you must be careful
+to use the one appropriate to the situation.
+</type>
+
+<type> SUBS1
+You have replaced the word [TARGWORD] ([TARGENG]) 
+with [OBSWORD] ([OBSENG]).  These two words are quite similar
+in meaning, both being members of the semantic groups
+[SHAREDGROUPS].
+</type>
+
+<type> SUBS2
+You have replaced the word [TARGWORD] ([TARGENG]) 
+with [OBSWORD] ([OBSENG]).  These two words are quite similar
+in terms of their spelling.
+</type>
+
+<type> SUBS3
+You have replaced the word [TARGWORD] ([TARGENG]) 
+with [OBSWORD] ([OBSENG]).  These two words are not related.
+Please review the vocabulary.
+</type>
+
+<type> SUBS4
+You have replaced the word [TARGWORD] ([TARGENG]) 
+with [OBSWORD] ([OBSENG]).  These two words are not of the same
+type ([TARGTYPE] vs [OBSTYPE]).  Please be sure to use the
+right type of word depending on the grammar.
+</type>
+
+<type> SUBS5
+You have replaced the word [TARGWORD] ([TARGENG]) 
+with [OBSWORD] ([OBSENG]), a word that is not recognized by the system. 
+<spell> Yes
+This was likely due to a spelling mistake, so please be careful as
+you type your answer.
+</spell>
+<spell> Maybe
+This may have been due to a spelling mistake, so please be careful as
+you type your answer.
+</spell>
+<spell> No
+You may have tried to enter a valid Japanese word that is not included
+in our dictionary.  Please use "[TARGWORD]" instead.
+</spell>
+</type>
+
+<type> SUBS6
+You appear to have replaced the word [TARGWORD] ([TARGENG]) 
+with a word based on an English word.  Please remember the word as
+shown above.
+</type>
+
+<type> SUBS7
+You have replaced the word [TARGWORD] ([TARGENG]) 
+with [OBSWORD] ([OBSENG]).  With definitives (that, this, etc)
+please be careful to use the correct word based on the concept displayed.
+For example, if you are talking about an object closer to you than it is to
+the listener, you must use "This".  If the object is closer to the listener use
+"that", and so on.  Please refer to the Lesson 1 notes for further information.
+</type>
+
+<type> SUBS8
+You used the word [OBSWORD] instead of [TARGWORD].  Whilst [OBSWORD]
+is a valid counter, it is not suitable for the object in this question.  Please review
+the various counter types, and which objects may use which types.
+</type>
+
+<type> SUBS9
+It appears you have used a different grammatical structure to that expected in this
+lesson.  Please review the lesson notes to see the desired sentence form.
+</type>
+
+<type> SUBS10
+You used the particle [OBSWORD] instead of [TARGWORD].  This particle
+is not valid at this position in the grammar.  Please refer to the notes for further
+information regarding the use of particles.
+</type>
+
+<type> SUBS11
+You used the particle [OBSWORD] instead of [TARGWORD].  Whilst this particle
+is indeed valid at this position in the grammar, it is not suitable for the given
+situation.  Please make sure you understand the concept you have to describe,
+checking both the Concept Diagram and Desired Form.
+</type>
+
+<type> SUBS12
+You have used a non-existing particle [OBSWORD] instead of [TARGWORD].
+Please refer to the notes for further information regarding the use of particles.
+</type>
+
+<type> SUBS13
+It appears that you have used the wrong form of kana for this word.  Remember,
+KATAKANA should be used for words of a foreign origin, whereas HIRAGANA
+is generally used for native Japanese words.
+</type>
+
+<type> SUBS14
+It seems as though you have used a romaji character, or sequence of characters,
+that is not recognized by the system.  Please take note of how the correct word
+([TARGWORD]) is written in romaji, and use this format in the future.
+</type>
+
+<type> WRONG_FORM
+It seems as though you have used the correct word, but in the wrong form.  The
+system was looking for a word in the [TARGFORM] form, whereas the word you
+have entered is in the [OBSFORM] form.  Please be careful to review both the
+Concept Diagram and Desired Form in order that you understand the form your
+answer should take.
+</type>
+
+<type> INVALID_FORM
+It seems as though you have made a mistake in the [TARGTYPE] form.  Please
+refer to the relevant notes and review the appropriate form for this [TARGTYPE].
+</type>
+
+<type> INS
+You have entered the word [OBSWORD] when in fact it should have been omitted in 
+the sentence.
+</type>
+
+<type> DEL
+You have failed to include the word [TARGWORD] in your sentence.
+</type>
+
+<type> UNKNOWN
+The system has been unable to determine the nature or likely cause of your error.
+Please refer to the notes and examples to confirm that you are using a sentence
+pattern that being taught by this lesson.
+</type>
+
+-eof

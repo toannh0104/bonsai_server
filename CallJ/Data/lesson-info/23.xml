@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xsl/overview.xsl"?>
+<lesson>
+	<id>23</id>
+	<title>It would be nice if it was sunny.</title>
+	<summary>
+		<content lang="ja_JP">Expressing hope and relief</content>
+		<content lang="ja_KANA">Expressing hope and relief</content>
+		<content lang="ja_ROME">Expressing hope and relief</content>
+	</summary>
+	<description>
+		<content lang="ja_JP">In this lesson we will practise expressions for showing the speaker's opinion on past and future events. The first expression we will study is similar to 'I hope...' in English and expresses the speaker's hope for the outcome of an event in the future. Finally, we will study expressions used to express regret and satisfaction for past events.</content>
+		<content lang="ja_KANA">In this lesson we will practise expressions for showing the speaker's opinion on past and future events. The first expression we will study is similar to 'I hope...' in English and expresses the speaker's hope for the outcome of an event in the future. Finally, we will study expressions used to express regret and satisfaction for past events.</content>
+		<content lang="ja_ROME">In this lesson we will practise expressions for showing the speaker's opinion on past and future events. The first expression we will study is similar to 'I hope...' in English and expresses the speaker's hope for the outcome of an event in the future. Finally, we will study expressions used to express regret and satisfaction for past events.</content>
+	</description>
+	<example>
+		<section>
+			<title><content lang="en">Hope</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">彼も行くと<b>いい</b></content>
+						<content lang="ja_KANA">かれもいくと<b>いい</b></content>
+						<content lang="ja_ROME">kare mo iku to <b>ii</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">It would be nice if he will go, too.</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">サムも喫茶店に来ると<b>いい</b></content>
+						<content lang="ja_KANA">サムもきっさてんにくると<b>いい</b></content>
+						<content lang="ja_ROME">samu mo kissaten ni kuru to <b>ii</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">I hope Sam will come to the cafe, too.</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+		<section>
+			<title><content lang="en">Regret</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">弟と一緒に遊べば<b>よかった</b></content>
+						<content lang="ja_KANA">おとうとといっしょにあそべば<b>よかった</b></content>
+						<content lang="ja_ROME">otouto to issho ni asobe ba <b>yokatta</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">I should have played with my little brother.</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">勉強をすれば<b>よかった</b></content>
+						<content lang="ja_KANA">べんきょうをすればば<b>よかった</b></content>
+						<content lang="ja_ROME">benkyou wo sure ba <b>yokatta</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">I should have studied.</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+		<section>
+			<title><content lang="en">Satisfaction</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">あの映画を見て<b>よかった</b></content>
+						<content lang="ja_KANA">あのえいがをみて<b>よかった</b></content>
+						<content lang="ja_ROME">ano eiga wo mite <b>yokatta</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">I'm glad I saw that movie.</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+	</example>
+	<grammar_points>
+<p><font size="4"><u><b>Grammar Point 1: Hope</b></u></font></p>
+<p>The first grammar pattern we will study expresses the speaker's hope about the outcome of an uncontrollable event that has not yet occurred, and is similar to the English expression 'It would be nice if...'. In this grammar pattern a subordinate clause in the plain non-past form is followed by といい . In this lesson we will study subordinate clauses with verbs, though adjectives and the copula may also be used in this pattern.</p>
+<table align="center" width="90%" border="1">
+<tr><td>弟も来るといいです。</td><td>"I hope my little brother will come, too."</td></tr><tr><td>日本語が上手になるといい。</td><td>"It would be nice if your Japanese gets better."</td></tr>
+</table>
+<p><font size="4"><u><b>Grammar Point 2: Regret</b></u></font></p>
+<p>This grammar pattern expresses the speaker's regret for something that was not done in the past. The nuance is that the outcome would have been better than the current one if the specified action had been done. This expression is similar to 'I should have...' or 'I wish I had...' in English. In this pattern a conditional clause with the "ba" form of a verb is followed by よかった , the past tense of the adjective いい . If the subject of the clause is omitted (as in the examples in this lesson), then it is understood to be the speaker.</p>
+<table align="center" width="90%" border="1">
+<tr><td>もっと英語を勉強すればよかったです。</td><td>"I should have studied English more."</td></tr><tr><td>お茶を買えばよかった。</td><td>"I wish I had bought some tea."</td></tr>
+</table>
+<p><font size="4"><u><b>Grammar Point 3: Satisfaction</b></u></font></p>
+<p>This grammar pattern consists of a clause with the "te" form of a verb followed by よかった , the past tense of the adjective いい , and is used to express the speaker's relief or satisfaction about an event in the past. The equivalent English expressions are 'I'm glad that...' or 'It was good that...' . Like the second grammar point this pattern is used to evaluate a past event, although in this case the event must have actually taken place. When the speaker is talking about himself (as in the examples in this lesson), the subject of the clause can be omitted.</p>
+<table align="center" width="90%" border="1">
+<tr><td>あの本を読んでよかった。</td><td>"I'm glad I read that book."</td></tr><tr><td>車を買ってよかったです。</td><td>"I'm glad that I bought a car."</td></tr>
+</table>
+	</grammar_points>
+</lesson>

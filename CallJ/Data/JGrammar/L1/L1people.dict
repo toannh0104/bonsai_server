@@ -1,0 +1,24 @@
+0	[わたし]	w a t a sh i
+0	[おれ]	o r e
+0	[ぼく]	b o k u
+1	[は]	w a
+1	[が]	g a
+2	[ジョン]	j o N
+2	[ジョンさん]	j o N s a N
+2	[ジョンくん]	j o N k u N
+3	[と]	t o
+3	[が]	g a
+4	[カレー]	k a r e:
+4	[カレ]	k a r e
+5	[を]	o
+6	[たべる]	t a b e r u
+6	[たべます]	t a b e m a s u
+6	[たべますか]	t a b e m a s u k a
+6	[たべました]	t a b e m a sh i t a
+6	[たべましたか]	t a b e m a sh i t a k a
+6	[たべません]	t a b e m a s e N
+6	[たべませんか]	t a b e m a s e N k a
+6	[たべませんでした]	t a b e m a s e N d e sh i t a
+6	[たべませんでしたか]	t a b e m a s e N d e sh i t a k a
+7	[<s>]	silB
+8	[</s>]	silE

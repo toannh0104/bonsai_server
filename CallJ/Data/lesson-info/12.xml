@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xsl/overview.xsl"?>
+<lesson>
+	<id>12</id>
+	<title>I've already seen it.</title>
+	<summary>
+		<content lang="ja_JP">Not yet, already, and related expressions</content>
+		<content lang="ja_KANA">Not yet, already, and related expressions</content>
+		<content lang="ja_ROME">Not yet, already, and related expressions</content>
+	</summary>
+	<description>
+		<content lang="ja_JP">In this lesson we will practise grammar patterns used to express whether an event has already happened or not. まだ is used to show that an action is still ongoing, or that an event has not yet happened. In contrast, もう is used to show that an event has already occurred or than an action has finished. Finally, the expression までに can be used to show that an event will be completed before a certain time. All of these expressions can be used with both volitional actions initiated by the speaker or events outside of the speaker's control.</content>
+		<content lang="ja_KANA">In this lesson we will practise grammar patterns used to express whether an event has already happened or not. まだ is used to show that an action is still ongoing, or that an event has not yet happened. In contrast, もう is used to show that an event has already occurred or than an action has finished. Finally, the expression までに can be used to show that an event will be completed before a certain time. All of these expressions can be used with both volitional actions initiated by the speaker or events outside of the speaker's control.</content>
+		<content lang="ja_ROME">In this lesson we will practise grammar patterns used to express whether an event has already happened or not. まだ is used to show that an action is still ongoing, or that an event has not yet happened. In contrast, もう is used to show that an event has already occurred or than an action has finished. Finally, the expression までに can be used to show that an event will be completed before a certain time. All of these expressions can be used with both volitional actions initiated by the speaker or events outside of the speaker's control.</content>
+	</description>
+	<example>
+		<section>
+			<title><content lang="en">Still, not yet</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">サリーはまだ昼食を食べていません。</content>
+						<content lang="ja_KANA">サリーはまだちょうしょくをたべていません。</content>
+						<content lang="ja_ROME">Sally ha mada tyoushoku wo tabete imasen.</content>
+					</japanese>
+					<translated>
+						<content lang="en">Sally hasn't eaten lunch yet.</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">サリーはまだ寝ている。</content>
+						<content lang="ja_KANA">サリーはまだねている。</content>
+						<content lang="ja_ROME">Sally ha mada nete iru.</content>
+					</japanese>
+					<translated>
+						<content lang="en">Sally is still sleeping.</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+		<section>
+			<title><content lang="en">Already</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">サリーはもう本を読み終わりました。</content>
+						<content lang="ja_KANA">サリーはもうほんをよみおわりました。</content>
+						<content lang="ja_ROME">Sally ha mou hon wo yomi owari mashita.</content>
+					</japanese>
+					<translated>
+						<content lang="en">Sally has already finished reading the book.</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">サリーはもう京都にいない。</content>
+						<content lang="ja_KANA">サリーはもうきょうとにいない。</content>
+						<content lang="ja_ROME">Sally ha mou Kyoto ni inai</content>
+					</japanese>
+					<translated>
+						<content lang="en">Sally has already left Kyoto.</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+		<section>
+			<title><content lang="en">By</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">日曜日までに本を読み終わる。</content>
+						<content lang="ja_KANA">にちようびまでにほんをよみおわる。</content>
+						<content lang="ja_ROME">Nichiyoubi made ni hon wo yomi owaru.</content>
+					</japanese>
+					<translated>
+						<content lang="en">I will finish reading the book by Sunday.</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">日曜日までに仕事を終える。</content>
+						<content lang="ja_KANA">にちようびまでにしごとをおえる</content>
+						<content lang="ja_ROME">Nichiyoubi made ni shigoto wo oeru.</content>
+					</japanese>
+					<translated>
+						<content lang="en">I will finish working by Sunday.</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+	</example>
+	<grammar_points>
+<p>Grammar Point 1:</p>
+<p>The expression まだ shows that something is in the same state as it was previously. The main idea is that the state being described has not changed between some time in the past and the time when the statement is made. In most cases the equivalent English expression is 'still,' although for negative sentences 'yet' is also used.</p>
+<table align="center" width="90%" border="1">
+<tr bgcolor="#aaaaff"><td colspan="2">1. Positive sentences</td></tr><tr><td>コーラはまだありますか。</td><td>"Do you still have cola?"</td></tr><tr><td>太郎はまだ勉強しています。</td><td>"Taro is still studying."</td></tr><tr bgcolor="#aaaaff"><td colspan="2">2. Negative sentences</td></tr><tr><td>宿題はまだやっていません。</td><td>"I haven't done my homework yet."</td></tr><tr><td>まだ東京に行ったことがない。</td><td>"I still haven't been to Tokyo."</td></tr>
+</table>
+<p>Grammar Point 2:</p>
+<p>You can think of もう as the opposite of まだ because it expresses a change in state between some point in the past and the time the statement is made. Often, the nuance is that the action has been completed or stopped. In positive sentences もう is usually translated as 'already,' and in negative sentences as 'not anymore' or 'no longer.'</p>
+<table align="center" width="90%" border="1">
+<tr bgcolor="#aaaaff"><td colspan="2">1. Positive sentences</td></tr><tr><td>私はもう晩ご飯を食べました。</td><td>"I've already eaten dinner."</td></tr><tr><td>ジョンはもう東京に行った。</td><td>"John has already gone to Tokyo."</td></tr><tr bgcolor="#aaaaff"><td  colspan="2">2. Negative sentences</td></tr><tr><td>渡辺さんはもう英語を勉強していない。</td><td>"Mr. Watanabe is no longer studying English."</td></tr><tr><td>サッカーはもうやらない。</td><td>"I don't play soccer anymore."</td></tr>
+</table>
+<p>Grammar Point 3:</p>
+<p>The grammar pattern までに is used to express that an event will complete by a certain time in the future. It expresses a time limit for the event in question, but it allows for the possibility that the event will complete before the specified time. Note that までに cannot be used with verbs that express a continuous state, such as いる or 待つ .</p>
+<table align="center" width="90%" border="1">
+<tr><td>８時までに東京に着きます。</td><td>"I will arrive in Tokyo by 8 o'clock."</td></tr><tr><td>来週までにレポートを出さなければいけない。</td><td>"I have to turn in this report by next week."</td></tr>
+</table>
+	</grammar_points>
+</lesson>

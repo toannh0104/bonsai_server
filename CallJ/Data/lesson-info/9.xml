@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xsl/overview.xsl"?>
+<lesson>
+	<id>9</id>
+	<title>I bought it because it was cheap.</title>
+	<summary>
+		<content lang="ja_JP">Expressing reasons and giving explanations</content>
+		<content lang="ja_KANA">Expressing reasons and giving explanations</content>
+		<content lang="ja_ROME">Expressing reasons and giving explanations</content>
+	</summary>
+	<description>
+		<content lang="ja_JP">In this lesson we will practice how to express reasons and explanations. First, we will look at から and ので , which are used to mark a conditional clause as a reason. When these expressions connect two clauses, the first becomes the reason for the second. When a speaker ends a sentence with the のです or the plain form んだ , it indicates that he is giving or asking for an explanation. The explanation is usually based on information that the speaker and listener share. This grammar pattern can also be used to emphasise a point emotionally. Study the following examples.
+</content>
+		<content lang="ja_KANA">In this lesson we will practice how to express reasons and explanations. First, we will look at から and ので , which are used to mark a conditional clause as a reason. When these expressions connect two clauses, the first becomes the reason for the second. When a speaker ends a sentence with the のです or the plain form んだ , it indicates that he is giving or asking for an explanation. The explanation is usually based on information that the speaker and listener share. This grammar pattern can also be used to emphasise a point emotionally. Study the following examples.
+</content>
+		<content lang="ja_ROME">In this lesson we will practice how to express reasons and explanations. First, we will look at から and ので , which are used to mark a conditional clause as a reason. When these expressions connect two clauses, the first becomes the reason for the second. When a speaker ends a sentence with the のです or the plain form んだ , it indicates that he is giving or asking for an explanation. The explanation is usually based on information that the speaker and listener share. This grammar pattern can also be used to emphasise a point emotionally. Study the following examples.
+</content>
+	</description>
+	<example>
+		<section>
+			<title><content lang="en">Reasons with Kara</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">暑い<b>から</b>コーラを飲む。</content>
+						<content lang="ja_KANA">あついからこーらをのむ。</content>
+						<content lang="ja_ROME">Atsui kara kola wo nomu.</content>
+					</japanese>
+					<translated>
+						<content lang="en">Since it's hot, I'll drink cola.</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+		<section>
+			<title><content lang="en">Reasons with Node</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">ジョンは忙しい<b>ので</b>サッカーをしない。</content>
+						<content lang="ja_KANA">じょんはいそがしいのでさっかーをしない。</content>
+						<content lang="ja_ROME">John ha isogashi node soccer wo shinai.</content>
+					</japanese>
+					<translated>
+						<content lang="en">John won't play soccer because he's busy.</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">日曜日な<b>ので</b>教会へ行く。</content>
+						<content lang="ja_KANA">にちようびなのできょうかいへいく。</content>
+						<content lang="ja_ROME">Nichiyoubi na node kyoukai he iku.</content>
+					</japanese>
+					<translated>
+						<content lang="en">Because it's Sunday, I'll go to church.</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+		<section>
+			<title><content lang="en">Explanation with N-da/desu</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">ジョンの鞄は大きい<b>ん</b>です。</content>
+						<content lang="ja_KANA">じょんのかばんはおおきいんです。</content>
+						<content lang="ja_ROME">John no kaban ha ookii n desu.</content>
+					</japanese>
+					<translated>
+						<content lang="en">John's bag is big.</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">明日ジョンに会う<b>ん</b>です。</content>
+						<content lang="ja_KANA">あすじょんにあうんです。</content>
+						<content lang="ja_ROME">Asu John ni au n desu.</content>
+					</japanese>
+					<translated>
+						<content lang="en">I'll meet John tomorrow.</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">夕飯はピザな<b>ん</b>です。</content>
+						<content lang="ja_KANA">ゆうはんはぴざなんです。</content>
+						<content lang="ja_ROME">Yuhan ha pizza na n desu.</content>
+					</japanese>
+					<translated>
+						<content lang="en">We're having pizza for dinner.</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+	</example>
+	<grammar_points>
+<p><font size="4"><u><b>Grammar Point 1: Reasons with から</b></u></font></p>
+<p>から is used to connect a subordinate clause to a main clause, and indicates that the subordinate clause is the reason for the main one. In this context, you can think of both clauses as simple sentences which could be said on their own. から plays the same role as English expressions such as 'since,' 'so,' or 'because.' Unlike English, the subordinate clause with the reason always comes first in Japanese. Study the following examples.</p>
+<table align="center" width="90%" border="1">
+<tr><td>風邪を引いたから、今日は休んだ。</td><td>"I took the day off because I caught a cold."</td></tr><tr><td>明日は土曜日だから、学校に行かなくてもいい。</td><td>"Because tomorrow is Saturday, you don't have to go to school."</td></tr><tr><td>暑いから窓を開けよう。</td><td>"Since it's hot, let's open a window."</td></tr>
+</table>
+<p>Subordinate clauses that precede から , like other kinds of subordinate clauses, are in the plain form. This is true even when the main clause is in the polite form. However, in formal situations both the subordinate and main clause may be changed into the polite form.</p>
+<p>In addition to descriptive statements, the main clause can also be a suggestion or request.</p>
+<table align="center" width="90%" border="1">
+<tr><td>明日は休みだから、映画を見に行きませんか。</td><td>"Because we have the day off tomorrow, why don't we go to see a movie?"</td></tr><tr><td>財布を忘れたから、千円を貸してもらえない？</td><td>"Since I forgot my wallet, could you lend me 1000 yen?"</td></tr>
+</table>
+<p><font size="4"><u><b>Grammar Point 2: Reasons with ので</b></u></font></p>
+<p>ので functions almost identically to から , but it has some additional restrictions on when it can be used. First, the reason in the subordinate clause must be convincing to the listener as well as the speaker. Though から can be used then the subordinate clause is the speaker's conjecture or when the main clause is a request, suggestion, or invitation, ので cannot be used in these cases. For these reasons, ので has a politer, more objective nuance while から is more subjective.</p>
+<table align="center" width="90%" border="1">
+<tr><td>日本に住んでいるので、いつでもお寿司が食べられます。</td><td>"Since I live in Japan, I can eat sushi anytime."</td></tr><tr><td>大阪は遠いのであまり行きません。</td><td>"Because it's far, I don't go to Osaka often."</td></tr>
+</table>
+<p>Note that when the subordinate clause ends with the copula だ or a "na" adjective, the final だ changes to な. Study the following examples.</p>
+<table align="center" width="90%" border="1">
+<tr><td>締め切りは明日なので、時間があまりありません。</td><td>"Because the deadline is tomorrow, I don't have much time."</td></tr><tr><td>図書館は静かなので、そこで勉強する学生が多い。</td><td>"Since the library is quiet, many students study there."</td></tr>
+</table>
+<p><font size="4"><u><b>Grammar Point 3: Explanations with んだ or のです</b></u></font></p>
+<p>This grammar pattern can be used to give an explanation for something that both the speaker and the listener know about. Often this shared information is something that both have directly observed or heard. When the copula だ or a "na" adjective is used the final だ changes to な , in the same way as subordinate clauses with ので .</p>
+<table align="center" width="90%" border="1">
+<tr><td>昨日の試験は難しかったのです。</td><td>"Yesterday's test was difficult."</td></tr><tr><td>田中さんはお酒を飲まないのだ。</td><td>"Mr. Tanaka doesn't drink alcohol."</td></tr><tr><td>期末試験は大変なのです。</td><td>"The final exam is tough."</td></tr><tr><td>あきこさんはとてもきれいなのだ。</td><td>"Akiko is really pretty."</td></tr>
+</table>
+<p>This grammar pattern can also be used when no information is shared between the speaker and the listener, or in situations other than explanations. In this case, the speaker uses this grammar pattern to emphasise a point and involve the listener in the conversation as if information was shared between them (as in the first examples).</p>
+<table align="center" width="90%" border="1">
+<tr><td>この本はとても面白いのです。</td><td>"This book is very interesting."</td></tr><tr><td>明日試験があるのだ。</td><td>"I have an exam tomorrow."</td></tr>
+</table>
+<p>In conversation and informal settings, のです is frequently shortened to んです . The informal version のだ is also shortened in these situations, but male and female speakers use different forms. Male speakers use んだ and female speakers use の . Study the following examples.</p>
+<table align="center" width="90%" border="1">
+<tr><td>来週は東京に行くんだ。</td><td>"I'm going to Tokyo next week." (male)</td></tr><tr><td>来週は東京に行くの。</td><td>"I'm going to Tokyo next week." (female)</td></tr><tr><td>去年は京都に住んでいたんです。</td><td>"I lived in Kyoto last year."</td></tr><tr><td>期末試験は簡単なんだ。</td><td>"The final exam is easy." (male)</td></tr><tr><td>期末試験は簡単なの。</td><td>"The final exam is easy." (female)</td></tr><tr><td>ジョンはイギリス人なんです。</td><td>"John is British."</td></tr>
+</table>
+	</grammar_points>
+</lesson>

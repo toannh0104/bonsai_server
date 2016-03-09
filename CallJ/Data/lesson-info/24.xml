@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xsl/overview.xsl"?>
+<lesson>
+	<id>24</id>
+	<title>It is easy to do.</title>
+	<summary>
+		<content lang="ja_JP">Expressing the ease or difficulty of an action</content>
+		<content lang="ja_KANA">Expressing the ease or difficulty of an action</content>
+		<content lang="ja_ROME">Expressing the ease or difficulty of an action</content>
+	</summary>
+	<description>
+		<content lang="ja_JP">In this lesson we will practise making statements about the ease or difficulty of an action. This is done by adding a suffix to the stem form of a verb to change it into an adjective which expresses the ease or difficulty of the action described by the verb. The two main forms to be practised in this lesson are be summarised by the following examples.</content>
+		<content lang="ja_KANA">In this lesson we will practise making statements about the ease or difficulty of an action. This is done by adding a suffix to the stem form of a verb to change it into an adjective which expresses the ease or difficulty of the action described by the verb. The two main forms to be practised in this lesson are be summarised by the following examples.</content>
+		<content lang="ja_ROME">In this lesson we will practise making statements about the ease or difficulty of an action. This is done by adding a suffix to the stem form of a verb to change it into an adjective which expresses the ease or difficulty of the action described by the verb. The two main forms to be practised in this lesson are be summarised by the following examples.</content>
+	</description>
+	<example>
+    <section id="1">
+      <title>
+        <content lang="en">Easy vs Difficult</content>
+      </title>
+      <sentence>
+        <item>
+          <japanese>
+            <content lang="ja_JP">このペンは<b>書きやすいです</b></content>
+            <content lang="ja_KANA">このペンは<b>かきやすいです</b></content>
+            <content lang="ja_ROME">kono pen ha<b>kakiyasuidesu</b></content>
+          </japanese>
+          <translated>
+            <content lang="en">This pen is easy to write with.</content>
+          </translated>
+        </item>
+        <item>
+          <japanese>
+            <content lang="ja_JP">このペンは<b>書きにくいです</b></content>
+            <content lang="ja_KANA">このペンは<b>かきにくいです</b></content>
+            <content lang="ja_ROME">kono pen ha<b>kakinikuidesu</b></content>
+          </japanese>
+          <translated>
+            <content lang="en">This pen is difficult to write with.</content>
+          </translated>
+        </item>
+      </sentence>
+    </section>
+    <section id="2">
+      <title>
+        <content lang="en">Polite vs Plain</content>
+      </title>
+      <sentence>
+        <item>
+          <japanese>
+            <content lang="ja_JP">この本は<b>読みやすいです</b></content>
+            <content lang="ja_KANA">このほんは<b>よみやすいです</b></content>
+            <content lang="ja_ROME">kono hon ha<b>yomiyasuidesu</b></content>
+          </japanese>
+          <translated>
+            <content lang="en">This book is easy to read. (Polite)</content>
+          </translated>
+        </item>
+        <item>
+          <japanese>
+            <content lang="ja_JP">この本は<b>読みやすい</b></content>
+            <content lang="ja_KANA">このほんは<b>よみやすい</b></content>
+            <content lang="ja_ROME">kono hon ha<b>yomiyasui</b></content>
+          </japanese>
+          <translated>
+            <content lang="en">This book is easy to read. (Plain)</content>
+          </translated>
+        </item>
+      </sentence>
+    </section>
+	</example>
+	<grammar_points>
+<p><font size="4"><u><b>Grammar Point 1: Ease and Difficulty</b></u></font></p>
+<p>In this lesson we will cover two grammar patterns used to express how easy or difficult an action is to perform. These expressions most often carry the nuance of physical difficulty or ease rather than mental. To express that something is difficult, add the suffix にくい to the stem form of a verb. To express that something is easy, add the suffix やすい to the stem form of a verb. In both cases, adding the suffix changes the verb into an "i" adjective that can be conjugated like any other "i" adjective. Study the examples below.</p>
+<table align="center" width="90%" border="1">
+<tr><td>この靴は走りにくいです。</td><td>"It's hard to run with these shoes."</td></tr><tr><td>あの大学は入りにくい。</td><td>"That university is hard to get into."</td></tr><tr><td>彼の名前は覚えやすいです。</td><td>"His name is easy to remember."</td></tr><tr><td>このシャツは洗いやすい。</td><td>"This shirt is easy to wash."</td></tr>
+</table>
+	</grammar_points>
+</lesson>

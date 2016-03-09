@@ -1,0 +1,250 @@
+<lesson>
+	<title 'This is a book' - Introduction to simple statements and questions>
+	<id 1>
+	<level 4>
+		<example>
+		<diagram Examples/lesson1a.gif>
+		<sentence Sally is not British>
+		<answerJ Æ’TÆ’Å ï¿½[â€šÂ³â€šÃ± â€šÃ� Æ’CÆ’MÆ’Å Æ’Xâ€šÂ¶â€šÃ± â€šÃ…â€šÃ�â€šÂ â€šÃ¨â€šÃœâ€šÂ¹â€šÃ± >
+		<answerK Æ’TÆ’Å ï¿½[â€šÂ³â€šÃ± â€šÃ� Æ’CÆ’MÆ’Å Æ’Xï¿½l â€šÃ…â€šÃ�â€šÂ â€šÃ¨â€šÃœâ€šÂ¹â€šÃ± >
+		<questionType Question Type - Questions about People>
+		<form>
+			<fgroup>
+				<off>Definitives
+				<on>People
+			</fgroup>
+			<fgroup>
+				<on>Statement
+				<off>Question
+			</fgroup>
+			<fgroup>
+				<off>Positive
+				<on>Negative
+			</fgroup>
+			<fgroup>
+				<off>Also
+			</fgroup>
+		</form>
+		<formHelp>
+			The Grammar Form shows us that we are talking about a person, and that the answer must 
+			be a statement in the negative form. In this example, the concept of "also" is not used.
+		</formHelp>
+		<gfxHelp>
+			In this type of question you are asked to make a declarative statement or question about a person.
+			Your answer may be a question about the person's nationality (for example, "Is Anne British?"), 
+			or specify their job ("My brother is a doctor."). Please check the Grammar Form to 
+			determine what form your response should be in.
+		</gfxHelp>
+		<diagHelp>
+			We can see that Sally is the subject (marked with S), and that we
+			are being asked to comment on whether she is British (information,
+			marked with I).  In this case she is not, as is indicated by the cross in
+			the diagram.
+		</diagHelp>
+	</example>
+	<example>
+		<diagram Examples/lesson1b.gif>
+		<sentence Is this a map?>
+		<answerJ â€šÂ±â€šÃª â€šÃ� â€šÂ¿â€šÂ¸ â€šÃ…â€šÂ·â€šÂ© >
+		<answerK â€šÂ±â€šÃª â€šÃ� â€™nï¿½} â€šÃ…â€šÂ·â€šÂ© >
+		<questionType Question Type - Questions about Objects with Definitives>
+		<form>
+			<fgroup>
+				<on>Definitives
+				<off>People
+			</fgroup>
+			<fgroup>
+				<off>Statement
+				<on>Question
+			</fgroup>
+			<fgroup>
+				<on>Positive
+				<off>Negative
+			</fgroup>
+			<fgroup>
+				<off>Also
+			</fgroup>
+		</form>
+		<formHelp>
+			The grammar form shows us that we are required to ask a 
+			question about an object using a definitive (this, that, etc).
+			The question should be in the positive form. The concept of "also"
+			is not used in this case.
+		</formHelp>
+		<gfxHelp>
+			You are sitting at a table opposite your friend.  If the object
+			is closer to you, i.e. in the lower half of the table, it is refered 
+			to as "this".  For example, "This is a pen". If it is closer to your friend, you should refer to it as "that".  
+			For example, "Is that a bag?". When two objects are shown which are the same, your description of the
+			selected object should include the word "also".  For example, "Is that also a CD?".
+		</gfxHelp>
+		<diagHelp>
+			The object, a map, is closer to you and thus addressed as "This". 
+			You are asked to form a question, and the question you would be
+			expected to ask (in Japanese) is, "Is this a map?"
+		</diagHelp>
+	</example>
+	<example>
+		<diagram Examples/lesson1c.gif>
+		<sentence That is also a hamburger>
+		<answerJ â€šÂ»â€šÃª â€šÃ  Æ’nÆ’â€œÆ’oï¿½[Æ’Kï¿½[ â€šÃ…â€šÂ·>
+		<answerK â€šÂ»â€šÃª â€šÃ  Æ’nÆ’â€œÆ’oï¿½[Æ’Kï¿½[ â€šÃ…â€šÂ·>
+		<questionType Statements about Objects with Definitives>
+		<form>
+			<fgroup>
+				<on>Definitives
+				<off>People
+			</fgroup>
+			<fgroup>
+				<on>Statement
+				<off>Question
+			</fgroup>
+			<fgroup>
+				<on>Positive
+				<off>Negative
+			</fgroup>
+			<fgroup>
+				<on>Also
+			</fgroup>
+		</form>
+		<formHelp>
+			The grammar form shows us that we are required to give a
+			statement about an object using a definitive (this, that, etc).
+			The statement should be in the positive form. We must use the word
+			"also" in our answer.
+		</formHelp>
+		<gfxHelp>
+			You are sitting at a table opposite your friend.  If the object
+			is closer to you, i.e. on your side of the table, it is referred
+			to as "this".  For example, "This is a pen". If it is closer to your friend, you should refer to it as "that".  
+			For example, "Is that a bag?". When two objects are shown which are the same, your description of the
+			selected object should include the word "also".  For example, "Is that also a CD?".
+		</gfxHelp>
+		<diagHelp>
+			There are two objects, but the focus is on the one further from
+			you, so you should refer to it as "that". As there are two identical objects,
+			you must use the word "also" in your answer,  i.e. "That is also..."
+		</diagHelp>
+	</example>
+</lesson>
+#
+#####################################################################
+#
+# Lesson 2
+#
+#####################################################################
+<lesson>
+	<title 'Doing things' - Introduction to verbs, and simple sentences>
+	<id 2>
+	<level 4>	
+	<example>
+		<diagram Examples/lesson2a.gif>
+		<sentence I will read a magazine at home>
+		<answerJ â€šÃ­â€šÂ½â€šÂµ â€šÃ� â€šÂ¤â€šÂ¿ â€šÃ… â€šÂ´â€šÃ�â€šÂµ â€šÃ° â€šÃ¦â€šÃ�â€šÃœâ€šÂ·>
+		<answerK Å½â€ž â€šÃ� â€°Ã† â€šÃ… Å½GÅ½ï¿½ â€šÃ° â€œÃ‡â€šÃ�â€šÃœâ€šÂ·>
+		<questionType Question Type - Simple Statements>
+		<form>		
+			<fgroup>
+				<on>Statement
+				<off>Question
+			</fgroup>
+			<fgroup>
+				<on>Positive
+				<off>Negative
+			</fgroup>
+			<fgroup>
+				<on>Non-Past
+				<off>Past
+			</fgroup>	
+		</form>
+		<formHelp>
+			The grammar form shows us that we are required to give a
+			statement about an action.  This should be a positive statement
+			using the non-past tense.
+		</formHelp>
+		<gfxHelp>
+			You are asked to describe an action, or construct a question about an action.
+			The diagram may contain information on who did the action, where they did it,
+			when it was carried out, what the object was, etc.  All displayed information
+			should be given in your answer.  Extra information should not be included.
+		</gfxHelp>
+		<diagHelp>
+			The subject (S) is you. The place (P) is your home.  The object of the
+			action (O) is a magazine.  The action itself, i.e. the verb (V) is To Read.
+		</diagHelp>
+	</example>
+	<example>
+		<diagram Examples/lesson2b.gif>
+		<sentence I did not go to the bank with my grandmother>
+		<answerJ â€šÃ­â€šÂ½â€šÂµ â€šÃ� â€šÂ¨â€šÃŽâ€šÂ â€šÂ³â€šÃ± â€šÃ† â€šÂ¬â€šÃ±â€šÂ±â€šÂ¤ â€šÃ– â€šÂ¢â€šÂ«â€šÃœâ€šÂ¹â€šÃ±â€šÃ…â€šÂµâ€šÂ½>
+		<answerK Å½â€ž â€šÃ� â€šÂ¨â€šÃŽâ€šÂ â€šÂ³â€šÃ± â€šÃ† â€¹Ã¢ï¿½s â€šÃ– ï¿½sâ€šÂ«â€šÃœâ€šÂ¹â€šÃ±â€šÃ…â€šÂµâ€šÂ½>
+		<questionType Question Type - Simple Statements>
+		<form>		
+			<fgroup>
+				<on>Statement
+				<off>Question
+			</fgroup>
+			<fgroup>
+				<off>Positive
+				<on>Negative
+			</fgroup>	
+			<fgroup>
+				<off>Non-Past
+				<on>Past
+			</fgroup>	
+		</form>
+		<formHelp>
+			The grammar form shows us that we are required to give a
+			statement about an action.  This should be a negative statement,
+			using the past tense.
+		</formHelp>
+		<gfxHelp>
+			You are asked to describe an action, or construct a question about an action.
+			The diagram may contain information on who did the action, where they did it,
+			when it was carried out, what the object was, etc.  All displayed information
+			should be given in your answer.  Extra information should not be included.
+		</gfxHelp>
+		<diagHelp>
+			The subject (S) is you. The action was performed with (+) your grandmother.
+			The place (P) is the bank.  The action itself, i.e. the verb (V) is "to go," but is
+			in the negative form.
+		</diagHelp>
+	</example>
+	<example>
+		<diagram Examples/lesson2c.gif>
+		<sentence Will you read the book?>
+		<answerJ â€šÃ™â€šÃ± â€šÃ° â€šÃ¦â€šÃ�â€šÃœâ€šÂ·â€šÂ©>
+		<answerK â€“{ â€šÃ° â€œÃ‡â€šÃ�â€šÃœâ€šÂ·â€šÂ©>
+		<questionType Question Type - Simple Questions>
+		<form>		
+			<fgroup>
+				<off>Statement
+				<on>Question
+			</fgroup>
+			<fgroup>
+				<on>Positive
+				<off>Negative
+			</fgroup>
+			<fgroup>
+				<on>Non-Past
+				<off>Past
+			</fgroup>
+		</form>
+		<formHelp>
+			The grammar form shows us that we are required to ask a
+			question about an possible action.  This should be a positive question,  
+			and the non-past tense should be used.
+		</formHelp>
+		<gfxHelp>
+			You are asked to describe an action, or construct a question about an action.
+			The diagram may contain information on who did the action, where they did it,
+			when it was carried out, what the object was, etc.  All displayed information
+			should be given in your answer.  Extra information should not be included.
+		</gfxHelp>
+		<diagHelp>
+			The object (O) that the action relates to is a book.
+			The action itself, i.e. the verb (V) is "to read," and should
+			be given as a question.
+		</diagHelp>
+	</example>
+</lesson>

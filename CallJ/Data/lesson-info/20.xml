@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xsl/overview.xsl"?>
+<lesson>
+	<id>20</id>
+	<title>I may read the book.</title>
+	<summary>
+		<content lang="ja_JP">Probability and uncertainty</content>
+		<content lang="ja_KANA">Probability and uncertainty</content>
+		<content lang="ja_ROME">Probability and uncertainty</content>
+	</summary>
+	<description>
+		<content lang="ja_JP">In this lesson we will practise how to express varying degrees of uncertainty in sentences. When describing an uncertain event in Japanese, the expression to be used is decided by the information available, the source of that information, and how the speaker feels about the validity of that information. Many of the expressions can have similar English translations, so it is important to understand the nuances of each one.</content>
+		<content lang="ja_KANA">In this lesson we will practise how to express varying degrees of uncertainty in sentences. When describing an uncertain event in Japanese, the expression to be used is decided by the information available, the source of that information, and how the speaker feels about the validity of that information. Many of the expressions can have similar English translations, so it is important to understand the nuances of each one.</content>
+		<content lang="ja_ROME">In this lesson we will practise how to express varying degrees of uncertainty in sentences. When describing an uncertain event in Japanese, the expression to be used is decided by the information available, the source of that information, and how the speaker feels about the validity of that information. Many of the expressions can have similar English translations, so it is important to understand the nuances of each one.</content>
+	</description>
+	<example>
+		<section>
+			<title><content lang="en">Impression, Guessing</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">明日のテストは難し<b>そうです</b></content>
+						<content lang="ja_KANA">あすのてすとはむずかし<b>そうです</b></content>
+						<content lang="ja_ROME">asu no tesuto ha muzukashi <b>sou desu</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">Tomorrow's test seems difficult.</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">今西さんは優し<b>そうだ</b></content>
+						<content lang="ja_KANA">いまにしさんはやさし<b>そうだ</b></content>
+						<content lang="ja_ROME">imanishisan ha yasashi <b>sou da</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">Imanishi seems kind.</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+		<section>
+			<title><content lang="en">Expectation</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">太郎は大使館に行った<b>はずだ</b></content>
+						<content lang="ja_KANA">たろうはたいしかんにいった<b>はずだ</b></content>
+						<content lang="ja_ROME">taro ha taishikan ni itta <b>hazu da</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">Taro must have gone to the embassy.</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+		<section>
+			<title><content lang="en">Appearance</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">今西さんの家は静かな<b>ようだ</b></content>
+						<content lang="ja_KANA">いまにしさんのいえはしずかな<b>ようです</b></content>
+						<content lang="ja_ROME">imanishisan no ie ha shizukana <b>you desu</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">Imanishi's house appears to be quiet.</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+		<section>
+			<title><content lang="en">Appearance, Similarity</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">太郎は学生<b>みたいです</b></content>
+						<content lang="ja_KANA">たろうはがくせい<b>みたいです</b></content>
+						<content lang="ja_ROME">taro ha gakusei <b>mitai desu</b> </content>
+					</japanese>
+					<translated>
+						<content lang="en">Taro looks like a student.</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+		<section>
+			<title><content lang="en">Conjecture</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">明日は晴れ<b>でしょう</b></content>
+						<content lang="ja_KANA">あすははれ<b>でしょう</b></content>
+						<content lang="ja_ROME">asu ha hare <b>deshou</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">It will probably be sunny tomorrow.</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+		<section>
+			<title><content lang="en">Possibility</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">太郎はサッカーを<b>するかもしれない</b></content>
+						<content lang="ja_KANA">たろうはさっかーを<b>するかもしれない</b></content>
+						<content lang="ja_ROME">taro ha sakka wo suru <b>kamoshirenai</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">Taro might play soccer.</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+		<section>
+			<title><content lang="en">Embedded question</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">このオレンジジュースはおいしい<b>かどうか</b>わからない</content>
+						<content lang="ja_KANA">このおれんじじゅーすはおいしい<b>かどうか</b>わからない</content>
+						<content lang="ja_ROME">kono orenge juice ha oishii <b>ka douka</b> wakaranai</content>
+					</japanese>
+					<translated>
+						<content lang="en">I don't know whether this orange juice is delicious or not.</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+	</example>
+	<grammar_points>
+
+<p><font size="4"><u><b>Grammar Point 1: Stating impressions and guessing</b></u></font></p>
+<p>This grammar pattern is used with an adjective to describe an impression of what something seems like based on the speaker's direct evidence, primarily the external appearance as perceived through the five senses. It can only be used to talk about what state something will become in the (near) future. Thus, it can't be used to state directly observable facts (in other words, the present state). This means that it cannot be used with adjectives that directly express the appearance of an object, for example きれい ("pretty") or colour words like 赤い ("red"). This expression is used even when the speaker isn't very certain about the truth of his impression. </p>
+<p>To form this pattern for adjectives, drop the final "i" sound of the plain form and replace it with "sou", then add the copula to the end of the sentence.</p>
+<p>このハンバーガーがおいしそうです - "This hamburger looks delicious." (polite)</p>
+<p>あの靴は高そうだ - "Those shoes over there seem expensive." (plain)</p>
+<p>Note that the word いい ("good") becomes よさそう for this grammar point. This is an exception that must be learnt.</p>
+<p>その本はよさそうです - "That book looks good." (polite)</p>
+<p><font size="4"><u><b>Grammar Point 2: Expressing expectations</b></u></font></p>
+<p>When a simple sentence in the plain form is followed by はず plus the copula, it indicates the natural result or reasonable expectation given the circumstances. This grammar pattern states an expectation given the circumstances or available evidence, and can be translated as "must be", "should be", or "ought to" in English. Note that in cases where the original sentence ends with the present tense of the copula (だ or です), the copula is replaced by な . In all other cases (for example, the past tense of the copula), はず is simply added to the original sentence.</p>
+<p>鈴木は家にいませんから、学校に行った<b>はず</b>です - "Suzuki is not at home, so he <b>must have</b> gone to school." (polite)</p>
+<p>姉は九時までに帰る<b>はず</b>だ - "My older sister <b>should</b> be home by 9 o'clock." (plain)</p>
+<p>太郎さんの車なはずです - "It's supposed to be Taro's car." (polite)</p>
+<p><font size="4"><u><b>Grammar Point 3: Expressing how something appears to be</b></u></font></p>
+<p>Similar to Grammar Point 1, this expression is used with an adjective to describe how something seems or appears to be. However, it implies that the speaker is making his own conclusion from the available evidence. This conclusion can be based on both the speaker's direct observations as well as indirect evidence from other sources, such as hearsay. While そうだ/そうです from Grammar Point 1 can be thought of as merely the speaker's impression of something or a guess about what it will become, ようだ/ようです implies that the speaker has spent some time reasoning about the situation and is more certain about the conclusion.</p>
+<p>このレストランは高いようです - "This restaurant appears to be expensive." (polite)</p>
+<p>今週のテストは簡単なようだ - "This week's test seems like it will be easy." (plain)</p>
+<p>The rules for forming this grammar pattern are different depending on what kind of word is modified.</p>
+<table align="center" width="600" border="1">
+<tr>
+<th bgcolor="#aaaaff" colspan="2">Case 1: verbs, "i" adjectives</th>
+</tr>
+<tr>
+<th bgcolor="#aaaaff">Case</th>
+<th bgcolor="#aaaaff">Rule</th>
+</tr>
+<tr>
+<td>"i" adjective</td>
+<td>Add よう plus the copula</td>
+</tr>
+<tr>
+<td>verb</td>
+<td>Add よう plus the copula</td>
+</tr>
+<tr>
+<th bgcolor="#aaaaff" colspan="2">Case 2: present tense of nouns or "na" adjectives with the copula だ or です</th>
+</tr>
+<tr>
+<th bgcolor="#aaaaff">Case</th>
+<th bgcolor="#aaaaff">Rule</th>
+</tr>
+<tr>
+<td>"na" adjective</td>
+<td>Keep the final な sound and add よう plus the copula.</td>
+</tr>
+<tr>
+<td>noun</td>
+<td>Add the noun marker の, then add よう plus the copula.</td>
+</tr>
+<tr>
+<th bgcolor="#aaaaff" colspan="2">Case 3: all tenses of nouns or "na" adjectives</th>
+</tr>
+<tr>
+<th bgcolor="#aaaaff">Case</th>
+<th bgcolor="#aaaaff">Rule</th>
+</tr>
+<tr>
+<td>"na" adjective</td>
+<td>Add よう plus the copula</td>
+</tr>
+<tr>
+<td>noun</td>
+<td>Add よう plus the copula</td>
+</tr>
+</table>
+
+<p>Here are some examples for the rules given in the table above.</p>
+<table align="center" width="600" border="1">
+<tr>
+<th bgcolor="#aaaaff">Case 1</th>
+</tr>
+<tr>
+<td>北海道はとても寒いようです - "Hokkaido seems to be very cold."</td>
+</tr>
+<tr>
+<td>今日雨が降ったようです - "It seems to have rained today."</td>
+</tr>
+<tr>
+<th bgcolor="#aaaaff">Case 2</th>
+</tr>
+<tr>
+<td>今週のテストは簡単なようです - "This week's test seems like it will be easy."</td>
+</tr>
+<tr>
+<td>あの人は学生のようです - "That person appears to be a student."</td>
+</tr>
+<tr>
+<th bgcolor="#aaaaff">Case 3</th>
+</tr>
+<tr>
+<td>今週のテストは簡単だったようです - "It seems like this week's test was easy."</td>
+</tr>
+<tr>
+<td>あの人は学生だったようです - "It seems that person used to be a student."</td>
+</tr>
+</table>
+
+<p><font size="4"><u><b>Grammar Point 4: Expressing how something appears to be</b></u></font></p>
+<p>This expression can be thought of as a more casual version of Grammar Point 3 that is used in spoken language. It should be avoided in formal situations or when writing. Instead, ようだ/ようです can be used in those situations.</p>
+<p>雨がやんだみたいです - "It looks like it stopped raining." (polite)</p>
+<p>あのレストランは安いみたいだ - "That restaurant seems cheap." (plain)</p>
+<p>鈴木さんの家はかなり静かみたいです - "Suzuki's house seems fairly quiet." (polite)</p>
+<p>This grammar point is formed by taking the original sentence in the plain form and adding みたい . In the case where the plain form of the copula (だ) is used in the original sentence, the copula is dropped. This type of sentence is used when comparing one thing to another or showing how similar they are.</p>
+<p>太郎は学生みたいです - "Taro looks like a student." (polite)</p>
+<p>あの人は医者みたいだ - "That person looks like a doctor." (plain)</p>
+<p>The first example expresses the fact that Taro resembles a student, irregardless of whether or not he actually is. If ようだ/ようです had been used, the nuance would be that the speaker believes that Taro is a student because he seems like one.</p>
+<p><font size="4"><u><b>Grammar Point 5: Making conjectures</b></u></font></p>
+<p>Adding でしょう to a sentence in plain form expresses a reasonable degree of certainty that it is true given all available information, or the speaker's conjecture that it is true based on observable facts. In the latter case, the meaning is close to the expressions "I'm pretty sure that..." or "I bet that..." in English. Note that it is restricted to events where the outcome is unknown, so it can't be used to talk about your own actions or events where the outcome is certain. When this grammar pattern is used, the speaker makes a conjecture about a possible outcome but still acknowledges that other outcomes are possible. This grammar pattern is used when talking about events such as the weather.</p>
+<p>明日雨が降るでしょう - "It will probably rain tomorrow."</p>
+<p>妹がちゃんと勉強すれば、試験に受かるでしょう - "If my little sister studies properly, she should pass the exam."</p>
+<p>Note that in cases where the original sentence ends with the present tense of the copula (だ or です), the copula is replaced by でしょう . In all other cases (for example, the past tense of the copula), でしょう is simply added to the original sentence.</p>
+<p><font size="4"><u><b>Grammar Point 6: Expressing possibilities</b></u></font></p>
+<p>Adding かもしれない to the end of a sentence in plain form expresses the fact that it could happen but is not likely to do so. This grammar pattern merely indicates that the event mentioned is possible, and corresponds to the words 'may' or 'might' in English. In polite sentences, かもしれない becomes かもしれません .</p>
+<p>来年東京に引っ越すかもしれません - "I might move to Tokyo next year." (polite)</p>
+<p>今西さんはパーティーに来るかもしれない - "Imanishi might come to the party." (plain)</p>
+<p>In this lesson, since we are talking about future events so the original sentence that comes before かもしれない should end with a verb in the simple non-past form. Note that in cases where the original sentence ends with the present tense of the copula (だ or です), the copula is dropped before adding かもしれない .</p>
+<p><font size="4"><u><b>Grammar Point 7: Embedded questions</b></u></font></p>
+<p>Adding かどうか to a sentence in the plain form turns it into an embedded question that can be then used in a larger sentence. This is similar to how the phrase 'whether or not' works in English. In cases where the sentence to be embedded ends with the present tense of the copula (だ or です), the copula is dropped.</p>
+<p>Similar to the other grammar patterns in this lesson, when the sentence that is embedded </p>
+<p>鈴木さんが来るかどうかはわからない - "I don't know whether or not Suzuki will come." (plain)</p>
+<p>パンを買ったかどうか忘れました - "I forgot whether I bought bread or not." (polite)</p>
+<p>太郎さんが学生かどうか教えてください - "Please tell me whether or not Taro is a student." (polite)</p>
+
+	</grammar_points>
+</lesson>

@@ -1,0 +1,306 @@
+# Student Config File
+#
+-id 2
+-name css
+-password csspwd
+#
+-lessonHistory 1 2 1 1 714 983 111 0 0 0 0 0 0 0
+-lessonHistory 2 1 0 0 0 0 1 0 0 0 0 0 0 0
+-lessonHistory 3 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 4 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 5 2 6 1 1075 6381 70 0 0 0 0 0 0 0
+-lessonHistory 6 1 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 7 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 8 2 3 0 0 3687 7 0 0 0 0 0 0 0
+-lessonHistory 9 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 10 1 1 0 0 1720 11 0 0 0 0 0 0 0
+-lessonHistory 11 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 12 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 13 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 14 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 15 20 137 0 0 99262 2541 0 0 0 0 0 0 0
+-lessonHistory 16 1 3 0 0 3938 9 0 0 0 0 0 0 0
+-lessonHistory 17 29 277 0 0 90332 4016 0 0 0 0 0 0 0
+-lessonHistory 19 23 303 3 1378 61326 6431 0 0 0 0 0 0 0
+-lessonHistory 20 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 21 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 22 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 23 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 24 1 1 0 0 986 39 0 0 0 0 0 0 0
+-lessonHistory 25 2 25 0 0 28070 56 0 0 0 0 0 0 0
+-lessonHistory 26 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 27 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 28 3 14 0 0 20677 50 0 0 0 0 0 0 0
+-lessonHistory 29 1 15 0 0 12587 1087 0 0 0 0 0 0 0
+-lessonHistory 30 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 18 0 0 0 0 0 0 0 0 0 0 0 0 0
+#
+-wordExperience 1 2 1 0
+-wordExperience 1 5 2 0
+-wordExperience 1 7 1 0
+-wordExperience 1 10 1 0
+-wordExperience 1 11 1 0
+-wordExperience 1 15 4 0
+-wordExperience 1 18 1 0
+-wordExperience 1 24 7 0
+-wordExperience 1 25 6 0
+-wordExperience 1 29 1 0
+-wordExperience 1 36 1 0
+-wordExperience 1 39 4 0
+-wordExperience 1 44 15 0
+-wordExperience 1 45 2 0
+-wordExperience 1 48 1 0
+-wordExperience 1 50 10 0
+-wordExperience 1 58 2 0
+-wordExperience 1 59 1 0
+-wordExperience 1 64 1 0
+-wordExperience 1 65 1 0
+-wordExperience 1 73 1 0
+-wordExperience 1 76 2 0
+-wordExperience 1 80 8 0
+-wordExperience 1 81 1 0
+-wordExperience 1 82 6 0
+-wordExperience 1 83 4 0
+-wordExperience 1 85 1 0
+-wordExperience 1 88 16 0
+-wordExperience 1 89 10 0
+-wordExperience 1 90 2 0
+-wordExperience 1 91 5 0
+-wordExperience 1 92 2 0
+-wordExperience 1 93 1 0
+-wordExperience 1 96 3 0
+-wordExperience 1 98 5 0
+-wordExperience 1 99 1 0
+-wordExperience 1 102 3 0
+-wordExperience 1 105 9 0
+-wordExperience 1 107 2 1
+-wordExperience 1 108 38 0
+-wordExperience 1 109 2 0
+-wordExperience 1 111 11 0
+-wordExperience 1 112 10 0
+-wordExperience 1 113 1 0
+-wordExperience 1 114 1 0
+-wordExperience 1 115 2 0
+-wordExperience 1 117 19 0
+-wordExperience 1 120 12 0
+-wordExperience 1 121 3 0
+-wordExperience 1 124 1 0
+-wordExperience 1 125 2 0
+-wordExperience 1 126 4 0
+-wordExperience 1 127 9 0
+-wordExperience 1 128 1 0
+-wordExperience 1 130 2 0
+-wordExperience 1 131 4 0
+-wordExperience 1 135 1 0
+-wordExperience 1 136 1 0
+-wordExperience 1 139 10 0
+-wordExperience 1 140 2 0
+-wordExperience 1 141 2 0
+-wordExperience 1 143 6 0
+-wordExperience 1 145 11 0
+-wordExperience 1 146 5 0
+-wordExperience 1 166 14 1
+-wordExperience 1 170 2 0
+-wordExperience 1 172 5 0
+-wordExperience 1 174 5 0
+-wordExperience 1 178 3 0
+-wordExperience 1 185 2 0
+-wordExperience 1 186 4 0
+-wordExperience 1 191 1 0
+-wordExperience 1 194 1 0
+-wordExperience 1 202 6 0
+-wordExperience 1 209 18 0
+-wordExperience 1 210 20 0
+-wordExperience 1 211 23 0
+-wordExperience 1 212 24 0
+-wordExperience 1 215 9 0
+-wordExperience 1 216 12 0
+-wordExperience 1 217 10 0
+-wordExperience 1 218 7 0
+-wordExperience 1 219 10 0
+-wordExperience 1 220 15 0
+-wordExperience 1 221 13 0
+-wordExperience 1 222 1 0
+-wordExperience 1 223 1 0
+-wordExperience 1 230 7 0
+-wordExperience 1 257 3 0
+-wordExperience 1 267 5 0
+-wordExperience 1 271 13 0
+-wordExperience 1 300 4 0
+-wordExperience 1 313 5 0
+-wordExperience 1 326 1 0
+-wordExperience 1 334 5 0
+-wordExperience 1 339 1 0
+-wordExperience 1 352 5 0
+-wordExperience 1 382 3 0
+-wordExperience 1 384 38 0
+-wordExperience 1 418 12 0
+-wordExperience 1 424 15 0
+-wordExperience 1 425 17 0
+-wordExperience 1 427 12 0
+-wordExperience 1 430 8 1
+-wordExperience 1 432 1 0
+-wordExperience 1 437 1 0
+-wordExperience 1 442 1 0
+-wordExperience 1 445 1 0
+-wordExperience 1 963 12 0
+-wordExperience 1 966 4 0
+-wordExperience 1 968 6 0
+-wordExperience 1 969 20 0
+-wordExperience 1 971 16 1
+-wordExperience 1 973 7 0
+-wordExperience 1 976 21 0
+-wordExperience 1 980 8 0
+-wordExperience 1 985 15 0
+-wordExperience 1 989 1 0
+-wordExperience 1 990 1 0
+-wordExperience 1 992 6 0
+-wordExperience 1 993 8 0
+-wordExperience 1 998 3 0
+-wordExperience 1 999 1 0
+-wordExperience 1 1000 2 0
+-wordExperience 1 1001 15 0
+-wordExperience 1 1002 11 0
+-wordExperience 1 1003 22 0
+-wordExperience 1 1004 1 0
+-wordExperience 1 1007 5 0
+-wordExperience 1 1009 8 0
+-wordExperience 1 1010 15 0
+-wordExperience 1 1011 51 0
+-wordExperience 1 1012 37 1
+-wordExperience 1 1014 1 0
+-wordExperience 1 1016 1 0
+-wordExperience 1 1017 3 0
+-wordExperience 1 1018 6 0
+-wordExperience 1 1019 13 0
+-wordExperience 1 1021 4 0
+-wordExperience 1 1022 1 0
+-wordExperience 1 1025 2 0
+-wordExperience 1 1026 1 0
+-wordExperience 1 1032 1 0
+-wordExperience 2 519 1 0
+-wordExperience 2 520 12 0
+-wordExperience 2 521 1 0
+-wordExperience 2 522 35 0
+-wordExperience 2 523 24 0
+-wordExperience 2 524 127 0
+-wordExperience 2 525 27 0
+-wordExperience 2 535 4 0
+-wordExperience 2 536 10 0
+-wordExperience 2 537 1 0
+-wordExperience 2 538 4 0
+-wordExperience 2 539 23 0
+-wordExperience 2 540 1 0
+-wordExperience 2 541 12 0
+-wordExperience 2 542 1 0
+-wordExperience 2 547 1 0
+-wordExperience 2 548 17 0
+-wordExperience 2 550 1 0
+-wordExperience 2 551 19 0
+-wordExperience 2 560 11 0
+-wordExperience 2 561 119 0
+-wordExperience 2 567 1 0
+-wordExperience 2 571 3 0
+-wordExperience 2 575 6 0
+-wordExperience 2 576 91 0
+-wordExperience 2 577 1 0
+-wordExperience 2 578 22 0
+-wordExperience 2 579 124 1
+-wordExperience 2 590 1 0
+-wordExperience 2 593 2 0
+-wordExperience 2 594 16 0
+-wordExperience 2 595 4 0
+-wordExperience 2 620 14 0
+-wordExperience 2 621 20 0
+-wordExperience 2 637 5 0
+-wordExperience 2 680 1 0
+-wordExperience 2 694 1 0
+-wordExperience 2 695 4 0
+-wordExperience 2 725 12 0
+-wordExperience 2 728 220 0
+-wordExperience 2 734 3 0
+-wordExperience 2 958 3 0
+-wordExperience 2 977 1 0
+-wordExperience 2 981 1 0
+-wordExperience 2 984 2 0
+-wordExperience 2 994 1 0
+-wordExperience 2 996 1 0
+-wordExperience 2 997 35 0
+-wordExperience 2 999 6 0
+-wordExperience 2 1000 27 0
+-wordExperience 2 1003 1 0
+-wordExperience 2 1005 1 0
+-wordExperience 2 1006 9 0
+-wordExperience 2 1008 8 0
+-wordExperience 2 1019 2 0
+-wordExperience 2 1022 21 0
+-wordExperience 2 1024 6 0
+-wordExperience 2 1028 1 0
+-wordExperience 2 1029 3 0
+-wordExperience 2 1033 2 0
+-wordExperience 3 751 1 0
+-wordExperience 3 754 114 0
+-wordExperience 3 760 4 0
+-wordExperience 3 782 2 0
+-wordExperience 3 838 1 0
+-wordExperience 3 996 6 0
+-wordExperience 3 999 104 0
+-wordExperience 3 1025 3 0
+-wordExperience 4 792 1 0
+-wordExperience 4 795 9 0
+-wordExperience 4 835 1 0
+-wordExperience 4 837 2 1
+-wordExperience 5 949 23 0
+-wordExperience 5 952 1 0
+-wordExperience 5 954 12 0
+-wordExperience 5 1002 2 0
+-wordExperience 5 1005 27 0
+-wordExperience 5 1012 2 0
+-wordExperience 5 1013 3 0
+-wordExperience 5 1015 7 0
+-wordExperience 5 1016 15 0
+-wordExperience 5 1017 2 0
+-wordExperience 5 1020 36 0
+-wordExperience 5 1021 1 0
+-wordExperience 5 1023 49 0
+-wordExperience 5 1024 1 0
+-wordExperience 6 732 11 0
+-wordExperience 6 733 9 0
+-wordExperience 6 735 32 0
+-wordExperience 6 736 66 0
+-wordExperience 6 737 9 0
+-wordExperience 6 738 182 0
+-wordExperience 6 739 81 0
+-wordExperience 6 740 14 0
+-wordExperience 6 741 179 1
+-wordExperience 6 742 345 1
+-wordExperience 6 743 59 0
+-wordExperience 6 744 8 0
+-wordExperience 6 993 3 0
+-wordExperience 6 995 1 0
+-wordExperience 6 996 42 0
+-wordExperience 6 997 27 0
+-wordExperience 6 998 33 0
+-wordExperience 6 1026 2 0
+-wordExperience 11 483 1 0
+-wordExperience 11 485 3 0
+-wordExperience 11 486 3 0
+-wordExperience 11 487 6 0
+-wordExperience 11 491 1 0
+-wordExperience 13 466 3 0
+-wordExperience 13 467 16 0
+-wordExperience 13 468 20 0
+-wordExperience 13 472 1 0
+-wordExperience 13 473 2 0
+-wordExperience 13 476 2 0
+-wordExperience 13 477 34 0
+-wordExperience 13 986 2 0
+-wordExperience 18 492 2 0
+-wordExperience 18 493 9 0
+-wordExperience 18 511 5 0
+-wordExperience 18 1010 1 0
+-wordExperience 18 1013 1 0
+-wordExperience 18 1014 2 0
+#
+-eof
+#

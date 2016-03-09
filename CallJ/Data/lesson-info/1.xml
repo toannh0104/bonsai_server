@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xsl/overview.xsl"?>
+<lesson>
+	<id>1</id>
+	<title>This is a book</title>
+	<summary>
+		<content lang="ja_JP">Usage of は, です,も,これ,それ (etc) to form basic statements about an object..</content>
+		<content lang="ja_KANA">Usage of は, です,も,これ,それ (etc) to form basic statements about an object..</content>
+		<content lang="ja_ROME">Usage of ha, desu, mo, kore, sore (etc) to form basic statements about an object..</content>
+	</summary>
+	<description>
+		<content lang="ja_JP">In this lesson we will practise making simple statements about objects, regarding what they basically are.  We will also consider using pronouns to refer to objects closer to us than the listener (ie. "This book" etc), and those closer to the listener ("That book" etc).  Finally, we will also consider the use of "も" as in "also". The main forms to be practised in this lesson can be
+summarized by the following examples.</content>
+		<content lang="ja_KANA">In this lesson we will practise making simple statements about objects, regarding what they basically are.  We will also consider using pronouns to refer to objects closer to us than the listener (ie. "This book" etc), and those closer to the listener ("That book" etc).  Finally, we will also consider the use of "も" as in "also". The main forms to be practised in this lesson can be
+summarized by the following examples.</content>
+		<content lang="ja_ROME">In this lesson we will practise making simple statements about objects, regarding what they basically are.  We will also consider using pronouns to refer to objects closer to us than the listener (ie. "This book" etc), and those closer to the listener ("That book" etc).  Finally, we will also consider the use of "mo" as in "also". The main forms to be practised in this lesson can be
+summarized by the following examples.</content>
+	</description>
+	<example>
+		<section id="1">
+			<title><content lang="en">Objects vs People:</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP"><b>これ</b>はリンゴです</content>
+						<content lang="ja_KANA"><b>これ</b>はリンゴです</content>
+						<content lang="ja_ROME"><b>Kore</b> ha ringo desu</content>
+					</japanese>
+					<translated>
+						<content lang="en">"<b>This</b> is an apple" (object)</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP"><b>ジョンさん</b>は医者です</content>
+						<content lang="ja_KANA"><b>ジョンさん</b>はいしゃです</content>
+						<content lang="ja_ROME"><b>jyonsan</b> ha isha desu</content>
+					</japanese>
+					<translated>
+						<content lang="en">"<b>John</b> is a doctor" (person)</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+		<section id="2">
+			<title><content lang="en">Question vs Statement:</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">これはオレンジ<b>です</b></content>
+						<content lang="ja_KANA">これはオレンジ<b>です</b></content>
+						<content lang="ja_ROME">Kore ha orenji <b>desu</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">"This <b>is</b> an orange?"</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">それはオレンジ<b>ですか</b></content>
+						<content lang="ja_KANA">それはオレンジ<b>ですか</b></content>
+						<content lang="ja_ROME">Sore ha orenji <b>desu ka</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">"<b>Is</b> that an orange?"</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+		<section id="3">
+			<title><content lang="en">Positive vs Negative:</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">サリーさんはイギリス人<b>です</b></content>
+						<content lang="ja_KANA">サリーサンはイギリスじん<b>です</b></content>
+						<content lang="ja_ROME">sari-san ha igirisujin <b>desu</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">"Sally <b>is</b> English"</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">今西さんはイギリス人<b>ではありません</b></content>
+						<content lang="ja_KANA">いまにしさんはイギリスじん<b>ではありません</b></content>
+						<content lang="ja_ROME">Imanishi san ha igirisujin<b>de ha arimasen</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">"Imanishi  <b>is not</b> English"</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+	</example>
+	<grammar_points>
+<p>
+	<font size="4"><b><u>Grammar Point 1: Use of the -です to explain who or what someone/something is.</u></b></font>
+</p>
+
+<p>
+	<font size="3">
+	です can be tranlated as "is, are, am" etc.  Desu acts like a verb, in that it's form changes depending on the tense, politeness, and sign of the sentence.  In this lesson we will only be dealing with the polite, non-past form of Desu.  However, the following table shows the various forms of desu, and whilst this information is not required for this lesson, it may be usefull to become familiar with it now.
+	</font>
+</p>
+	<CENTER>
+	<table width="90%" border="1">
+		<tr bgcolor="#AAAAFF">
+			<td><i>Type</i></td>
+			<td><i>Plain</i></td>
+			<td><i>Polite</i></td>
+		</tr>
+		<tr>
+			<td>Present, Positive</td>
+			<td><font color="#666666">だ</font></td>
+			<td>です</td>
+		</tr>	
+		<tr>
+			<td>Present, Negative</td>
+			<td><font color="#666666">ではない</font></td>
+			<td>ではありません</td>
+		</tr>	
+		<tr>
+			<td>Past, Positive</td>
+			<td><font color="#666666">だった</font></td>
+			<td><font color="#666666">でした</font></td>
+		</tr>	
+		<tr>
+			<td>Past, Negative</td>
+			<td><font color="#666666">ではなかった</font></td>
+			<td><font color="#666666">ではありませんでした</font></td>
+		</tr>	
+	</table>
+	</CENTER>
+<p>
+	<font size="3">
+	Having seen the form that "です" takes, we will now consider it's use and positioning in a sentence.  Consider the following examples:
+	</font>
+</p>
+	<table>
+		<tr>
+			<td width="250">"わたしはジョン<u>です</u>"</td>
+			<td>"I am John (my name is John)"</td>
+		</tr>
+		<tr>
+			<td width="250">"これは電話<u>です</u>"</td>
+			<td>"This is a mobile phone"</td>
+		</tr>
+		<tr>
+			<td width="250">"それはりんご<u>ではありません</u>"</td>
+			<td>"That is not an apple"</td>
+		</tr>
+		<tr>
+			<td width="250">"それはバナナ<u>ですか</u>"</td>
+			<td>"Is that a banana?"</td>
+		</tr>
+	</table>
+	
+<p>
+	<font size="3">
+	<b>Notes:</b>
+	</font>
+	</p>
+	<p>- Desu, in whatever form, is used at the end of the sentence.  </p>
+	<p>- In the above sentences, は is used as the topic marker, ie. the object that we are talking about.</p>
+	<p>- それ and これ are both pronouns, meaning "That" and "This" respecitively.  See the next section for more information.</p>
+	<p>- In the last example, we can see that to form a question we simply add か to the end of the sentence.</p>
+	<hr />
+	<p>
+		<font size="4"><u><b>Grammar Point 2: は and も</b></u></font>
+	</p>
+	<p>
+		は is used to mark the subject of a sentence, and follows directly after the subject.  For example:
+	</p>
+		<p>これ<b>は</b>リンゴです - "This <b>is</b> an apple"</p>
+		<p>In this case, "This" is the subject of the sentence.</p>
+		<p>も is used in the sense of "also", and may also be placed after the subject, replacing は.  For example:</p>
+		<p>これ<b>も</b>リンゴです - "This <b>is also</b> an apple"</p>
+		<p>In this case, "This" is still the subject of the sentence, but the meaning now implies "also", as in that there is another object that the subject is being equated to.</p>
+	<hr />
+	<p>
+		<font size="4"><b><u>Grammar Point 3: Demonstratives</u></b></font>
+	</p>
+	<p>
+		<font size="3">
+  		Demonstatives are the words such as "This", "that", etc.  For this lesson, we will be considering the following 4 words:　これ、それ、あれ and どれ.  Which word is to be use depends on the location of the object being referred to by the word with regards to the speaker and the listener.  This is shown in the following table (S=Speaker, L=Listener):
+		</font>
+	</p>
+	<table width="90%" border="1">
+		<tr bgcolor="#AAAAFF">
+			<td><i>Japanese</i></td>
+			<td><i>English</i></td>
+			<td><i>Object Location</i></td>
+		</tr>
+		<tr>
+			<td>これ</td>
+			<td>This</td>
+			<td>Nearer S than L</td>
+		</tr>
+		<tr>
+			<td>それ</td>
+			<td>That</td>
+			<td>Nearer L than S</td>
+		</tr>
+		<tr>
+			<td>あれ</td>
+			<td>That (over there)</td>
+			<td>Away from both L &amp; S</td>
+		</tr>
+	</table>
+	<p>
+	どれ is a little bit different as it is a question word which could be translated as "which".  There are other constructs which follow the same pattern as the above (この, その, あの; こちら, そちら, あちら etc), but these will be covered in a later lesson.
+</p>
+	</grammar_points>
+</lesson>

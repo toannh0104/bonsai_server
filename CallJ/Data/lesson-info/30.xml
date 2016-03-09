@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xsl/overview.xsl"?>
+<lesson>
+	<id>30</id>
+	<title>Keigo</title>
+	<summary>
+		<content lang="ja_JP">Introduction to honorific and modest forms</content>
+		<content lang="ja_KANA">Introduction to honorific and modest forms</content>
+		<content lang="ja_ROME">Introduction to honorific and modest forms</content>
+	</summary>
+	<description>
+		<content lang="ja_JP">In this lesson we will practise polite language used when talking to those of higher social status. This polite language is called 'keigo' and is crucial for smooth interactions in Japanese society. There are two basic kinds of 'keigo' - honorific language is used for talking about the actions of one's superiors, while humble language is used to talk about the actions of oneself or one's peers. Each verb has both an honorific and humble form. For most verbs these forms are created from simple grammatical rules, but the most common verbs have special honorific and humble equivalents that must be learnt.</content>
+		<content lang="ja_KANA">In this lesson we will practise polite language used when talking to those of higher social status. This polite language is called 'keigo' and is crucial for smooth interactions in Japanese society. There are two basic kinds of 'keigo' - honorific language is used for talking about the actions of one's superiors, while humble language is used to talk about the actions of oneself or one's peers. Each verb has both an honorific and humble form. For most verbs these forms are created from simple grammatical rules, but the most common verbs have special honorific and humble equivalents that must be learnt.</content>
+		<content lang="ja_ROME">In this lesson we will practise polite language used when talking to those of higher social status. This polite language is called 'keigo' and is crucial for smooth interactions in Japanese society. There are two basic kinds of 'keigo' - honorific language is used for talking about the actions of one's superiors, while humble language is used to talk about the actions of oneself or one's peers. Each verb has both an honorific and humble form. For most verbs these forms are created from simple grammatical rules, but the most common verbs have special honorific and humble equivalents that must be learnt.</content>
+	</description>
+	<example>
+		<section>
+			<title><content lang="en">Special 'keigo'</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">先生は家に<b>いらっしゃる</b></content>
+						<content lang="ja_KANA">せんせいはいえに<b>いらっしゃる</b></content>
+						<content lang="ja_ROME">sensei wa ie ni <b>irassyaru</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">The professor will go home.</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">社長が新聞を<b>ご覧になる</b></content>
+						<content lang="ja_KANA">しゃちょうがしんぶんを<b>ごらんになる</b></content>
+						<content lang="ja_ROME">shachou ga shinbun wo <b>goranninaru</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">The company president will read the newspaper.</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">行かないと<b>申し上げた</b></content>
+						<content lang="ja_KANA">いかないと<b>もうしあげた</b></content>
+						<content lang="ja_ROME">ikanai to <b>mousiageta</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">I said, 'I won't go.'</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+		<section>
+			<title><content lang="en">Humble forms</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">招待状を<b>お送りする</b></content>
+						<content lang="ja_KANA">しょうたいじょうを<b>おおくりする</b></content>
+						<content lang="ja_ROME">syoutaijou wo <b>ookuri suru</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">I'll send an invitation.</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">明日先生が<b>お帰りになります</b></content>
+						<content lang="ja_KANA">あすせんせいが<b>おかえりになります</b></content>
+						<content lang="ja_ROME">asu sensei ga <b>okaeri ni narimasu</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">The professor will leave tomorrow.</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">先生が私の傘を<b>お借りになりました。</b></content>
+						<content lang="ja_KANA">せんせいが私の傘を<b>お借りになりました。</b></content>
+						<content lang="ja_ROME">sensei ga watasi no kasa o <b>okari ni narimasita</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">The professor borrowed by umbrella.</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+	</example>
+	<grammar_points>
+<p><font size="4"><u><b>Grammar Point 1: Honorific forms</b></u></font></p>
+<p>The honorific form is used when the subject of a sentence is a superior or has higher social status than the speaker. Using the correct honorific form shows respect for the subject. For most verbs, the honorific form is お plus the stem form of the verb plus になる . This honorific form is conjugated just like any other expression using the verb なる . Study the examples below.</p>
+<p>来週先生はお休みになります。	"The professor will go on vacation next week."</p>
+<p>社長は車をお買いになるそうです。     "I heard that the company president will buy a car."</p>
+<p><font size="4"><b>2.1 Irregular honorific forms</b></font></p>
+<p>While the honorific form for most verbs can be made with the pattern described above, the most common verbs have special honorific versions that must be learnt. The table below shows the main honorific forms that will be covered in this lesson. Note that all of the honorific verbs in this table are group 1 verbs.</p>
+<table align="center" width="90%" border="1">
+<tr><td>Dictionary From</td><td>Honorific Form</td><td>English Meaning</td></tr><tr><td>食べる/飲む</td><td>召し上がる</td><td>to eat</td></tr><tr><td>行く/来る/いる</td><td>いらっしゃる</td><td>to go, to come, to be</td></tr><tr><td>来る</td><td>見える</td><td>to come</td></tr><tr><td>言う</td><td>おっしゃる</td><td>to say</td></tr><tr><td>する</td><td>なさる</td><td>to do</td></tr><tr><td>見る</td><td>ご覧になる</td><td>to see</td></tr>
+</table>
+<p>Note that the "masu" form for several of the honorific verbs is irregular.</p>
+<table align="center" width="90%" border="1">
+<tr><td colspan="2">Dictionary Form "Masu" Form</td></tr><tr><td>いらっしゃる</td><td>いらっしゃいます</td></tr><tr><td>おっしゃる</td><td>おっしゃいます</td></tr><tr><td>なさる</td><td>なさいます</td></tr>
+</table>
+<p>Study the examples below.</p>
+<p>夕飯はもう召し上がりましたか。	"Have you eaten dinner yet?" (to a superior)</p>
+<p>社長は鈴木さんが賢いとおっしゃいました。    "The company president said that Mr. Suzuki is smart."</p>
+<p>先生は今研究室にいらっしゃいます。	    "The professor is in the lab now."</p>
+<p><font size="4"><u><b>Grammar Point 3: Modest (humble) forms</b></u></font></p>
+<p>The modest (or humble) form is used for describing the actions of oneself or one's peers when speaking to a superior. It indirectly shows respect by lowering the position of the speaker. The construction for the humble form is お followed by the stem of the verb followed by する . To conjugate verbs in this grammar pattern, simply conjugate the final する .</p>
+<p>Verbs which take the regular honorific form also take the regular modest form. Note that this grammar pattern is only used when the speaker's actions involve or affect a superior, and thus cannot be used in all situations. (See grammar point 3.2 below for exceptions.) Study the examples below.</p>
+<p>先生に手紙をお送りします。   "I will send a letter to the professor."</p>
+<p>お客さんとお話します。	     "I will speak with the client."</p>
+<p>Verbs consisting of a noun plus suru, such as 勉強する , have a different modest form. In this case, one of two special prefixes indicating politeness is added to the noun. In general, the prefix お is used for words of Japanese origin, while the prefix ご is used for kanji words of Chinese origin. However, お is used for some some common words (such as 勉強 , 掃除 and 電話) so the correct prefix must be learnt for these.</p>
+<p>明日お電話します。  "I will call tomorrow."</p>
+<p>来週またご連絡します。 "I will contact you again next week."</p>
+<p>今週中に書類をご送付します。   "I will send the documents by the end of this week."</p>
+<p><font size="4"><b>3.2 Irregular humble (modest) forms</b></font></p>
+<p>The verbs which take irregular honorific forms also have irregular humble forms. Note that all the verbs in the table below are group 1 verbs, with the exception of 拝見する .</p>
+<table align="center" width="90%" border="1">
+<tr><td>Dictionary From</td><td>Humble Form</td><td>English Meaning</td></tr><tr><td>食べる/飲む/もらう</td><td>いただく</td><td>to eat, to drink, to receive</td></tr><tr><td>する</td><td>致す</td><td>to do</td></tr><tr><td>言う</td><td>申す</td><td>to say</td></tr><tr><td>行く/来る</td><td>参る</td><td>to go, to come</td></tr><tr><td>いる</td><td>おる</td><td>to be</td></tr><tr><td>見る</td><td>拝見する</td><td>to see</td></tr>
+</table>
+<p>Study the examples below.</p>
+<p>私は田中と申します。	"My name is Tanaka."</p>
+<p>明日そちらに参ります。	"I will go there tomorrow." (to a superior)</p>
+<p>お客さんに手紙をいただきました。 "I received a letter from a client."</p>
+	</grammar_points>
+</lesson>

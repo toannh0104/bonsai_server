@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xsl/overview.xsl"?>
+<lesson>
+	<id>5</id>
+	<title>I like playing soccer.</title>
+	<summary>
+		<content lang="ja_JP">Further Adjectives</content>
+		<content lang="ja_KANA">Further Adjectives</content>
+		<content lang="ja_ROME">Further Adjectives</content>
+	</summary>
+	<description>
+		<content lang="ja_JP">In this lesson we will practise expressing simple feelings about objects with adjectives. Two forms of adjective use will be practiced. First we will learn a form called suki1, where the adjective is located at the end of the sentence and describes feelings about one noun. We will also consider a related form called suki2 where the adjective refers to an activity described by a simple sentence. To show how adjectives can modify verbs as adverbs, we'll look at sentences expressing changes in the size or number of objects. Finally, we will also learn the past form for each kind of adjective introduced in this lesson.</content>
+		<content lang="ja_KANA">In this lesson we will practise expressing simple feelings about objects with adjectives. Two forms of adjective use will be practiced. First we will learn a form called suki1, where the adjective is located at the end of the sentence and describes feelings about one noun. We will also consider a related form called suki2 where the adjective refers to an activity described by a simple sentence. To show how adjectives can modify verbs as adverbs, we'll look at sentences expressing changes in the size or number of objects. Finally, we will also learn the past form for each kind of adjective introduced in this lesson.</content>
+		<content lang="ja_ROME">In this lesson we will practise expressing simple feelings about objects with adjectives. Two forms of adjective use will be practiced. First we will learn a form called suki1, where the adjective is located at the end of the sentence and describes feelings about one noun. We will also consider a related form called suki2 where the adjective refers to an activity described by a simple sentence. To show how adjectives can modify verbs as adverbs, we'll look at sentences expressing changes in the size or number of objects. Finally, we will also learn the past form for each kind of adjective introduced in this lesson.</content>
+	</description>
+	<example>
+		<section id="1">
+			<title><content lang="en">suki1 vs suki2 vs adj:</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">私はサッカーが好きです</content>
+						<content lang="ja_KANA">わたしはサッカーがすきです</content>
+						<content lang="ja_ROME">watashi ha sakka- ga sukidesu</content>
+					</japanese>
+					<translated>
+						<content lang="en">"I like soccer." (suki1)</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">私はサッカーをするのが好きです</content>
+						<content lang="ja_KANA">わたしはサッカーをするのがすきです</content>
+						<content lang="ja_ROME">watashi ha sakka- wo surunoga sukidesu</content>
+					</japanese>
+					<translated>
+						<content lang="en">"I like playing soccer." (suki2)</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">リンゴは大きくなりました</content>
+						<content lang="ja_KANA">リンゴはおおきくなりました</content>
+						<content lang="ja_ROME">ringo ha ookiku narimashita</content>
+					</japanese>
+					<translated>
+						<content lang="en">"The apple became bigger." (adj)</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+		<section id="2">
+			<title><content lang="en">Positive vs Negative:</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">私はお酒が好きです</content>
+						<content lang="ja_KANA">わたしはおさけがすきです</content>
+						<content lang="ja_ROME">watashi ha osake ga sukidesu</content>
+					</japanese>
+					<translated>
+						<content lang="en">"I like alcohol."</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">私はお酒が好きではありません</content>
+						<content lang="ja_KANA">わたしはおさけがすきではありません</content>
+						<content lang="ja_ROME">watashi ha osake ga suki deha arimasen</content>
+					</japanese>
+					<translated>
+						<content lang="en">"I don't like alcohol."</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+		<section id="3">
+			<title><content lang="en">Present vs Past:</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">私はサッカーが好きでした</content>
+						<content lang="ja_KANA">わたしはサッカーがすきでした</content>
+						<content lang="ja_ROME">watashi ha sakka- ga sukidesita</content>
+					</japanese>
+					<translated>
+						<content lang="en">"I liked soccer." (suki1)</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">私はサッカーをするのが好きでした</content>
+						<content lang="ja_KANA">わたしはサッカーをするのがすきでした</content>
+						<content lang="ja_ROME">watashi ha sakka- wo surunoga sukidesita</content>
+					</japanese>
+					<translated>
+						<content lang="en">"I liked to play soccer." (suki2)</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">リンゴは大きくなりませんでした</content>
+						<content lang="ja_KANA">リンゴはおおきくなりませんでした</content>
+						<content lang="ja_ROME">ringo ha ookiku narimasendesita</content>
+					</japanese>
+					<translated>
+						<content lang="en">"The apple didn't become bigger." (suki1)</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+	</example>
+	<grammar_points>
+
+<p><font size="4"><u><b>Grammar Point 1: Expressing feelings about objects and activities</b></u></font></p>
+<p>The "na" adjective 好き is used to express one's positive feelings about an object or activity. It is equivalent to the expressions "to enjoy" or "to like" in English. In this lesson, the suki1 form is just the standard form for "na" adjectives that you practised in the previous lesson.</p>
+<table align="center" width="600" border="1">
+<tr>
+<th bgcolor="#aaaaff">Positive</th>
+</tr>
+<tr>
+<td>私はオレンジジュースが好きです - "I like orange juice."</td>
+</tr>
+<tr>
+<th bgcolor="#aaaaff">Negative</th>
+</tr>
+<tr>
+<td>私はコーラが好きではありません - "I don't like cola."</td>
+</tr>
+</table>
+
+<p>The example sentences above express feelings about a noun, so the adjective modifies the noun in question. A similar pattern that we call the suki2 form can be used for expressing feelings about an activity, but in this case the adjective modifies a simple sentence consisting of a verb followed by the marker の instead of a noun. The only difference between this form and the suki1 form is the phrase modified by the adjective, so the forms of the adjective itself are exactly the same.</p>
+<table align="center" width="600" border="1">
+<tr>
+<th bgcolor="#aaaaff">Positive</th>
+</tr>
+<tr>
+<td>私はコーヒーを飲むのが好きです - "I like drinking coffee."</td>
+</tr>
+<tr>
+<th bgcolor="#aaaaff">Negative</th>
+</tr>
+<tr>
+<td>私は勉強するのが好きではありません - "I don't like studying."</td>
+</tr>
+</table>
+
+<p><font size="4"><u><b>Grammar Point 2: Using adjectives as adverbs to express changes in size or number</b></u></font></p>
+<p>The examples below show an expression used to indicate that the size or quantity of an object (described by an adjective) has changed. This expression consists of an "i" adjective describing size or quantity followed by the verb なる ("to become"). To create the negative form of this pattern, we simply use the negative past form of the verb.</p>
+<table align="center" width="600" border="1">
+<tr>
+<th bgcolor="#aaaaff">Positive, Past</th>
+</tr>
+<tr>
+<td>魚は大きくなりました - "The fish became bigger."</td>
+</tr>
+<tr>
+<td>リンゴは多くなりました - "The apples became numerous." (The number of apples increased.)</td>
+</tr>
+<tr>
+<th bgcolor="#aaaaff">Negative, Past</th>
+</tr>
+<tr>
+<td>魚は大きくなりませんでした - "The fish didn't become bigger."</td>
+</tr>
+<tr>
+<td>リンゴは多くなりませんでした - "The apples didn't become more numerous." (The number of apples didn't increase.)</td>
+</tr>
+</table>
+
+<p>This pattern is actually an example of an adjective being used as an adverb to modify a verb. When an adjective is used in this way, the final "i" sound changes to "ku" and the verb that is modified directly follows the adjective. We will only consider the following adjectives in this lesson, but in general any "i" adjective can be used.</p>
+<table align="center" width="600" border="1">
+<tr>
+<th bgcolor="#aaaaff">Adjectives</th>
+</tr>
+<tr>
+<td>大きい - big / large</td>
+</tr>
+<tr>
+<td>多い - numerous / many</td>
+</tr>
+</table>
+
+	</grammar_points>
+</lesson>

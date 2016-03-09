@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xsl/overview.xsl"?>
+<lesson>
+	<id>4</id>
+	<title>That's a nice cake.</title>
+	<summary>
+		<content lang="ja_JP">Introduction to adjectives</content>
+		<content lang="ja_KANA">Introduction to adjectives</content>
+		<content lang="ja_ROME">Introduction to adjectives</content>
+	</summary>
+	<description>
+		<content lang="ja_JP">In this lesson we will practise making simple statements about objects, conveying simple information about the object via the use of adjectives. Two forms of adjective use will be practiced. First, we consider the standard usage where the adjective is located after the noun in question. We also look at the case where an adjective modifies the noun that directly follows it. Finally, this lesson also introduces a further form of the definitive that is used to modify a noun.</content>
+		<content lang="ja_KANA">In this lesson we will practise making simple statements about objects, conveying simple information about the object via the use of adjectives. Two forms of adjective use will be practiced. First, we consider the standard usage where the adjective is located after the noun in question. We also look at the case where an adjective modifies the noun that directly follows it. Finally, this lesson also introduces a further form of the definitive that is used to modify a noun.</content>
+		<content lang="ja_ROME">In this lesson we will practise making simple statements about objects, conveying simple information about the object via the use of adjectives. Two forms of adjective use will be practiced. First, we consider the standard usage where the adjective is located after the noun in question. We also look at the case where an adjective modifies the noun that directly follows it. Finally, this lesson also introduces a further form of the definitive that is used to modify a noun.</content>
+	</description>
+	<example>
+		<section id="1">
+			<title><content lang="en">Standard vs Modifier:</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">このケーキはおいしいです</content>
+						<content lang="ja_KANA">このケーキはおいしいです</content>
+						<content lang="ja_ROME">Kono ke-ki ha oishii desu</content>
+					</japanese>
+					<translated>
+						<content lang="en">"This cake is tasty." (standard)</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">これはおいしいケーキです</content>
+						<content lang="ja_KANA">これはおいしいケーキです</content>
+						<content lang="ja_ROME">Kore ha oishii ke-ki desu</content>
+					</japanese>
+					<translated>
+						<content lang="en">"This is a tasty cake." (modifier)</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+		<section id="2">
+			<title><content lang="en">Question vs Statement:</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">これは高いバッグです</content>
+						<content lang="ja_KANA">これはたかいバッグです</content>
+						<content lang="ja_ROME">Kore ha takai baggu desu</content>
+					</japanese>
+					<translated>
+						<content lang="en">"This is an expensive bag."</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">これは高いバッグですか</content>
+						<content lang="ja_KANA">これはたかいバッグですか</content>
+						<content lang="ja_ROME">Kore ha takai baggu desu ka?</content>
+					</japanese>
+					<translated>
+						<content lang="en">"Is this an expensive bag?"</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+		<section id="3">
+			<title><content lang="en">Positive vs Negative:</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">このコーヒーは熱いです</content>
+						<content lang="ja_KANA">このコーヒーはあついです</content>
+						<content lang="ja_ROME">Kono ko-hi- ha atsui desu</content>
+					</japanese>
+					<translated>
+						<content lang="en">"This coffee is hot."</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">このコーヒーは熱くないです</content>
+						<content lang="ja_KANA">このコーヒーはあつくないです</content>
+						<content lang="ja_ROME">Kono ko-hi- ha atsukunai desu</content>
+					</japanese>
+					<translated>
+						<content lang="en">"This coffee is not hot."</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+		<section id="4">
+			<title><content lang="en">Expressing "Also":</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">このビールも冷たいです</content>
+						<content lang="ja_KANA">このビールもつめたいです</content>
+						<content lang="ja_ROME">Kono bi-ru mo tsumetai desu</content>
+					</japanese>
+					<translated>
+						<content lang="en">"This beer is also cold."</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+	</example>
+	<grammar_points>
+
+<p><font size="4"><u><b>Grammar Point 1: The Standard and Modifier Forms of Adjectives</b></u></font></p>
+<p>Adjectives in Japanese fall into two distinct categories with distinct conjugations based on what the word looks like in the modifier form. The first type of adjective is derived from nouns, and in the standard form they are used in the same way. These adjectives are called "na" adjectives because they always end with "na" when used to modify the noun that follows them.</p>
+<table align="center" width="600" border="1">
+<tr>
+<th bgcolor="#aaaaff">Standard form of "na" adjectives</th>
+</tr>
+<tr>
+<td>鈴木さんは静かです - "Suzuki is quiet." (Statement)</td>
+</tr>
+<tr>
+<td>田中さんは元気ですか- "Is Tanaka feeling well?" (Question)</td>
+</tr>
+<tr>
+<td>この靴はきれいじゃありません - "These shoes are not clean." (Negative)</td>
+</tr>
+<tr>
+<th bgcolor="#aaaaff">Modifier form of "na" adjectives</th>
+</tr>
+<tr>
+<td>静かな人が好きです - "I like quiet people."</td>
+</tr>
+</table>
+
+<p>The second type of adjective ends with "i", so they are referred to as "i" adjectives. The standard form differs from that of "na" adjectives and nouns. The standard form and modifier form for these adjectives are identical.</p>
+<table align="center" width="600" border="1">
+<tr>
+<th bgcolor="#aaaaff">Standard form of "i" adjectives</th>
+</tr>
+<tr>
+<td>ジョンさんはやさしいです - "John is kind." (Statement)</td>
+</tr>
+<tr>
+<td>英語の本は高かったです - "English books were expensive." (Question)</td>
+</tr>
+<tr>
+<td>このコーヒーは温かくありません - "This coffee is not hot." (Negative)</td>
+</tr>
+<tr>
+<th bgcolor="#aaaaff">Modifier form of "i" adjectives</th>
+</tr>
+<tr>
+<td>おいしいケーキを食べました - "I ate a tasty cake."</td>
+</tr>
+<tr>
+<td>ジョンさんはやさしい人です - "John is a kind person."</td>
+</tr>
+</table>
+
+<p>Note that even though some words end in "i", for example きれい ("pretty"), they are actually "na" adjectives!</p>
+<p>Example:</p>
+<p>森にきれいな花があります - "There are some pretty flowers in the forest."</p>
+<p><font size="4"><u><b>Grammar Point 2: Expressing Also</b></u></font></p>
+<p>The marker "mo" expresses similarity between the topic of the current sentence and a topic that was previously discussed or introduced. It is used in place of the topic marker "ha", and conveys its meaning with the additional nuance of "also". It can be used in both statements and questions.</p>
+<p>Examples:</p>
+<p>サリーさんはアメリカ人です - "Sally is American."</p>
+<p>サリーさんもアメリカ人です - "Sally is also American."</p>
+<p>While both of the sentences describe Sally, the nuance is slightly different. In the first sentence we are simply describing Sally, but the second sentence implies that earlier in the conversation someone mentioned the fact that a different person was American. The second sentence can only be used in this context.</p>
+
+	</grammar_points>
+</lesson>

@@ -1,0 +1,10 @@
+# Student Config File
+#
+-id 5
+-name !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+-password aaaa
+#
+#
+#
+-eof
+#

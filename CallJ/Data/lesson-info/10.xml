@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xsl/overview.xsl"?>
+<lesson>
+	<id>10</id>
+	<title>I am drinking.</title>
+	<summary>
+		<content lang="ja_JP">Using the "て" form of the verb plus "いる" to express states and progressive actions</content>
+		<content lang="ja_KANA">Using the "て" form of the verb plus "いる" to express states and progressive actions</content>
+		<content lang="ja_ROME">Using the "te" form of the verb plus "iru" to express states and progressive actions</content>
+	</summary>
+	<description>
+		<content lang="ja_JP">In this lesson we will practise making statements about states and progressive actions. These sentences use the "て" form of the verb plus the auxiliary verb "いる", and are similar to the pattern "be doing" in English. We will also considering making sentences in both polite and plain forms. Two main forms to be practised in this lesson can be summarised by the following examples.</content>
+		<content lang="ja_KANA">In this lesson we will practise making statements about states and progressive actions. These sentences use the "て" form of the verb plus the auxiliary verb "いる", and are similar to the pattern "be doing" in English. We will also considering making sentences in both polite and plain forms. Two main forms to be practised in this lesson can be summarised by the following examples.</content>
+		<content lang="ja_ROME">In this lesson we will practise making statements about states and progressive actions. These sentences use the "te" form of the verb plus the auxiliary verb "iru", and are similar to the pattern "be doing" in English. We will also considering making sentences in both polite and plain forms. Two main forms to be practised in this lesson can be summarised by the following examples.</content>
+	</description>
+	<example>
+    <section id="1">
+      <title>
+        <content lang="en">Polite vs Plain:</content>
+      </title>
+      <sentence>
+        <item>
+          <japanese>
+            <content lang="ja_JP">父は新聞を<b>読んでいます</b></content>
+            <content lang="ja_KANA">ちちはしんぶんを<b>よんでいます</b></content>
+            <content lang="ja_ROME">titi ha sinbun wo <b>yondeimasu</b></content>
+          </japanese>
+          <translated>
+            <content lang="en">My father is reading the newspaper.</content>
+          </translated>
+        </item>
+        <item>
+          <japanese>
+            <content lang="ja_JP">父は新聞を<b>読んでいる</b></content>
+            <content lang="ja_KANA">ちちしはしんぶん<b>よんでいる</b></content>
+            <content lang="ja_ROME">titi ha sinbun wo <b>yondeiru</b></content>
+          </japanese>
+          <translated>
+            <content lang="en">My father is reading the newspaper.</content>
+          </translated>
+        </item>
+      </sentence>
+    </section>
+    <section id="2">
+      <title>
+        <content lang="en">Question vs Statement:</content>
+      </title>
+      <sentence>
+        <item>
+          <japanese>
+            <content lang="ja_JP">サリーさんは皿を<b>洗っていますか</b></content>
+            <content lang="ja_KANA">サリーさんはさらを<b>あらっていますか</b></content>
+            <content lang="ja_ROME">sari-san ha sara wo <b>aratteimasuka</b></content>
+          </japanese>
+          <translated>
+            <content lang="en">Is Sally washing the dishes?</content>
+          </translated>
+        </item>
+        <item>
+          <japanese>
+            <content lang="ja_JP">サリーさんは皿を<b>洗っています</b></content>
+            <content lang="ja_KANA">サリーさんはさらを<b>あらっています</b></content>
+            <content lang="ja_ROME">sari-san ha sara wo <b>aratteimasu</b></content>
+          </japanese>
+          <translated>
+            <content lang="en">Sally is washing the dishes.</content>
+          </translated>
+        </item>
+      </sentence>
+    </section>
+	</example>
+	<grammar_points>
+
+<p><font size="4"><u><b>Grammar Point 1:</b></u></font></p>
+<p>Sentences which express a state or ongoing action are formed by using the "te" form of the verb plus the auxiliary verb "iru". This pattern corresponds closely to the combination of "be" plus a gerund in English. (For example, "I am reading.") Unlike sentences which express existence using only the verb "iru", in this pattern "iru" is used for both people and inanimate objects. The polite form of this pattern is formed by using "imasu", the polite form of "iru".</p>
+<table align="center" width="600" border="1">
+<tr>
+<th bgcolor="#aaaaff">Plain</th>
+</tr>
+<tr>
+<td>ジョンさんは喫茶店でコーヒーを飲んでいる - "John is drinking coffee in a coffee shop." (plain)</td>
+</tr>
+<tr>
+<td>妹は本を読んでいる - "My younger sister is reading a book." (plain)</td>
+</tr>
+<tr>
+<th bgcolor="#aaaaff">Polite</th>
+</tr>
+<tr>
+<td>田中さんは学校でサリーさんを待っています - "Tanaka is waiting for Sally at school." (polite)</td>
+</tr>
+<tr>
+<td>兄はサムさんと話しています - "My older brother is talking to Sam." (polite)</td>
+</tr>
+</table>
+
+<p>Adding the question marker "ka" changes the statement into a question.</p>
+<table align="center" width="600" border="1">
+<tr>
+<th bgcolor="#aaaaff">Question, Polite</th>
+</tr>
+<tr>
+<td>鈴木さんはテレビを見ていますか - "Is Suzuki watching television?"</td>
+</tr>
+<tr>
+<td>田中さんは魚を食べていますか - "Is Tanaka eating fish?"</td>
+</tr>
+</table>
+
+	</grammar_points>
+</lesson>

@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xsl/overview.xsl"?>
+<lesson>
+	<id>22</id>
+	<title>Tom gave John a book.</title>
+	<summary>
+		<content lang="ja_JP">How to express the concept of giving and receiving</content>
+		<content lang="ja_KANA">How to express the concept of giving and receiving</content>
+		<content lang="ja_ROME">How to express the concept of giving and receiving</content>
+	</summary>
+	<description>
+		<content lang="ja_JP">In this lesson we will look at how to form sentences that convey the meaning of giving and receiving. There are a number of different verbs that are used for this - which verb should be used depends on the situation, the focus (subject) of the sentence, and the relative seniority level between the two people. Please refer to the notes for further information. The following table shows the kind of answers you will be expected to give throughout the lesson:</content>
+		<content lang="ja_KANA">In this lesson we will look at how to form sentences that convey the meaning of giving and receiving. There are a number of different verbs that are used for this - which verb should be used depends on the situation, the focus (subject) of the sentence, and the relative seniority level between the two people. Please refer to the notes for further information. The following table shows the kind of answers you will be expected to give throughout the lesson:</content>
+		<content lang="ja_ROME">In this lesson we will look at how to form sentences that convey the meaning of giving and receiving. There are a number of different verbs that are used for this - which verb should be used depends on the situation, the focus (subject) of the sentence, and the relative seniority level between the two people. Please refer to the notes for further information. The following table shows the kind of answers you will be expected to give throughout the lesson:</content>
+	</description>
+	<example>
+    <section id="1">
+      <title>
+        <content lang="en">Giving vs Receiving</content>
+      </title>
+      <sentence>
+        <item>
+          <japanese>
+            <content lang="ja_JP">トムさん は サムさん に リンゴ を あげました</content>
+            <content lang="ja_KANA">トムさん は サムさん に リンゴ を あげました</content>
+            <content lang="ja_ROME">Tom-san ha Sam-san ni ringo wo agemashita</content>
+          </japanese>
+          <translated>
+            <content lang="en">"Tom gave Sam an apple."</content>
+          </translated>
+        </item>
+        <item>
+          <japanese>
+            <content lang="ja_JP">サムさん は 私 に リンゴ を くれました</content>
+            <content lang="ja_KANA">サムさん は わたし に リンゴ を くれました</content>
+            <content lang="ja_ROME">Sam-san ha watashi ni ringo wo kuremashita</content>
+          </japanese>
+          <translated>
+            <content lang="en">"Sam gave me an apple."</content>
+          </translated>
+        </item>
+        <item>
+          <japanese>
+            <content lang="ja_JP">サムさん は トムさん に リンゴ を もらいました</content>
+            <content lang="ja_KANA">サムさん は トムさん に リンゴ を もらいました</content>
+            <content lang="ja_ROME">Sam-san ha Tom-san ni ringo wo moraimashita</content>
+          </japanese>
+          <translated>
+            <content lang="en">"Sam received an apple from Tom."</content>
+          </translated>
+        </item>
+      </sentence>
+    </section>
+    <section id="2">
+      <title>
+        <content lang="en">Polite vs Plain</content>
+      </title>
+      <sentence>
+        <item>
+          <japanese>
+            <content lang="ja_JP">ジョンさん は サリーさん に 花 を あげます</content>
+            <content lang="ja_KANA">ジョンさん は サリーさん に はな を あげます</content>
+            <content lang="ja_ROME">John-san ha Sally-san ni hana wo agemasu</content>
+          </japanese>
+          <translated>
+            <content lang="en">"John will give Sally a flower." (polite)</content>
+          </translated>
+        </item>
+        <item>
+          <japanese>
+            <content lang="ja_JP">ジョンさん は サリーさん に 花をあげる</content>
+            <content lang="ja_KANA">ジョンさん は サリーさん に はなをあげる</content>
+            <content lang="ja_ROME">John-san ha Sally-san ni hana wo ageru</content>
+          </japanese>
+          <translated>
+            <content lang="en">"John will give Sally a flower." (plain)</content>
+          </translated>
+        </item>
+        <item>
+          <japanese>
+            <content lang="ja_JP">ジョンさん は サリーさん に 花 を あげました</content>
+            <content lang="ja_KANA">ジョンさん は サリーさん に はな を あげました</content>
+            <content lang="ja_ROME">John-san ha Sally-san ni hana wo agemashita</content>
+          </japanese>
+          <translated>
+            <content lang="en">"John gave Sally a flower." (polite)</content>
+          </translated>
+        </item>
+        <item>
+          <japanese>
+            <content lang="ja_JP">ジョンさん は サリーさん に 花をあげた</content>
+            <content lang="ja_KANA">ジョンさん は サリーさん に はなをあげた</content>
+            <content lang="ja_ROME">John-san ha Sally-san ni hana wo ageta</content>
+          </japanese>
+          <translated>
+            <content lang="en">"John gave Sally a flower." (plain)</content>
+          </translated>
+        </item>
+      </sentence>
+    </section>
+    <section id="3">
+      <title>
+        <content lang="en">Non-past vs Past</content>
+      </title>
+      <sentence>
+        <item>
+          <japanese>
+            <content lang="ja_JP">先生 に プレゼント を あげます</content>
+            <content lang="ja_KANA">せんせい に プレゼント を あげます</content>
+            <content lang="ja_ROME">Sensei ni purezento wo agemasu</content>
+          </japanese>
+          <translated>
+            <content lang="en">"I will give the teacher a present." (non-past)</content>
+          </translated>
+        </item>
+        <item>
+          <japanese>
+            <content lang="ja_JP">先生 に プレゼント を あげました</content>
+            <content lang="ja_KANA">せんせい に プレゼント を あげました</content>
+            <content lang="ja_ROME">Sensei ni purezento wo sashiagemashita</content>
+          </japanese>
+          <translated>
+            <content lang="en">"I gave the teacher a present." (past)</content>
+          </translated>
+        </item>
+      </sentence>
+    </section>
+	</example>
+	<grammar_points>
+
+<p><font size="4"><u><b>Grammar Point 1: Giving</b></u></font></p>
+<p>The verb あげる is used to indicate that one person gives an object to someone else. The giver is marked with the topic marker は , the recipient is marked with the direction marker に , and the object given is marked with the direct object marker を . The focus of the sentence is placed on the giver.</p>
+<table align="center" width="600" border="1">
+<tr>
+<th bgcolor="#aaaaff">Past</th>
+</tr>
+<tr>
+<td>私は田中さんに本をあげました - "I gave Tanaka a book." (polite)</td>
+</tr>
+<tr>
+<td>鈴木さんはトムさんにリンゴをあげた - "Suzuki gave Tom an apple." (plain)</td>
+</tr>
+<tr>
+<th bgcolor="#aaaaff">Non-Past</th>
+</tr>
+<tr>
+<td>トムさんは田中さんにエンピツをあげます - "Tom will give Tanaka a pencil." (polite)</td>
+</tr>
+<tr>
+<td>私は鈴木さんにバナナをあげる - "I will give Suzuki a banana." (plain)</td>
+</tr>
+</table>
+
+<p>This word cannot be used if you are the recipient, or if you or a member of your family is the recipient and someone outside your family is the giver. See Grammar Point 2 below for an explanation of this case.</p>
+<p><font size="4"><u><b>Grammar Point 2: Giving when you or your family is the recipient</b></u></font></p>
+<p>In the last grammar point it was mentioned that there are certain circumstances under which あげる cannot be used. Specifically, if the giver is someone outside your family and you (or your family members) are the recipient, you must use the verb くれる instead. </p>
+<table align="center" width="600" border="1">
+<tr>
+<th bgcolor="#aaaaff">Rules for when to use くれる</th>
+</tr>
+<tr>
+<td>1. When you are the recipient</td>
+</tr>
+<tr>
+<td>2. When you or your family members are the recipient and the giver is someone outside your family</td>
+</tr>
+</table>
+
+<p>This verb has the same meaning as あげる in these situations, but clearly states that you (or one of your family members) is the recipient. In Japanese, a distinction is made between one's group (such as family) and others. This should be clear if you study the examples below.</p>
+<p>In the first two examples the giver is someone outside the speaker's family so くれる is used. </p>
+<p>田中さんが私にプレゼントをくれました - "Tanaka gave me a present." (polite)</p>
+<p>先生がリンゴを弟にくれた - "The teacher gave my younger brother an apple." (plain)</p>
+<p>The next two examples illustrate how the rules are applied. In the first sentence, because the speaker is the recipient くれる must be used. In the second sentence, the recipient is a family member but so is the giver, so あげる is used. This case is the same as the example in Grammar Point 1 where both the giver and receiver are third parties not in the speaker's family.</p>
+<p>姉が私に本をくれます - "My older sister will give me a book."</p>
+<p>姉が弟に本をあげました - "My older sister gave my younger brother a book."</p>
+<p><font size="4"><u><b>Grammar Point 3: Receiving</b></u></font></p>
+<p>The verb もらう is used to indicate that one person receives an object from someone else. In this case, the focus of the sentence is placed on the receiver. This word cannot be used if you are the giver. The recipient is marked with the topic marker は , the giver is marked with the direction marker に , and the object that is received is marked with the direct object marker を . </p>
+<table align="center" width="600" border="1">
+<tr>
+<th bgcolor="#aaaaff">Past</th>
+</tr>
+<tr>
+<td>私は田中さんに本をもらった - "I received a book from Tanaka." (plain)</td>
+</tr>
+<tr>
+<td>鈴木さんはトムさんにコーラをもらいました - "Suzuki received some cola from Tom." (polite)</td>
+</tr>
+<tr>
+<th bgcolor="#aaaaff">Non-past</th>
+</tr>
+<tr>
+<td>トムさんは友達にコーラをもらう - "Tom will receive some cola from his friend." (plain)</td>
+</tr>
+<tr>
+<td>私は兄に雑誌をもらいます - "I will receive a magazine from my older brother." (polite)</td>
+</tr>
+</table>
+
+	</grammar_points>
+</lesson>

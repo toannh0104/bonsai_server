@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xsl/overview.xsl"?>
+<lesson>
+	<id>17</id>
+	<title>You should rest</title>
+	<summary>
+		<content lang="ja_JP">Recommendations, rules, and suggestions</content>
+		<content lang="ja_KANA">Recommendations, rules, and suggestions</content>
+		<content lang="ja_ROME">Recommendations, rules, and suggestions</content>
+	</summary>
+	<description>
+		<content lang="ja_JP">In this lesson we will cover expressions used for giving recommendations and expressing preference for one thing over another. We will also see how to express situations where the speaker or listener must do something. Finally, we will learn an expression for giving the listener permission to do something without specifying the details. The main forms to be practised in this lesson can be summarised by the following examples.</content>
+		<content lang="ja_KANA">In this lesson we will cover expressions used for giving recommendations and expressing preference for one thing over another. We will also see how to express situations where the speaker or listener must do something. Finally, we will learn an expression for giving the listener permission to do something without specifying the details. The main forms to be practised in this lesson can be summarised by the following examples.</content>
+		<content lang="ja_ROME">In this lesson we will cover expressions used for giving recommendations and expressing preference for one thing over another. We will also see how to express situations where the speaker or listener must do something. Finally, we will learn an expression for giving the listener permission to do something without specifying the details. The main forms to be practised in this lesson can be summarised by the following examples.</content>
+	</description>
+	<example>
+		<section>
+			<title><content lang="en">Recommendations</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">早く帰った<b>方がいい</b></content>
+						<content lang="ja_KANA">はやくかえった<b>ほうがいい</b></content>
+						<content lang="ja_ROME">hayaku kaetta <b>hou ga ii</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">You should go home early.</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">私をあまり怒らせない<b>方がいい</b></content>
+						<content lang="ja_KANA">わたしをあまりおこらせない<b>ほうがいい</b></content>
+						<content lang="ja_ROME">watashi o amari okorasenai <b>hou ga ii</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">You shouldn't make me so angry.</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">そちらの計画の<b>ほうがいいです</b></content>
+						<content lang="ja_KANA">そちらのけいかくの<b>ほうがいいです</b></content>
+						<content lang="ja_ROME">sochira no keikaku no <b>hou ga iidesu</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">That plan is better.</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+		<section>
+			<title><content lang="en">Obligations</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">学校に<b>行かなければならない</b></content>
+						<content lang="ja_KANA">がっこうに<b>いかなければならない</b></content>
+						<content lang="ja_ROME">gakkou ni ika<b>nakereba naranai</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">I have to go to school.</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">勉強を<b>しなければならない</b></content>
+						<content lang="ja_KANA">べんきょうを<b>しなければならない</b></content>
+						<content lang="ja_ROME">benkyou o <b>shinakereba naranai</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">I have to study.</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">男には<b>やらなければならない</b>ことがある</content>
+						<content lang="ja_KANA">おとこには<b>やらなければならない</b>ことがある</content>
+						<content lang="ja_ROME">otoko niwa <b>yaranakereba naranai</b> koto ga aru</content>
+					</japanese>
+					<translated>
+						<content lang="en">A man has to do what a man has to do.</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+		<section>
+			<title><content lang="en">Permission</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">明日行ったら<b>いいです</b></content>
+						<content lang="ja_KANA">あすいったら<b>いいです</b></content>
+						<content lang="ja_ROME">asu ittara <b>iidesu</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">You can just go tomorrow.</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">そうしたら<b>いいです</b></content>
+						<content lang="ja_KANA">そうしたら<b>いいです</b></content>
+						<content lang="ja_ROME">sou shitara <b>iidesu</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">You can do that.</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">全部あなたの思うようにしたら<b>いいです</b></content>
+						<content lang="ja_KANA">ぜんぶあなたのおもうようにしたら<b>いいです</b></content>
+						<content lang="ja_ROME">zenbu anata no omou you ni sitara <b>iidesu</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">You can do it all however you please.</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+	</example>
+	<grammar_points>
+
+<p><font size="4"><u><b>Grammar Point 1: Recommendations and preferences</b></u></font></p>
+<p><font size="4"><b>1.1 Recommendations</b></font></p>
+<p>First, we will look at an expression used to give advice or recommendations to others. This expression corresponds to the phrase "You should ..." in English, and is a polite way to recommend that someone should do something. Study the following examples.</p>
+<p>Examples:</p>
+<p>明日京都に行った方がいいです - "You should go to Kyoto tomorrow."</p>
+<p>英語を勉強した方がいいです - "You should study English."</p>
+<p>In this expression, the plain past form of the verb that shows the action to be done is followed by "hou ga ii desu". For the plain form, the "desu" at the end of the sentence can be dropped.</p>
+<p><font size="4"><b>1.2 Preferences</b></font></p>
+<p>The expression we looked at in the last section can actually be used to show a preference for one thing when comparing two or more things. This expression is used when the speaker has a choice between two or more alternatives. In this case, instead of the plain past form of a verb, we use a noun directly followed by the marker "no". Here are a few examples.</p>
+<p>Examples:</p>
+<p>ピザの方がいいです - "Pizza would be better."</p>
+<p>この本の方がいいです - "This book is better."</p>
+<p><font size="4"><u><b>Grammar Point 2: Expressing obligations</b></u></font></p>
+<p>To express that someone must do something, the following expression is used. It corresponds to the expressions "must" or "have to" in English, and is used to describe both external obligations placed on the subject by someone else or the speaker's convictions about what needs to be done. To form this expression, change the plain negative form of the verb into the "ba" form and add the negative form of the verb "naru".</p>
+<p>Examples:</p>
+<p>宿題を出さなければならない - "You have to turn in your homework." (plain)</p>
+<p>今日は早く帰らなければなりません - "I must go home early today." (polite)</p>
+<p><font size="4"><b>2.1 The negative "ba" form of verbs</b></font></p>
+<p>The negative "ba" form of verbs is used in the expression above, but it can also be used to make conditional statements like the normal "ba" form. This kind of sentence describes the result that occurs if the action in the conditional clause is not performed. To construct this form, the final "i" sound of the plain negative form is replaced with "kereba". See the examples below.</p>
+<table align="center" width="600" border="1">
+<tr>
+<th bgcolor="#aaaaff">Group</th>
+<th bgcolor="#aaaaff">English</th>
+<th bgcolor="#aaaaff">Dictionary Form</th>
+<th bgcolor="#aaaaff">Plain negative</th>
+<th bgcolor="#aaaaff">Negative "ba" form</th>
+</tr>
+<tr>
+<td rowspan="3">1</td>
+<td>To go</td>
+<td>行く</td>
+<td>行かない</td>
+<td>行かなければ</td>
+</tr>
+<tr>
+<td>To drink</td>
+<td>飲む</td>
+<td>飲まない</td>
+<td>飲まなければ</td>
+</tr>
+<tr>
+<td>To play</td>
+<td>遊ぶ</td>
+<td>遊ばない</td>
+<td>遊ばなければ</td>
+</tr>
+<tr>
+<td rowspan="3">2</td>
+<td>To sleep</td>
+<td>寝る</td>
+<td>寝ない</td>
+<td>寝なければ</td>
+</tr>
+<tr>
+<td>To eat</td>
+<td>食べる</td>
+<td>食べない</td>
+<td>食べなければ</td>
+</tr>
+<tr>
+<td>To watch</td>
+<td>見る</td>
+<td>見ない</td>
+<td>見なければ</td>
+</tr>
+<tr>
+<td rowspan="2">3</td>
+<td>To come</td>
+<td>来る</td>
+<td>来ない</td>
+<td>来なければ</td>
+</tr>
+<tr>
+<td>To do</td>
+<td>する</td>
+<td>しない</td>
+<td>しなければ</td>
+</tr>
+</table>
+
+<p>Examples:</p>
+<p>切符を買わなければ電車に乗れません - "If you don't buy a ticket, you can't ride the train."</p>
+<p>明日雨が降らなければ行けます - "It it doesn't rain tomorrow, I can go."</p>
+<p><font size="4"><u><b>Grammar Point 3: Giving permission and making suggestions</b></u></font></p>
+<p>Finally, we will look at another expression used to give permission. This expression gives permission to do the specified action and suggests that it will be enough for the situation. It carries the nuance that other choices are also acceptable. It is similar to the expressions "You can just..." or "It will be fine if you..." in English.</p>
+<p>Examples:</p>
+<p>先生に聞いたらいいです - "Just ask the professor."</p>
+<p>スーツを着たらいいです - "You can just wear a suit."</p>
+<p>Remember that a sentence that uses the "te" form of the verb followed by "mo ii desu" gives permission to do the specified action. In this case, the focus is on the permission only. In contrast, a sentence using the "tara" form of a verb followed by "ii desu" is more of a suggestion that implies permission. This expression is often used when giving advice or recommending a course of action.</p>
+
+	</grammar_points>
+</lesson>

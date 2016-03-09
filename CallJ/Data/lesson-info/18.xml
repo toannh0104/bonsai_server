@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xsl/overview.xsl"?>
+<lesson>
+	<id>18</id>
+	<title>I will read this after lunch.</title>
+	<summary>
+		<content lang="ja_JP">Expressing the relative order of actions</content>
+		<content lang="ja_KANA">Expressing the relative order of actions</content>
+		<content lang="ja_ROME">Expressing the relative order of actions</content>
+	</summary>
+	<description>
+		<content lang="ja_JP">This lesson covers how to express the relative order of actions. First we will consider the case where an event occurs before or after another. Next, we will practise sentences where two events occur simultaneously. Finally, we will cover more advanced expressions for describing how often an event occurs or when it is expected to be completed.</content>
+		<content lang="ja_KANA">This lesson covers how to express the relative order of actions. First we will consider the case where an event occurs before or after another. Next, we will practise sentences where two events occur simultaneously. Finally, we will cover more advanced expressions for describing how often an event occurs or when it is expected to be completed.</content>
+		<content lang="ja_ROME">This lesson covers how to express the relative order of actions. First we will consider the case where an event occurs before or after another. Next, we will practise sentences where two events occur simultaneously. Finally, we will cover more advanced expressions for describing how often an event occurs or when it is expected to be completed.</content>
+	</description>
+	<example>
+		<section>
+			<title><content lang="en">'Before',</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">学校に行く<b>前に</b>水を飲んだ</content>
+						<content lang="ja_KANA">がっこうへいく<b>まえに</b>みずをのんだ</content>
+						<content lang="ja_ROME">gakkou ni iku <b>maeni</b> mizu wo nonda</content>
+					</japanese>
+					<translated>
+						<content lang="en">I drank some water <b>before</b> I went to school.</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+		<section>
+			<title><content lang="en">'After'</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">朝食を食べた<b>後で</b>テニスをした</content>
+						<content lang="ja_KANA">ちょうしょくをたべた<b>あとで</b>てにすをした</content>
+						<content lang="ja_ROME">tyoushoku wo tabeta <b>atode</b> tenisu wo shita</content>
+					</japanese>
+					<translated>
+						<content lang="en">I played tennis <b>after</b> I had breakfast.</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+		<section>
+			<title><content lang="en">'Then'</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">母が来て<b>から</b>朝食を食べる</content>
+						<content lang="ja_KANA">ははがきて<b>から</b>ちょうしょくをたべる</content>
+						<content lang="ja_ROME">haha ga kite <b>kara</b> tyoushoku wo taberu</content>
+					</japanese>
+					<translated>
+						<content lang="en">My mother will come, and <b>then</b> we will have breakfast.</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+		<section>
+			<title><content lang="en">'While'</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">テレビを見<b>ながら</b>新聞を読む</content>
+						<content lang="ja_KANA">てれびをみ<b>ながら</b>しんぶんをよむ</content>
+						<content lang="ja_ROME">terebi wo mi <b>nagara</b> shinbun wo yomu</content>
+					</japanese>
+					<translated>
+						<content lang="en">I read the newspaper <b>while I watch TV</b>.</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+		<section>
+			<title><content lang="en">'During'</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">休みの<b>間に</b>映画館へ行く</content>
+						<content lang="ja_KANA">やすみの<b>あいだに</b>えいがかんへいく</content>
+						<content lang="ja_ROME">yasumi no <b>aida ni</b> eigakan he iku</content>
+					</japanese>
+					<translated>
+						<content lang="en">I will go to the theatre <b>during the holidays</b>.</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+		<section>
+			<title><content lang="en">'By'</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">明日までに仕事をする</content>
+						<content lang="ja_KANA">あすまでにしごとをする</content>
+						<content lang="ja_ROME">asu <b>madeni</b> shigoto wo suru</content>
+					</japanese>
+					<translated>
+						<content lang="en">I will finish the work <b>by tomorrow.</b></content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+		<section>
+			<title><content lang="en">Frequency</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP"><b>一日に二回</b>兄はミチコに電話します</content>
+						<content lang="ja_KANA"><b>いちにちににかい</b>あにはみちこにでんわします</content>
+						<content lang="ja_ROME"><b>itiniti ni ni kai</b> ani ha mitiko nidenwa shimasu</content>
+					</japanese>
+					<translated>
+						<content lang="en">Michiko's brother calls her <b>two times a day</b>.</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+	</example>
+	<grammar_points>
+
+<p><font size="4"><u><b>Grammar Point 1: Before and after 前に and 後で</b></u></font></p>
+<p>We will start by practising the simplest case where one event comes before or after another. When a simple sentence using the plain non-past form plus the phrase 前に is followed by another sentence, it indicates that the action described by the first sentence occurs before the second. Similarly, for the case when one action is done after another, the plain past form of the verb for the simple sentence describing the first action plus 後で is followed by the second sentence.</p>
+<p>Examples:</p>
+<p>寝る<b>前に</b>歯を磨きます - "I brush my teeth <b>before</b> I sleep."</p>
+<p>昼ご飯を食べた<b>後で</b>映画を見に行きました - "I went to see a film <b>after</b> I ate lunch."</p>
+<p>Both of these grammar patterns merely indicate the relative order of actions and do not suggest any causal relationship between them.</p>
+<p><font size="4"><b>1.2 Using the "te" form of a verb plus から to show completed actions</b></font></p>
+<p>There is another pattern that is used to combine two sentences and indicate that the action described in one occurs before the other one. The first sentence ends with a verb in the "te" form plus から followed by the second sentence.</p>
+<p>Examples:</p>
+<p>昼ご飯を食べてから映画を見に行きましょう - "Let's go see a film after we eat lunch."</p>
+<p>宿題を出してから家に帰りました - "I turned in my homework and then I went home."</p>
+<p>The grammar pattern using 後で only indicates that one event occurs after another, but doesn't specify how much time elapsed between the time that the first finished and the second started. In contrast, when the "te" form plus から is used it implies a closer relation between the two events where one immediately follows another. In particular, the event described by the verb in the "te" form must be completed before the second action can occur or be carried out. So, this type of sentence makes the order explicitly clear. When the second sentence is used to make a suggestion or express the speaker's volition, the completion of the action in the first becomes a condition.</p>
+<p>In the first example below, the speaker is simply describing that he studied at some point after eating dinner. The speaker may have done other actions during the time between he finished eating and the time he started studying. In the second sentence, it's likely that the speaker started studying immediately after he finished eating. Depending on the context both of these grammar patterns may translate to 'after' in English, but each carries a different nuance.</p>
+<p>晩ご飯を食べた後で日本語を勉強しました - "I studied Japanese after I ate dinner."</p>
+<p>晩ご飯を食べてから日本語を勉強しました - "I ate dinner and then studied Japanese."</p>
+<p><font size="4"><u><b>Grammar Point 2: Two concurrent actions</b></u></font></p>
+<p>Next we will practise a grammar pattern that shows that one action occurs at the same time as another. A simple sentence with the stem of the verb plus ながら followed by another sentence indicates that the first action occurs or is performed at the same time as the main action described by the second sentence. The verb in the second simple sentence is the main action, and indicates the tense for the entire sentence. Both sentences must share the same subject.</p>
+<p>Examples:</p>
+<p>ラジオを聞きながら仕事をしました - "I worked while listening to the radio."</p>
+<p>コーラを飲みながらテレビを見るのが好きです - "I enjoy watching TV while drinking cola."</p>
+<p><font size="4"><u><b>Grammar Point 3: Periods of time</b></u></font></p>
+<p>When a phrase is marked with 間に in a sentence, it indicates that the speaker has specifically chosen that time period to emphasise. Similar to the case when the word "during" is used in English, the idea expressed by the sentence occurs within that time period. The action doesn't necessarily span the entire time period, and may complete before the time period does.</p>
+<p>Examples:</p>
+<p>日本にいる間に京都に行きたい - "I want to go to Kyoto while I'm in Japan."</p>
+<p>休みの間に映画館へ行く - "I will go to the theatre during the holidays."</p>
+<p>Either a noun plus the noun marker の or a verb phrase may be followed by 間に to indicate a time period.</p>
+<p><font size="4"><b>3.1 Expected completion</b></font></p>
+<p>The following grammar pattern is used when the speaker expects an action to be completed by a certain time. It may be the case that the action completes earlier than expected, but the word or phrase that precedes までに indicates the latest possible time that it can complete.</p>
+<p>明日までに宿題を出してください - "Please turn in your homework by tomorrow."</p>
+<p>三時までに京都に着きます - "I will arrive in Kyoto by 3 o'clock."</p>
+<p><font size="4"><u><b>Grammar Point 4: Expressing frequency</b></u></font></p>
+<p>Finally, we will study a grammar pattern used to describe the frequency of actions.</p>
+<p>Examples:</p>
+<p>一日に二回歯を磨きます - "I brush my teeth twice per day."</p>
+<p>月に一回出張で東京に行きます - "I go to Tokyo on business once per month."</p>
+<p>週に三回以上英語を勉強したいです - "I want to study English more than three times per week."</p>
+<p>This pattern is most often used to describe regularly occuring events or habitual actions. The counter 回 (pronounced かい ) is used to count repeated actions. When it follows a word for a fixed unit of time (for example, a week or a month) plus に , the sentence expresses the frequency of the event being discussed.</p>
+
+	</grammar_points>
+</lesson>

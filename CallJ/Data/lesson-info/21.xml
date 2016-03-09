@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xsl/overview.xsl"?>
+<lesson>
+	<id>21</id>
+	<title>Five stamps</title>
+	<summary>
+		<content lang="ja_JP">Using counters to count objects</content>
+		<content lang="ja_KANA">Using counters to count objects</content>
+		<content lang="ja_ROME">Using counters to count objects</content>
+	</summary>
+	<description>
+		<content lang="ja_JP">In this lesson we will look at how to use counters in Japanese. Counters are used to count objects, and the form of the counter may vary depending on the type of object. For example, one type of counter is used for long, thin objects (本: 1 pencil is counted as 一本), whereas another is used for counting flat objects (枚: 1 sheet of paper would be counted as 一枚). The following table shows the different forms that your answer may take during this lesson:</content>
+		<content lang="ja_KANA">In this lesson we will look at how to use counters in Japanese. Counters are used to count objects, and the form of the counter may vary depending on the type of object. For example, one type of counter is used for long, thin objects (ほん: 1 pencil is counted as いっぽん), whereas another is used for counting flat objects (まい: 1 sheet of paper would be counted as いちまい). The following table shows the different forms that your answer may take during this lesson:</content>
+		<content lang="ja_ROME">In this lesson we will look at how to use counters in Japanese. Counters are used to count objects, and the form of the counter may vary depending on the type of object. For example, one type of counter is used for long, thin objects (hon: 1 pencil is counted as ippon), whereas another is used for counting flat objects (mai: 1 sheet of paper would be counted as ichimai). The following table shows the different forms that your answer may take during this lesson:</content>
+	</description>
+	<example>
+    <section id="1">
+      <title>
+        <content lang="en">Statement vs Request</content>
+      </title>
+      <sentence>
+        <item>
+          <japanese>
+            <content lang="ja_JP">私は切手を2枚 買いました</content>
+            <content lang="ja_KANA">わたしはきってをにまいかいました</content>
+            <content lang="ja_ROME">Watashi ha kitte wo nimai kaimashita</content>
+          </japanese>
+          <translated>
+            <content lang="en">"I bought two stamps."</content>
+          </translated>
+        </item>
+        <item>
+          <japanese>
+            <content lang="ja_JP">切手を2枚 ください</content>
+            <content lang="ja_KANA">きってをにまいください</content>
+            <content lang="ja_ROME">Kitte wo nimai kudasai</content>
+          </japanese>
+          <translated>
+            <content lang="en">"Two stamps, please."</content>
+          </translated>
+        </item>
+      </sentence>
+    </section>
+    <section id="2">
+      <title>
+        <content lang="en">Polite vs Plain</content>
+      </title>
+      <sentence>
+        <item>
+          <japanese>
+            <content lang="ja_JP">トムさんはエンピツを2本買いました</content>
+            <content lang="ja_KANA">トムさんはエンピツをにほんかいました</content>
+            <content lang="ja_ROME">Tom-san ha enpitsu wo nihon kaimashita</content>
+          </japanese>
+          <translated>
+            <content lang="en">"Tom bought two pencils." (polite)</content>
+          </translated>
+        </item>
+        <item>
+          <japanese>
+            <content lang="ja_JP">トムさんはエンピツを2本買った</content>
+            <content lang="ja_KANA">トムさんはエンピツをにほんかった</content>
+            <content lang="ja_ROME">Tom-san ha enpitsu wo nihon katta</content>
+          </japanese>
+          <translated>
+            <content lang="en">"Tom bought two pencils." (plain)</content>
+          </translated>
+        </item>
+      </sentence>
+    </section>
+    <section id="3">
+      <title>
+        <content lang="en">Non-past vs Past</content>
+      </title>
+      <sentence>
+        <item>
+          <japanese>
+            <content lang="ja_JP">ビールを2本買います</content>
+            <content lang="ja_KANA">ビールをにはんかいます</content>
+            <content lang="ja_ROME">Bi-ru wo nihon kaimasu</content>
+          </japanese>
+          <translated>
+            <content lang="en">"I will buy two beers." (non-past)</content>
+          </translated>
+        </item>
+        <item>
+          <japanese>
+            <content lang="ja_JP">ビールを2本買いました</content>
+            <content lang="ja_KANA">ビールをにはんかいました</content>
+            <content lang="ja_ROME">Bi-ru wo nihon kaimashita</content>
+          </japanese>
+          <translated>
+            <content lang="en">"I bought two beers." (past)</content>
+          </translated>
+        </item>
+      </sentence>
+    </section>
+	</example>
+	<grammar_points>
+
+<p><font size="4"><u><b>Grammar Point 1: Counters</b></u></font></p>
+<p>Counters are suffixes that are used when counting objects in Japanese. In general, the size and shape of an object determines what kind of counter is used. Some of the most common counters, which appear in this lesson, are shown below. Note that the pronunciation of the counter may vary depending on the quantity of the object.</p>
+<table align="center" width="600" border="1">
+<tr>
+<th bgcolor="#aaaaff">Counter</th>
+<th bgcolor="#aaaaff">Type of Object</th>
+<th bgcolor="#aaaaff">Examples</th>
+</tr>
+<tr>
+<td>個</td>
+<td>Solid or round objects</td>
+<td>Apples, oranges, eggs</td>
+</tr>
+<tr>
+<td>枚</td>
+<td>Flat objects</td>
+<td>Sheets of paper, pizzas</td>
+</tr>
+<tr>
+<td>本</td>
+<td>Long, thin objects</td>
+<td>Umbrellas, pens, pencils, bottled drinks</td>
+</tr>
+<tr>
+<td>杯</td>
+<td>Cups of liquid</td>
+<td>Cups of coffee</td>
+</tr>
+<tr>
+<td>冊</td>
+<td>Books or magazines</td>
+<td>Books or magazines</td>
+</tr>
+<tr>
+<td>足</td>
+<td>Pairs of footwear, socks</td>
+<td>Pairs of socks or shoes</td>
+</tr>
+</table>
+
+<p>Here are some examples using different counters.</p>
+<p>ペンを2本買いました - "I bought two pens." (polite)</p>
+<p>鈴木さんは雑誌を3冊買った - "Suzuki bought three magazines." (plain)</p>
+<p>ピザを1枚ください - "One pizza, please."</p>
+<p>For quantities from one to ten, the traditional numerals given below can often be used if the correct counter is not known or no counter exists. However, whenever possible you should use the correct counter.</p>
+<table align="center" width="600" border="1">
+<tr>
+<th bgcolor="#aaaaff" colspan="2">Numeral Pronunciation</th>
+</tr>
+<tr>
+<td>1</td>
+<td>ひとつ</td>
+</tr>
+<tr>
+<td>2</td>
+<td>ふたつ</td>
+</tr>
+<tr>
+<td>3</td>
+<td>みっつ</td>
+</tr>
+<tr>
+<td>4</td>
+<td>よっつ</td>
+</tr>
+<tr>
+<td>5</td>
+<td>いつつ</td>
+</tr>
+<tr>
+<td>6</td>
+<td>むっつ</td>
+</tr>
+<tr>
+<td>7</td>
+<td>ななつ</td>
+</tr>
+<tr>
+<td>8</td>
+<td>やっつ</td>
+</tr>
+<tr>
+<td>9</td>
+<td>ここのつ</td>
+</tr>
+<tr>
+<td>10</td>
+<td>じゅう</td>
+</tr>
+</table>
+<p><font size="4"><b>1.2 Simple requests using counters</b></font></p>
+<p>We have already learnt how to make a simple request for an object with ください in an earlier lesson. The same basic pattern can be used with counters to indicate the quantity of the object.</p>
+<p>エンピツをください - "A pencil, please."</p>
+<p>エンピツを2本ください - "Two pencils, please."</p>
+<p>リンゴをください - "An apple, please."</p>
+<p>リンゴを3個ください - "Three apples, please."</p>
+<p>To specify the quantity of the object, simply indicate the number with the appropriate counter after を and before ください . Requests for different kinds of items can also be made by connecting sentences with と as in the following example.</p>
+<p>リンゴを3個とバナナを一本ください - "Three apples and one banana, please."</p>
+	</grammar_points>
+</lesson>

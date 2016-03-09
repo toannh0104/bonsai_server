@@ -1,0 +1,1368 @@
+## should we add sentence structure(that is grammar rule) restriction? 
+##no meaning for T1T2 in lesson 28, just for right counting
+## in default, the predicted word is an valid word (in dictionary)
+## slot, ParticleSUBJ (subject particle)　は、が、も
+## slot, ParticleWhere (where particle) で,に、へ
+## slot, ParticleWith (With particle)　と-> が
+##
+##########################################################
+##
+-word particle は
+-slot ParticleSUBJ
+-sub が
+-accept no
+-error DW
+-lesson 1
+-lesson 2
+-lesson 3
+-lesson 4
+-lesson 5
+-lesson 6
+-lesson 7
+-lesson 8
+-lesson 9
+-lesson 10
+-lesson 11
+-lesson 21
+-lesson 24
+-lesson 22
+-lesson 28
+
+##
+-word particle が
+-slot ParticleOBJ
+-sub は
+-accept no
+-error DW
+-lesson -1
+##
+-word particle も
+-slot ParticleSUBJ
+-sub は
+-error DW
+-accept no
+-lesson -1
+##
+-word particle も
+-slot ParticleSUBJ
+-sub が
+-accept no
+-error DW
+-lesson -1
+##
+-word definitive それ
+-sub これ
+-accept no
+-error DW
+-lesson 1
+##
+-word definitive これ
+-sub それ
+-accept no
+-error DW
+-lesson 1
+##
+-word particle と
+-slot ParticleWith
+-sub が
+-accept no
+-error DW
+-specific alt4
+-lesson -1
+##
+-word particle へ
+-slot ParticleWhere
+-sub に
+-accept no
+-error DW
+-lesson -1
+##
+-word particle に
+-slot ParticleWhere
+-sub へ
+-accept no
+-error DW
+-lesson -1
+##
+-word particle に
+-slot ParticleWhere
+-sub で
+-accept no
+-error DW
+-lesson -1
+##
+-word particle で
+-slot ParticleWhere
+-sub に
+-accept no
+-error DW
+-lesson -1
+##
+-word particle に
+-sub で
+-accept no
+-error DW
+-lesson 3
+##
+-word verb ある
+-sub いる
+-accept no
+-error DW
+-lesson 3
+##
+-word verb いる
+-sub ある
+-accept no
+-error DW
+-lesson 3
+
+##
+-word particle に
+-sub を
+-accept no
+-error DW
+-lesson 7
+
+-word particle を
+-slot ParticleObject
+-condition Subject==null
+-sub は
+-error DW
+-accept no
+-lesson 21
+
+-word particle を
+-slot ParticleObject
+-sub が
+-accept no
+-error DW
+-lesson 21
+
+-word quantifier つ
+-sub こ
+-accept yes
+-error DW
+-lesson 21
+
+-word quantifier こ
+-sub つ
+-accept yes
+-error DW
+-lesson 21
+
+-word quantifier さつ
+-sub まい
+-accept no
+-error DW
+-lesson 21
+
+-word quantifier 杯
+-sub まい
+-accept no
+-error DW
+-lesson 21
+
+-word quantifier 杯
+-sub ほん
+-accept no
+-error DW
+-lesson 21
+
+-word quantifier 本
+-sub こ
+-accept no
+-error DW
+-lesson 21
+
+-word quantifier 枚
+-sub こ
+-accept no
+-error DW
+-lesson 21
+
+-word quantifier 匹
+-sub こ
+-accept no
+-error DW
+-lesson 2
+
+-word quantifier 匹
+-sub つ
+-accept no
+-error DW
+-lesson 2
+
+
+-word particle に
+-slot ParticleWho
+-condition Subject==null
+-sub から
+-accept yes
+-error DW
+-lesson 22
+
+-word particle に
+-slot ParticleWho
+-condition Subject==null
+-sub は
+-accept yes
+-error DW
+-lesson 22
+-lesson 28
+
+-word particle に
+-slot ParticleWho
+-condition Subject==null
+-sub が
+-accept yes
+-error DW
+-lesson 22
+-lesson 28
+
+
+-word particle から
+-slot ParticleWho
+-sub に
+-accept yes
+-error DW
+-lesson 22
+
+
+-word verb くれる
+-sub あげる
+-accept no
+-error DW
+-lesson 22
+
+-word verb くれる
+-sub もらう
+-accept no
+-error DW
+-lesson 22
+
+-word verb あげる
+-sub くれる
+-accept no
+-error DW
+-lesson 22
+
+-word verb あげる
+-sub もらう
+-accept no
+-error DW
+-lesson 22
+
+-word verb あげる
+-sub あける
+-accept no
+-error DW
+-specific PCE
+-lesson 22
+
+-word verb もらう
+-sub くれる
+-accept no
+-error DW
+-lesson 22
+
+-word verb もらう
+-sub あげる
+-accept no
+-error DW
+-lesson 22
+
+
+##
+-group noun nationality
+-rule *じん sub *
+-accept no
+-error DW
+-lesson -1
+
+-group personname personname_male
+-rule * sub *さん,*くん
+-accept yes
+-specific honorific
+-error DW
+-lesson -1
+
+-group personname personname_female
+-rule * sub *さん,*ちゃん
+-accept yes
+-specific honorific
+-error DW
+-lesson -1
+
+-group noun polite_o
+-rule * sub お*
+-accept yes
+-specific honorific
+-error DW
+-lesson -1
+
+
+-word noun いもうとさん
+-sub おねえさん
+-accept no
+-specific family
+-error DW
+-lesson -1
+
+-word noun いもうとさん
+-sub いもうと
+-accept no
+-specific family
+-specific honorific
+-error DW
+-lesson -1
+
+-word noun いもうとさん
+-sub おもうとさん
+-accept no
+-specific family
+-valid no
+-error DW
+-lesson -1
+
+
+-word noun おねえさん
+-sub いもうとさん
+-accept no
+-specific family
+-error DW
+-lesson -1
+
+-word noun おねえさん
+-sub おにいさん
+-accept no
+-specific family
+-error DW
+-lesson -1
+
+-word noun おねえさん
+-sub あね
+-accept no
+-specific family
+-specific honorific
+-error DW
+-lesson -1
+
+-word noun おねえさん
+-sub ねえさん
+-accept no
+-specific family
+-specific honorific
+-error DW
+-lesson -1
+
+
+-word noun おねえさん
+-sub あねさん
+-accept no
+-specific family
+-specific honorific
+-valid no
+-error DW
+-lesson -1
+
+-word noun おねえさん
+-sub あねえさん
+-accept no
+-specific family
+-specific honorific
+-valid no
+-error DW
+-lesson -1
+
+-word noun おねえさん
+-sub おねいさん
+-accept no
+-specific family
+-specific honorific
+-valid no
+-error DW
+-lesson -1
+
+-word noun おねえさん
+-sub おねえ
+-accept no
+-specific family
+-specific honorific
+-valid no
+-error DW
+-lesson -1
+ 
+-word noun あね
+-sub あに
+-accept no
+-specific family
+-error DW
+-lesson -1
+
+-word noun あね
+-sub おにいさん
+-accept no
+-specific family
+-error DW
+-lesson -1
+
+-word noun あね
+-sub おねえさん
+-accept yes
+-specific family
+-specific honorific
+-error DW
+-lesson -1
+
+-word noun あね
+-sub ねえさん
+-accept yes
+-specific family
+-specific honorific
+-error DW
+-lesson -1
+
+
+-word noun おにいさん
+-sub あに
+-accept no
+-specific family
+-specific honorific
+-error DW
+-lesson -1
+
+-word noun おにいさん
+-sub にいさん
+-accept no
+-specific family
+-specific honorific
+-error DW
+-lesson -1
+
+-word noun おにいさん
+-sub おとうさん
+-accept no
+-specific family
+-error DW
+-lesson -1
+
+-word noun おにいさん
+-sub あにさん
+-accept no
+-specific family
+-specific honorific
+-valid no
+-error DW
+-lesson -1
+
+
+-word noun おばあさん
+-sub おおばさん
+-accept no
+-specific family
+-specific honorific
+-valid no
+-error DW
+-lesson -1
+
+-word noun おばあさん
+-sub おばあちゃん
+-accept yes
+-specific family
+-specific honorific
+-error DW
+-lesson -1
+
+-word noun おばあさん
+-sub おかあさん
+-accept no
+-specific family
+-error DW
+-lesson -1
+
+-word noun おばあさん
+-sub おじいさん
+-accept no
+-specific family
+-error DW
+-lesson -1
+
+-word noun おばあさん
+-sub おばさん
+-accept no
+-specific family
+-error DW
+-lesson -1
+
+-word noun おとうとさん
+-sub いもうとさん
+-accept no
+-specific family
+-error DW
+-lesson -1
+
+-word noun おとうとさん
+-sub おとうさん
+-accept no
+-specific family
+-error DW
+-lesson -1
+
+-word noun おとうとさん
+-sub おにいさん
+-accept no
+-specific family
+-error DW
+-lesson -1
+
+-word noun おとうとさん
+-sub おとうと
+-accept no
+-specific family
+-specific honorific
+-error DW
+-lesson -1
+
+-word noun おとうとさん
+-sub いとうとさん
+-accept no
+-specific family
+-specific honorific
+-valid no
+-error DW
+-lesson -1
+
+-word noun おとうと
+-sub おとうとさん
+-accept yes
+-specific family
+-specific honorific
+-error DW
+-lesson -1
+
+-word noun おとうと
+-sub いとうとさん
+-accept no
+-specific family
+-specific honorific
+-valid no
+-error DW
+-lesson -1
+
+-word noun おとうと
+-sub いもうとさん
+-accept no
+-specific family
+-valid no
+-error DW
+-lesson -1
+
+-word noun おとうと
+-sub いもうと
+-accept no
+-specific family
+-valid no
+-error DW
+-lesson -1
+
+-word noun おとうと
+-sub おとうさん
+-accept no
+-specific family
+-error DW
+-lesson -1
+
+-word noun おとうと
+-sub おにいさん
+-accept no
+-specific family
+-error DW
+-lesson -1
+
+-word noun おじいさん
+-sub おばあさん
+-accept no
+-specific family
+-valid no
+-error DW
+-lesson -1
+
+-word noun おじいさん
+-sub そふ
+-accept no
+-specific family
+-specific honorific
+-error DW
+-lesson -1
+
+-word noun おじいさん
+-sub おおじさん
+-accept no
+-specific family
+-specific honorific
+-valid no
+-error DW
+-lesson -1
+
+-word noun そふ
+-sub おばあさん
+-accept no
+-specific family
+-error DW
+-lesson -1
+
+-word noun そふ
+-sub おじいさん
+-accept yes
+-specific family
+-specific honorific
+-error DW
+-lesson -1
+
+-word noun そふ
+-sub おおじさん
+-accept no
+-specific family
+-specific honorific
+-valid no
+-error DW
+-lesson -1
+
+-word noun おじさん
+-sub おじ
+-accept no
+-specific family
+-specific honorific
+-error DW
+-lesson -1
+ 
+-word noun おじ
+-sub おじさん
+-accept yes
+-specific family
+-specific honorific
+-error DW
+-lesson -1
+
+-word noun おじさん
+-sub おじいさん
+-accept no
+-specific family
+-error DW
+-lesson -1
+
+-word noun おばさん
+-sub おばあさん
+-accept no
+-specific family
+-error DW
+-lesson -1
+
+-word noun あに
+-sub あね
+-accept no
+-specific family
+-error DW
+-lesson -1
+
+
+-word noun あに
+-sub おねえさん
+-accept no
+-specific family
+-error DW
+-lesson -1
+
+-word noun あに
+-sub おにいさん
+-accept yes
+-specific family
+-specific honorific
+-error DW
+-lesson -1
+
+-word noun おとうさん
+-sub ちち
+-accept no
+-specific family
+-specific honorific
+-error DW
+-lesson -1
+
+-word noun ちち
+-sub おとうさん
+-accept yes
+-specific family
+-specific honorific
+-error DW
+-lesson -1
+
+-word noun おかあさん
+-sub かあさん
+-accept no
+-specific family
+-specific honorific
+-error DW
+-lesson -1
+
+-word noun おかあさん
+-sub はは
+-accept no
+-specific family
+-specific honorific
+-error DW
+-lesson -1
+
+-word noun はは
+-sub かあさん
+-accept yes
+-specific family
+-specific honorific
+-error DW
+-lesson -1
+
+-word noun はは
+-sub おかあさん
+-accept yes
+-specific family
+-specific honorific
+-error DW
+-lesson -1
+
+##############################################
+##
+-word pronoun_person 私
+-sub 俺
+-accept no
+-specific samemeaning
+-specific honorific
+-error DW
+-lesson -1
+
+-word pronoun_person 私
+-sub 僕
+-accept no
+-specific samemeaning
+-specific honorific
+-error DW
+-lesson -1
+
+-word noun 公務員
+-sub 役人
+-accept no
+-specific related
+-error DW
+-lesson -1
+
+-word noun 先生
+-sub 教師
+-accept yes
+-specific samemeaning
+-error DW
+-lesson -1
+
+-word noun かない
+-sub つま
+-accept yes
+-specific samemeaning
+-error DW
+-lesson -1
+
+-word noun かない
+-sub おくさん
+-accept no
+-specific samemeaning
+-specific honorific
+-error DW
+-lesson -1
+
+-word noun つま
+-sub おくさん
+-accept no
+-specific samemeaning
+-specific honorific
+-error DW
+-lesson -1
+
+-word noun かない
+-sub おくさん
+-accept no
+-specific samemeaning
+-specific honorific
+-error DW
+-lesson -1
+
+-word noun いえ
+-sub うち
+-accept yes
+-specific samemeaning
+-error DW
+-lesson -1
+
+-word noun うち
+-sub いえ
+-accept yes
+-specific samemeaning
+-error DW
+-lesson -1
+
+-word noun がくせい
+-sub せいと
+-accept yes
+-specific samemeaning
+-error DW
+-lesson -1
+
+-word noun せいと
+-sub がくせい
+-accept yes
+-specific samemeaning
+-error DW
+-lesson -1
+
+-word noun けいかん
+-sub けいさつ
+-accept no
+-specific related
+-error DW
+-lesson -1
+
+-word noun けいかん
+-sub けいさつかん
+-accept yes
+-specific samemeaning
+-error DW
+-lesson -1
+
+
+-word noun 大使館
+-sub りょうじかん
+-accept yes
+-specific samemeaning
+-error DW
+-lesson -1
+
+-word noun 喫茶店
+-sub コーヒーかん
+-accept no
+-specific related
+-valid no
+-error DW
+-lesson -1
+
+
+-word noun 喫茶店
+-sub レストラン
+-accept no
+-specific related
+-error DW
+-lesson -1
+
+
+-word noun 地下鉄
+-sub でんしゃ
+-accept no
+-specific related
+-error DW
+-lesson -1
+
+-word noun 飛行場
+-sub くうこう
+-accept yes
+-specific samemeaning
+-error DW
+-lesson -1
+
+
+-word noun さくぶん
+-sub ろんぶん
+-accept no
+-specific related
+-error DW
+-lesson -1
+
+
+-word noun てがみ
+-sub メール
+-accept no
+-specific related
+-specific pic
+-error DW
+-lesson -1
+
+
+-word noun びじゅつかん
+-sub はくぶつかん
+-accept no
+-specific related
+-specific pic
+-error DW
+-lesson -1
+
+-word noun トースト
+-sub パン
+-accept yes
+-specific related
+-specific pic
+-error DW
+-lesson -1
+
+-word noun となり
+-sub そば
+-accept yes
+-specific samemeaning
+-error DW
+-lesson -1
+
+-word noun テーブル
+-sub つくえ
+-accept yes
+-specific samemeaning
+-error DW
+-lesson -1
+
+-word noun テーブル
+-sub コタツ
+-accept yes
+-specific samemeaning
+-error DW
+-lesson -1
+
+-word noun かいがん
+-sub うみがわ
+-accept yes
+-specific samemeaning
+-error DW
+-lesson -1
+
+-word noun やおや
+-sub やさいや
+-accept no
+-specific samemeaning
+-valid no
+-error DW
+-lesson -1
+
+-word noun とこや
+-sub りはつてん
+-accept yes
+-specific samemeaning
+-error DW
+-lesson -1
+
+-word noun ひきだし
+-sub たんす
+-accept yes
+-specific samemeaning
+-error DW
+-lesson -1
+
+-word noun ひきだし
+-sub つくえ
+-accept no
+-specific related
+-specific pic
+-error DW
+-lesson -1
+
+-word noun とっきゅう
+-sub とっきゅうでんしゃ
+-accept no
+-specific related
+-valid no
+-error DW
+-lesson -1
+
+
+-word noun おんなのこ
+-sub おんなのひと
+-accept yes
+-specific related
+-error DW
+-lesson -1
+
+
+-word noun おんなのこ
+-sub おんな
+-accept no
+-specific related
+-error DW
+-lesson -1
+
+
+-word noun おとこのこ
+-sub おとこのひと
+-accept yes
+-specific related
+-error DW
+-lesson -1
+
+
+-word noun おとこのこ
+-sub おとこ
+-accept no
+-specific related
+-error DW
+-lesson -1
+
+-word noun とけい
+-sub うでとけい
+-accept yes
+-specific samemeaning
+-error DW
+-lesson -1
+
+
+-word noun うでとけい
+-sub とけい
+-accept yes
+-specific samemeaning
+-error DW
+-lesson -1
+
+
+-word noun お土産
+-sub プレゼント
+-accept yes
+-specific samemeaning
+-error DW
+-lesson -1
+
+-word noun プレゼント
+-sub お土産
+-accept yes
+-specific samemeaning
+-error DW
+-lesson -1
+
+##
+-word noun 歯医者
+-sub はいしゃさん
+-accept yes
+-specific samemeaning
+-specific honorific
+-valid no
+-error DW
+-lesson -1
+
+-word noun 歯医者
+-sub いしゃ
+-accept no
+-specific related
+-specific coverage
+-error DW
+-lesson -1
+
+-word noun 歯医者
+-sub いしゃさん
+-accept no
+-specific related
+-specific coverage
+-valid no
+-error DW
+-lesson -1
+
+-word noun 晩御飯
+-sub ごはん
+-accept no
+-specific related
+-specific coverage
+-error DW
+-lesson -1
+
+-word noun 生徒
+-sub がくせい
+-accept no
+-specific related
+-specific coverage
+-error DW
+-lesson -1
+
+-word noun ティーシャツ
+-sub シャツ
+-accept no
+-specific related
+-specific coverage
+-error DW
+-lesson -1
+
+-word noun だいがく
+-sub がっこう
+-accept no
+-specific related
+-specific coverage
+-error DW
+-lesson -1
+
+-word noun ちゅうがっこう
+-sub がっこう
+-accept no
+-specific related
+-specific coverage
+-error DW
+-lesson -1
+
+-word noun ざっし
+-sub ほん
+-accept no
+-specific related
+-specific coverage
+-error DW
+-lesson -1
+
+-word noun オレンジジュース
+-sub ジュース
+-accept no
+-specific related
+-specific coverage
+-error DW
+-lesson -1
+
+-word noun ぎゅうにく
+-sub にく
+-accept no
+-specific related
+-specific coverage
+-error DW
+-lesson -1
+
+-word noun ざっし
+-sub ほん
+-accept no
+-specific related
+-specific coverage
+-error DW
+-lesson -1
+
+-word noun けんきゅうしつ
+-sub きょうしつ
+-accept no
+-specific related
+-specific coverage
+-error DW
+-lesson -1
+
+-word noun ふうとう
+-sub てがみ
+-accept no
+-specific related
+-specific pic
+-error DW
+-lesson -1
+
+-word noun うしろ
+-sub まえ
+-accept no
+-specific related
+-specific pic
+-error DW
+-lesson -1
+
+-word noun うえ
+-sub なか
+-accept no
+-specific related
+-specific pic
+-error DW
+-lesson -1
+
+-word noun とりにく
+-sub にわとり
+-accept no
+-specific related
+-specific pic
+-error DW
+-lesson -1
+
+-word noun いけ
+-sub みずうみ
+-accept no
+-specific related
+-specific pic
+-error DW
+-lesson -1
+
+-word noun はいざら
+-sub たばこ
+-accept no
+-specific related
+-specific pic
+-error DW
+-lesson -1
+
+-word noun エッセー
+-sub レポート
+-accept no
+-specific related
+-error DW
+-lesson -1
+
+-word noun じんじゃ
+-sub しんとじんじゃ
+-accept no
+-specific related
+-specific pic
+-error DW
+-lesson -1
+
+##
+-word noun かんごふ
+-sub かんごふさん
+-accept yes
+-specific sanemeaning
+-specific honorific
+-valid no
+-error DW
+-lesson -1
+
+-word noun いしゃ
+-sub いしゃさん
+-accept yes
+-specific sanemeaning
+-specific honorific
+-valid no
+-error DW
+-lesson -1
+
+-word noun いしゃ
+-sub おいしゃさん
+-accept yes
+-specific sanemeaning
+-specific honorific
+-valid no
+-error DW
+-lesson -1
+
+-word noun いしゃ
+-sub せんせい
+-accept yes
+-specific sanemeaning
+-specific honorific
+-error DW
+-lesson -1
+
+#######
+-word verb 翻訳する
+-sub やくす
+-accept yes
+-specific sanemeaning
+-error DW
+-lesson -1
+
+-word verb あるく
+-sub さんぽする
+-accept yes
+-specific sanemeaning
+-error DW
+-lesson -1
+
+-word verb あける
+-sub ひらく
+-accept yes
+-specific sanemeaning
+-error DW
+-lesson -1
+
+
+#######
+-word verb おこす
+-sub おきる
+-accept no
+-specific vivt
+-error DW
+-lesson -1
+
+-word verb たつ
+-sub たてる
+-accept no
+-specific vivt
+-error DW
+-lesson -1
+
+######
+
+-word verb 話す
+-sub そうだんする
+-accept no
+-specific related
+-error DW
+-lesson -1
+
+
+-word verb つく
+-sub くる
+-accept no
+-specific related
+-specific pic
+-error DW
+-lesson -1
+
+-word verb つく
+-sub いく
+-accept no
+-specific related
+-specific pic
+-error DW
+-lesson -1
+
+-word verb あける
+-sub あげる
+-accept no
+-specific related
+-specific PCE
+-error DW
+-lesson -1
+
+-word verb くる
+-sub いく
+-accept no
+-specific related
+-specific pic
+-error DW
+-lesson 2
+-lesson 6
+-lesson 7
+-lesson 28
+
+##################################################
+############################
+##Concept
+
+-grammar verb
+-vform present,pos,neg,polite,statement,question
+-lesson 1
+
+-grammar verb
+-vform present,past,pos,neg,polite,statement,question
+-lesson 2
+
+-grammar verb
+-vform present,past,pos,neg,polite,statement,question
+-lesson 3
+
+-grammar verb
+-vform present,pos,polite,statement,question
+-REF Masyou
+-invalidform Masho,T1T2
+-lesson 6
+
+-grammar verb
+-vform present,pos,neg,polite,statement
+-REF TETA
+-invalidform MasuTe_please,NaiTe_please,TeDe_please,T1T2_please
+-lesson 7
+
+-grammar verb
+-vform present,past,pos,polite,statement
+-lesson 21
+
+-grammar verb
+-vform present,past,pos,polite,statement,question
+-lesson 22
+
+-grammar verb
+-vform present,past,pos,polite,statement,question
+-REF SE
+-invalidform SaseSe,T1T2
+-lesson 28
+-eof

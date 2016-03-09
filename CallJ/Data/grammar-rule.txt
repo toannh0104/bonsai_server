@@ -1,0 +1,49 @@
+﻿#
+<rule DESU_SIMPLE1>
+	<form verbForm>
+		<setting>
+			present pos neg polite statement		
+			<condition [Verb] == is_also>
+				FORM neg off
+			</condition>
+		</setting>
+		<setting>
+			present pos polite question		
+			<condition [Subject] =group= ingroup>
+				FORM question off
+				FORM statement on
+				FORM neg on
+			</condition>
+		</setting>
+	</form>
+	<template>
+		{Subject 1 4} [Complement 1 4] {Verb 4 2} 
+	</template>
+	<rule Subject>
+		<template>
+			[Subject -1 -1] {Particle 3 1}
+			<restriction [Subject] =group= person>
+				{Person -1 -1 [Subject]} {Particle 3 1}
+			</restriction>
+			<restriction [Subject] =group= definitiveA>
+				[Subject 4 2] {Particle 3 1}
+			</restriction>
+		</template>
+		<rule Particle>
+			<template>
+				{ParticleSUBJ -1 -1}
+				<restriction [Verb] == is_also>
+					(particle も -1 -1)
+				</restriction>				
+			</template>
+		</rule>
+	</rule>
+	<rule Verb>
+		<template>
+			<vrule basic verbForm>			
+				(verb です -1 -1) 
+			</vrule>
+		</template>	
+	</rule>
+</rule>
+#

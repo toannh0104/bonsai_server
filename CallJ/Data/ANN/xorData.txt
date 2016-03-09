@@ -1,0 +1,16 @@
+# These are the training data features for an XOR neural network
+#
+# Case 1
+0.0 0.0
+0.0
+# Case 2
+1.0 0.0
+1.0
+# Case 3
+0.0 1.0
+1.0
+# Case 4
+1.0 1.0
+0.0
+#
+-eof

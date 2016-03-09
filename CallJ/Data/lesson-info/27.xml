@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xsl/overview.xsl"?>
+<lesson>
+	<id>27</id>
+	<title>I decided to see it</title>
+	<summary>
+		<content lang="ja_JP">Decisions</content>
+		<content lang="ja_KANA">Decisions</content>
+		<content lang="ja_ROME">Decisions</content>
+	</summary>
+	<description>
+		<content lang="ja_JP">In this lesson we will practise how to express one's decision to do something. This grammar pattern is used with volitional actions performed by the speaker. We will also learn a related expression used when the speaker performs an action due to arrangements or events outside of his control. The choice between these two expressions to use is determined by whether or not the speaker made a voluntary decision. See the example sentences below for examples.</content>
+		<content lang="ja_KANA">In this lesson we will practise how to express one's decision to do something. This grammar pattern is used with volitional actions performed by the speaker. We will also learn a related expression used when the speaker performs an action due to arrangements or events outside of his control. The choice between these two expressions to use is determined by whether or not the speaker made a voluntary decision. See the example sentences below for examples.</content>
+		<content lang="ja_ROME">In this lesson we will practise how to express one's decision to do something. This grammar pattern is used with volitional actions performed by the speaker. We will also learn a related expression used when the speaker performs an action due to arrangements or events outside of his control. The choice between these two expressions to use is determined by whether or not the speaker made a voluntary decision. See the example sentences below for examples.</content>
+	</description>
+	<example>
+		<section>
+			<title><content lang="en">Speaker's positive decision (suru)</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">シャツを買う<b>ことにする</b></content>
+						<content lang="ja_KANA">シャツをかう<b>ことにする</b></content>
+						<content lang="ja_ROME">shatsu wo kau <b>koto ni suru</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">I've decided to buy a shirt.</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">コーラを飲む<b>ことにしました</b></content>
+						<content lang="ja_KANA">コーラをのむ<b>ことにしました</b></content>
+						<content lang="ja_ROME">ko-ra wo nomu <b>koto ni shimashita</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">I decided to drink cola.</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+		<section>
+			<title><content lang="en">Speaker's negative decision (suru)</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">テレビを見ない<b>ことにした</b></content>
+						<content lang="ja_KANA">テレビをみない<b>ことにした</b></content>
+						<content lang="ja_ROME">terebi wo minai <b>koto ni sita</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">I decided not to watch TV.</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">漫画をよまない<b>ことにした</b></content>
+						<content lang="ja_KANA">まんがをよまない<b>ことにした</b></content>
+						<content lang="ja_ROME">manga wo yomanai <b>koto ni sita</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">I decided not to read comics.</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+		<section>
+			<title><content lang="en">Someone else's positive decision (naru)</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">日本で英語を教える<b>ことになりました。</b></content>
+						<content lang="ja_KANA">にほんでえいごをおしえる<b>ことになりました。</b></content>
+						<content lang="ja_ROME">nihon de eigo wo osieru <b>koto ni narimasita</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">It's been decided that I'll teach English in Japan.</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">京都に引っ越す<b>ことになった。</b></content>
+						<content lang="ja_KANA">きょうとにひっこす<b>ことになった。</b></content>
+						<content lang="ja_ROME">kyoto ni hikkosu <b>koto ni natta</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">It's been arranged that I'll move to Kyoto.</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+		<section>
+			<title><content lang="en">Someone else's negative decision (naru)</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">来月休まない<b>ことになりました。</b></content>
+						<content lang="ja_KANA">らいげつやすまない<b>ことになりました。</b></content>
+						<content lang="ja_ROME">raigetu yasumanai <b>koto ni narimasita</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">It's been decided that I won't go on vacation next month.</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">来年東京に行かない<b>ことになった。</b></content>
+						<content lang="ja_KANA">らいねんとうきょうにいかない<b>ことになった。</b></content>
+						<content lang="ja_ROME">rainen toukyou ni ikanai <b>koto ni natta</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">It's been decided that I won't go to Tokyo next year.</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+	</example>
+	<grammar_points>
+<p><font size="4"><u><b>Grammar Point 1: Volitional decisions to perform actions</b></u></font></p>
+<p>This grammar pattern is used when the speaker makes a volitional decision to do something. By adding ことにする to a subordinate clause that ends with a verb in the plain, non-past form the speaker indicates that he has made a decision to perform the action described in the clause.</p>
+<p>映画を見ることにしました。   "I decided to watch a movie."</p>
+<p>京都に行くことにした。	     "I decided to go to Kyoto."</p>
+<p>Negating the verb indicates that the speaker has decided not to perform the action.</p>
+<p>明日学校に行かないことにした。	  "I decided not to go to school tomorrow."</p>
+<p>その本を買わないことにしました。  "I decided not to buy that book."</p>
+<p>Note that this grammar pattern can only be used when the subordinate clause describes a volitional action by the speaker, so verbs and clauses that do not fit this restriction are not possible.</p>
+<p><font size="4"><u><b>Grammar Point 2: Events that occur irregardless of the speaker's volition</b></u></font></p>
+<p>While the previous grammar pattern is used for volitional decisions made by the speaker, the related expression ことになる is used for actions that happen because of something outside of the speaker's control. The nuance is that events have unfolded irregardless of the speaker's volition. The most common use of this expression is to show the result of a decision or arrangement made by an unspecified agent.</p>
+<p>東京に転勤することになりました。   "It has been decided that I will transfer to Tokyo."</p>
+<p>来年イギリスを留学することになった。   "It has been arranged that I will study abroad in England next year."</p>
+<p>Because this form expresses the idea that the action occurred irregardless of the speaker's volition, it is also used like the expressions 'turn out' or 'come about' in English.</p>
+<p>姉と喧嘩することになった。  "I ended up fighting with my older sister."</p>
+	</grammar_points>
+</lesson>

@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xsl/overview.xsl"?>
+<lesson>
+	<id>11</id>
+	<title>I will go to see a film.</title>
+	<summary>
+		<content lang="ja_JP">Going somewhere to do an action</content>
+		<content lang="ja_KANA">Going somewhere to do an action</content>
+		<content lang="ja_ROME">Going somewhere to do an action</content>
+	</summary>
+	<description>
+		<content lang="ja_JP">In this lesson we will practise a grammar pattern used to express the purpose of going somewhere. In this type of sentence, the subject goes somewhere to perform an action like eating or shopping. The main forms to be practised in this lesson are summarised by the following examples.</content>
+		<content lang="ja_KANA">In this lesson we will practise a grammar pattern used to express the purpose of going somewhere. In this type of sentence, the subject goes somewhere to perform an action like eating or shopping. The main forms to be practised in this lesson are summarised by the following examples.</content>
+		<content lang="ja_ROME">In this lesson we will practise a grammar pattern used to express the purpose of going somewhere. In this type of sentence, the subject goes somewhere to perform an action like eating or shopping. The main forms to be practised in this lesson are summarised by the following examples.</content>
+	</description>
+	<example>
+    <section id="1">
+      <title>
+        <content lang="en">GoToDo</content>
+      </title>
+      <sentence>
+        <item>
+          <japanese>
+            <content lang="ja_JP">私はコーラを<b>買いに行きます</b></content>
+            <content lang="ja_KANA">わたしはコーラを<b>かいに行きます</b></content>
+            <content lang="ja_ROME">watashi wa ko-ra o <b>kai ni ikimasu</b></content>
+          </japanese>
+          <translated>
+            <content lang="en">I will go out to buy cola.</content>
+          </translated>
+        </item>
+        <item>
+          <japanese>
+            <content lang="ja_JP">私はお酒を<b>飲みに行きます</b></content>
+            <content lang="ja_KANA">わたしはおさけを<b>のみにいきます</b></content>
+            <content lang="ja_ROME">watashi wa osake o <b>nomi ni ikimasu</b></content>
+          </japanese>
+          <translated>
+            <content lang="en">I will go out to drink alcohol.</content>
+          </translated>
+        </item>
+      </sentence>
+    </section>
+	</example>
+	<grammar_points>
+
+<p><font size="4"><u><b>Grammar Point 1: Going somewhere to do an action</b></u></font></p>
+<p>In this lesson, we will learn an expression used when a subject goes somewhere to perform an action. It is similar to the English expressions "go out for X" or "go to X to Y", and consists of a direct object marked by the direct object marker "wo" followed by the stem form of a verb plus the phrase "ni ikimasu". Note that this type of sentence is only used to indicate the purpose if that purpose is relatively unimportant or simple. It is often used for simple actions such as eating or shopping, but cannot be used when the action is complicated or very important to the subject. Optionally, the destination followed by the direction marker "ni" or "he" may appear at the beginning of the sentence, but this is not necessary in this lesson. Study the following examples.</p>
+<p>Examples:</p>
+<p>本を借りに行きます - "I will go to borrow a book."</p>
+<p>ケーキを食べに行きます - "I will go to eat cake."</p>
+<p>くつを買いに行きます - "I will go to buy shoes."</p>
+<p><font size="4"><u><b>Grammar Point 2: The stem form of verbs</b></u></font></p>
+<p>The stem form of the verb is used by the grammar pattern above, but also appears in other expressions. Different groups of verbs have different rules for creating the stem form, as explained below.</p>
+<p>Group 1: Replace the final "u" sound with "i".</p>
+<p>Group 2: Simply drop the final "ru" sound from the verb.</p>
+<p>Group 3: No particular rule exists, so the stem forms must be learnt.</p>
+<table align="center" width="600" border="1">
+<tr>
+<th bgcolor="#aaaaff">Group</th>
+<th bgcolor="#aaaaff">English</th>
+<th bgcolor="#aaaaff">Dictionary Form</th>
+<th bgcolor="#aaaaff">Stem form</th>
+</tr>
+<tr>
+<td>1</td>
+<td>To go</td>
+<td>行く</td>
+<td>行き</td>
+</tr>
+<tr>
+<td></td>
+<td>To drink</td>
+<td>飲む</td>
+<td>飲み</td>
+</tr>
+<tr>
+<td></td>
+<td>To play</td>
+<td>遊ぶ</td>
+<td>遊び</td>
+</tr>
+<tr>
+<td>2</td>
+<td>To sleep</td>
+<td>寝る</td>
+<td>寝</td>
+</tr>
+<tr>
+<td></td>
+<td>To eat</td>
+<td>食べる</td>
+<td>食べ</td>
+</tr>
+<tr>
+<td></td>
+<td>To watch</td>
+<td>見る</td>
+<td>見</td>
+</tr>
+<tr>
+<td>3</td>
+<td>To come</td>
+<td>来る</td>
+<td>来</td>
+</tr>
+<tr>
+<td></td>
+<td>To do</td>
+<td>する</td>
+<td>し</td>
+</tr>
+</table>
+
+	</grammar_points>
+</lesson>

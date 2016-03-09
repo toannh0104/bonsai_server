@@ -1,0 +1,5 @@
+sentence1: <s> おれ が きっさてん に コーラ を のむ </s>
+wseq1: 7 0 1 2 3 4 5 6 8
+phseq1: silB | o r e | g a | k i q s a t e N | n i | k o: r a | o | n o m u | silE
+cmscore1: 1.000 0.598 0.614 1.000 1.000 1.000 1.000 0.996 1.000
+score1: -62194.070313

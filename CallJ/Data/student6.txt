@@ -1,0 +1,10 @@
+# Student Config File
+#
+-id 6
+-name ���Ȃ���
+-password aaaa
+#
+#
+#
+-eof
+#

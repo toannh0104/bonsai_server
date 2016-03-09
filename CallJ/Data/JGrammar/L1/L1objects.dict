@@ -1,0 +1,78 @@
+0	[これ]	k o r e
+0	[それ]	s o r e
+0	[あれ]	a r e
+1	[は]	w a
+1	[が]	g a
+1	[も]	m o
+2	[鉛筆]	e N p i ts u
+2	[お菓子]	o k a sh i
+2	[お金]	o k a n e
+2	[お酒]	o s a k e
+2	[皿]	s a r a
+2	[お茶]	o ch a
+2	[お弁当]	o b e N t o u
+2	[傘]	k a s a
+2	[鞄]	k a b a N
+2	[花瓶]	k a b i N
+2	[紙]	k a m i
+2	[切手]	k i q t e
+2	[切符]	k i q p u
+2	[牛乳]	gy u u ny u u
+2	[薬]	k u s u r i
+2	[靴]	k u ts u
+2	[靴下]	k u ts u sh i t a
+2	[魚]	s a k a n a
+2	[雑誌]	z a q sh i
+2	[写真]	sh a sh i N
+2	[新聞]	sh i N b u N
+2	[辞書]	j i sh o
+2	[卵]	t a m a g o
+2	[地図]	ch i z u
+2	[手紙]	t e g a m i
+2	[電話]	d e N w a
+2	[時計]	t o k e i
+2	[荷物]	n i m o ts u
+2	[灰皿]	h a i z a r a
+2	[箱]	h a k o
+2	[箸]	h a sh i
+2	[花]	h a n a
+2	[封筒]	f u u t o u
+2	[本]	h o N
+2	[帽子]	b o u sh i
+2	[万年筆]	m a N n e N h i ts u
+2	[水]	m i z u
+2	[眼鏡]	m e g a n e
+2	[ビール]	b i: r u
+2	[コーヒー]	k o: h i:
+2	[コーラ]	k o: r a
+2	[オレンジジュース]	o r e N j i j u: s u
+2	[ワイン]	w a i N
+2	[林檎]	r i N g o
+2	[ケーキ]	k e: k i
+2	[ハンバーガー]	h a N b a: g a:
+2	[アイスクリーム]	a i s u k u r i: m u
+2	[ピザー]	p i z a:
+2	[ステーキ]	s u t e: k i
+2	[苺]	i ch i g o
+2	[トースト]	t o: s u t o
+2	[キャンドル]	ky a N d o r u
+2	[ラジオ]	r a j i o
+2	[パソコン]	p a s o k o N
+2	[プレゼント]	p u r e z e N t o
+2	[ティーシャツ]	t e: sh a ts u
+2	[テレビ]	t e r e b i
+3	[だ　　　d]	a
+3	[です]	d e s u
+3	[だった]	d a q t a
+3	[ではない]	d e w a n a i
+3	[ではなかった]	d e w a n a q k a q t a
+3	[でした]	d e sh i t a
+3	[ではありません]	d e w a a r i m a s e N
+3	[ではありませんでした]	d e w a a r i m a s e N d e sh i t a
+4	[えー]	e:
+4	[えーと]	e: t o
+4	[えーと]	e: q t o
+4	[あのー]	a n o:
+5	[<s>]	silB
+6	[</s>]	silE
+7	[sp]	sp

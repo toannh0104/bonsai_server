@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xsl/overview.xsl"?>
+<lesson>
+	<id>25</id>
+	<title>I think I can go tomorrow.</title>
+	<summary>
+		<content lang="ja_JP">Expressions with subordinate clauses</content>
+		<content lang="ja_KANA">Expressions with subordinate clauses</content>
+		<content lang="ja_ROME">Expressions with subordinate clauses</content>
+	</summary>
+	<description>
+		<content lang="ja_JP">This lesson focuses on expressions that use subordinate clauses marked by the particle "と". You can think of subordinate clauses as small sentences that are embedded in a larger sentence. We will practice expressions that use a subordinate clause to express what someone says or thinks. We will also learn an expression that describes or explains a noun without using a subordinate clause.</content>
+		<content lang="ja_KANA">This lesson focuses on expressions that use subordinate clauses marked by the particle "と". You can think of subordinate clauses as small sentences that are embedded in a larger sentence. We will practice expressions that use a subordinate clause to express what someone says or thinks. We will also learn an expression that describes or explains a noun without using a subordinate clause.</content>
+		<content lang="ja_ROME">This lesson focuses on expressions that use subordinate clauses marked by the particle "と". You can think of subordinate clauses as small sentences that are embedded in a larger sentence. We will practice expressions that use a subordinate clause to express what someone says or thinks. We will also learn an expression that describes or explains a noun without using a subordinate clause.</content>
+	</description>
+	<example>
+		<section>
+			<title><content lang="en">Quotation, Thought(引用)</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">行かない<b>と言った</b></content>
+						<content lang="ja_KANA">いかない<b>といった</b></content>
+						<content lang="ja_ROME">ikanai <b>to itta</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">I said I won't go.</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">野球をする<b>と思う</b></content>
+						<content lang="ja_KANA">やきゅうをする<b>とおもう</b></content>
+						<content lang="ja_ROME">yakyu wo siyou <b>to omou</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">I think they will play baseball.</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">明日行ける<b>と思います</b></content>
+						<content lang="ja_KANA">あすいける<b>とおもいます</b></content>
+						<content lang="ja_ROME">asu ikeru <b>to omoimasu</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">I think I can go tomorrow.</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">妹が好きだ<b>と言った</b></content>
+						<content lang="ja_KANA">いもうとがすきだ<b>といった</b></content>
+						<content lang="ja_ROME">imouto ga sukida <b>to itta</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">My younger sister said she likes it.</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">兄と行く<b>と言った</b></content>
+						<content lang="ja_KANA">あにといく<b>といった</b></content>
+						<content lang="ja_ROME">ani to iku <b>to itta</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">I said I'll go with my older brother.</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">弟がほしい<b>と思います</b></content>
+						<content lang="ja_KANA">おとうとがほしい<b>とおもいます</b></content>
+						<content lang="ja_ROME">otouto ga hosii <b>to omoimasu</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">I think my younger brother will want it.</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">野球をする<b>と言う</b></content>
+						<content lang="ja_KANA">やきゅうをする<b>という</b></content>
+						<content lang="ja_ROME">yakyuu wo suru <b>to iu</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">I'll say we will play baseball.</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">あそこへ行こう<b>と思います</b></content>
+						<content lang="ja_KANA">あそこへいこう<b>とおもいます</b></content>
+						<content lang="ja_ROME">asoko he ikou <b>to omoimasu</b> </content>
+					</japanese>
+					<translated>
+						<content lang="en">I'm thinking about going over there.</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">野球をしてみたい<b>と思う</b></content>
+						<content lang="ja_KANA">やきゅうをしてみたい<b>とおもう</b></content>
+						<content lang="ja_ROME">yakyuu wo sitemitai <b>to omou</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">I want to try playing baseball.</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">姉は勉強をする<b>と思う</b></content>
+						<content lang="ja_KANA">あねはべんきょうをする<b>とおもう</b></content>
+						<content lang="ja_ROME">ane ha benkyou wo suru <b>to omou</b></content>
+					</japanese>
+					<translated>
+						<content lang="en">I think my older sister will study.</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+		<section>
+			<title><content lang="en">Description(標識化)</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">京都大学<b>と言う</b>大学</content>
+						<content lang="ja_KANA">きょうとだいがく<b>という</b>だいがく</content>
+						<content lang="ja_ROME">kyoto-daigaku <b>to iu</b> daigaku</content>
+					</japanese>
+					<translated>
+						<content lang="en">the university called Kyoto University</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">ポチ<b>と言う</b>犬</content>
+						<content lang="ja_KANA">ぽち<b>という</b>いぬ</content>
+						<content lang="ja_ROME">pochi <b>to iu</b> inu</content>
+					</japanese>
+					<translated>
+						<content lang="en">a dog called pochi</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">大使館<b>という</b>建物</content>
+						<content lang="ja_KANA">たいしかん<b>という</b>たてもの</content>
+						<content lang="ja_ROME">taishikan <b>to iu</b> tatemono</content>
+					</japanese>
+					<translated>
+						<content lang="en">the building called the embassy</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+	</example>
+	<grammar_points>
+
+<p><font size="4"><u><b>Grammar Point 1: Indirect quotations with と言う</b></u></font></p>
+<p>First we will study indirect quotations. In this case, the speaker sums up the main points of what someone else said in their own words instead of repeating them word for word. The summary of the quote is a subordinate clause which is equivalent to a sentence in the plain form, followed by the particle と and the verb 言う . The past form of 言う is used to quote something that was said once, and is used the most often. </p>
+<p>兄は入学試験が簡単だと言った - "My older brother said the entrance exam was easy."</p>
+<p>先生はトムがドイツ人だと言いました - "The teacher said that Tom is German."</p>
+<p>友達はイタリアの食べ物がとてもおいしいと言った - "My friend said that Italian food is very delicious."</p>
+<p>母は明日買い物をすると言った - "My mother said she will go shopping tomorrow."</p>
+<p>Remember that verbs and "i" adjectives do not need any special endings for the plain form, but nouns and "na" adjectives must be followed by the copula だ . In the first two examples above, the subordinate clauses include the copula だ for this reason.</p>
+<p>When the plain form of 言う is used in this grammar pattern, it carries the nuance that the quote is said repeatedly or habitually.</p>
+<p>太郎はいつも忙しいと言います - "Taro always says that he's busy."</p>
+<p>父は仕事が大変だと言う - "My father says that his job is tough."</p>
+<p><font size="4"><u><b>Grammar Point 2: Thoughts</b></u></font></p>
+<p>Similar to how a subordinate clause and と言う is used to express what someone said, a subordinate clause and と思う is used to express what someone thinks or feels. Note that the non-past form (思う) is used for expressing one's own thoughts, but the "te" form (思っている) is used for expressing the thoughts of others.</p>
+<p>弟がほしいと思います - "I think my younger brother will want it."</p>
+<p>彼はやさしい人だと思う - "I think he is a kind person."</p>
+<p>太郎は英語は難しいと思っている - "Taro thinks that English is difficult."</p>
+<p>Just like the verb "to think" in English, と思う can also be used to express the speaker's opinion on uncertain events. Note that the focus is on what the speaker believes. In general, adding と思う to a statement in this way softens it and makes it less direct.</p>
+<p>田中さんは来ると思いますか - "Do you think Tanaka will come?"</p>
+<p>明日雨が降ると思います - "I think it will rain tomorrow."</p>
+<p>In addition to thoughts, と思う can also used the "tai" form of verbs. This usage conveys the speaker's hope to perform an action, and has the nuance that the speaker is uncertain about when the action will be performed.</p>
+<p>東京に行きたいと思います。- "I'd like to go to Tokyo."</p>
+<p>ヨーロッパを旅行したいと思います - "I'd like to visit Europe."</p>
+<p>When と思う is used with the the volitional form, it indicates the speaker has the intention to perform an action. When used by itself the volitional form directly expresses the speaker's desire at that moment, but adding と思う describes the desire in a somewhat objective. In English, "I intend to ..." or "I'm thinking of ..." are the expressions that are closest to this grammar pattern. Note that this grammar pattern is mainly used for expressing the speaker's desire or in direct questions to the listener.</p>
+<p>来年日本に行こうと思います。- "I intend to go to Japan next year."</p>
+<p>また海外に住もうと思いますか - "Are you thinking about living abroad again?"</p>
+<p><font size="4"><u><b>Grammar Point 2: Descriptions with という</b></u></font></p>
+<p>This grammar pattern is used to provide a description of a noun. In its simplest form, the pattern consists of two nouns linked by という . The second noun is a general category of which the first noun is a specific example. Either noun can also be a noun phrase. The expression XというY is usually translated into English as "X called Y" or "X named Y".</p>
+<p>ボストンという街に住んでいます - "I live in a city called Boston."</p>
+<p>この本は夏目漱石という有名な小説家に書かれました - "This book was written by a famous novelist named Soseki Natsume."</p>
+
+	</grammar_points>
+</lesson>

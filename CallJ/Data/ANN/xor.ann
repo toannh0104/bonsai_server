@@ -1,0 +1,48 @@
+#
+# CallJ ANN file
+#
+##############
+#
+-sigmoidFactor 2.0
+-maxLR 1.0
+-minLR 0.0050
+-mom 0.8
+-networkSize 1 5 1
+-nodeType 0
+-nodeNum 0
+-nodeLayer 0
+-nodeInputWeight 0.84202379427116
+-nodeInputWeight 2.428220381663028
+-nodeInputWeight 2.586132979353919
+-nodeType 0
+-nodeNum 1
+-nodeLayer 0
+-nodeInputWeight 1.2146415438226374
+-nodeInputWeight 2.445727715766024
+-nodeInputWeight -3.0900960760013505
+-nodeType 0
+-nodeNum 2
+-nodeLayer 0
+-nodeInputWeight 0.9754330287680905
+-nodeInputWeight -3.003622627779232
+-nodeInputWeight 2.11267562726679
+-nodeType 0
+-nodeNum 3
+-nodeLayer 0
+-nodeInputWeight 0.6233272303095431
+-nodeInputWeight -1.1492238357547797
+-nodeInputWeight 0.6448601927872589
+-nodeType 0
+-nodeNum 4
+-nodeLayer 0
+-nodeInputWeight 0.5729591910054463
+-nodeInputWeight 0.6626804419436857
+-nodeInputWeight 0.3412299221903824
+-nodeType 1
+-nodeNum 0
+-nodeInputWeight 3.686046715831122
+-nodeInputWeight 3.334112072731605
+-nodeInputWeight 5.798211097751969
+-nodeInputWeight 5.247259116912229
+-nodeInputWeight -0.04575274603770178
+-nodeInputWeight -3.7165891156933593

@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xsl/overview.xsl"?>
+<lesson>
+	<id>15</id>
+	<title>This, that, and the other</title>
+	<summary>
+		<content lang="ja_JP">Listing words and actions</content>
+		<content lang="ja_KANA">Listing words and actions</content>
+		<content lang="ja_ROME">Listing words and actions</content>
+	</summary>
+	<description>
+		<content lang="ja_JP">In this lesson we will practise sentences which involve incomplete lists of actions or objects. We will first consider incomplete lists of nouns, and then move on to sentences which describe lists of actions. The main forms to be practised in this lesson are summarised by the following examples.</content>
+		<content lang="ja_KANA">In this lesson we will practise sentences which involve incomplete lists of actions or objects. We will first consider incomplete lists of nouns, and then move on to sentences which describe lists of actions. The main forms to be practised in this lesson are summarised by the following examples.</content>
+		<content lang="ja_ROME">In this lesson we will practise sentences which involve incomplete lists of actions or objects. We will first consider incomplete lists of nouns, and then move on to sentences which describe lists of actions. The main forms to be practised in this lesson are summarised by the following examples.</content>
+	</description>
+	<example>
+		<section>
+			<title><content lang="en">Listing actions(動作の並列)</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">リンゴを食べ<b>たり</b>バナナを食べ<b>たり</b>しました</content>
+						<content lang="ja_KANA">リンゴをたべ<b>たり</b>バナナをたべ<b>たり</b>しました</content>
+						<content lang="ja_ROME">ringo wo tabe<b>tari</b> banana wo tabe<b>tari</b> simasu</content>
+					</japanese>
+					<translated>
+						<content lang="en">I ate apples and ate bananas.</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+		<section>
+			<title><content lang="en">Listing subjects and objects(主語や目的語の並列)</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">バス<b>や</b>タクシーは便利だ</content>
+						<content lang="ja_KANA">バス<b>や</b>タクシーはべんりだ</content>
+						<content lang="ja_ROME">basu <b>ya</b> takusi wa benri da</content>
+					</japanese>
+					<translated>
+						<content lang="en">Buses and taxis are convenient.</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">コーラ<b>や</b>オレンジジュースを飲んだ</content>
+						<content lang="ja_KANA">コーラ<b>や</b>オレンジジュースをのんだ</content>
+						<content lang="ja_ROME">ko-ra <b>ya</b> orenjiju-su wo nonda</content>
+					</japanese>
+					<translated>
+						<content lang="en">I drank cola and orange juice.</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+		<section>
+			<title><content lang="en">Listing phrases(句の並列)</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">テレビを見<b>たり</b>先生に聞い<b>たり</b>しました</content>
+						<content lang="ja_KANA">テレビをみ<b>たり</b>先生にきい<b>たり</b>しました</content>
+						<content lang="ja_ROME">terebi wo mi<b>tari</b> sensei ni kii<b>tari</b> simasita</content>
+					</japanese>
+					<translated>
+						<content lang="en">I watched TV, asked the teacher a question, and did other things.</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">お菓子を食べ<b>たり</b>宿題をし<b>たり</b>する</content>
+						<content lang="ja_KANA">おかしをたべ<b>たり</b>しゅくだいをし<b>たり</b>する</content>
+						<content lang="ja_ROME">okasi wo tabe<b>tari</b> shukudai wo si<b>tari</b> suru</content>
+					</japanese>
+					<translated>
+						<content lang="en">I eat sweets, do my homework, and do other things.</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+		<section>
+			<title><content lang="en">Listing predicates(述語の並列)</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">勝負で勝っ<b>たり</b>負け<b>たり</b>する</content>
+						<content lang="ja_KANA">しょうぶでかっ<b>たり</b>まけ<b>たり</b>する</content>
+						<content lang="ja_ROME">shoubu de kat<b>tari</b> make<b>tari</b> suru</content>
+					</japanese>
+					<translated>
+						<content lang="en">Sometimes I win games and sometimes I lose.</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+	</example>
+	<grammar_points>
+
+<p><font size="4"><u><b>Grammar Point 1: Listing subjects and objects with "ya"</b></u></font></p>
+<p>You have already studied the list marker "to", which translates as the English word "and" and is used to give a complete list of nouns as the subject or direct object of a sentence. The incomplete list marker "ya" is similar, but it implies some other nouns are not mentioned in the sentence.</p>
+<p>Examples:</p>
+<p>コーラとお茶を飲みました - "I drank cola and tea."</p>
+<p>コーラやお茶を飲みました - "I drank cola, tea, and other things."</p>
+<p>In the first sentence in the example above, the speaker is only talking about cola and tea. But in the second sentence, the implication is that the speaker drank many things but is only mentioning two of them.</p>
+<p><font size="4"><u><b>Grammar Point 2: The "tari" form of verbs</b></u></font></p>
+<p>When enumerating an incomplete list of actions, a form of the verb called the "tari" form is used. Each action mentioned is put into the "tar" form, and the verb "suru" is added to the end of the sentence. The "tari" form of verbs is constructed by adding a "ri" sound to the end of the plain past tense. The tense of the sentence is determined by the "suru" at the end.</p>
+<table align="center" width="600" border="1">
+<tr>
+<th bgcolor="#aaaaff">Group</th>
+<th bgcolor="#aaaaff">English</th>
+<th bgcolor="#aaaaff">Dictionary Form</th>
+<th bgcolor="#aaaaff">Plain Past</th>
+<th bgcolor="#aaaaff">"tari" form</th>
+</tr>
+<tr>
+<td>1</td>
+<td>To go</td>
+<td>行く</td>
+<td>行った</td>
+<td>行ったり</td>
+</tr>
+<tr>
+<td></td>
+<td>To drink</td>
+<td>飲む</td>
+<td>飲んだ</td>
+<td>飲んだり</td>
+</tr>
+<tr>
+<td></td>
+<td>To play</td>
+<td>遊ぶ</td>
+<td>遊んだ</td>
+<td>遊んだり</td>
+</tr>
+<tr>
+<td>2</td>
+<td>To sleep</td>
+<td>寝る</td>
+<td>寝た</td>
+<td>寝たり</td>
+</tr>
+<tr>
+<td></td>
+<td>To eat</td>
+<td>食べる</td>
+<td>食べた</td>
+<td>食べたり</td>
+</tr>
+<tr>
+<td></td>
+<td>To watch</td>
+<td>見る</td>
+<td>見た</td>
+<td>見たり</td>
+</tr>
+<tr>
+<td>3</td>
+<td>To come</td>
+<td>来る</td>
+<td>来た</td>
+<td>来たり</td>
+</tr>
+<tr>
+<td></td>
+<td>To do</td>
+<td>する</td>
+<td>した</td>
+<td>したり</td>
+</tr>
+</table>
+
+<p><font size="4"><b>2.1 Listing phrases and actions</b></font></p>
+<p>When the "tari" form of verbs is used to enumerate a few actions out of a larger list, it performs the same function that "ya" does for nouns. In other words, it indicates that there were additional actions which were not mentioned in the sentence. No relative order of the actions is implied.</p>
+<p>週末はテレビを見たり本を読んだりします - "On weekends I watch TV, read books, and so on."</p>
+<p>学校で友達と話したり勉強したりします - "At school I talk to my friends, study, and do other things."</p>
+<p><font size="4"><b>2.2 Listing predicates</b></font></p>
+<p>The "tari" form is also used to describe alternating states or repeating actions done by the same subject. This usage carries the nuance that sometimes the subject is or does one thing, and at other times it is or does something else.</p>
+<p>勝負で勝ったり負けたりする - "Sometimes I win games and sometimes I lose."</p>
+<p>バスは来たり来なかったりします - "Sometimes the bus comes and sometimes it doesn't."</p>
+
+	</grammar_points>
+</lesson>

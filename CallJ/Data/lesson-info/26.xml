@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xsl/overview.xsl"?>
+<lesson>
+	<id>26</id>
+	<title>Even though Taro is busy, he's late.</title>
+	<summary>
+		<content lang="ja_JP">Expressions with concessions</content>
+		<content lang="ja_KANA">Expressions with concessions</content>
+		<content lang="ja_ROME">Expressions with concessions</content>
+	</summary>
+	<description>
+		<content lang="ja_JP">In this lesson we will learn how to make expressions with concessions. In both grammar patterns that we will practise, the main sentence describing the result is preceded by another sentence that sets down conditions on the outcome. In the first pattern, the  result is not what the speaker expected given the concession. In the second pattern, the statement holds even allowing for the concession. </content>
+		<content lang="ja_KANA">In this lesson we will learn how to make expressions with concessions. In both grammar patterns that we will practise, the main sentence describing the result is preceded by another sentence that sets down conditions on the outcome. In the first pattern, the  result is not what the speaker expected given the concession. In the second pattern, the statement holds even allowing for the concession. </content>
+		<content lang="ja_ROME">In this lesson we will learn how to make expressions with concessions. In both grammar patterns that we will practise, the main sentence describing the result is preceded by another sentence that sets down conditions on the outcome. In the first pattern, the  result is not what the speaker expected given the concession. In the second pattern, the statement holds even allowing for the concession. </content>
+	</description>
+	<example>
+		<section>
+			<title><content lang="en">Even though</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">晴れている<b>のに</b>テニスをしません</content>
+						<content lang="ja_KANA">はれている<b>のに</b>てにすをしません</content>
+						<content lang="ja_ROME">hareteiru <b>noni</b> tenisu wo shimasen</content>
+					</japanese>
+					<translated>
+						<content lang="en">Even though it's sunny outside, we won't play tennis.</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">太郎は暇な<b>のに</b>学校へ行きません</content>
+						<content lang="ja_KANA">たろうはひまな<b>のに</b>がっこうへいきません</content>
+						<content lang="ja_ROME">taro ha himana <b>noni</b> gakkou he ikimasen</content>
+					</japanese>
+					<translated>
+						<content lang="en">Even though Taro has nothing to do, he doesn't go to school.</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">京都は晴れな<b>のに</b>大阪は雨だ</content>
+						<content lang="ja_KANA">きょうとははれなのにおおさかはあめだ</content>
+						<content lang="ja_ROME">kyoto ha hare na <b>noni</b> osaka ha ame da</content>
+					</japanese>
+					<translated>
+						<content lang="en">Even though the weather is clear in Kyoto, it's raining in Osaka.</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">太郎は忙しい<b>のに</b>遅刻する</content>
+						<content lang="ja_KANA">たろうはいそがしい<b>のに</b>ちこくする</content>
+						<content lang="ja_ROME">taro ha isogashii <b>noni</b> chikoku suru</content>
+					</japanese>
+					<translated>
+						<content lang="en">Even though Taro is busy, he's late.</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+		<section>
+			<title><content lang="en">Even if</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">太郎に数学について聞いても無駄だ</content>
+						<content lang="ja_KANA">たろうにすうがくについてきいてもむだだ</content>
+						<content lang="ja_ROME">taro ni sugaku ni tsuite kiitemo mudada</content>
+					</japanese>
+					<translated>
+						<content lang="en">Even if you ask Taro about math, it's no use.</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">ここで寝てもいい</content>
+						<content lang="ja_KANA">ここでねてもいい</content>
+						<content lang="ja_ROME">koko de netemo ii</content>
+					</japanese>
+					<translated>
+						<content lang="en">You can sleep here.</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+	</example>
+	<grammar_points>
+
+<p><font size="4"><u><b>Grammar Point 1: Unexpected outcomes (AのにB)</b></u></font></p>
+<p>This grammar point connects two sentences and shows that the result in sentence B is the opposite of what the speaker expects from the established facts or current state described in sentence A. In other words, sentence B is the opposite of what the speaker reasonably expects given that sentence A is true. This grammar pattern is used in much the same way as the expression "even though ..." or "although ..." in English.</p>
+<p>夕べ早く寝たのに、今日は眠い - "Even though I went to bed early last night, I'm sleepy today."</p>
+<p>雨が降ってるのに、太郎は傘を持って来ませんでした - "Even though it's raining, Taro didn't bring an umbrella."</p>
+<p>Sentence A is always in the plain form. Recall that verbs and "i" adjectives do not need any special endings for the plain form, but nouns and "na" adjectives must be followed by the copula だ . However, because sentence A is followed by の it becomes a subordinate clause, and thus the copula だ changes into な for "na" adjectives and nouns. See the examples below.</p>
+<p>太郎は日本人なのに、魚が嫌いだ - "Even though Taro is Japanese, he doesn't like fish."</p>
+<p>弟は暇なのに、全然勉強しません - "Even though my little brother has free time, he doesn't study at all."</p>
+<p>This pattern is not used when both sentence A and sentence B describe deliberate actions by the speaker. However, sentence A can be a deliberate action if sentence B describes some external event that prevents it from being completed, as shown in the example below.</p>
+<p>ジュースを飲みたかったのに、売り切れてしまいました - "I wanted to drink some juice, but it sold out."</p>
+<p>Also note that sentence B cannot be a question, request, or command.</p>
+<p><font size="4"><u><b>Grammar Point 2: "Even if ..." (AてもB)</b></u></font></p>
+<p>This grammar pattern shows that sentence B holds even if the condition given in sentence A is true. It is usually translated as "even if ..." or "although" . The verb of sentence A must be in the "te" form followed by も . If sentence A originally used the copula だ , then the copula is replaced by でも .</p>
+<p>入学試験が簡単でも妹は合格しない - "Even if the entrance exam is easy, my little sister won't pass."</p>
+<p>先生に聞いても分かりませんでした - "Although I asked the teacher, I still didn't understand."</p>
+<p>たくさん食べてもお腹が空く - "I get hungry even if I eat a lot."</p>
+<p><font size="4"><b>Grammar Point 2.1 Asking for permission</b></font></p>
+<p>In a previous lesson, we studied how to give and request permission using the "te" form of a verb plus もいい . This expression is actually an idiomatic usage of grammar point 2.</p>
+<p>煙草を吸ってもいいですか - "May I smoke?"</p>
+<p>ここで寝てもいい - "You can sleep here."</p>
+
+	</grammar_points>
+</lesson>

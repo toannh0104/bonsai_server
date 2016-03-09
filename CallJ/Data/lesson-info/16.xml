@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xsl/overview.xsl"?>
+<lesson>
+	<id>16</id>
+	<title>If it is sunny I will go</title>
+	<summary>
+		<content lang="ja_JP">Conditional statements</content>
+		<content lang="ja_KANA">Conditional statements</content>
+		<content lang="ja_ROME">Conditional statements</content>
+	</summary>
+	<description>
+		<content lang="ja_JP">In this lesson we will practise sentences with conditional clauses. We will look at various phrases which can be used to mark a clause as conditional and attach it to a sentence, and the different nuances that these words carry. In this lesson you will be given two pictures, one depicting the conditional clause and the other depicting the sentence, and asked to choose the the correct grammar pattern to connect them. The main forms to be practised in this lesson are summarised by the following examples.</content>
+		<content lang="ja_KANA">In this lesson we will practise sentences with conditional clauses. We will look at various phrases which can be used to mark a clause as conditional and attach it to a sentence, and the different nuances that these words carry. In this lesson you will be given two pictures, one depicting the conditional clause and the other depicting the sentence, and asked to choose the the correct grammar pattern to connect them. The main forms to be practised in this lesson are summarised by the following examples.</content>
+		<content lang="ja_ROME">In this lesson we will practise sentences with conditional clauses. We will look at various phrases which can be used to mark a clause as conditional and attach it to a sentence, and the different nuances that these words carry. In this lesson you will be given two pictures, one depicting the conditional clause and the other depicting the sentence, and asked to choose the the correct grammar pattern to connect them. The main forms to be practised in this lesson are summarised by the following examples.</content>
+	</description>
+	<example>
+		<section>
+			<title><content lang="en">Conditional assumptions</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">暇<b>なら</b>教会に行こう</content>
+						<content lang="ja_KANA">ひま<b>なら</b>きょうかいへいこう</content>
+						<content lang="ja_ROME">hima <b>nara</b> kyoukai he ikou</content>
+					</japanese>
+					<translated>
+						<content lang="en">If you are free, let's go to the church.</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">明日暇<b>なら</b>銀行に行きます</content>
+						<content lang="ja_KANA">あすひま<b>なら</b>ぎんこうにいきます</content>
+						<content lang="ja_ROME">asu hima <b>nara</b> ginkou ni ikimasu</content>
+					</japanese>
+					<translated>
+						<content lang="en">If I am free tomorrow, I will go to the bank.</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+		<section>
+			<title><content lang="en">Simple conditionals</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">雨が降っ<b>たら</b>出かけない。</content>
+						<content lang="ja_KANA">あめがふっ<b>たら</b>でかけない</content>
+						<content lang="ja_ROME">ame ga hut <b>tara</b> dekakenai</content>
+					</japanese>
+					<translated>
+						<content lang="en">If it rains, we won't go out.</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">宿題が終わっ<b>たら</b>遊ぼう</content>
+						<content lang="ja_KANA">しゅくだいがおわっ<b>たら</b>あそぼう</content>
+						<content lang="ja_ROME">shukudai ga owat <b>tara</b> asobou</content>
+					</japanese>
+					<translated>
+						<content lang="en">When we finish the homework, let's go play outdoors.</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+		<section>
+			<title><content lang="en">Uncontrollable events</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">春になる<b>と</b>暖かくなる</content>
+						<content lang="ja_KANA">はるになる<b>と</b>あたたかくなる</content>
+						<content lang="ja_ROME">haru ni naru <b>to</b> atatakaku naru</content>
+					</japanese>
+					<translated>
+						<content lang="en">When Spring comes, it becomes warm.</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">秋になる<b>と</b>涼しくなる。</content>
+						<content lang="ja_KANA">あきになる<b>と</b>すずしくなる</content>
+						<content lang="ja_ROME">aki ni naru <b>to</b> suzushiku naru</content>
+					</japanese>
+					<translated>
+						<content lang="en">When Autumn comes, it becomes cool.</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+		<section>
+			<title><content lang="en">General conditionals</content></title>
+			<sentence>
+				<item>
+					<japanese>
+						<content lang="ja_JP">病院まで歩け<b>ば</b>近い</content>
+						<content lang="ja_KANA">びょういんまであるけ<b>ば</b>ちかい</content>
+						<content lang="ja_ROME">byouin made aruke <b>ba</b> tikai.</content>
+					</japanese>
+					<translated>
+						<content lang="en">The hospital is close if you walk.</content>
+					</translated>
+				</item>
+				<item>
+					<japanese>
+						<content lang="ja_JP">図書館まで歩け<b>ば</b>遠い</content>
+						<content lang="ja_KANA">としょかんまであるけ<b>ば</b>遠い</content>
+						<content lang="ja_ROME">toshokan made aruke <b>ba</b> tooi.</content>
+					</japanese>
+					<translated>
+						<content lang="en">The library is far if you walk.</content>
+					</translated>
+				</item>
+			</sentence>
+		</section>
+	</example>
+	<grammar_points>
+
+<p><font size="4"><u><b>Grammar Point 1: Conditional assumptions with "nara"</b></u></font></p>
+<p>When the word "nara" is used to mark a conditional statement, the emphasis of the sentence is on the speaker's belief in the truth of the condition, and you can think of it as giving the necessary conditions for the main sentence to be true. In other words, the emphasis is on the speaker's assumption. The word "nara" must be directly preceded by a noun, or a verb. Verbs are optionally followed by the noun marker "no".</p>
+<p>Examples:</p>
+<p>明日なら時間があります - "If it's tomorrow, I'm free."</p>
+<p>みんなが行くのなら私も行きます - "If everyone goes, I will go too."</p>
+<p>In the first example, the speaker implies that tomorrow is the only day that he is free. Similarly, in the second sentence the speaker implies that everyone going is a condition for him, and he will not go under other circumstances.</p>
+<p><font size="4"><u><b>Grammar Point 2: Simple conditionals with "tara"</b></u></font></p>
+<p>Next, we will look at a more general way to form conditional sentences. In this case, the conditional clause is marked by a verb in the "tara" form. This form is constructed by adding the sound "ra" to the plain past form of the verb. Study the examples in the chart below. Unlike sentences with "nara", more emphasis is placed on the result than the condition.</p>
+<table align="center" width="600" border="1">
+<tr>
+<th bgcolor="#aaaaff">Group</th>
+<th bgcolor="#aaaaff">English</th>
+<th bgcolor="#aaaaff">Dictionary Form</th>
+<th bgcolor="#aaaaff">Plain Past</th>
+<th bgcolor="#aaaaff">"tara" form</th>
+</tr>
+<tr>
+<td>1</td>
+<td>To go</td>
+<td>行く</td>
+<td>行った</td>
+<td>行ったら</td>
+</tr>
+<tr>
+<td></td>
+<td>To drink</td>
+<td>飲む</td>
+<td>飲んだ</td>
+<td>飲んだら</td>
+</tr>
+<tr>
+<td></td>
+<td>To play</td>
+<td>遊ぶ</td>
+<td>遊んだ</td>
+<td>遊んだら</td>
+</tr>
+<tr>
+<td>2</td>
+<td>To sleep</td>
+<td>寝る</td>
+<td>寝た</td>
+<td>寝たら</td>
+</tr>
+<tr>
+<td></td>
+<td>To eat</td>
+<td>食べる</td>
+<td>食べた</td>
+<td>食べたら</td>
+</tr>
+<tr>
+<td></td>
+<td>To watch</td>
+<td>見る</td>
+<td>見た</td>
+<td>見たら</td>
+</tr>
+<tr>
+<td>3</td>
+<td>To come</td>
+<td>来る</td>
+<td>来た</td>
+<td>来たら</td>
+</tr>
+<tr>
+<td></td>
+<td>To do</td>
+<td>する</td>
+<td>した</td>
+<td>したら</td>
+</tr>
+</table>
+
+<p>When a conditional clause is marked with "tara", it must be the case that the condition occurs or becomes true before the event described in the main clause of the sentence. In other words, the condition is completed or fulfilled before the result happens in the sequential ordering of events. The main sentence that occurs after the condition is usually used to express a conclusion or result, but it can also express the speaker's volition, make a request to the listener, or permit or prohibit an action.</p>
+<p>Examples:</p>
+<p>勉強が終わったらコーヒーを飲みましょう - "When I'm done studying, let's drink some coffee."</p>
+<p>雨が降ったら傘を買います - "If it rains, I will buy an umbrella."</p>
+<p>Note that "tara" is ambiguous depending on the truth of the condition. When the condition is certain (or very likely), "tara" is translated as "when", but if the truth of the condition is not known (or cannot be known) "tara" is translated as "if".</p>
+<p><font size="4"><u><b>Grammar Point 3: Natural consequences with "to"</b></u></font></p>
+<p>When "to" directly follows the dictionary form of a verb, it marks a conditional clause. In this case, the conclusion or resulting state indicated by the main clause is an uncontrollable result. In other words, it must be a natural conclusion or certain fact (or one that the speaker is convinced is true), and cannot be a suggestion or expression of the speaker's volition. Because of this restriction, "to" cannot be used for giving suggestions or expressing the speaker's volition.</p>
+<p>Examples:</p>
+<p>冬になると雪が降ります - "Whenever the winter comes, it snows."</p>
+<p>先生に聞かないとわかりません - "If I don't ask the professor, I won't know." ("I won't know unless I ask the professor.")</p>
+<p><font size="4"><u><b>Grammar Point 4: General conditionals with "ba"</b></u></font></p>
+<p>Finally, we will consider a way to make general conditional statements. The "ba" form of a verb is used to indicate a simple conditional statement followed by a result, with no special implications. It lacks the restriction to uncontrollable outcomes implied by "to", the completion of the condition and strict ordering implied by "tara", and the focus on the speaker's belief in the condition that "nara" gives. It is the most general way to indicate a hypothetical situation, and gives the sentence an objective nuance.</p>
+<p>Examples:</p>
+<p>東京に行けば楽しいです - "You will have fun if you go to Tokyo."</p>
+<p>先生に聞けばわかります - "You will understand if you ask the professor."</p>
+<p>To construct this form, start with the dictionary form and change the final "u" sound to "e" and add "ba". See the chart below for examples.</p>
+<table align="center" width="600" border="1">
+<tr>
+<th bgcolor="#aaaaff">Group</th>
+<th bgcolor="#aaaaff">English</th>
+<th bgcolor="#aaaaff">Dictionary Form</th>
+<th bgcolor="#aaaaff">"ba" form</th>
+</tr>
+<tr>
+<td>1</td>
+<td>To go</td>
+<td>行く</td>
+<td>行けば</td>
+</tr>
+<tr>
+<td></td>
+<td>To drink</td>
+<td>飲む</td>
+<td>飲めば</td>
+</tr>
+<tr>
+<td></td>
+<td>To play</td>
+<td>遊ぶ</td>
+<td>遊べば</td>
+</tr>
+<tr>
+<td>2</td>
+<td>To sleep</td>
+<td>寝る</td>
+<td>寝れば</td>
+</tr>
+<tr>
+<td></td>
+<td>To eat</td>
+<td>食べる</td>
+<td>食べれば</td>
+</tr>
+<tr>
+<td></td>
+<td>To watch</td>
+<td>見る</td>
+<td>見れば</td>
+</tr>
+<tr>
+<td>3</td>
+<td>To come</td>
+<td>来る</td>
+<td>来れば</td>
+</tr>
+<tr>
+<td></td>
+<td>To do</td>
+<td>する</td>
+<td>すれば</td>
+</tr>
+</table>
+
+<p>In general, the main sentence that follows the conditional marked with "ba" cannot be used for giving suggestions, granting permission, or expressing the speaker's volition.</p>
+
+	</grammar_points>
+</lesson>

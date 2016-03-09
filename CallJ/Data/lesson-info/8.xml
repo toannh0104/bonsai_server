@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xsl/overview.xsl"?>
+<lesson>
+	<id>8</id>
+	<title>You can eat here</title>
+	<summary>
+		<content lang="ja_JP">Introducing the sentence patterns of permission and forbidden</content>
+		<content lang="ja_KANA">Introducing the sentence patterns of permission and forbidden</content>
+		<content lang="ja_ROME">Introducing the sentence patterns of permission and forbidden</content>
+	</summary>
+	<description>
+		<content lang="ja_JP">In this lesson we will practise two sentence patterns. One is for asking for permission, using the "て" form of the verb plus "もいいですか". The other forbids an action, using the "て" form of the verb plus "はいけません". We will look at making sentences in both question and statement forms. The patterns and forms you will be expected to know to complete this lesson are summarised below:</content>
+		<content lang="ja_KANA">In this lesson we will practise two sentence patterns. One is for asking for permission, using the "て" form of the verb plus "もいいですか". The other forbids an action, using the "て" form of the verb plus "はいけません". We will look at making sentences in both question and statement forms. The patterns and forms you will be expected to know to complete this lesson are summarised below:</content>
+		<content lang="ja_ROME">In this lesson we will practise two sentence patterns. One is for asking for permission, using the "te" form of the verb plus "mo ii desu ka". The other forbids an action, using the "te" form of the verb plus "ha ikemasen". We will look at making sentences in both question and statement forms. The patterns and forms you will be expected to know to complete this lesson are summarised below:</content>
+	</description>
+	<example>
+    <section>
+      <title>
+        <content lang="en">Permission vs Forbidden</content>
+      </title>
+      <sentence>
+        <item>
+          <japanese>
+            <content lang="ja_JP">窓を<b>開けてもいいですか</b></content>
+            <content lang="ja_KANA"></content>
+            <content lang="ja_ROME"></content>
+          </japanese>
+          <translated>
+            <content lang="en">"<b>Do you mind if</b> I open the window?"(Permission)</content>
+          </translated>
+        </item>
+        <item>
+          <japanese>
+            <content lang="ja_JP">ここで煙草を<b>吸ってはいけません</b></content>
+            <content lang="ja_KANA"></content>
+            <content lang="ja_ROME"></content>
+          </japanese>
+          <translated>
+            <content lang="en">"<b>You cannot smoke</b> here."(Forbidden)</content>
+          </translated>
+        </item>
+      </sentence>
+    </section>
+	</example>
+	<grammar_points>
+
+<p><font size="4"><u><b>Grammar Point 1: Giving and Asking for Permission</b></u></font></p>
+<p>For sentences that give permission to perform an action, you change the verb into the "te" form and add the marker "mo" plus the phrase "ii desu". This is equivalent to the expressions "You may..." or "You can..." in English. You can ask permission to perform an action by adding the question marker "ka" to the statement form.</p>
+<table align="center" width="600" border="1">
+<tr>
+<th bgcolor="#aaaaff">Statement</th>
+</tr>
+<tr>
+<td>コーヒーを飲んでもいいです - "You may drink coffee."</td>
+</tr>
+<tr>
+<td>この本を読んでもいいです - "You can read this book."</td>
+</tr>
+<tr>
+<th bgcolor="#aaaaff">Question</th>
+</tr>
+<tr>
+<td>テレビを見てもいいですか - "Do you mind if I watch TV?"</td>
+</tr>
+<tr>
+<td>ここでたばこを吸ってもいいですか - "May I smoke here?"</td>
+</tr>
+</table>
+
+<p><font size="4"><u><b>Grammar Point 2: Forbidding Actions</b></u></font></p>
+<p>An expression similar to the one above is used to forbid an action. In this case, the grammar pattern is the "te" form of the verb followed by the topic marker "ha" plus the word "ikemasen".</p>
+<table align="center" width="600" border="1">
+<tr>
+<th bgcolor="#aaaaff">Statement</th>
+</tr>
+<tr>
+<td>窓を開けてはいけません - "You may not open the window."</td>
+</tr>
+<tr>
+<td>ここで車を止めてはいけません - "You cannot park your car here."</td>
+</tr>
+</table>
+
+<p>This form can also be turned into a question by adding the question marker "ka". However, in this case the nuance is slightly different. Questions of this form express the speaker's assumption that the listener will not give permission for the action.</p>
+<table align="center" width="600" border="1">
+<tr>
+<th bgcolor="#aaaaff">Question</th>
+</tr>
+<tr>
+<td>ここでたばこを吸ってはいけませんか - "Am I not allowed to smoke here?"</td>
+</tr>
+<tr>
+<td>ビールを飲んではいけませんか - "Am I not allowed to drink beer?"</td>
+</tr>
+</table>
+
+	</grammar_points>
+</lesson>

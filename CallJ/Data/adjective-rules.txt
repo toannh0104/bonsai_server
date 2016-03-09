@@ -1,0 +1,302 @@
+﻿# Rules for adjective conjugation
+#
+# Format of case specification: <tense> <+/-> 
+#
+####################################################################################
+#
+#--------------------------------------------------------------------
+-name standard
+#
+-i_adjectives
+# ===================================
+-type present pos plain
+-rule [dic]
+#
+-type present neg plain
+-rule [dic] - い + くない
+#
+-type past pos plain
+-rule [dic] - い + かった
+#
+-type past neg plain
+-rule [dic] - い + くなかった
+#
+-type present pos polite
+-rule [dic] + です
+#
+-type present neg polite
+-rule [dic] - い + くない + です
+#
+-type present neg polite
+-rule [dic] - い + くない + です
+#
+-type past pos polite
+-rule [dic] - い + かった + です
+#
+-type past neg polite
+-rule [dic] - い + くなかった + です
+#
+#
+-na_adjectives
+# ===================================
+-type present pos plain
+-rule [dic] - な + だ
+#
+-type present neg plain
+-rule [dic] - な + ではない
+#
+-type past pos plain
+-rule [dic] - な + だった
+#
+-type past neg plain
+-rule [dic] - な + ではなかった
+#
+-type present pos polite
+-rule [dic] - な + です
+#
+-type present neg polite
+-rule [dic] - な + ではありません
+#
+-type past pos polite
+-rule [dic] - な + でした
+#
+-type past neg polite
+-rule [dic] - な + ではありませんでした
+#
+-other_adjectives
+# ===================================
+#
+-type present pos plain
+-case いい
+-rule [dic]
+#
+-type present neg plain
+-case いい
+-rule よくない
+#
+-type past pos plain
+-case いい
+-rule よかった
+#
+-type past neg plain
+-case いい
+-rule よくなかった
+#
+-type present pos polite
+-case いい
+-rule [dic] + です
+#
+-type present neg polite
+-case いい
+-rule よくないです
+#
+-type past pos polite
+-case いい
+-rule よかったです
+#
+-type past neg polite
+-case いい
+-rule よくなかったです
+#
+#--------------------------------------------------------------------
+-name modifier
+#
+-i_adjectives
+# ===================================
+-type pos
+-rule [dic]
+#
+-type  neg
+-rule [dic] - い + くない
+#
+#
+-na_adjectives
+# =========if nothing, all is ok==========================
+-type
+-rule [dic]
+#
+-other_adjectives
+# ================
+#
+-type pos
+-case いい
+-rule [dic]
+#
+-type neg
+-case いい
+-rule よくない
+#
+#
+#--------------------------------------------------------------------
+-name connective
+#
+-i_adjectives
+# ===================================
+-type pos
+-rule [dic] - い + くて
+#
+-type neg
+-rule [dic] - い + くなくて
+#
+-na_adjectives
+# ===================================
+-type pos 
+-rule [dic] - な + で
+#
+-type neg
+-rule [dic] - な + じゃなくて
+#
+-other_adjectives
+# ================
+-type
+-case いい
+-rule よくて
+#
+#--------------------------------------------------------------------
+-name adverb
+#
+-i_adjectives
+# ===================================
+-type
+-rule [dic] - い + く
+#
+-na_adjectives
+# ===================================
+-type
+-rule [dic] - な + に
+#
+-other_adjectives
+# ================
+-type
+-case いい
+-rule よく
+#
+#Added by Kurita
+#
+#--------------------------------------------------------------------
+-name then
+#
+-i_adjectives
+# ===================================
+-type
+-rule [dic] + なら
+#
+-na_adjectives
+# ===================================
+-type
+-rule [dic] + ら
+#
+-other_adjectives
+# ================
+-type
+-case いい
+-rule よかったら
+#
+-name stem
+#
+-i_adjectives
+# ===================================
+-type
+-rule [dic] - い
+#
+-na_adjectives
+# ===================================
+-type
+-rule [dic] - な
+#
+#--------------------------------------------------------------------
+-name ndadesu
+#
+-i_adjectives
+# ===================================
+-type present pos plain
+-rule [dic] + んだ 
+#
+-type present neg plain
+-rule [dic] - い + くない + んだ
+#
+-type past pos plain
+-rule [dic] - い + かった + んだ
+#
+-type past neg plain
+-rule [dic] - い + くなかった + んだ
+#
+-type present pos polite
+-rule [dic] + んです
+#
+-type present neg polite
+-rule [dic] - い + くない + んです
+#
+-type present neg polite
+-rule [dic] - い + くない + んです
+#
+-type past pos polite
+-rule [dic] - い + かった + んです
+#
+-type past neg polite
+-rule [dic] - い + くなかった + んです
+#
+#
+-na_adjectives
+# ===================================
+-type present pos plain
+-rule [dic] + んだ
+#
+-type present neg plain
+-rule [dic] - な + ではない + んだ
+#
+-type past pos plain
+-rule [dic] - な + だった + んだ
+#
+-type past neg plain
+-rule [dic] - な + ではなかった + んだ
+#
+-type present pos polite
+-rule [dic] + んです
+#
+-type present neg polite
+-rule [dic] - な + ではない + んです
+#
+-type past pos polite
+-rule [dic] - な + だった + んでした
+#
+-type past neg polite
+-rule [dic] - な + ではなかった + んでした
+#
+-other_adjectives
+# ===================================
+#
+-type present pos plain
+-case いい
+-rule [dic]
+#
+-type present neg plain
+-case いい
+-rule よくない
+#
+-type past pos plain
+-case いい
+-rule よかった
+#
+-type past neg plain
+-case いい
+-rule よくなかった
+#
+-type present pos polite
+-case いい
+-rule [dic] + です
+#
+-type present neg polite
+-case いい
+-rule よくないです
+#
+-type past pos polite
+-case いい
+-rule よかったです
+#
+-type past neg polite
+-case いい
+-rule よくなかったです
+#
+#--------------------------------------------------------------------
+-eof

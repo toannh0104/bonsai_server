@@ -1,0 +1,108 @@
+# Student Config File
+#
+-id 8
+-name quyet
+-password 1234
+#
+-lessonHistory 1 1 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 2 1 1 0 0 1723 39 0 0 0 0 0 0 0
+-lessonHistory 3 2 67 0 0 11073 376 0 0 0 0 0 0 0
+-lessonHistory 4 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 5 1 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 6 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 7 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 8 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 9 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 10 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 11 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 12 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 13 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 14 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 15 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 16 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 17 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 18 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 19 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 20 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 21 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 22 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 23 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 24 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 25 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 26 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 27 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 28 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 29 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 30 0 0 0 0 0 0 0 0 0 0 0 0 0
+#
+-wordExperience 1 18 1 0
+-wordExperience 1 19 1 0
+-wordExperience 1 29 1 0
+-wordExperience 1 38 1 0
+-wordExperience 1 49 1 0
+-wordExperience 1 72 2 0
+-wordExperience 1 73 11 1
+-wordExperience 1 84 1 0
+-wordExperience 1 85 1 0
+-wordExperience 1 91 1 0
+-wordExperience 1 92 3 0
+-wordExperience 1 94 1 0
+-wordExperience 1 106 2 0
+-wordExperience 1 107 1 0
+-wordExperience 1 108 4 0
+-wordExperience 1 113 1 0
+-wordExperience 1 115 2 0
+-wordExperience 1 124 1 0
+-wordExperience 1 133 3 0
+-wordExperience 1 136 1 0
+-wordExperience 1 142 7 0
+-wordExperience 1 160 6 0
+-wordExperience 1 162 1 0
+-wordExperience 1 164 1 0
+-wordExperience 1 170 1 0
+-wordExperience 1 180 1 0
+-wordExperience 1 185 2 0
+-wordExperience 1 186 1 0
+-wordExperience 1 187 23 0
+-wordExperience 1 188 2 0
+-wordExperience 1 190 19 1
+-wordExperience 1 191 4 0
+-wordExperience 1 202 2 0
+-wordExperience 1 211 2 0
+-wordExperience 1 217 1 0
+-wordExperience 1 221 1 0
+-wordExperience 1 224 1 0
+-wordExperience 1 228 12 0
+-wordExperience 1 239 46 0
+-wordExperience 1 240 15 0
+-wordExperience 1 267 1 0
+-wordExperience 1 323 2 0
+-wordExperience 1 343 1 0
+-wordExperience 1 349 1 0
+-wordExperience 1 352 1 0
+-wordExperience 1 368 1 0
+-wordExperience 1 400 3 0
+-wordExperience 1 430 1 0
+-wordExperience 1 433 2 0
+-wordExperience 1 965 4 0
+-wordExperience 1 970 1 0
+-wordExperience 2 520 61 1
+-wordExperience 2 559 1 0
+-wordExperience 2 594 1 0
+-wordExperience 2 720 8 0
+-wordExperience 2 724 1 0
+-wordExperience 2 730 1 0
+-wordExperience 4 834 2 0
+-wordExperience 6 731 72 1
+-wordExperience 6 734 61 1
+-wordExperience 6 737 69 1
+-wordExperience 6 738 3 0
+-wordExperience 6 739 2 0
+-wordExperience 6 1098 2 0
+-wordExperience 11 482 1 0
+-wordExperience 11 485 1 0
+-wordExperience 11 486 2 0
+-wordExperience 11 487 1 0
+#
+-eof
+#

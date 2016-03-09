@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xsl/overview.xsl"?>
+<lesson>
+	<id>28</id>
+	<title>The teacher made the student read a book</title>
+	<summary>
+		<content lang="ja_JP">Compulsion, permission, and requests with the causative form</content>
+		<content lang="ja_KANA">Compulsion, permission, and requests with the causative form</content>
+		<content lang="ja_ROME">Compulsion, permission, and requests with the causative form</content>
+	</summary>
+	<description>
+		<content lang="ja_JP">In this lesson we will study the construction and uses of the causative form. This form is typically used to convey that someone is being compelled to do something by another person. However, the same form may also be used to convey that someone is being allowed to perform an action. Also, the causative form can be combined with ください to make requests.</content>
+		<content lang="ja_KANA">In this lesson we will study the construction and uses of the causative form. This form is typically used to convey that someone is being compelled to do something by another person. However, the same form may also be used to convey that someone is being allowed to perform an action. Also, the causative form can be combined with ください to make requests.</content>
+		<content lang="ja_ROME">In this lesson we will study the construction and uses of the causative form. This form is typically used to convey that someone is being compelled to do something by another person. However, the same form may also be used to convey that someone is being allowed to perform an action. Also, the causative form can be combined with ください to make requests.</content>
+	</description>
+	<example>
+    <section id="1">
+      <title>
+        <content lang="en">Type</content>
+      </title>
+      <sentence>
+        <item>
+          <japanese>
+            <content lang="ja_JP">私は子供に野菜を食べさせました</content>
+            <content lang="ja_KANA">わたしはこどもにやさいをたべさせました</content>
+            <content lang="ja_ROME">watashi ha kodomo ni yasai wo tabesasemashita</content>
+          </japanese>
+          <translated>
+            <content lang="en">"I made the child eat vegetables" (compulsion)</content>
+          </translated>
+        </item>
+        <item>
+          <japanese>
+            <content lang="ja_JP">私は子供におかしを食べさせました</content>
+            <content lang="ja_KANA">わたしはこどもにおかしをたべさせました</content>
+            <content lang="ja_ROME">watashi ha kodomo ni okashi wo tabesasemashita</content>
+          </japanese>
+          <translated>
+            <content lang="en">"I allowed the child to eat sweets" (permission)</content>
+          </translated>
+        </item>
+        <item>
+          <japanese>
+            <content lang="ja_JP">体が悪いので、早く帰らせてください</content>
+            <content lang="ja_KANA">からだがわるいので、はやくかえらせてください</content>
+            <content lang="ja_ROME">karada ga warui node, hayaku kaerasetekudasai</content>
+          </japanese>
+          <translated>
+            <content lang="en">"I don't feel good, so please let me go home early." (request)</content>
+          </translated>
+        </item>
+      </sentence>
+    </section>
+    <section id="2">
+      <title>
+        <content lang="en">Statement vs Question</content>
+      </title>
+      <sentence>
+        <item>
+          <japanese>
+            <content lang="ja_JP">教授は学生にレポートを書かせます</content>
+            <content lang="ja_KANA">きょうじゅはがくせいにレポートをかかせます</content>
+            <content lang="ja_ROME">kyouju ha gakusei ni repo-to wo kakasemasu</content>
+          </japanese>
+          <translated>
+            <content lang="en">"The professor will make the students write a report." (Statement)</content>
+          </translated>
+        </item>
+        <item>
+          <japanese>
+            <content lang="ja_JP">教授は学生にレポートを書かせますか</content>
+            <content lang="ja_KANA">きょうじゅはがくせいにレポートをかかせますか</content>
+            <content lang="ja_ROME">kyouju ha gakusei ni repo-to wo kakasemasuka</content>
+          </japanese>
+          <translated>
+            <content lang="en">"Will the the professor make the students write a report?" (Question)</content>
+          </translated>
+        </item>
+      </sentence>
+    </section>
+    <section id="3">
+      <title>
+        <content lang="en">Non-past vs Past</content>
+      </title>
+      <sentence>
+        <item>
+          <japanese>
+            <content lang="ja_JP">部長は田中さんに東京へ行かせます</content>
+            <content lang="ja_KANA">ぶちょうはたなかさんにとうきょうへいかせます</content>
+            <content lang="ja_ROME">butyou ha tanakasan ni toukyou he ikasemasu</content>
+          </japanese>
+          <translated>
+            <content lang="en">"The manager will make Mr. Tanaka to go to Tokyo." (non-past)</content>
+          </translated>
+        </item>
+        <item>
+          <japanese>
+            <content lang="ja_JP">部長は田中さんに東京へ行かせました</content>
+            <content lang="ja_KANA">ぶちょうはたなかさんにとうきょうへいかせました</content>
+            <content lang="ja_ROME">butyou ha tanakasan ni toukyou he ikasemashita</content>
+          </japanese>
+          <translated>
+            <content lang="en">"The manager made Mr. Tanaka to go to Tokyo." (past)</content>
+          </translated>
+        </item>
+      </sentence>
+    </section>
+    <section id="4">
+      <title>
+        <content lang="en">Polite vs Plain</content>
+      </title>
+      <sentence>
+        <item>
+          <japanese>
+            <content lang="ja_JP">私は妹に勉強させます</content>
+            <content lang="ja_KANA">わたしはいもうとにべんきょうさせます</content>
+            <content lang="ja_ROME">watashi ha imouto ni benkyousasemasu</content>
+          </japanese>
+          <translated>
+            <content lang="en">"I make my younger sister study." (polite)</content>
+          </translated>
+        </item>
+        <item>
+          <japanese>
+            <content lang="ja_JP">私は妹に勉強させる</content>
+            <content lang="ja_KANA">わたしはいもうとにべんきょうさせる</content>
+            <content lang="ja_ROME">watashi ha imouto ni benkyousaseru</content>
+          </japanese>
+          <translated>
+            <content lang="en">"I make my younger sister study." (plain)</content>
+          </translated>
+        </item>
+      </sentence>
+    </section>
+	</example>
+	<grammar_points>
+<p><font size="4"><u><b>Grammar Point 1: The Causative Form</b></u></font></p>
+<p>The causative form of verbs is used to show that someone makes or allows someone else to do something. First, we will study the causative form a sentence which has a transitive verb (one that takes a direct object). The person who causes the other person to take an action is marked with は or が , the person caused to perform the action is marked by に , the direct object is marked with を , and the verb is changed to the causative form.</p>
+<p>Study the examples below.</p>
+<table align="center" width="90%" border="1">
+<tr><td>先生がジョンに本を読ませました。</td><td>"The professor made John read the book."</td></tr><tr><td>母は私にお皿を洗わせました。</td><td>"My mother forced me to do the dishes."</td></tr>
+</table>
+<p>The causer, marked with は or が , is the subject of the sentence and thus may be dropped when understood from context.</p>
+<p>みちこにピアノを練習させました。 "I made Michiko practise the piano."</p>
+<p>For intransitive verbs (ones that do not take direct objects), the person who is forced or allowed to perform an action is marked by を or に . The choice between these two particles is determined by whether or not the action performed was intentional or not. In general, に is used for volitional actions and has the nuance of permission, while を does not have this meaning and can be used irregardless of the volition of the person caused to act. However, this rule is not hard and fast and the context of the sentence will determine whether the nuance is one of persuasion or permission.</p>
+<table align="center" width="90%" border="1">
+<tr><td>母はむりやりに姉をイギリスへ行かせました。</td><td>"My mother forced my older sister to go to England." (coercion)</td></tr><tr><td colspan="2">姉はイギリスに行ってみたいと言っていたから、母は彼女をイギリスに行かせました。 "My sister said she wanted to go to England, so my mother allowed her to go." (permission)</td></tr>
+</table>
+<p>In the first example, 姉 must be marked with を because the speaker's older sister does not want to go. However, in the second example both に and を can be used to mark 彼女 because the speaker's older sister wanted to go.</p>
+<p>In the case of transitive verbs, に is used to mark the person made to perform the action even if they do not want to perform the action. This is because を already appears in the clause to mark the direct object. Thus, both examples below use に even though the nuances are different.</p>
+<table align="center" width="90%" border="1">
+<tr><td>私は弟に野菜を食べさせました。</td><td>"I made (or let) my little brother eat vegetables." (permission)</td></tr><tr><td>私はむりやりに弟に野菜を食べさせました。</td><td>"I forced by my little brother to eat vegetables." (coercion)</td></tr>
+</table>
+<p><font size="4"><b>1.1 How to form the causative form</b></font></p>
+<p>The table below shows how to form the causative form for each group of verbs.</p>
+<table align="center" width="90%" border="1">
+<tr bgcolor="#aaaaff"><td>Group</td><td>Dictionary Form</td><td>Causative Form</td><td>Method</td></tr><tr><td width="30">1</td><td>行く</td><td>行かせる</td><td rowspan="3">Take the negative dictionary form and replace ない with せる .</td></tr><tr><td></td><td>飲む</td><td>飲ませる</td></tr><tr><td></td><td>遊ぶ</td><td>遊ばせる</td></tr><tr><td width="30">2</td><td>寝る</td><td>寝させる</td><td rowspan="3">Remove the final る sound from the dictionary form, and replace it with させる .</td></tr><tr><td></td><td>食べる</td><td>食べさせる</td></tr><tr><td></td><td>見る</td><td>見させる</td></tr><tr><td width="30">3</td><td>する</td><td>させる</td><td rowspan="2">These forms are irregular and must be learnt.</td></tr><tr><td></td><td>来る</td><td>来させる</td></tr>
+</table>
+<p>Verbs in the causative form are group 2 verbs, and are conjugated in the same way as other group 2 verbs.</p>
+<table align="center" width="90%" border="1">
+<tr bgcolor="#aaaaff"><td colspan="2">Plain</td></tr><tr><td>Dictionary</td><td>させる</td></tr><tr><td>Negative</td><td>させない</td></tr><tr><td>"te" form</td><td>させて</td></tr><tr><td>Past</td><td>させた</td></tr><tr bgcolor="#aaaaff"><td colspan="2">Polite</td></tr><tr><td>"masu" form</td><td>させます</td></tr><tr><td>Negative</td><td>させません</td></tr><tr><td>Past</td><td>させました</td></tr>
+</table>
+<p><font size="4"><u><b>Grammar Point 2: Permission with the causative form</b></u></font></p>
+<p>While the causative form is often used when one person is forced to do something by someone else, it can also be used when one person allows another to do something. This meaning of the causative form can also be used to make requests for permission to do something, similar to the expression "Could you let me..." in English. Study the examples below.</p>
+<table align="center" width="90%" border="1">
+<tr><td>私にもプールに行かせて下さい。</td><td>"Please let me go to the pool, too."</td></tr><tr><td>今日は休ませて下さい。</td><td>"Please let me take today off."</td></tr><tr><td>弟にアイスを食べさせて下さい。</td><td>"Please let my little brother eat some ice cream."</td></tr>
+</table>
+	</grammar_points>
+</lesson>

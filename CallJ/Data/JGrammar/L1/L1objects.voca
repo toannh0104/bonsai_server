@@ -1,0 +1,85 @@
+% DEMONSTRATIVE_PRON
+これ	k o r e
+それ	s o r e
+あれ	a r e
+% SUBJ_PARTICAL
+は	w a
+が	g a
+も	m o
+% SMALLOBJECT_N
+鉛筆	 e N p i ts u
+お菓子	 o k a sh i
+お金	 o k a n e
+お酒	 o s a k e
+皿	 s a r a
+お茶	 o ch a
+お弁当	 o b e N t o u
+傘	 k a s a
+鞄	 k a b a N
+花瓶	 k a b i N
+紙	 k a m i
+切手	 k i q t e
+切符	 k i q p u
+牛乳	 gy u u ny u u
+薬	 k u s u r i
+靴	 k u ts u
+靴下	 k u ts u sh i t a
+魚	 s a k a n a
+雑誌	 z a q sh i
+写真	 sh a sh i N
+新聞	 sh i N b u N
+辞書	 j i sh o
+卵	 t a m a g o
+地図	 ch i z u
+手紙	 t e g a m i
+電話	 d e N w a
+時計	 t o k e i
+荷物	 n i m o ts u
+灰皿	 h a i z a r a
+箱	 h a k o
+箸	 h a sh i
+花	 h a n a
+封筒	 f u u t o u
+本	 h o N
+帽子	 b o u sh i
+万年筆	 m a N n e N h i ts u
+水	 m i z u
+眼鏡	 m e g a n e
+ビール	 b i: r u
+コーヒー	 k o: h i:
+コーラ	 k o: r a
+オレンジジュース	 o r e N j i j u: s u
+ワイン	 w a i N
+林檎	 r i N g o
+ケーキ	 k e: k i
+ハンバーガー	 h a N b a: g a:
+アイスクリーム	 a i s u k u r i: m u
+ピザー	 p i z a:
+ステーキ	 s u t e: k i
+苺	 i ch i g o
+トースト	 t o: s u t o
+キャンドル	 ky a N d o r u
+ラジオ	 r a j i o
+パソコン	 p a s o k o N
+プレゼント	 p u r e z e N t o
+ティーシャツ	 t e: sh a ts u
+テレビ	 t e r e b i
+% PREDICATE_VERB
+です	d e s u
+ではない	d e w a n a i
+ではなかった	d e w a n a q k a q t a
+でした	d e sh i t a
+ではありません	d e w a a r i m a s e N
+ではありませんでした	d e w a a r i m a s e N d e sh i t a
+% FILL_B
+えー	e: 
+えーと	e: t o 
+えーと	e: q t o 
+あのー	a n o: 
+
+% NS_B
+<s>	silB
+% NS_E
+</s>	silE
+% NOISE			# short pause
+sp		sp

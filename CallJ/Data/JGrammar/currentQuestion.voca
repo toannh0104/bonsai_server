@@ -1,0 +1,31 @@
+% Subject
+わたし	 w a t a sh i
+おれ	 o r e
+ぼく	 b o k u
+% Subject_Particle
+は	w a
+が	 g a
+% Where
+きっさてん	 k i q s a t e N
+レストラン	 r e s u t o r a N
+% Where_Particle
+で	 d e
+に	 n i
+% What
+コーラ	 k o: r a
+% What_Particle
+を	 o
+% Verb
+のむ	 n o m u
+のみます	 n o m i m a s u
+のみますか	 n o m i m a s u k a
+のみました	 n o m i m a sh i t a
+のみましたか	 n o m i m a sh i t a k a
+のみません	 n o m i m a s e N
+のみませんか	 n o m i m a s e N k a
+のみませんでした	 n o m i m a s e N d e sh i t a
+のみませんでしたか	 n o m i m a s e N d e sh i t a k a
+% NS_B
+<s>	silB
+% NS_E
+</s>	silE

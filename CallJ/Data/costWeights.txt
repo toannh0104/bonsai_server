@@ -1,0 +1,40 @@
+# This file defines the weights for the various features
+# that influence the cost of hints and errors
+# The weights were determined based on each feature's
+# apparent significane in training an SVM to classify
+# a student's proficiency.
+#==========================================================
+#
+# Components
+# ----------
+-component_verb 10	
+-component_particle 6
+-component_adjective 3
+-component_adverb 3
+-component_noun 9
+-component_other 7
+-component_counter 1
+-component_location 4
+-component_definitive 3
+#
+# Hints
+# -----
+#
+-hint_type_length 6
+-hint_type_intermediate 6
+-hint_type_dictionary 9
+-hint_type_final 1
+-hint_total_components 0
+#
+#
+# Errors
+# -----
+#
+-error_type_grammar 9
+-error_type_lexical 7
+-error_type_input 3
+-error_type_concept 1
+-error_type_nonSpelling 9
+#
+#
+-eof

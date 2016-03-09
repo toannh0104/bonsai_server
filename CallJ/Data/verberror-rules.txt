@@ -1,0 +1,484 @@
+﻿# Rules for verb inflections
+#
+# Formate of case specification: <tense> <+/-> <polite?> <from form> - <remove> + <plus> = <equals>
+#
+####################################################################################
+#
+#
+#-name mashou
+-name mashou_Masho
+#
+#
+-group 1
+-type present pos polite
+-rule [dic] - *う + *いましょ
+#
+#
+-group 2
+-type present pos polite
+-rule [dic] - る + ましょ
+#
+#
+-group 3
+-type present pos polite 
+-case *する
+-rule [dic] - する + しましょ
+-default
+-rule [dic] - する + しましょ
+#
+#
+-group 4
+-type present pos polite 
+-case 来る
+-rule きましょ
+#
+#-----------------------------------------------------------------
+#
+#
+-name mashou_T1T2
+#
+#
+-group 1
+-type present pos polite
+-case *る
+-rule [dic] - る + ましょう
+#
+-group 2
+-type present pos polite
+-rule [dic] - る + りましょう
+#
+#-----------------------------------------------------------------
+#
+#
+-name TETA_MasuTe_please
+-group 1
+-type present pos polite
+-rule [dic] - *う + *いてください
+-type present pos plain
+-rule [dic] - *う + *いてください
+#
+-group 2
+-type present pos polite
+-rule [dic] - る + てください
+-type present pos plain
+-rule [dic] - る + てください
+#
+-group 3
+-type present pos polite
+-case *する
+-rule [dic] - する +  してください
+#
+-group 4
+-type present pos polite
+-case 来る
+-rule きてください
+-case *する
+-rule [dic] - する +  してください
+#
+#-----------------------------------------------------------------
+#
+-name TETA_NaiTe_please
+-group 1
+-type present pos polite
+-case *う
+-rule [dic] - う + わてください
+-default
+-rule [dic] - *う + *あてください
+#
+-group 2
+-type present pos polite
+-rule [dic] - る + てください
+#
+-group 3
+-type present pos polite
+-case 来る
+-rule こてください
+-case *する
+-rule [dic] - する +  してください
+#
+#-----------------------------------------------------------------
+#
+-name TETA_TeDe_please
+-group 1
+-type present pos polite
+-case *う
+-rule [dic] - う + っでください
+-case  行く 
+-rule いっで
+-case *く
+-rule [dic] - く + いでください
+-case *ぐ
+-rule [dic] - ぐ + いでください
+-case *す
+-rule [dic] - す + しでください
+-case *つ
+-rule [dic] - つ + っでください
+-case *む
+-rule [dic] - む + んでください
+-case *ぶ
+-rule [dic] - ぶ + んでください
+-default
+-rule [dic] - *う + っでください
+#
+-group 2
+-type present pos polite
+-rule [dic] - る + でください
+#
+-group 3
+-type present pos polite
+-case 来る
+-rule きでください
+-case *する
+-rule [dic] - する +  しでください
+#
+#-----------------------------------------------------------------
+#
+-name TETA_T1T2_please
+#
+-group 1
+#
+-type present pos polite
+-case *う
+-rule [dic] - う + てください
+-case  行く 
+-rule いって
+-case *く
+-rule [dic] - く + てください
+-case *ぐ
+-rule [dic] - ぐ + てください
+-case *す
+-rule [dic] - す + てください
+-case *つ
+-rule [dic] - つ + てください
+-case *む
+-rule [dic] - む + てください
+-case *ぶ
+-rule [dic] - ぶ + てください
+-default
+-rule [dic] - *う + てください
+#
+#
+-group 2
+-type present pos polite
+-rule [dic] - る + ってください
+#
+#
+-group 3
+-type present pos polite
+-case 来る
+-rule きてください
+-case *する
+-rule [dic] - する +  してください
+#
+#
+#-----------------------------------------------------------------
+#
+-name TETA_MasuTe
+-group 1
+-type present pos polite
+-rule [dic] - *う + *いて
+-type present pos plain
+-rule [dic] - *う + *いて
+#
+-group 2
+-type present pos polite
+-rule [dic] - る + て
+-type present pos plain
+-rule [dic] - る + て
+#
+-group 3
+-type present pos polite
+-case *する
+-rule [dic] - する +  して
+#
+-group 4
+-type present pos polite
+-case 来る
+-rule きて
+-case *する
+-rule [dic] - する +  して
+#
+#-----------------------------------------------------------------
+#
+-name TETA_NaiTe
+-group 1
+-type present pos polite
+-case *う
+-rule [dic] - う + わて
+-default
+-rule [dic] - *う + *あて
+#
+-group 2
+-type present pos polite
+-rule [dic] - る + て
+#
+-group 3
+-type present pos polite
+-case 来る
+-rule こて
+-case *する
+-rule [dic] - する +  して
+#
+#-----------------------------------------------------------------
+#
+-name TETA_TeDe
+-group 1
+-type present pos polite
+-case *う
+-rule [dic] - う + っで
+-case  行く 
+-rule いっで
+-case *く
+-rule [dic] - く + いで
+-case *ぐ
+-rule [dic] - ぐ + いで
+-case *す
+-rule [dic] - す + しで
+-case *つ
+-rule [dic] - つ + っで
+-case *む
+-rule [dic] - む + んで
+-case *ぶ
+-rule [dic] - ぶ + んで
+-default
+-rule [dic] - *う + っで
+#
+-group 2
+-type present pos polite
+-rule [dic] - る + で
+#
+-group 3
+-type present pos polite
+-case 来る
+-rule きで
+-case *する
+-rule [dic] - する +  しで
+#
+#-----------------------------------------------------------------
+#
+-name TETA_T1T2
+#
+-group 1
+#
+-type present pos polite
+-case *う
+-rule [dic] - う + て
+-case  行く 
+-rule いって
+-case *く
+-rule [dic] - く + て
+-case *ぐ
+-rule [dic] - ぐ + て
+-case *す
+-rule [dic] - す + て
+-case *つ
+-rule [dic] - つ + て
+-case *む
+-rule [dic] - む + て
+-case *ぶ
+-rule [dic] - ぶ + て
+-default
+-rule [dic] - *う + て
+#
+#
+-group 2
+-type present pos polite
+-rule [dic] - る + って
+#
+#
+-group 3
+-type present pos polite
+-case 来る
+-rule きて
+-case *する
+-rule [dic] - する +  して
+#
+#-----------------------------------------------------------------
+#only sase to se error form
+-name SE_SaseSe
+#
+-group 1
+-type present pos plain
+-case *う
+-rule [dic] - う + わさせる
+-default
+-rule [dic] - *う + *あさせる
+#	
+-type present pos polite
+-case *う
+-rule [dic] - う + わさせます
+-default
+-rule [dic] - *う + *あさせます
+#
+-type past pos plain
+-case *う
+-rule [dic] - う + わさせた
+-default
+-rule [dic] - *う + *あさせた
+#	
+-type past pos polite
+-case *う
+-rule [dic] - う + わさせました
+-default
+-rule [dic] - *う + *あさせました
+#
+#
+-group 2
+-type present pos plain
+-rule [dic] - る + させる
+#	
+-type present pos polite
+-rule [dic] - る + させます
+#
+-type past pos plain
+-rule [dic] - る + させた
+#	
+-type past pos polite
+-rule [dic] - る + させました
+#
+#
+-group 3
+-type present pos plain 
+-case 来る
+-rule こさせる
+-case *する
+-rule [dic] - する + させる
+#
+-type present pos polite 
+-case 来る
+-rule こさせます
+-case *する
+-rule [dic] - する + させます
+#
+-type past pos plain 
+-case 来る
+-rule こさせた
+-case *する
+-rule [dic] - する + させた
+#
+-type past pos polite 
+-case 来る
+-rule こさせました
+-case *する
+-rule [dic] - する + させました
+#
+#-----------------------------------------------------------------
+-name SE_T1T2
+#
+-group 1
+-type present pos plain
+-case *う
+-rule [dic] - う + させる
+-case *く
+-rule [dic] - く + させる
+-case *ぐ
+-rule [dic] - ぐ + させる
+-case *す
+-rule [dic] - す + させる
+-case *つ
+-rule [dic] - つ + させる
+-case *む
+-rule [dic] - む + させる
+-case *ぶ
+-rule [dic] - ぶ + させる
+-default
+-rule [dic] - *う + させる
+#
+#	
+-type present pos polite
+-case *う
+-rule [dic] - う + させます
+-case *く
+-rule [dic] - く + させます
+-case *ぐ
+-rule [dic] - ぐ + させます
+-case *す
+-rule [dic] - す + させます
+-case *つ
+-rule [dic] - つ + させます
+-case *む
+-rule [dic] - む + させます
+-case *ぶ
+-rule [dic] - ぶ + させます
+-default
+-rule [dic] - *う + させます
+#
+-type past pos plain
+-case *う
+-rule [dic] - う + させた
+-case *く
+-rule [dic] - く + させた
+-case *ぐ
+-rule [dic] - ぐ + させた
+-case *す
+-rule [dic] - す + させた
+-case *つ
+-rule [dic] - つ + させた
+-case *む
+-rule [dic] - む + させた
+-case *ぶ
+-rule [dic] - ぶ + させた
+-default
+-rule [dic] - *う + させた
+#	
+-type past pos polite
+-case *う
+-rule [dic] - う + させました
+-case *く
+-rule [dic] - く + させました
+-case *ぐ
+-rule [dic] - ぐ + させました
+-case *す
+-rule [dic] - す + させました
+-case *つ
+-rule [dic] - つ + させました
+-case *む
+-rule [dic] - む + させました
+-case *ぶ
+-rule [dic] - ぶ + させました
+-default
+-rule [dic] - *う + させました
+#
+#
+-group 2
+-type present pos plain
+-rule [dic] - る + らせる
+#	
+-type present pos polite
+-rule [dic] - る + らせます
+#
+-type past pos plain
+-rule [dic] - る + らせた
+#	
+-type past pos polite
+-rule [dic] - る + らせました
+#
+#
+-group 3
+-type present pos plain
+-case 来る
+-rule こさせる
+-case *する
+-rule [dic] - する + させる
+#
+-type present pos polite 
+-case 来る
+-rule こさせます
+-case *する
+-rule [dic] - する + させます
+#
+-type past pos plain 
+-case 来る
+-rule こさせた
+-case *する
+-rule [dic] - する + させた
+#
+-type past pos polite 
+-case 来る
+-rule こさせました
+-case *する
+-rule [dic] - する + させました
+#
+#-----------------------------------------------------------------
+#
+-eof

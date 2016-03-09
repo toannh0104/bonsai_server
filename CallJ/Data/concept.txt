@@ -1,0 +1,27 @@
+# Concept Definition file
+# May 2006
+# ===============================
+#
+# 
+# [xxx] = Will be taken from lexicon based on [group]
+# {xxx} = A sub concept, ie. frame name
+# (xxx) = Will be interpreted by the grammar rules (not a reference to anything)
+# xxx   = Will be taken from lexicon as is
+#
+<frame to_go_3>	
+	<slot How 1.0>
+		[transport]		
+		<restriction Destination == [intown]>
+			[transport_S] 0.5
+		</restriction>
+		<restriction Destination == [incountry]>
+			[transport_L] 0.5
+			[transport_M] 0.5
+		</restriction>
+		<restriction Destination == [international]>
+			[transport_L] 
+		</restriction>
+	</slot>	
+</frame>
+#
+-eof

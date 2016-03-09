@@ -1,0 +1,71 @@
+% HUMAN_N
+ジョン	j o N
+サム	s a m u
+サリ	s a r i
+道子	 m i ch i k o
+田中	t a n a k a
+太郎	t a r o:
+鈴木	s i z i k i
+今西	 i m a n i sh i
+% SUFFIX
+さん	s a N
+君	k u N
+ちゃん	ch a N
+% FAMILY
+お母さん	 o k a a s a N
+奥さん	 o k u s a N
+伯父	 o j i
+お爺さん	 o j i i s a N
+父	 ch i ch i
+弟	 o t o u t o
+お兄さん	 o n i i s a N
+お姉さん	 o n e e s a N
+伯母さん	 o b a s a N
+お婆さん	 o b a a s a N
+家内	 ts u m a
+母	 h a h a
+妹さん	 i m o u t o s a N
+伯父さん	 o j i s a N
+お父さん	 o t o u s a N
+% SUBJ_PARTICAL
+は	w a
+が	g a
+も	m o
+% JOB
+医者	 i sh a
+学生	 g a k u s e i
+先生	 s e N s e i
+お金持ち	 o k a n e m o ch i
+看護婦	 k a N g o f u
+警官	 k e i k a N
+校長	 k o u ch o u
+公務員	 k o u m u i N
+歯医者	 h a i sh a
+% NATIONALITY
+イギリス人	 i g i r i s u j i N
+フランス人	 f u r a N s u j i N
+ドイツ人	 d o i ts u j i N
+スペイン人	 s u p e i N j i N
+アメリカ人	 a m e r i k a j i N
+日本人	 n i h o N j i N
+% PREDICATE_VERB
+だ　　　d a
+です	d e s u
+だった	d a q t a
+ではない	d e w a n a i
+ではなかった	d e w a n a q k a q t a
+でした	d e sh i t a
+ではありません	d e w a a r i m a s e N
+ではありませんでした	d e w a a r i m a s e N d e sh i t a
+% FILL_B
+えー	e: 
+えーと	e: t o 
+えーと	e: q t o 
+あのー	a n o: 
+
+% NS_B
+<s>	silB
+% NS_E
+</s>	silE
+% NOISE			# short pause
+sp		sp

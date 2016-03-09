@@ -1,0 +1,24 @@
+# Student Config File
+#
+-id 7
+-name a
+-password a
+#
+-lessonHistory 1 1 1 1 812 991 15 0 0 0 0 0 0 0
+-lessonHistory 2 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 3 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 4 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 5 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 6 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 7 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 8 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 9 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 10 0 0 0 0 0 0 0 0 0 0 0 0 0
+#
+-wordExperience 1 231 1 0
+-wordExperience 2 730 1 0
+-wordExperience 6 731 1 0
+-wordExperience 11 485 1 1
+#
+-eof
+#

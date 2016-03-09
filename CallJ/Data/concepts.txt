@@ -1,0 +1,4353 @@
+# Concept Definition file
+# May 2006
+# ===============================
+#
+# 
+# [xxx] = Will be taken from lexicon based on [group]
+# {xxx} = A sub concept, ie. frame name
+# (xxx) = Will be interpreted by the grammar rules (not a reference to anything)
+# xxx   = Will be taken from lexicon as is
+#
+<frame object1>
+	<slot What 1.0>
+		[shopping]
+	</slot>
+</frame>
+#
+<frame this_is>
+	<slot Subject 1.0>
+		[definitiveA]
+	</slot>
+	<slot Complement 1.0>
+		[small_object]
+	</slot>
+	<slot Verb 1.0>
+		(is) 1.5
+		(is_also) 1.0
+	</slot>
+</frame>
+#
+<frame person_is_1>
+	<slot Subject 1.0>
+		[name] 1.0		
+	</slot>
+	<slot Verb 1.0>
+		(is) 1.0
+	</slot>
+	<slot Complement 1.0>
+		[nationality] 1.0
+	</slot>
+</frame>
+#
+<frame person_is_2>
+	<slot Subject 1.0>
+		[family] 1.0
+	</slot>
+	<slot Verb 1.0>
+		(is) 1.0
+	</slot>
+	<slot Complement 1.0>
+		[job] 1.0
+	</slot>
+</frame>
+#
+<frame food_adjectives1>
+	<slot Definitive 1.0>
+		[definitiveB]
+	</slot>
+	<slot Subject 1.0>
+		[edible] 0.5
+		[drinkable] 0.5
+	</slot>
+	<slot Adjective 1.0>
+		[adjective_cost] 0.3
+		[adjective_taste] 0.3
+		[adjective_obj_temp] 0.3
+	</slot>
+	<slot Adjective2 0.2>
+		[adjective_gen] 0.5
+		[adjective_size] 0.5
+	</slot>
+	<slot Verb 1.0>
+		(is) 1.5
+		(is_also) 1.0
+	</slot>
+</frame>
+#
+<frame food_adjectives2>
+	<slot Definitive 1.0>
+		[definitiveA]
+	</slot>
+	<slot Complement 1.0>
+		[edible] 0.5
+		[drinkable] 0.5
+	</slot>
+	<slot Adjective 1.0>
+		[adjective_cost] 0.3
+		[adjective_taste] 0.3
+		[adjective_obj_temp] 0.3
+	</slot>
+	<slot Verb 1.0>
+		(is) 1.5
+		(is_also) 1.0
+	</slot>
+</frame>
+#
+<frame adjectives1>
+	<slot Definitive 1.0>
+		[definitiveB]
+	</slot>
+	<slot Subject 1.0>
+		[edible] 0.5
+		[drinkable] 0.5
+	</slot>
+	<slot Adjective 1.0>
+			[adjective_taste] 0.3
+			[adjective_cost] 0.3
+			[adjective_obj_temp] 0.3
+	</slot>
+</frame>
+# 
+<frame adjectives2>
+	<slot Subject 1.0>
+		[name]
+	</slot>
+	<slot Adjective 1.0>
+		[adjective_chara]
+	</slot>
+</frame>
+#
+<frame suki1>
+        <slot Subject 1.0>
+	 [I]
+	</slot>
+	<slot Object 1.0>
+	[ediblepic] 0.5
+	[drinkable] 0.4
+	[playing] 0.1	
+	</slot>
+	<slot Adjective 1.0>
+	好きな	
+	</slot>
+</frame>
+#
+<frame suki2>
+	<slot Subject 1.0>
+	 [I]
+	</slot>
+	<slot Object 1.0>
+	[playing]	
+	</slot>
+	<slot Verb 1.0>
+	する	
+	</slot>
+	<slot Adjective 1.0>
+	好きな	
+	</slot>
+</frame>
+#
+<frame l5_souji>
+	<slot Adjective 1.0>
+		きれいな
+	</slot>
+	<slot Verb 1.0>
+		掃除する
+	</slot>	
+</frame>
+#
+<frame l5_kaku>
+	<slot Adjective 1.0>
+		丁寧な
+	</slot>
+	<slot Verb 1.0>
+		書く
+	</slot>
+</frame>
+#
+<frame l5_naku>
+	<slot Subject 1.0>
+	[changable_size_big]	
+	</slot>
+	<slot Adjective 1.0>
+		[adjective_big] 0.5
+	</slot>
+	<slot Verb 1.0>
+		なる
+	</slot>	
+</frame>
+#
+<frame l5_naku2>
+	<slot Subject 1.0>
+	[changable_num]	
+	</slot>
+	<slot Adjective 1.0>
+		[adjective_num_many] 0.5
+	</slot>
+	<slot Verb 1.0>
+		なる
+	</slot>	
+</frame>
+#
+<frame to_read>
+	<slot Subject 1.0>
+		[I] 2.0
+		[person] 0.4
+	</slot>
+	<slot When 0.5>
+		{time}
+	</slot>
+	<slot Where 0.5>
+		[read_loc]
+	</slot>
+	<slot What 1.0>
+		[readable]
+	</slot>
+	<slot Verb 1.0>
+		読む
+	</slot>
+</frame>
+#
+<frame to_eat_1>
+	<slot Subject 1.0>
+		[I] 2.0
+		[person] 0.4
+	</slot>
+	<slot With 0.1>
+		[person]
+	</slot>
+	<slot When 0.2>
+		{time}
+	</slot>
+	<slot Where 0.5>
+		[food_loc]
+	</slot>
+	<slot What 1.0>
+		[edible]
+	</slot>
+	<slot Verb 1.0>
+		eat
+	</slot>
+</frame>
+#
+<frame to_eat_2>
+	<slot Subject 1.0>
+		[I]		
+	</slot>
+	<slot With 0.3>
+		[ingroup] 0.5
+		[personname_female] 0.5
+		[personname_male] 0.5
+	</slot>	
+	<slot When 0.2>
+		{time}
+	</slot>
+	<slot Where 0.5>
+		[food_loc]
+	</slot>
+	<slot What 1.0>
+		[edible]
+	</slot>
+	<slot Verb 1.0>
+		eat
+	</slot>
+</frame>
+#
+<frame to_eat_3>
+	<slot When 0.3>
+		{time}
+	</slot>
+	<slot Where 0.5>
+		[food_loc]
+	</slot>
+	<slot What 1.0>
+		[edible]
+	</slot>
+	<slot Verb 1.0>
+		eat
+	</slot>
+</frame>
+#
+<frame to_drink_1>
+	<slot Subject 1.0>
+		[I] 
+	</slot>
+	<slot With 0.3>
+		[ingroup] 0.5
+		[personname_female] 0.5
+		[personname_male] 0.5
+	</slot>
+	<slot When 0.5>
+		{time}
+	</slot>
+	<slot What 1.0>
+		[drinkable]
+	</slot>
+	<slot Verb 1.0>
+		飲む
+	</slot>
+</frame>
+#
+<frame to_drink_2>
+	<slot Subject 1.0>
+		[I] 0.5
+		[person] 0.5
+	</slot>
+	<slot Where 1.0>
+		[drink_loc]
+	</slot>
+	<slot What 1.0>
+		[beverage]
+	</slot>
+	<slot Verb 1.0>
+		飲む
+	</slot>
+</frame>
+#
+<frame to_drink_3>
+	<slot Where 1.0>
+		[drink_loc]
+	</slot>
+	<slot What 1.0>
+		[beverage]
+	</slot>
+	<slot Verb 1.0>
+		飲む
+	</slot>
+</frame>
+#
+<frame to_go_1>
+	<slot Subject 1.0>
+		[I] 
+	</slot>
+	<slot With 0.5>
+		[ingroup] 0.5
+		[personname_female] 0.5
+		[personname_male] 0.5
+	</slot>
+	<slot When 0.5>
+		{time}
+	</slot>
+	<slot Destination 1.0>
+		[intown]
+		[incountry]
+	</slot>
+	<slot Verb 1.0>
+		行く
+	</slot>
+</frame>
+#
+<frame to_go_2>
+	<slot Subject 1.0>
+		[I] 1.0
+		[name] 1.0
+	</slot>
+	<slot Destination 1.0>
+		[intown]
+		[incountry]
+		[international]
+	</slot>
+	<slot How 0.8>
+		[transport]		
+		<restriction Destination == [intown]>
+			[transport_S] 0.5
+			[transport_M] 0.1
+		</restriction>
+		<restriction Destination == [incountry]>
+			[transport_L] 0.5
+			[transport_M] 0.5
+		</restriction>
+		<restriction Destination == [international]>
+			[transport_L] 
+		</restriction>
+	</slot>
+	<slot Verb 1.0>
+		行く
+	</slot>
+</frame>
+#
+<frame to_go_3>
+	<slot Destination 1.0>
+		[intown]
+		[incountry]
+		[international]
+	</slot>
+	<slot How 1.0>
+		[transport]		
+		<restriction Destination == [intown]>
+			[transport_S] 0.5
+		</restriction>
+		<restriction Destination == [incountry]>
+			[transport_L] 0.5
+			[transport_M] 0.5
+		</restriction>
+		<restriction Destination == [international]>
+			[transport_L] 
+		</restriction>
+	</slot>
+	<slot Verb 1.0>
+		行く
+	</slot>
+</frame>
+#
+<frame to_wash>
+	<slot Subject 1.0>
+		[I] 2.0
+		[name] 0.4
+	</slot>
+	<slot When 0.5>
+		{time}
+	</slot>
+	<slot What 1.0>
+		[washable]
+	</slot>
+	<slot Verb 1.0>
+		洗う
+	</slot>
+</frame>
+#
+<frame to_open_intrans>
+	<slot Subject 1.0>
+		[I] 2.0
+		[person] 0.4
+	</slot>
+	<slot When 0.2>
+		{time}
+	</slot>
+	<slot What 1.0>
+		[openable]
+	</slot>
+	<slot Verb 1.0>
+		開ける
+	</slot>
+</frame>
+#
+<frame to_open_trans>
+	<slot Subject 1.0>
+		[openable]
+	</slot>
+	<slot Verb 1.0>
+		開く
+	</slot>
+</frame>
+#
+<frame to_converse>
+	<slot Subject 1.0>
+		[I] 		
+	</slot>
+	<slot With 1.0>
+		[ingroup] 0.5
+		[personname_female] 0.5
+		[personname_male] 0.5
+	</slot>
+	<slot Where 0.5>
+		[read_loc]
+	</slot>
+	<slot When 0.5>
+		{time}
+	</slot>
+	<slot Verb 1.0>
+		話す 1.0
+	</slot>
+</frame>
+#
+<frame to_live>
+	<slot Subject 1.0>
+		[I] 2.0
+		[person] 1.0
+	</slot>
+	<slot WhereNi 1.0>
+		[living_loc]
+	</slot>
+	<slot Verb 1.0>
+		住む
+	</slot>
+</frame>
+#
+<frame simple_return>
+	<slot Destination 1.0>
+		[return_loc]
+	</slot>
+	<slot Verb 1.0>
+		帰る
+	</slot>
+</frame>
+#
+<frame simple_listen>
+	<slot What 1.0>
+		[listen_obj]
+	</slot>	 
+	<slot Verb 1.0>
+		聞く
+	</slot>
+</frame>
+#
+<frame simple_smoke>	
+	<slot What 1.0>
+		[smoke_obj]
+	</slot>	 
+	<slot Verb 1.0>
+		吸う
+	</slot>
+</frame>
+#
+<frame simple_open>
+	<slot What 1.0>
+		[openable]
+	</slot>
+	<slot Verb 1.0>
+		開ける
+	</slot>
+</frame>
+#
+<frame simple_close>
+	<slot What 1.0>
+		[openable]
+	</slot>	 
+	<slot Verb 1.0>
+		閉める
+	</slot>
+</frame>
+#
+<frame simple_get>
+	<slot Object 1.0>
+		[writable]
+	</slot>	 
+	<slot Verb 1.0>
+		取る
+	</slot>
+</frame>
+#
+<frame simple_wash>
+	<slot What 1.0>
+		[washable]
+	</slot>
+	<slot Verb 1.0>
+		洗う
+	</slot>
+</frame>
+#
+<frame simple_read>
+	<slot What 1.0>
+		[readable]
+	</slot>
+	<slot Verb 1.0>
+		read
+	</slot>
+</frame>
+#
+<frame simple_write>
+	<slot What 1.0>
+		[writeable]
+	</slot>
+	<slot Verb 1.0>
+		write
+	</slot>
+</frame>
+#
+<frame simple_eat>
+	<slot What 1.0>
+		[edible]
+	</slot>
+	<slot Verb 1.0>
+		eat
+	</slot>
+</frame>
+#
+<frame simple_drink>
+	<slot What 1.0>
+		[drinkable]
+	</slot>
+	<slot Verb 1.0>
+		drink
+	</slot>
+</frame>
+#
+<frame simple_drink_nonalcohol>
+	<slot What 1.0>
+		お茶
+		オレンジジュース
+		コーヒー
+		コーラ
+		牛乳
+	</slot>
+	<slot Verb 1.0>
+		drink
+	</slot>
+</frame>
+#
+<frame simple_buy>
+	<slot What 1.0>
+		[shopping]
+	</slot>
+	<slot Verb 1.0>
+		買う
+	</slot>	
+</frame>
+#
+<frame simple_stop>
+	<slot What 1.0>
+		[parkable]
+	</slot>
+	<slot Verb 1.0>
+		止める
+	</slot>	
+</frame>
+#
+<frame simple_go>
+	<slot Destination 1.0>
+		[intown]
+		[incountry]
+		[international]
+	</slot>
+	<slot Verb 1.0>
+		行く
+	</slot>
+</frame> 
+#
+<frame simple_forget>	
+	<slot What 1.0>
+		[forget_obj]
+	</slot>	 
+	<slot Verb 1.0>
+		忘れる
+	</slot>
+</frame>
+#
+<frame simple_come>
+	<slot Destination 0.5>
+		[intown]
+	</slot>
+	<slot Verb 1.0>
+		来る
+	</slot>
+</frame>
+#
+<frame to_come_1>
+	<slot When 0.5>
+		{time}
+	</slot>
+	<slot Destination 0.5>
+		[intown]
+	</slot>
+	<slot Verb 1.0>
+		来る
+	</slot>
+</frame>
+#
+<frame simple_ask>
+	<slot To 1.0>
+		[ingroup] 0.3
+		[personname_female] 0.3
+		[personname_male] 0.4
+	</slot>
+	<slot Verb 1.0>
+		頼む
+	</slot>
+</frame>
+#
+<frame request_wake>  
+	<slot When 1.0>
+		[time_abs]		
+	</slot>
+	<slot Who 0.5>
+		[ingroup]		
+	</slot>
+	<slot Verb 1.0>
+		起こす
+	</slot>
+</frame>
+#
+<frame to_wake>  
+	<slot When 1.0>
+		[time_abs]		
+	</slot>
+	<slot Verb 1.0>
+		起きる
+	</slot>
+</frame>
+#
+<frame simple_puton>  
+	<slot What 0.5>
+		[puton_obj] 0.5
+		[puton_obj2] 0.2
+		[puton_obj3] 0.3
+	</slot>
+	<slot Verb 1.0>
+		[wear]		
+		<restriction What == [puton_obj]>
+			着る
+		</restriction>
+		<restriction What == [puton_obj2]>
+			履く
+		</restriction>
+		<restriction What == [puton_obj3]>
+			かぶる 
+		</restriction>
+	</slot>
+</frame>
+#
+<frame simple_call>
+	<slot Who 1.0>
+		[ingroup] 0.5
+		[personname_female] 0.5
+		[personname_male] 0.5
+	</slot>
+	<slot Verb 1.0>
+		 呼ぶ
+	</slot>
+</frame>
+#
+<frame simple_look>
+	<slot What 1.0>
+		[lookable]
+	</slot>
+	<slot Verb 1.0>
+		見る
+	</slot>
+</frame>
+#
+<frame simple_geton>
+	<slot Transport 1.0>
+		[transport_M]
+	</slot>
+	<slot Verb 1.0>
+		乗る
+	</slot>
+</frame>
+#
+<frame simple_enter>
+	<slot Transport 1.0>
+		[getin_loc]
+	</slot>
+	<slot Verb 1.0>
+		入る
+	</slot>
+</frame>
+#
+<frame simple_borrow>
+	<slot What 1.0>
+		# SATO fix
+		雑誌 0.5
+		本 0.5
+		漫画 0.5
+#		[readable]
+	</slot>
+	<slot Verb 1.0>
+		借りる 0.5
+		返す 0.5
+	</slot>
+</frame>
+#
+<frame simple_intrans_1>
+	<slot When 1.0>
+		[time_abs]
+	</slot>
+	<slot Verb 1.0>
+	  <restriction When == [time_abs]>
+			[time_rel]
+		</restriction>
+		<restriction When == [time_rel]>
+			[inWhenrel]
+		</restriction>
+	</slot>	
+</frame>
+#
+<frame simple_translate>
+	<slot What 1.0>
+		[translatable]
+	</slot>
+	<slot Verb 1.0>
+		翻訳する
+	</slot>
+</frame>
+#
+<frame simple_turnto>
+	<slot To 1.0>
+		[direction]
+	</slot>
+	<slot Verb 1.0>
+		曲がる
+	</slot>
+</frame>
+#
+<frame basic_action_trans>
+	<slot Subject 1.0>
+		[I] 2.0
+		[person] 1.0
+	</slot>
+	<slot With 1.0>
+		[person]
+	</slot>
+	<slot Verb 1.0>
+		# SATO fix
+		遊ぶ 1.0
+		歩く 1.0
+		歌う 1.0
+		泳ぐ 1.0
+		帰る 1.0
+		飲む 1.0
+		走る 1.0
+		踊る 1.0
+#		[invitational_trans]
+	</slot>
+</frame>
+#
+<frame simple_getup>
+	<slot Subject 1.0>
+		[I] 2.0
+		[person] 1.0
+	</slot>
+	 <slot When>
+		[morning]
+	</slot>
+	<slot Verb 1.0>
+		[invitational_trans]
+	</slot>
+</frame>
+#
+<frame time>
+	<slot time_rel>
+		[time_rel]
+	</slot>
+	<slot time_abs>
+		[time_nonrel]
+	</slot>
+</frame>
+#
+<frame position_in_room1>
+	<slot Subject 1.0>
+		[onbed] 1.0
+		[underbed] 1.0
+		[onshelf] 1.0
+		[underclock] 1.0
+		[nextToclock] 1.0
+		[indrawer] 1.0
+		[ondrawer] 1.0
+	</slot>	 
+	<slot Where 1.0>
+		(on_drawer) 
+	        <restriction Subject == [onbed]>
+			(on_bed) 			
+		</restriction>
+		 <restriction Subject == [underbed]>
+			(under_bed)		
+		</restriction>
+		 <restriction Subject == [onshelf]>
+			(on_shelf)		
+		</restriction>
+		 <restriction Subject == [nextToclock]>
+			(next_to_clock)			
+		</restriction>
+		 <restriction Subject == [underclock]>
+			(under_clock)			
+		</restriction>
+		 <restriction Subject == [indrawer]>
+			(in_drawer) 		
+		</restriction>
+		<restriction Subject == [ondrawer]>
+			(on_drawer) 			
+		</restriction>
+	</slot>
+</frame>
+#
+<frame position_in_room2>
+	<slot Subject 1.0>
+		[abovewindow] 1.0
+		[belowwindow] 1.0
+		[ontable] 1.0
+		[onbookshelf] 1.0
+		[belowtable] 1.0
+		[infronttv] 1.0
+		[abovetv] 1.0
+		[nextTotv] 1.0
+	</slot>
+	<slot Where 1.0>
+		(on_table) 
+	        <restriction Subject == [abovewindow]>
+			(above_window)		
+		</restriction>
+		 <restriction Subject == [belowwindow]>
+			(below_window)			
+		</restriction>
+		 <restriction Subject == [onbookshelf]>
+			(on_bookshelf)			
+		</restriction>
+		 <restriction Subject == [ontable]>
+			(on_table)		
+		</restriction>
+		 <restriction Subject == [belowtable]>
+			(below_table)			
+		</restriction>
+		<restriction Subject == [infronttv]>
+			(infront_tv)			
+		</restriction>
+		<restriction Subject == [nextTotv]>
+			(next_to_tv)			
+		</restriction>
+		<restriction Subject == [abovetv]>
+			(above_tv) 		
+		</restriction>
+	</slot>
+</frame>
+#
+<frame person_position>
+	<slot Subject 1.0>
+		[name] 0.5
+		[family] 0.5
+	</slot>
+	<slot Where 1.0>
+		[location]
+	</slot>
+</frame>
+#
+<frame giving1>
+	<slot Subject> 1.0		
+		[ingroup] 0.2
+		[name] 0.4
+		[I] 0.3
+	</slot>
+	<slot Who> 1.0		
+		[ingroup] 0.4
+		[name] 0.4
+		[I] 0.3
+		<restriction Subject == [ingroup]>			
+			[name]
+		</restriction>
+		<restriction Subject == [I]>			
+			[ingroup] 0.5
+			[name] 0.5
+		</restriction>
+	</slot>
+	<slot What 1.0>
+		[small_object]
+	</slot>
+	<slot Verb 1.0>
+		(give)
+	</slot>
+</frame>
+#
+<frame giving2>
+	<slot Subject 1.0>
+		[outgroup] 0.4
+		[ingroup] 0.2
+		[name] 0.4
+		[I] 0.3
+	</slot>
+	<slot Who 1.0>	
+		[outgroup] 0.2
+		[ingroup] 0.4
+		[name] 0.4
+		[I] 0.3
+		<restriction Subject == [ingroup]>
+			[outgroup] 0.7
+			[name] 0.3
+		</restriction>
+	</slot>
+	<slot What 1.0>
+		[small_object]
+	</slot>
+	<slot Verb 1.0>
+		(give)
+	</slot>
+</frame>
+#
+<frame receiving1>
+	<slot Subject 1.0>
+		[outgroup] 0.2
+		[ingroup] 0.4
+		[name] 0.2
+		[I] 0.3
+	</slot>
+	<slot Who 1.0>		
+		[name]
+		restriction Subject == [ingroup]>
+			[I] 0.5
+			[name] 0.5
+		</restriction>
+	</slot>
+	<slot What 1.0>
+		[small_object]
+	</slot>
+	<slot Verb 1.0>
+		(receive)
+	</slot>
+</frame>
+#
+<frame counters1>
+	<slot Subject 0.5>
+		[name]
+	</slot>
+	<slot What 1.0>
+		[shopping]
+	</slot>
+	<slot Quantity 1.0>
+		[quantity] 1.0
+	</slot>	
+	<slot Verb 1.0>
+		買う
+	</slot>	
+</frame>
+#
+<frame counters2>
+	<slot What 1.0>
+		[edible]		
+	</slot>
+	<slot Quantity 1.0>
+		[quantity] 1.0
+	</slot>	
+#	<slot What2 0.5>
+#		[drinkable]
+#	</slot>
+#	<slot Quantity2 1.0>
+#		<restriction What2 == [shopping]>
+#			[quantity] 1.0
+#		</restriction>
+#	</slot>
+	<slot Verb 1.0>
+		ください
+	</slot>	
+</frame>
+#
+<frame causative1>
+	<slot Subject 0.5>
+		[personname_male] 0.5
+		[personname_female] 0.5
+	</slot>
+	<slot Who 1.0>
+		<restriction Subject == [personname_male]>
+			[personname_female]
+		</restriction>
+		<restriction Subject == [personname_female]>
+			[personname_male]
+		</restriction>
+	</slot>
+	<slot Rest 1.0>
+		{simple_write} 0.2
+		{simple_read} 0.2
+		{simple_eat} 0.2
+		{simple_drink_nonalcohol} 0.2
+		{simple_go} 0.2
+	</slot>
+</frame>
+#
+<frame to_read_ing>
+	<slot Subject 1.0>
+		[person]
+	</slot>	
+	<slot What 1.0>
+		[readable]
+	</slot>
+	<slot Verb 1.0>
+		読む
+	</slot>
+</frame>
+#
+<frame to_eat_ing>
+	<slot Subject 1.0>		
+		[person]
+	</slot>
+	<slot Where 0.5>
+		[food_loc]
+	</slot>
+	<slot What 1.0>
+		[edible]
+	</slot>
+	<slot Verb 1.0>
+		eat
+	</slot>
+</frame>
+#
+<frame to_drink_ing>
+	<slot Subject 1.0>
+		[person]
+	</slot>
+	<slot Where 1.0>
+		[drink_loc]
+	</slot>
+	<slot What 1.0>
+		[beverage]
+	</slot>
+	<slot Verb 1.0>
+		飲む
+	</slot>
+</frame>
+#
+<frame to_wash_ing>
+	<slot Subject 1.0>
+		[person]
+	</slot>
+	<slot What 1.0>
+		[washable]
+	</slot>
+	<slot Verb 1.0>
+		洗う
+	</slot>
+</frame>
+#
+<frame to_converse_ing>
+	<slot Subject 1.0>
+		[ingroup]
+	</slot>
+	<slot With 1.0>
+		[personname_male] 0.5
+		[personname_female] 0.5
+	</slot>
+	<slot Where 0.5>
+		[read_loc]
+	</slot>
+	<slot Verb 1.0>
+		話す
+	</slot>
+</frame>
+#
+<frame to_wait_ing>
+	<slot Subject 1.0>
+		[personname_male]		
+	</slot>
+	<slot Where 1.0>
+		[read_loc]
+		[drink_loc]
+		[food_loc]
+	</slot>
+	<slot Who 1.0>
+		[personname_female] 0.5
+	</slot>
+	<slot Verb 1.0>
+		待つ
+	</slot>
+</frame>
+#
+<frame sub_write>	
+	<slot Subject 1.0>
+	   [writetool]	
+	</slot>
+	<slot Verb 1.0>
+		書く
+	</slot>		
+</frame>
+#
+<frame sub_read>	
+	<slot Subject 1.0>
+	   [readable]	
+	</slot>
+	<slot Verb 1.0>
+		読む
+	</slot>		
+</frame>
+#
+<frame sub_remember>	
+	<slot Subject 1.0>
+	   [rememberable]	
+	</slot>
+	<slot Verb 1.0>
+		覚える
+	</slot>		
+</frame>
+#
+<frame sub_use>	
+	<slot Subject 1.0>
+	   [usable]	
+	</slot>
+	<slot Verb 1.0>
+		使う
+	</slot>		
+</frame>
+#
+<frame sub_wash>	
+	<slot Subject 1.0>
+	   [washable]	
+	</slot>
+	<slot Verb 1.0>
+		洗う
+	</slot>		
+</frame>
+#
+<frame sub_wash>	
+	<slot Subject 1.0>
+	   [washable]	
+	</slot>
+	<slot Verb 1.0>
+		洗う
+	</slot>		
+</frame>
+# Lesson 4 BEGIN
+<frame lesson4-1>
+	<slot Subject1 1.0>
+		[name] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		(ha) 1.0
+		(mo) 1.0
+	</slot>
+	<slot Adjective1 1.0>
+		忙しい 1.0
+		元気な 1.0
+		親切な 1.0
+	</slot>
+	<slot GFXBG1 1.0>
+	</slot>
+</frame>
+<frame lesson4-2>
+	<slot Description1 1.0>
+		この 1.0
+	</slot>
+	<slot Subject1 1.0>
+		[edible] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		(ha) 1.0
+		(mo) 1.0
+	</slot>
+	<slot Adjective1 1.0>
+		おいしい 1.0
+		まずい 1.0
+	</slot>
+	<slot GFXBG1 1.0>
+	</slot>
+</frame>
+<frame lesson4-3>
+	<slot Description1 1.0>
+		その 1.0
+	</slot>
+	<slot Subject1 1.0>
+		ハンバーガー 1.0
+		ステーキ 1.0
+		ピザ 1.0
+		トースト 1.0
+	</slot>
+	<slot Particle1 1.0>
+		(ha) 1.0
+		(mo) 1.0
+	</slot>
+	<slot Adjective1 1.0>
+		熱い 1.0
+	</slot>
+	<slot GFXBG1 1.0>
+	</slot>
+</frame>
+<frame lesson4-4>
+	<slot Description1 1.0>
+		[name] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		(ha) 1.0
+		(mo) 1.0
+	</slot>
+	<slot Adjective1 1.0>
+		忙しい 1.0
+		元気な 1.0
+		親切な 1.0
+	</slot>
+	<slot Object1 1.0>
+		人 1.0
+	</slot>
+	<slot Verb1 1.0>
+		です 1.0
+	</slot>
+</frame>
+<frame lesson4-5>
+	<slot Description1 1.0>
+		これ 1.0
+	</slot>
+	<slot Particle1 1.0>
+		は 1.0
+	</slot>
+	<slot Adjective1 1.0>
+		安い 1.0
+		高い 1.0
+	</slot>
+	<slot Adjective2 1.0>
+		おいしい 1.0
+		まずい 1.0
+	</slot>
+	<slot Object1 1.0>
+		[edible] 1.0
+	</slot>
+	<slot Verb1 1.0>
+		です 1.0
+	</slot>
+	<slot GFXBG1 1.0>
+	</slot>
+</frame>
+# Lesson 4 END
+# Lesson 5 BEGIN
+<frame lesson5-1>
+	<slot Subject1 1.0>
+		私 1.0
+	</slot>
+	<slot Particle1 1.0>
+		は 1.0
+	</slot>
+	<slot Object1 1.0>
+		[edible] 1.0
+		[drinkable] 1.0
+	</slot>
+	<slot Particle2 1.0>
+		が 1.0
+	</slot>
+	<slot Adjective1 1.0>
+		好きな 1.0
+	</slot>
+</frame>
+<frame lesson5-2>
+	<slot Subject1 1.0>
+		私 1.0
+	</slot>
+	<slot Particle1 1.0>
+		は 1.0
+	</slot>
+	<slot Object1 1.0>
+		[do_obj] 1.0
+	</slot>
+	<slot Particle2 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		する 1.0
+	</slot>
+	<slot Particle3 1.0>
+		のが 1.0
+	</slot>
+	<slot Adjective1 1.0>
+		好きな 1.0
+	</slot>
+</frame>
+# Lesson 5 END
+# Lesson 7 BEGIN
+<frame lesson7-1>
+	<slot Object1 1.0>
+		[small_object] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		を 1.0
+	</slot>
+	<slot Adjective1 1.0>
+		下さい 1.0
+	</slot>
+</frame>
+<frame lesson7-2>
+	<slot Object1 1.0>
+		[name] 1.0
+		[drinkable] 1.0
+		[readable] 1.0
+		[openable] 1.0
+		[smoke_obj] 1.0
+		[lookable] 1.0
+		[washable] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		<restriction Object1 == [name]>
+			呼ぶ 1.0
+		</restriction>
+		<restriction Object1 == [drinkable]>
+			飲む 1.0
+		</restriction>
+		<restriction Object1 == [readable]>
+			読む 1.0
+		</restriction>
+		<restriction Object1 == [openable]>
+			開ける 1.0
+			閉める 1.0
+		</restriction>
+		<restriction Object1 == [smoke_obj]>
+			吸う 1.0
+		</restriction>
+		<restriction Object1 == [lookable]>
+			見る 1.0
+		</restriction>
+		<restriction Object1 == [washable]>
+			洗う 1.0
+		</restriction>
+	</slot>
+</frame>
+<frame lesson7-3>
+	<slot Object1 1.0>
+		[smoke_obj] 1.0
+		[forget_obj] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		<restriction Object1 == [forget_obj]>
+			忘れる 1.0
+		</restriction>
+		<restriction Object1 == [smoke_obj]>
+			吸う 1.0
+		</restriction>
+	</slot>
+</frame>
+<frame lesson7-4>
+	<slot Object1 1.0>
+		[name] 1.0
+		[direction] 1.0
+		[intown] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		に 1.0
+	</slot>
+	<slot Verb1 1.0>
+		<restriction Object1 == [name]>
+			頼む 1.0
+		</restriction>
+		<restriction Object1 == [direction]>
+			曲がる 1.0
+		</restriction>
+		<restriction Object1 == [intown]>
+			行く 1.0
+		</restriction>
+	</slot>
+</frame>
+# Lesson 7 END
+# Lesson 9 BEGIN
+<frame lesson9-1>
+	<slot Adjective1 1.0>
+		暑い 1.0
+	</slot>
+	<slot Particle1 1.0>
+		から 1.0
+	</slot>
+	<slot Object1 1.0>
+		お茶 1.0
+		牛乳 1.0
+		ビール 1.0
+		コーラ 1.0
+		オレンジジュース 1.0
+	</slot>
+	<slot Particle2 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		飲む 1.0
+	</slot>
+</frame>
+<frame lesson9-2>
+	<slot Adjective1 1.0>
+		寒い 1.0
+	</slot>
+	<slot Particle1 1.0>
+		から 1.0
+	</slot>
+	<slot Object1 1.0>
+		お茶 1.0
+		牛乳 1.0
+		コーヒー 1.0
+		お酒 1.0
+	</slot>
+	<slot Particle2 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		飲む 1.0
+	</slot>
+</frame>
+<frame lesson9-3>
+	<slot Subject1 1.0>
+		[name] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		は 1.0
+	</slot>
+	<slot Adjective1 1.0>
+		忙しい 1.0
+	</slot>
+	<slot Particle2 1.0>
+		ので 1.0
+	</slot>
+	<slot Object1 1.0>
+		[task] 1.0
+	</slot>
+	<slot Particle3 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		する 1.0
+	</slot>
+</frame>
+<frame lesson9-4>
+	<slot Time1 1.0>
+		[weekday] 5.0
+		[weekend] 2.0
+	</slot>
+	<slot Particle1 1.0>
+		なので 1.0
+	</slot>
+	<slot Object1 1.0>
+		<restriction Time1 == [sunday]>
+			教会 1.0
+		</restriction>
+		<restriction Time1 == [weekday]>
+			学校 1.0
+			大学 1.0
+			仕事 1.0
+		</restriction>
+		<restriction Time1 == [weekend]>
+			図書館 1.0
+		</restriction>
+	</slot>
+	<slot Particle2 1.0>
+		へ 1.0
+	</slot>
+	<slot Verb1 1.0>
+		行く 1.0
+	</slot>
+</frame>
+<frame lesson9-5>
+	<slot Subject1 1.0>
+		[name] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		の 1.0
+	</slot>
+	<slot Subject2 1.0>
+		鞄 1.0
+		パソコン 1.0
+		傘 1.0
+		ラジオ 1.0
+		万年筆 1.0
+		帽子 1.0
+		眼鏡 1.0
+		花瓶 1.0
+		靴 1.0
+		自転車 1.0
+	</slot>
+	<slot Particle2 1.0>
+		は 1.0
+	</slot>
+	<slot Adjective1 1.0>
+		大きい 1.0
+		小さい 1.0
+		重い 1.0
+		軽い 1.0
+	</slot>
+</frame>
+<frame lesson9-6>
+	<slot Time1 1.0>
+		[yobi] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		の 1.0
+	</slot>
+	<slot DetailedTime1 1.0>
+		朝 1.0
+		昼 1.0
+		夕方 1.0
+		夜 1.0
+	</slot>
+	<slot Particle2 1.0>
+		に 1.0
+	</slot>
+	<slot Object1 1.0>
+		[name] 1.0
+		[family] 1.0
+	</slot>
+	<slot Particle3 1.0>
+		に 1.0
+	</slot>
+	<slot Verb1 1.0>
+		会う 1.0
+	</slot>
+</frame>
+<frame lesson9-7>
+	<slot Time1 1.0>
+		明日 1.0
+		明後日 1.0
+		[yobi] 1.0
+	</slot>
+	<slot Object1 1.0>
+		[person] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		に 1.0
+	</slot>
+	<slot Verb1 1.0>
+		会う 1.0
+	</slot>
+</frame>
+<frame lesson9-8>
+	<slot Subject1 1.0>
+		朝食 1.0
+		昼食 1.0
+		夕食 1.0
+	</slot>
+	<slot Particle1 1.0>
+		は 1.0
+	</slot>
+	<slot Object1 1.0>
+		ピザ 1.0
+		ステーキ 1.0
+		ラーメン 1.0
+		ハンバーガー 1.0
+		トースト 1.0
+		パン 1.0
+		お菓子 1.0
+		カレー 1.0
+		弁当 1.0
+		果物 1.0
+	</slot>
+	<slot Verb1 1.0>
+		だ 1.0
+	</slot>
+</frame>
+# Lesson 9 END
+# Lesson 11 BEGIN
+<frame lesson11-1>
+	<slot Object1 1.0>
+		[edible] 1.0
+		[readable] 1.0
+		[shopping] 1.0
+		[small_object] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		<restriction Object1 == [edible]>
+			食べる 1.0
+		</restriction>
+		<restriction Object1 == [readable]>
+			読む 1.0
+		</restriction>
+		<restriction Object1 == [shopping]>
+			買う 1.0
+		</restriction>
+		<restriction Object1 == [small_object]>
+			借りる 1.0
+		</restriction>
+	</slot>
+	<slot Particle2 1.0>
+		に 1.0
+	</slot>
+	<slot Verb2 1.0>
+		行く 1.0
+	</slot>
+</frame>
+<frame lesson11-2>
+	<slot Object1 1.0>
+		[edible] 1.0
+		[readable] 1.0
+		[shopping] 1.0
+		[small_object] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		<restriction Object1 == [edible]>
+			食べる 1.0
+		</restriction>
+		<restriction Object1 == [readable]>
+			読む 1.0
+		</restriction>
+		<restriction Object1 == [shopping]>
+			買う 1.0
+		</restriction>
+		<restriction Object1 == [small_object]>
+			借りる 1.0
+		</restriction>
+	</slot>
+	<slot Particle2 1.0>
+		に 1.0
+	</slot>
+	<slot Verb2 1.0>
+		来る 1.0
+	</slot>
+</frame>
+# Lesson 11 END
+# Lesson 12 BEGIN
+<frame lesson12-1>
+	<slot Subject1 1.0>
+		[name] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		は 1.0
+	</slot>
+	<slot Adverb1 1.0>
+		まだ 1.0
+	</slot>
+	<slot Object1 1.0>
+		[edible] 1.0
+		[drinkable] 1.0
+		[readable] 1.0
+	</slot>
+	<slot Particle2 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		<restriction Object1 == [edible]>
+			食べる 1.0
+		</restriction>
+		<restriction Object1 == [drinkable]>
+			飲む 1.0
+		</restriction>
+		<restriction Object1 == [readable]>
+			読む 1.0
+		</restriction>
+	</slot>
+	<slot Verb2 1.0>
+		いる 1.0
+	</slot>
+</frame>
+<frame lesson12-2>
+	<slot Subject1 1.0>
+		[name] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		は 1.0
+	</slot>
+	<slot Adverb1 1.0>
+		まだ 1.0
+	</slot>
+	<slot Verb1 1.0>
+		寝る 1.0
+		怒る 1.0
+		歌う 1.0
+		祈る 1.0
+		出かける 1.0
+	</slot>
+	<slot Verb2 1.0>
+		いる 1.0
+	</slot>
+</frame>
+<frame lesson12-3>
+	<slot Subject1 1.0>
+		[name] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		は 1.0
+	</slot>
+	<slot Adverb1 1.0>
+		もう 1.0
+	</slot>
+	<slot Object1 1.0>
+		[edible] 1.0
+		[drinkable] 1.0
+		[readable] 1.0
+	</slot>
+	<slot Particle2 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		<restriction Object1 == [edible]>
+			食べる 1.0
+		</restriction>
+		<restriction Object1 == [drinkable]>
+			飲む 1.0
+		</restriction>
+		<restriction Object1 == [readable]>
+			読む 1.0
+		</restriction>
+	</slot>
+	<slot Verb2 1.0>
+		終わる 1.0
+	</slot>
+</frame>
+<frame lesson12-4>
+	<slot Subject1 1.0>
+		[name] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		は 1.0
+	</slot>
+	<slot Adverb1 1.0>
+		もう 1.0
+	</slot>
+	<slot Object1 1.0>
+		大学 1.0
+		学校 1.0
+		会社 1.0
+		家 1.0
+		東京 1.0
+		京都 1.0
+	</slot>
+	<slot Particle2 1.0>
+		に 1.0
+	</slot>
+	<slot Verb1 1.0>
+		いる 1.0
+	</slot>
+</frame>
+<frame lesson12-5>
+	<slot Object1 1.0>
+		[yobi] 1.0
+	</slot>
+	<slot Adverb1 1.0>
+		まで 1.0
+	</slot>
+	<slot Particle1 1.0>
+		に 1.0
+	</slot>
+	<slot Object2 1.0>
+		[readable] 1.0
+	</slot>
+	<slot Particle2 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		<restriction Object2 == [readable]>
+			読む 1.0
+		</restriction>
+	</slot>
+	<slot Verb2 1.0>
+		<restriction Object2 == [readable]>
+			終わる 1.0
+		</restriction>
+	</slot>
+</frame>
+<frame lesson12-6>
+	<slot Object1 1.0>
+		[time_real] 1.0
+	</slot>
+	<slot Adverb1 1.0>
+		まで 1.0
+	</slot>
+	<slot Particle1 1.0>
+		に 1.0
+	</slot>
+	<slot Object2 1.0>
+		[edible] 1.0
+		[drinkable] 1.0
+	</slot>
+	<slot Particle2 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		<restriction Object2 == [edible]>
+			食べる 1.0
+		</restriction>
+		<restriction Object2 == [drinkable]>
+			飲む 1.0
+		</restriction>
+	</slot>
+	<slot Verb2 1.0>
+		終わる 1.0
+	</slot>
+</frame>
+<frame lesson12-7>
+	<slot Object1 1.0>
+		[yobi] 1.0
+	</slot>
+	<slot Adverb1 1.0>
+		まで 1.0
+	</slot>
+	<slot Particle1 1.0>
+		に 1.0
+	</slot>
+	<slot Object2 1.0>
+		仕事 1.0
+		宿題 1.0
+	</slot>
+	<slot Particle2 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		終える 1.0
+	</slot>
+</frame>
+# Lesson 12 END
+# Lesson 13 BEGIN
+<frame lesson13-1>
+	<slot Subject1 1.0>
+		ケーティ 1.0
+		サム 1.0
+		太郎 1.0
+		田中 1.0
+	</slot>
+	<slot Particle1 1.0>
+		は 1.0
+	</slot>
+	<slot Object1 1.0>
+		サリー 1.0
+		ジョン 1.0
+		道子 1.0
+		鈴木 1.0
+		私 1.0
+	</slot>
+	<slot Particle2 1.0>
+		より 1.0
+	</slot>
+	<slot Adjective1 1.0>
+		若い 1.0
+		優しい 1.0
+		厳しい 1.0
+	</slot>
+</frame>
+<frame lesson13-2>
+	<slot Subject1 1.0>
+		今日 1.0
+	</slot>
+	<slot Particle1 1.0>
+		は 1.0
+	</slot>
+	<slot Adjective1 1.0>
+		暑い 1.0
+		寒い 1.0
+	</slot>
+	<slot Verb1 1.0>
+		過ぎる 1.0
+	</slot>
+</frame>
+<frame lesson13-3>
+	<slot Subject1 1.0>
+		[personname_male] 1.0
+		[personname_female] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		は 1.0
+	</slot>
+	<slot Object1 1.0>
+		<restriction Subject1 == [personname_male]>
+			[personname_female] 1.0
+			女 1.0
+		</restriction>
+		<restriction Subject1 == [personname_female]>
+			[personname_male] 1.0
+			男 1.0
+		</restriction>
+	</slot>
+	<slot Particle2 1.0>
+		に 1.0
+	</slot>
+	<slot Adjective1 1.0>
+		優しい 1.0
+		厳しい 1.0
+		冷たい 1.0
+	</slot>
+	<slot Verb1 1.0>
+		過ぎる 1.0
+	</slot>
+</frame>
+<frame lesson13-4>
+	<slot Description1 1.0>
+		これら 1.0
+	</slot>
+	<slot Particle1 1.0>
+		の 1.0
+	</slot>
+	<slot Object1 1.0>
+		お酒 1.0
+		果物 1.0
+		野菜 1.0
+		食べ物 1.0
+		飲み物 1.0
+	</slot>
+	<slot Particle2 1.0>
+		の 1.0
+	</slot>
+	<slot Object2 1.0>
+		中 1.0
+	</slot>
+	<slot Particle3 1.0>
+		で 1.0
+	</slot>
+	<slot Object3 1.0>
+		どれ 1.0
+	</slot>
+	<slot Particle4 1.0>
+		が 1.0
+	</slot>
+	<slot Adverb1 1.0>
+		最も 1.0
+	</slot>
+	<slot Adjective1 1.0>
+		好きな 1.0
+	</slot>
+	<slot Verb1 1.0>
+		です 1.0
+	</slot>
+</frame>
+<frame lesson13-5>
+	<slot Object1 1.0>
+		お酒 1.0
+		食べ物 1.0
+		飲み物 1.0
+		動物 1.0
+		果物 1.0
+		野菜 1.0
+	</slot>
+	<slot Particle1 1.0>
+		の 1.0
+	</slot>
+	<slot Object2 1.0>
+		中 1.0
+	</slot>
+	<slot Particle2 1.0>
+		で 1.0
+	</slot>
+	<slot Object3 1.0>
+		何 1.0
+	</slot>
+	<slot Particle3 1.0>
+		が 1.0
+	</slot>
+	<slot Adverb1 1.0>
+		最も 1.0
+	</slot>
+	<slot Adjective1 1.0>
+		好きな 1.0
+	</slot>
+	<slot Verb1 1.0>
+		です 1.0
+	</slot>
+</frame>
+<frame lesson13-6>
+	<slot Object1 1.0>
+		数学 1.0
+		野菜 1.0
+		猫 1.0
+		電話 1.0
+	</slot>
+	<slot Particle1 1.0>
+		と 1.0
+	</slot>
+	<slot Object2 1.0>
+		<restriction Object1 == [learn_obj]>
+			英語 1.0
+		</restriction>
+		<restriction Object1 == [shopping]>
+			肉 1.0
+		</restriction>
+		<restriction Object1 == [animal]>
+			犬 1.0
+		</restriction>
+		<restriction Object1 == [do_obj]>
+			メール 1.0
+		</restriction>
+	</slot>
+	<slot Particle2 1.0>
+		と 1.0
+	</slot>
+	<slot Object3 1.0>
+		どちら 1.0
+	</slot>
+	<slot Particle3 1.0>
+		が 1.0
+	</slot>
+	<slot Adjective1 1.0>
+		好きな 1.0
+	</slot>
+	<slot Verb1 1.0>
+		です 1.0
+	</slot>
+</frame>
+<frame lesson13-7>
+	<slot Object1 1.0>
+		私 1.0
+		お金 1.0
+		宿題 1.0
+	</slot>
+	<slot Particle1 1.0>
+		と 1.0
+	</slot>
+	<slot Object2 1.0>
+		<restriction Object1 == [I]>
+			仕事 1.0
+		</restriction>
+		<restriction Object1 == [small_object]>
+			愛 1.0
+		</restriction>
+		<restriction Object1 == [forget_obj]>
+			友達 1.0
+		</restriction>
+	</slot>
+	<slot Particle2 1.0>
+		と 1.0
+	</slot>
+	<slot Object3 1.0>
+		どちら 1.0
+	</slot>
+	<slot Particle3 1.0>
+		が 1.0
+	</slot>
+	<slot Adjective1 1.0>
+		大切な 1.0
+	</slot>
+	<slot Verb1 1.0>
+		です 1.0
+	</slot>
+</frame>
+# Lesson 13 END
+# Lesson 14 BEGIN
+<frame lesson14-1>
+	<slot Subject1 1.0>
+		私 1.0
+	</slot>
+	<slot Particle1 1.0>
+		は 1.0
+	</slot>
+	<slot Object1 1.0>
+		[jpncity] 1.0
+		大学 1.0
+		学校 1.0
+	</slot>
+	<slot Particle2 1.0>
+		に 1.0
+	</slot>
+	<slot Verb1 1.0>
+		<restriction Object1 == [jpncity]>
+			行く 1.0
+			帰る 1.0
+		</restriction>
+		行く 1.0
+		戻る 1.0
+	</slot>
+	<slot Adjective1 1.0>
+		たい 1.0
+	</slot>
+</frame>
+<frame lesson14-2>
+	<slot Subject1 1.0>
+		私 1.0
+		[name] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		は 1.0
+	</slot>
+	<slot Object1 1.0>
+		[jpncity] 1.0
+		大学 1.0
+		学校 1.0
+	</slot>
+	<slot Particle2 1.0>
+		に 1.0
+	</slot>
+	<slot Verb1 1.0>
+		<restriction Object1 == [jpncity]>
+			行く 1.0
+			帰る 1.0
+		</restriction>
+		行く 1.0
+		戻る 1.0
+	</slot>
+	<slot Adverb1 1.0>
+		つもり 1.0
+	</slot>
+	<slot Verb2 1.0>
+		です 1.0
+	</slot>
+</frame>
+<frame lesson14-3>
+	<slot Subject1 1.0>
+		私 1.0
+	</slot>
+	<slot Particle1 1.0>
+		は 1.0
+	</slot>
+	<slot Adjective1 1.0>
+		<restriction Object1 == [shopping]>
+			熱い 1.0
+			冷たい 1.0
+		</restriction>
+		冷たい 1.0
+	</slot>
+	<slot Object1 1.0>
+		コーラ 1.0
+		オレンジジュース 1.0
+		ビール 1.0
+		お茶 1.0
+		コーヒー 1.0
+		牛乳 1.0
+	</slot>
+	<slot Particle2 1.0>
+		が 1.0
+	</slot>
+	<slot Adjective2 1.0>
+		欲しい 1.0
+	</slot>
+</frame>
+<frame lesson14-4>
+	<slot Subject1 1.0>
+		私 1.0
+	</slot>
+	<slot Particle1 1.0>
+		は 1.0
+	</slot>
+	<slot Object1 1.0>
+		鈴木 1.0
+	</slot>
+	<slot Particle2 1.0>
+		に 1.0
+	</slot>
+	<slot Object2 1.0>
+		イギリス 1.0
+		アメリカ 1.0
+		中国 1.0
+		大学 1.0
+		学校 1.0
+	</slot>
+	<slot Particle3 1.0>
+		に 1.0
+	</slot>
+	<slot Verb1 1.0>
+		<restriction Object2 == [international]>
+			行く 1.0
+			帰る 1.0
+			戻る 1.0
+		</restriction>
+		行く 1.0
+		戻る 1.0
+	</slot>
+	<slot Adjective1 1.0>
+		欲しい 1.0
+	</slot>
+</frame>
+# Lesson 14 END
+# Lesson 15 BEGIN
+<frame lesson15-1>
+	<slot Object1 1.0>
+		魚 1.0
+		卵 1.0
+		ケーキ 1.0
+		ハンバーガー 1.0
+		ラーメン 1.0
+		カレー 1.0
+		林檎 1.0
+	</slot>
+	<slot Particle1 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		食べる 1.0
+	</slot>
+	<slot Object2 1.0>
+		アイスクリーム 1.0
+		ピザ 1.0
+		ステーキ 1.0
+		パン 1.0
+		苺 1.0
+	</slot>
+	<slot Particle2 1.0>
+		を 1.0
+	</slot>
+	<slot Verb2 1.0>
+		食べる 1.0
+	</slot>
+	<slot Verb3 1.0>
+		する 1.0
+	</slot>
+</frame>
+<frame lesson15-2>
+	<slot Object1 1.0>
+		お茶 1.0
+		コーヒー 1.0
+		コーラ 1.0
+	</slot>
+	<slot Particle1 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		飲む 1.0
+	</slot>
+	<slot Object2 1.0>
+		オレンジジュース 1.0
+		牛乳 1.0
+		ビール 1.0
+		お酒 1.0
+	</slot>
+	<slot Particle2 1.0>
+		を 1.0
+	</slot>
+	<slot Verb2 1.0>
+		飲む 1.0
+	</slot>
+	<slot Verb3 1.0>
+		する 1.0
+	</slot>
+</frame>
+<frame lesson15-3>
+	<slot Object1 1.0>
+		テレビ 1.0
+		新聞 1.0
+	</slot>
+	<slot Particle1 1.0>
+		で 1.0
+	</slot>
+	<slot Verb1 1.0>
+		見る 1.0
+	</slot>
+	<slot Object2 1.0>
+		人 1.0
+		友達 1.0
+		先生 1.0
+	</slot>
+	<slot Particle2 1.0>
+		から 1.0
+		に 1.0
+	</slot>
+	<slot Verb2 1.0>
+		聞く 1.0
+	</slot>
+	<slot Verb3 1.0>
+		する 1.0
+	</slot>
+</frame>
+<frame lesson15-4>
+	<slot Object1 1.0>
+		お菓子 1.0
+	</slot>
+	<slot Particle1 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		食べる 1.0
+	</slot>
+	<slot Object2 1.0>
+		仕事 1.0
+		勉強 1.0
+		宿題 1.0
+	</slot>
+	<slot Particle2 1.0>
+		を 1.0
+	</slot>
+	<slot Verb2 1.0>
+		する 1.0
+	</slot>
+	<slot Verb3 1.0>
+		する 1.0
+	</slot>
+</frame>
+<frame lesson15-5>
+	<slot Object1 1.0>
+		勝負 1.0
+		ゲーム 1.0
+	</slot>
+	<slot Particle1 1.0>
+		に 1.0
+		で 1.0
+	</slot>
+	<slot Verb1 1.0>
+		勝つ 1.0
+	</slot>
+	<slot Verb2 1.0>
+		負ける 1.0
+	</slot>
+	<slot Verb3 1.0>
+		する 1.0
+	</slot>
+</frame>
+<frame lesson15-6>
+	<slot Object1 1.0>
+		お茶 1.0
+		コーヒー 1.0
+		コーラ 1.0
+	</slot>
+	<slot Particle1 1.0>
+		や 1.0
+	</slot>
+	<slot Object2 1.0>
+		オレンジジュース 1.0
+		牛乳 1.0
+		ビール 1.0
+		お酒 1.0
+	</slot>
+	<slot Particle2 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		飲む 1.0
+	</slot>
+</frame>
+<frame lesson15-7>
+	<slot Object1 1.0>
+		神社 1.0
+		床屋 1.0
+		教会 1.0
+		八百屋 1.0
+		病院 1.0
+		図書館 1.0
+	</slot>
+	<slot Particle1 1.0>
+		や 1.0
+	</slot>
+	<slot Object2 1.0>
+		公園 1.0
+		銀行 1.0
+		喫茶店 1.0
+		学校 1.0
+		映画館 1.0
+	</slot>
+	<slot Particle2 1.0>
+		に 1.0
+		へ 1.0
+	</slot>
+	<slot Verb1 1.0>
+		行く 1.0
+	</slot>
+</frame>
+<frame lesson15-8>
+	<slot Object1 1.0>
+		バス 1.0
+		タクシー 1.0
+		車 1.0
+	</slot>
+	<slot Particle1 1.0>
+		や 1.0
+	</slot>
+	<slot Object2 1.0>
+		地下鉄 1.0
+		電車 1.0
+	</slot>
+	<slot Particle2 1.0>
+		は 1.0
+	</slot>
+	<slot Adjective1 1.0>
+		便利な 1.0
+	</slot>
+</frame>
+<frame lesson15-9>
+	<slot Object1 1.0>
+		魚 1.0
+		卵 1.0
+		ケーキ 1.0
+		林檎 1.0
+	</slot>
+	<slot Particle1 1.0>
+		や 1.0
+	</slot>
+	<slot Object2 1.0>
+		アイスクリーム 1.0
+		ピザ 1.0
+		ステーキ 1.0
+		パン 1.0
+		苺 1.0
+		カレー 1.0
+	</slot>
+	<slot Particle2 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		食べる 1.0
+	</slot>
+</frame>
+# Lesson 15 END
+# Lesson 16 BEGIN
+<frame lesson16-1>
+	<slot Subject1 1.0>
+		[fourseason] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		に 1.0
+	</slot>
+	<slot Verb1 1.0>
+		なる 1.0
+	</slot>
+	<slot Particle2 1.0>
+		と 1.0
+	</slot>
+	<slot Adjective1 1.0>
+		<restriction Subject1 == [spring]>
+			暖かい 1.0
+		</restriction>
+		<restriction Subject1 == [summer]>
+			暑い 1.0
+		</restriction>
+		<restriction Subject1 == [autumn]>
+			涼しい 1.0
+		</restriction>
+		<restriction Subject1 == [winter]>
+			寒い 1.0
+		</restriction>
+	</slot>
+	<slot Verb2 1.0>
+		なる 1.0
+	</slot>
+</frame>
+<frame lesson16-2>
+	<slot Adverb1 1.0>
+		もし 1.0
+	</slot>
+	<slot Adjective1 1.0>
+		忙しい 1.0
+	</slot>
+	<slot Particle1 1.0>
+		なら 1.0
+	</slot>
+	<slot Object1 1.0>
+		[intown] 1.0
+	</slot>
+	<slot Particle2 1.0>
+		に 1.0
+	</slot>
+	<slot Verb1 1.0>
+		行く 1.0
+	</slot>
+</frame>
+<frame lesson16-3>
+	<slot Adverb1 1.0>
+		もし 1.0
+	</slot>
+	<slot Object1 1.0>
+		雨 1.0
+	</slot>
+	<slot Particle1 1.0>
+		が 1.0
+	</slot>
+	<slot Verb1 1.0>
+		降る 1.0
+	</slot>
+	<slot Particle2 1.0>
+		たら 1.0
+	</slot>
+	<slot Object2 1.0>
+		[intown] 1.0
+	</slot>
+	<slot Particle3 1.0>
+		に 1.0
+	</slot>
+	<slot Verb2 1.0>
+		行く 1.0
+	</slot>
+</frame>
+<frame lesson16-4>
+	<slot Subject1 1.0>
+		[name] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		が 1.0
+	</slot>
+	<slot Verb1 1.0>
+		来る 1.0
+	</slot>
+	<slot Particle2 1.0>
+		ば 1.0
+	</slot>
+	<slot Object1 1.0>
+		野球 1.0
+		ゲーム 1.0
+		バレーボール 1.0
+	</slot>
+	<slot Particle3 1.0>
+		が 1.0
+	</slot>
+	<slot Verb2 1.0>
+		できる 1.0
+	</slot>
+</frame>
+# Lesson 16 END
+# Lesson 17 BEGIN
+<frame lesson17-1>
+	<slot Adjective1 1.0>
+		早い 1.0
+	</slot>
+	<slot Object1 1.0>
+		[intown] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		へ 1.0
+	</slot>
+	<slot Verb1 1.0>
+		行く 1.0
+	</slot>
+	<slot Adjective2 1.0>
+		方がいい 1.0
+	</slot>
+</frame>
+<frame lesson17-2>
+	<slot Adjective1 1.0>
+		早い 1.0
+	</slot>
+	<slot Object1 1.0>
+		[edible] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		食べる 1.0
+	</slot>
+	<slot Adjective2 1.0>
+		方がいい 1.0
+	</slot>
+</frame>
+<frame lesson17-3>
+	<slot Time1 1.0>
+		[weekday] 1.0
+		今日 1.0
+		明日 1.0
+	</slot>
+	<slot Particle1 1.0>
+		は 1.0
+	</slot>
+	<slot Object1 1.0>
+		[intown] 1.0
+	</slot>
+	<slot Particle2 1.0>
+		に 1.0
+	</slot>
+	<slot Verb1 1.0>
+		行く 1.0
+	</slot>
+	<slot Verb2 1.0>
+		なる 1.0
+	</slot>
+</frame>
+<frame lesson17-4>
+	<slot Object1 1.0>
+		数学 1.0
+		英語 1.0
+		法律 1.0
+		文学 1.0
+		経済 1.0
+		歴史 1.0
+		医学 1.0
+		地理 1.0
+		大学 1.0
+	</slot>
+	<slot Particle1 1.0>
+		の 1.0
+	</slot>
+	<slot Object2 1.0>
+		こと 1.0
+	</slot>
+	<slot Particle2 1.0>
+		なら 1.0
+	</slot>
+	<slot Object3 1.0>
+		[name] 1.0
+		[myfamily] 1.0
+	</slot>
+	<slot Particle3 1.0>
+		に 1.0
+	</slot>
+	<slot Verb1 1.0>
+		聞く 1.0
+	</slot>
+	<slot Adjective1 1.0>
+		いい 1.0
+	</slot>
+</frame>
+# Lesson 17 END
+# Lesson 18 BEGIN
+<frame lesson18-1>
+	<slot Object1 1.0>
+		[intown] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		に 1.0
+	</slot>
+	<slot Verb1 1.0>
+		行く 1.0
+	</slot>
+	<slot Object2 1.0>
+		前 1.0
+	</slot>
+	<slot Particle2 1.0>
+		に 1.0
+	</slot>
+	<slot Object3 1.0>
+		水 1.0
+		オレンジジュース 1.0
+		お茶 1.0
+	</slot>
+	<slot Particle3 1.0>
+		を 1.0
+	</slot>
+	<slot Verb2 1.0>
+		飲む 1.0
+	</slot>
+</frame>
+<frame lesson18-2>
+	<slot Object1 1.0>
+		[edible] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		食べる 1.0
+	</slot>
+	<slot Object2 1.0>
+		後 1.0
+	</slot>
+	<slot Particle2 1.0>
+		で 1.0
+	</slot>
+	<slot Object3 1.0>
+		野球 1.0
+		ゲーム 1.0
+		バレーボール 1.0
+		宿題 1.0
+	</slot>
+	<slot Particle3 1.0>
+		を 1.0
+	</slot>
+	<slot Verb2 1.0>
+		する 1.0
+	</slot>
+</frame>
+<frame lesson18-3>
+	<slot Subject1 1.0>
+		[family] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		が 1.0
+	</slot>
+	<slot Verb1 1.0>
+		来る 1.0
+	</slot>
+	<slot Particle2 1.0>
+		から 1.0
+	</slot>
+	<slot Object1 1.0>
+		朝食 1.0
+		昼食 1.0
+		夕食 1.0
+	</slot>
+	<slot Particle3 1.0>
+		を 1.0
+	</slot>
+	<slot Verb2 1.0>
+		食べる 1.0
+	</slot>
+</frame>
+<frame lesson18-4>
+	<slot Object1 1.0>
+		[lookable] 1.0
+		[edible] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		<restriction Object1 == [lookable]>
+			見る 1.0
+		</restriction>
+		<restriction Object1 == [edible]>
+			食べる 1.0
+		</restriction>
+	</slot>
+	<slot Particle2 1.0>
+		ながら 1.0
+	</slot>
+	<slot Object2 1.0>
+		[readable] 1.0
+	</slot>
+	<slot Particle3 1.0>
+		を 1.0
+	</slot>
+	<slot Verb2 1.0>
+		読む 1.0
+	</slot>
+</frame>
+<frame lesson18-5>
+	<slot Object1 1.0>
+		休み 1.0
+		夏休み 1.0
+	</slot>
+	<slot Particle1 1.0>
+		の 1.0
+	</slot>
+	<slot Object2 1.0>
+		間 1.0
+	</slot>
+	<slot Particle2 1.0>
+		に 1.0
+	</slot>
+	<slot Object3 1.0>
+		映画館 1.0
+		図書館 1.0
+		公園 1.0
+		大使館 1.0
+		外国 1.0
+		展覧会 1.0
+		美術館 1.0
+	</slot>
+	<slot Particle3 1.0>
+		へ 1.0
+	</slot>
+	<slot Verb1 1.0>
+		行く 1.0
+	</slot>
+</frame>
+<frame lesson18-6>
+	<slot Time1 1.0>
+		一日 1.0
+		一週間 1.0
+		一ヶ月 1.0
+		一年 1.0
+	</slot>
+	<slot Particle1 1.0>
+		に 1.0
+	</slot>
+	<slot DetailedTime1 1.0>
+		二 1.0
+		三 1.0
+		四 1.0
+		五 1.0
+		六 1.0
+		七 1.0
+		八 1.0
+		九 1.0
+	</slot>
+	<slot Object1 1.0>
+		回 1.0
+	</slot>
+	<slot Subject1 1.0>
+		[myfamily] 1.0
+		[yourfamily] 1.0
+	</slot>
+	<slot Particle2 1.0>
+		は 1.0
+	</slot>
+	<slot Object2 1.0>
+		[name] 1.0
+	</slot>
+	<slot Particle3 1.0>
+		に 1.0
+	</slot>
+	<slot Verb1 1.0>
+		電話する 1.0
+		会う 1.0
+	</slot>
+</frame>
+<frame lesson18-7>
+	<slot Time1 1.0>
+		明日 1.0
+		夏休み 1.0
+	</slot>
+	<slot Particle1 1.0>
+		まで 1.0
+	</slot>
+	<slot Particle2 1.0>
+		に 1.0
+	</slot>
+	<slot Object1 1.0>
+		仕事 1.0
+		レポート 1.0
+	</slot>
+	<slot Particle3 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		する 1.0
+	</slot>
+</frame>
+# Lesson 18 END
+# Lesson 19 BEGIN
+<frame lesson19-1>
+	<slot Place1 1.0>
+		東京 1.0
+		アメリカ 1.0
+	</slot>
+	<slot Particle1 1.0>
+		に 1.0
+	</slot>
+	<slot Adverb1 1.0>
+		一度 1.0
+		いつか 1.0
+	</slot>
+	<slot Verb1 1.0>
+		行く 1.0
+	</slot>
+</frame>
+<frame lesson19-2>
+	<slot Place1 1.0>
+		あそこ 1.0
+		ここ 1.0
+	</slot>
+	<slot Particle1 1.0>
+		で 1.0
+	</slot>
+	<slot Verb1 1.0>
+		泳ぐ 1.0
+		遊ぶ 1.0
+		寝る 1.0
+	</slot>
+</frame>
+<frame lesson19-3>
+	<slot Object1 1.0>
+		彼 1.0
+		彼女 1.0
+	</slot>
+	<slot Particle1 1.0>
+		と 1.0
+	</slot>
+	<slot Object2 1.0>
+		ゲーム 1.0
+		映画 1.0
+		サッカー 1.0
+		野球 1.0
+		アニメ 1.0
+	</slot>
+	<slot Particle2 1.0>
+		の 1.0
+	</slot>
+	<slot Object3 1.0>
+		話 1.0
+		議論 1.0
+	</slot>
+	<slot Particle3 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		する 1.0
+	</slot>
+</frame>
+<frame lesson19-4>
+	<slot Object1 1.0>
+		[small_object] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		買う 1.0
+	</slot>
+</frame>
+<frame lesson19-5>
+	<slot Object1 1.0>
+		彼 1.0
+		彼女 1.0
+		友達 1.0
+		先生 1.0
+	</slot>
+	<slot Particle1 1.0>
+		に 1.0
+	</slot>
+	<slot Verb1 1.0>
+		言う 1.0
+	</slot>
+</frame>
+<frame lesson19-6>
+	<slot Adverb1 1.0>
+		あらかじめ 1.0
+	</slot>
+	<slot Verb1 1.0>
+		飲む 1.0
+		聞く 1.0
+		探す 1.0
+	</slot>
+</frame>
+<frame lesson19-7>
+	<slot Object1 1.0>
+		待ち合わせ 1.0
+		会議 1.0
+		電車 1.0
+		バス 1.0
+		飛行機 1.0
+		時間 1.0
+	</slot>
+	<slot Particle1 1.0>
+		に 1.0
+	</slot>
+	<slot Verb1 1.0>
+		遅れる 1.0
+	</slot>
+</frame>
+<frame lesson19-8>
+	<slot Object1 1.0>
+		[drinkable] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		を 1.0
+	</slot>
+	<slot Adverb1 1.0>
+		もう 1.0
+	</slot>
+	<slot Verb1 1.0>
+		飲む 1.0
+	</slot>
+</frame>
+<frame lesson19-9>
+	<slot Object1 1.0>
+		[edible] 1.0
+		[ediblepic] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		を 1.0
+	</slot>
+	<slot Adverb1 1.0>
+		もう 1.0
+	</slot>
+	<slot Verb1 1.0>
+		食べる 1.0
+	</slot>
+</frame>
+# Lesson 19 END
+# Lesson 20 BEGIN
+<frame lesson20-1>
+	<slot Subject1 1.0>
+		[name] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		は 1.0
+	</slot>
+	<slot Adjective1 1.0>
+		優しい 1.0
+		冷たい 1.0
+		つまらない 1.0
+		楽しい 1.0
+		怖い 1.0
+		元気な 1.0
+		面白い 1.0
+		忙しい 1.0
+		恥ずかしい 1.0
+		厳しい 1.0
+		面白い 1.0
+		嬉しい 1.0
+		悲しい 1.0
+	</slot>
+	<slot Adjective2 1.0>
+		そうな 1.0
+	</slot>
+</frame>
+<frame lesson20-2>
+	<slot Time1 1.0>
+		今日 1.0
+		明日 1.0
+		明後日 1.0
+	</slot>
+	<slot Particle1 1.0>
+		は 1.0
+	</slot>
+	<slot Object1 1.0>
+		晴れ 1.0
+		曇り 1.0
+		雨 1.0
+	</slot>
+	<slot Verb1 1.0>
+		です 1.0
+	</slot>
+</frame>
+<frame lesson20-3>
+	<slot Subject1 1.0>
+		[name] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		は 1.0
+	</slot>
+	<slot Object1 1.0>
+		[job] 1.0
+	</slot>
+	<slot Particle2 1.0>
+		みたい 1.0
+	</slot>
+	<slot Verb1 1.0>
+		です 1.0
+	</slot>
+</frame>
+<frame lesson20-4>
+	<slot Subject1 1.0>
+		[name] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		は 1.0
+	</slot>
+	<slot Object1 1.0>
+		[do_obj] 1.0
+	</slot>
+	<slot Particle2 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		する 1.0
+	</slot>
+	<slot Adjective1 1.0>
+		かもしれない 1.0
+	</slot>
+</frame>
+<frame lesson20-5>
+	<slot Subject1 1.0>
+		[name] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		は 1.0
+	</slot>
+	<slot Object1 1.0>
+		[intown] 1.0
+	</slot>
+	<slot Particle2 1.0>
+		に 1.0
+	</slot>
+	<slot Verb1 1.0>
+		行く 1.0
+	</slot>
+	<slot Particle3 1.0>
+		はず 1.0
+	</slot>
+	<slot Verb2 1.0>
+		です 1.0
+	</slot>
+</frame>
+<frame lesson20-6>
+	<slot Description1 1.0>
+		この 1.0
+		あの 1.0
+		その 1.0
+	</slot>
+	<slot Subject1 1.0>
+		[edible] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		は 1.0
+	</slot>
+	<slot Adjective1 1.0>
+		おいしい 1.0
+		新しい 1.0
+		まずい 1.0
+	</slot>
+	<slot Particle2 1.0>
+		かどうか 1.0
+	</slot>
+	<slot Verb1 1.0>
+		わかる 1.0
+	</slot>
+</frame>
+<frame lesson20-7>
+	<slot Owner1 1.0>
+		[name] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		の 1.0
+	</slot>
+	<slot Subject1 1.0>
+		家 1.0
+	</slot>
+	<slot Particle2 1.0>
+		は 1.0
+	</slot>
+	<slot Adjective1 1.0>
+		静かな 1.0
+		賑やかな 1.0
+		うるさい 1.0
+		新しい 1.0
+		古い 1.0
+		暑い 1.0
+		寒い 1.0
+		涼しい 1.0
+		狭い 1.0
+	</slot>
+	<slot Adjective2 1.0>
+		ような 1.0
+	</slot>
+</frame>
+# Lesson 20 END
+# Lesson 22 BEGIN
+<frame lesson22-1>
+	<slot Subject1 1.0>
+		[name] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		は 1.0
+	</slot>
+	<slot Particle2 1.0>
+		[myfamily] 1.0
+		私 1.0
+	</slot>
+	<slot Particle3 1.0>
+		に 1.0
+	</slot>
+	<slot Object1 1.0>
+		[small_object] 1.0
+	</slot>
+	<slot Particle4 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		くれる 1.0
+	</slot>
+</frame>
+<frame lesson22-2>
+	<slot Subject1 1.0>
+		[personname_male] 1.0
+		[personname_female] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		は 1.0
+	</slot>
+	<slot Particle2 1.0>
+		<restriction Subject1 == [personname_male]>
+			[personname_female] 1.0
+		</restriction>
+		<restriction Subject1 == [personname_female]>
+			[personname_male] 1.0
+		</restriction>
+	</slot>
+	<slot Particle3 1.0>
+		に 1.0
+	</slot>
+	<slot Object1 1.0>
+		[small_object] 1.0
+		ワイン 1.0
+	</slot>
+	<slot Particle4 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		あげる 1.0
+	</slot>
+</frame>
+<frame lesson22-3>
+	<slot Subject1 1.0>
+		[name] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		は 1.0
+	</slot>
+	<slot Particle2 1.0>
+		[yourfamily] 1.0
+	</slot>
+	<slot Particle3 1.0>
+		に 1.0
+	</slot>
+	<slot Object1 1.0>
+		[small_object] 1.0
+	</slot>
+	<slot Particle4 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		あげる 1.0
+	</slot>
+</frame>
+<frame lesson22-4>
+	<slot Subject1 1.0>
+		[personname_male] 1.0
+		[personname_female] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		は 1.0
+	</slot>
+	<slot Particle2 1.0>
+		<restriction Subject1 == [personname_male]>
+			[personname_female] 1.0
+		</restriction>
+		<restriction Subject1 == [personname_female]>
+			[personname_male] 1.0
+		</restriction>
+	</slot>
+	<slot Particle3 1.0>
+		に 1.0
+	</slot>
+	<slot Object1 1.0>
+		[small_object] 1.0
+	</slot>
+	<slot Particle4 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		もらう 1.0
+	</slot>
+</frame>
+<frame lesson22-5>
+	<slot Subject1 1.0>
+		[name] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		は 1.0
+	</slot>
+	<slot Particle2 1.0>
+		[yourfamily] 1.0
+	</slot>
+	<slot Particle3 1.0>
+		に 1.0
+	</slot>
+	<slot Object1 1.0>
+		[small_object] 1.0
+	</slot>
+	<slot Particle4 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		もらう 1.0
+	</slot>
+</frame>
+# Lesson 22 END
+# Lesson 23 BEGIN
+<frame lesson23-1>
+	<slot Object1 1.0>
+		[person] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		も 1.0
+	</slot>
+	<slot Verb1 1.0>
+		来る 1.0
+		行く 1.0
+	</slot>
+	<slot Particle2 1.0>
+		と 1.0
+	</slot>
+	<slot Adjective1 1.0>
+		いい 1.0
+	</slot>
+</frame>
+<frame lesson23-2>
+	<slot Object1 1.0>
+		[person] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		も 1.0
+	</slot>
+	<slot Place1 1.0>
+		[getin_loc] 1.0
+	</slot>
+	<slot Particle2 1.0>
+		に 1.0
+	</slot>
+	<slot Verb1 1.0>
+		来る 1.0
+		行く 1.0
+	</slot>
+	<slot Particle3 1.0>
+		と 1.0
+	</slot>
+	<slot Adjective1 1.0>
+		いい 1.0
+	</slot>
+</frame>
+<frame lesson23-3>
+	<slot Object1 1.0>
+		道子 1.0
+		祖父 1.0
+		母 1.0
+		父 1.0
+		彼 1.0
+		彼女 1.0
+		弟 1.0
+		兄 1.0
+		妹 1.0
+		姉 1.0
+		妻 1.0
+		太郎 1.0
+		友達 1.0
+		先生 1.0
+		伯父さん 1.0
+		伯母さん 1.0
+	</slot>
+	<slot Particle1 1.0>
+		と 1.0
+	</slot>
+	<slot Adverb1 1.0>
+		一緒 1.0
+	</slot>
+	<slot Particle2 1.0>
+		に 1.0
+	</slot>
+	<slot Verb1 1.0>
+		行く 1.0
+		遊ぶ 1.0
+	</slot>
+	<slot Particle3 1.0>
+		ば 1.0
+	</slot>
+	<slot Adjective1 1.0>
+		いい 1.0
+	</slot>
+</frame>
+<frame lesson23-4>
+	<slot Object1 1.0>
+		宿題 1.0
+		勉強 1.0
+		仕事 1.0
+		アルバイト 1.0
+	</slot>
+	<slot Particle1 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		する 1.0
+	</slot>
+	<slot Particle2 1.0>
+		ば 1.0
+	</slot>
+	<slot Adjective1 1.0>
+		いい 1.0
+	</slot>
+</frame>
+<frame lesson23-5>
+	<slot Description1 1.0>
+		この 1.0
+		あの 1.0
+		その 1.0
+	</slot>
+	<slot Object1 1.0>
+		映画 1.0
+		アニメ 1.0
+		雑誌 1.0
+	</slot>
+	<slot Particle1 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		見る 1.0
+	</slot>
+	<slot Adjective1 1.0>
+		いい 1.0
+	</slot>
+</frame>
+<frame lesson23-6>
+	<slot Description1 1.0>
+		この 1.0
+		あの 1.0
+		その 1.0
+	</slot>
+	<slot Object1 1.0>
+		本 1.0
+		テーブル 1.0
+		コンピューター 1.0
+		ゲーム 1.0
+		プレゼント 1.0
+		帽子 1.0
+		指輪 1.0
+		机 1.0
+		漫画 1.0
+		皿 1.0
+		花 1.0
+		花瓶 1.0
+		薬 1.0
+		辞書 1.0
+		靴 1.0
+	</slot>
+	<slot Particle1 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		買う 1.0
+	</slot>
+	<slot Adjective1 1.0>
+		いい 1.0
+	</slot>
+</frame>
+<frame lesson23-7>
+	<slot Description1 1.0>
+		この 1.0
+		あの 1.0
+		その 1.0
+	</slot>
+	<slot Object1 1.0>
+		ケーキ 1.0
+		ハンバーガー 1.0
+		アイスクリーム 1.0
+		ピザ 1.0
+		ステーキ 1.0
+		パン 1.0
+		お菓子 1.0
+		ラーメン 1.0
+	</slot>
+	<slot Particle1 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		食べる 1.0
+	</slot>
+	<slot Adjective1 1.0>
+		いい 1.0
+	</slot>
+</frame>
+# Lesson 23 END
+# Lesson 25 BEGIN
+<frame lesson25-1>
+	<slot Verb1 1.0>
+		行く 1.0
+		知る 1.0
+		見る 1.0
+	</slot>
+	<slot Particle1 1.0>
+		と 1.0
+	</slot>
+	<slot Verb2 1.0>
+		言う 1.0
+	</slot>
+	<slot GFXBG1 1.0>
+	</slot>
+</frame>
+<frame lesson25-2>
+	<slot Time1 1.0>
+		明日 1.0
+		明後日 1.0
+		今日 1.0
+		来週 1.0
+		来月 1.0
+	</slot>
+	<slot Verb1 1.0>
+		行く 1.0
+		来る 1.0
+	</slot>
+	<slot Particle1 1.0>
+		と 1.0
+	</slot>
+	<slot Verb2 1.0>
+		思う 1.0
+	</slot>
+	<slot GFXBG1 1.0>
+	</slot>
+</frame>
+<frame lesson25-3>
+	<slot Object1 1.0>
+		[personname_male] 1.0
+		[personname_female] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		と 1.0
+	</slot>
+	<slot Verb1 1.0>
+		言う 1.0
+	</slot>
+	<slot Object2 1.0>
+		人 1.0
+	</slot>
+	<slot GFXBG1 1.0>
+	</slot>
+</frame>
+<frame lesson25-4>
+	<slot Object1 1.0>
+		[person] 1.0
+		[drinkable] 1.0
+		[edible] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		が 1.0
+	</slot>
+	<slot Adjective1 1.0>
+		好きな 1.0
+		嫌いな 1.0
+	</slot>
+	<slot Particle2 1.0>
+		と 1.0
+	</slot>
+	<slot Verb1 1.0>
+		言う 1.0
+	</slot>
+	<slot GFXBG1 1.0>
+	</slot>
+</frame>
+<frame lesson25-5>
+	<slot Object1 1.0>
+		[person] 1.0
+		[drinkable] 1.0
+		[edible] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		が 1.0
+	</slot>
+	<slot Adjective1 1.0>
+		好きな 1.0
+		嫌いな 1.0
+	</slot>
+	<slot Particle2 1.0>
+		と 1.0
+	</slot>
+	<slot Verb1 1.0>
+		思う 1.0
+	</slot>
+	<slot GFXBG1 1.0>
+	</slot>
+</frame>
+<frame lesson25-6>
+	<slot Object1 1.0>
+		[person] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		と 1.0
+	</slot>
+	<slot Verb1 1.0>
+		行く 1.0
+	</slot>
+	<slot Particle2 1.0>
+		と 1.0
+	</slot>
+	<slot Verb2 1.0>
+		言う 1.0
+	</slot>
+	<slot GFXBG1 1.0>
+	</slot>
+</frame>
+<frame lesson25-7>
+	<slot Object1 1.0>
+		[drinkable] 1.0
+		[edible] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		が 1.0
+	</slot>
+	<slot Adjective1 1.0>
+		ほしい 1.0
+	</slot>
+	<slot Particle2 1.0>
+		と 1.0
+	</slot>
+	<slot Verb1 1.0>
+		思う 1.0
+	</slot>
+	<slot GFXBG1 1.0>
+	</slot>
+</frame>
+<frame lesson25-8>
+	<slot Object1 1.0>
+		野球 1.0
+		サッカー 1.0
+		ゲーム 1.0
+		勉強 1.0
+	</slot>
+	<slot Particle1 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		する 1.0
+	</slot>
+	<slot Particle2 1.0>
+		と 1.0
+	</slot>
+	<slot Verb2 1.0>
+		言う 1.0
+	</slot>
+	<slot GFXBG1 1.0>
+	</slot>
+</frame>
+<frame lesson25-9>
+	<slot Place1 1.0>
+		そこ 1.0
+		あそこ 1.0
+		京都 1.0
+		アメリカ 1.0
+		東京 1.0
+		大学 1.0
+	</slot>
+	<slot Particle1 1.0>
+		へ 1.0
+	</slot>
+	<slot Verb1 1.0>
+		行く 1.0
+	</slot>
+	<slot Particle2 1.0>
+		と 1.0
+	</slot>
+	<slot Verb2 1.0>
+		思う 1.0
+	</slot>
+	<slot GFXBG1 1.0>
+	</slot>
+</frame>
+<frame lesson25-10>
+	<slot Object1 1.0>
+		野球 1.0
+		サッカー 1.0
+		ゲーム 1.0
+		勉強 1.0
+	</slot>
+	<slot Particle1 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		する 1.0
+	</slot>
+	<slot Particle2 1.0>
+		と 1.0
+	</slot>
+	<slot Verb2 1.0>
+		思う 1.0
+	</slot>
+	<slot GFXBG1 1.0>
+	</slot>
+</frame>
+<frame lesson25-11>
+	<slot Object1 1.0>
+		[name] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		は 1.0
+	</slot>
+	<slot Object2 1.0>
+		勉強 1.0
+		サッカー 1.0
+		野球 1.0
+		ゲーム 1.0
+	</slot>
+	<slot Particle2 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		する 1.0
+	</slot>
+	<slot Particle3 1.0>
+		と 1.0
+	</slot>
+	<slot Verb2 1.0>
+		思う 1.0
+	</slot>
+	<slot GFXBG1 1.0>
+	</slot>
+</frame>
+# Lesson 25 END
+# Lesson 26 BEGIN
+<frame lesson26-1>
+	<slot Subject1 1.0>
+		[name] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		は 1.0
+	</slot>
+	<slot Adjective1 1.0>
+		暇な 1.0
+	</slot>
+	<slot Particle2 1.0>
+		のに 1.0
+	</slot>
+	<slot Object1 1.0>
+		学校 1.0
+		大学 1.0
+		講義 1.0
+		研究室 1.0
+	</slot>
+	<slot Particle3 1.0>
+		へ 1.0
+	</slot>
+	<slot Verb1 1.0>
+		行く 1.0
+	</slot>
+	<slot GFXBG1 1.0>
+	</slot>
+</frame>
+<frame lesson26-2>
+	<slot Subject1 1.0>
+		札幌 1.0
+		仙台 1.0
+		東京 1.0
+	</slot>
+	<slot Particle1 1.0>
+		は 1.0
+	</slot>
+	<slot Object1 1.0>
+		晴れ 1.0
+	</slot>
+	<slot Verb1 1.0>
+		だ 1.0
+	</slot>
+	<slot Particle2 1.0>
+		のに 1.0
+	</slot>
+	<slot Subject2 1.0>
+		名古屋 1.0
+		京都 1.0
+		大阪 1.0
+		広島 1.0
+		福岡 1.0
+	</slot>
+	<slot Particle3 1.0>
+		は 1.0
+	</slot>
+	<slot Object2 1.0>
+		雨 1.0
+	</slot>
+	<slot Verb2 1.0>
+		だ 1.0
+	</slot>
+	<slot GFXBG1 1.0>
+	</slot>
+</frame>
+<frame lesson26-3>
+	<slot Subject1 1.0>
+		名古屋 1.0
+		京都 1.0
+		大阪 1.0
+		広島 1.0
+		福岡 1.0
+	</slot>
+	<slot Particle1 1.0>
+		は 1.0
+	</slot>
+	<slot Object1 1.0>
+		晴れ 1.0
+	</slot>
+	<slot Verb1 1.0>
+		だ 1.0
+	</slot>
+	<slot Particle2 1.0>
+		のに 1.0
+	</slot>
+	<slot Subject2 1.0>
+		札幌 1.0
+		仙台 1.0
+		東京 1.0
+	</slot>
+	<slot Particle3 1.0>
+		は 1.0
+	</slot>
+	<slot Object2 1.0>
+		雨 1.0
+	</slot>
+	<slot Verb2 1.0>
+		だ 1.0
+	</slot>
+	<slot GFXBG1 1.0>
+	</slot>
+</frame>
+<frame lesson26-4>
+	<slot Time1 1.0>
+		今日 1.0
+	</slot>
+	<slot Particle1 1.0>
+		は 1.0
+	</slot>
+	<slot Verb1 1.0>
+		晴れる 1.0
+	</slot>
+	<slot Particle2 1.0>
+		のに 1.0
+	</slot>
+	<slot Object1 1.0>
+		サッカー 1.0
+		バレーボール 1.0
+	</slot>
+	<slot Particle3 1.0>
+		を 1.0
+	</slot>
+	<slot Verb2 1.0>
+		する 1.0
+	</slot>
+	<slot GFXBG1 1.0>
+	</slot>
+</frame>
+<frame lesson26-5>
+	<slot Subject1 1.0>
+		[personname_male] 1.0
+		[personname_female] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		は 1.0
+	</slot>
+	<slot Verb1 1.0>
+		来る 1.0
+	</slot>
+	<slot Particle2 1.0>
+		のに 1.0
+	</slot>
+	<slot Subject2 1.0>
+		<restriction Subject1 == [personname_male]>
+			[personname_female] 1.0
+		</restriction>
+		<restriction Subject1 == [personname_female]>
+			[personname_male] 1.0
+		</restriction>
+	</slot>
+	<slot Particle3 1.0>
+		は 1.0
+	</slot>
+	<slot Verb2 1.0>
+		来る 1.0
+	</slot>
+	<slot GFXBG1 1.0>
+	</slot>
+</frame>
+<frame lesson26-6>
+	<slot Subject1 1.0>
+		[person] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		に 1.0
+	</slot>
+	<slot Object1 1.0>
+		[learn_obj] 1.0
+	</slot>
+	<slot Particle2 1.0>
+		に 1.0
+	</slot>
+	<slot Particle3 1.0>
+		ついて 1.0
+	</slot>
+	<slot Verb1 1.0>
+		聞く 1.0
+	</slot>
+	<slot Adjective1 1.0>
+		無駄な 1.0
+	</slot>
+</frame>
+<frame lesson26-7>
+	<slot Place1 1.0>
+		ここ 1.0
+	</slot>
+	<slot Particle1 1.0>
+		で 1.0
+	</slot>
+	<slot Verb1 1.0>
+		寝る 1.0
+		働く 1.0
+		食べる 1.0
+		遊ぶ 1.0
+		泳ぐ 1.0
+		歌う 1.0
+		買う 1.0
+	</slot>
+	<slot Adjective1 1.0>
+		いい 1.0
+	</slot>
+	<slot GFXBG1 1.0>
+	</slot>
+</frame>
+# Lesson 26 END
+# Lesson 27 BEGIN
+<frame lesson27-1>
+	<slot Object1 1.0>
+		[drinkable] 1.0
+		[edible] 1.0
+		[shopping] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		買う 1.0
+	</slot>
+	<slot Adverb1 1.0>
+		こと 1.0
+	</slot>
+	<slot Particle2 1.0>
+		に 1.0
+	</slot>
+	<slot Verb2 1.0>
+		する 1.0
+	</slot>
+</frame>
+<frame lesson27-2>
+	<slot Object1 1.0>
+		[edible] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		食べる 1.0
+	</slot>
+	<slot Adverb1 1.0>
+		こと 1.0
+	</slot>
+	<slot Particle2 1.0>
+		に 1.0
+	</slot>
+	<slot Verb2 1.0>
+		する 1.0
+	</slot>
+</frame>
+<frame lesson27-3>
+	<slot Object1 1.0>
+		[drinkable] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		飲む 1.0
+	</slot>
+	<slot Adverb1 1.0>
+		こと 1.0
+	</slot>
+	<slot Particle2 1.0>
+		に 1.0
+	</slot>
+	<slot Verb2 1.0>
+		する 1.0
+	</slot>
+</frame>
+<frame lesson27-4>
+	<slot Object1 1.0>
+		会社 1.0
+		学校 1.0
+		アルバイト 1.0
+		仕事 1.0
+		大学 1.0
+		喫茶店 1.0
+		銀行 1.0
+		八百屋 1.0
+		旅行 1.0
+		警察官 1.0
+		けんか 1.0
+	</slot>
+	<slot Particle1 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		やめる 1.0
+	</slot>
+	<slot Adverb1 1.0>
+		こと 1.0
+	</slot>
+	<slot Particle2 1.0>
+		に 1.0
+	</slot>
+	<slot Verb2 1.0>
+		なる 1.0
+	</slot>
+</frame>
+<frame lesson27-5>
+	<slot Object1 1.0>
+		会社 1.0
+		学校 1.0
+		アルバイト 1.0
+		仕事 1.0
+		大学 1.0
+		喫茶店 1.0
+		銀行 1.0
+		八百屋 1.0
+		旅行 1.0
+		警察官 1.0
+		けんか 1.0
+	</slot>
+	<slot Particle1 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		やめる 1.0
+	</slot>
+	<slot Adverb1 1.0>
+		こと 1.0
+	</slot>
+	<slot Particle2 1.0>
+		に 1.0
+	</slot>
+	<slot Verb2 1.0>
+		する 1.0
+	</slot>
+</frame>
+<frame lesson27-6>
+	<slot Object1 1.0>
+		アルバイト 1.0
+		仕事 1.0
+		旅行 1.0
+		けんか 1.0
+	</slot>
+	<slot Particle1 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		する 1.0
+	</slot>
+	<slot Adverb1 1.0>
+		こと 1.0
+	</slot>
+	<slot Particle2 1.0>
+		に 1.0
+	</slot>
+	<slot Verb2 1.0>
+		なる 1.0
+	</slot>
+</frame>
+<frame lesson27-7>
+	<slot Object1 1.0>
+		勉強 1.0
+		けんか 1.0
+		競争 1.0
+		経験 1.0
+		入院 1.0
+		失敗 1.0
+	</slot>
+	<slot Verb1 1.0>
+		する 1.0
+	</slot>
+	<slot Adverb1 1.0>
+		こと 1.0
+	</slot>
+	<slot Particle1 1.0>
+		に 1.0
+	</slot>
+	<slot Verb2 1.0>
+		なる 1.0
+	</slot>
+</frame>
+<frame lesson27-8>
+	<slot Object1 1.0>
+		[readable] 1.0
+		[lookable] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		見る 1.0
+	</slot>
+	<slot Adverb1 1.0>
+		こと 1.0
+	</slot>
+	<slot Particle2 1.0>
+		に 1.0
+	</slot>
+	<slot Verb2 1.0>
+		する 1.0
+	</slot>
+</frame>
+<frame lesson27-9>
+	<slot Object1 1.0>
+		[readable] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		読む 1.0
+	</slot>
+	<slot Adverb1 1.0>
+		こと 1.0
+	</slot>
+	<slot Particle2 1.0>
+		に 1.0
+	</slot>
+	<slot Verb2 1.0>
+		する 1.0
+	</slot>
+</frame>
+<frame lesson27-10>
+	<slot Object1 1.0>
+		[listen_obj] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		聞く 1.0
+	</slot>
+	<slot Adverb1 1.0>
+		こと 1.0
+	</slot>
+	<slot Particle2 1.0>
+		に 1.0
+	</slot>
+	<slot Verb2 1.0>
+		する 1.0
+	</slot>
+</frame>
+<frame lesson27-11>
+	<slot Object1 1.0>
+		[getin_loc] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		に 1.0
+	</slot>
+	<slot Verb1 1.0>
+		入る 1.0
+	</slot>
+	<slot Adverb1 1.0>
+		こと 1.0
+	</slot>
+	<slot Particle2 1.0>
+		に 1.0
+	</slot>
+	<slot Verb2 1.0>
+		する 1.0
+	</slot>
+</frame>
+# Lesson 27 END
+# Lesson 29 BEGIN
+<frame lesson29-1>
+	<slot Place1 1.0>
+		東京 1.0
+		アメリカ 1.0
+		イギリス 1.0
+		中国 1.0
+	</slot>
+	<slot Particle1 1.0>
+		に 1.0
+	</slot>
+	<slot Verb1 1.0>
+		行かす 1.0
+	</slot>
+	<slot GFXBG1 1.0>
+	</slot>
+</frame>
+<frame lesson29-2>
+	<slot Object1 1.0>
+		壺 1.0
+		バッグ 1.0
+		宝石 1.0
+		指輪 1.0
+	</slot>
+	<slot Particle1 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		買わす 1.0
+	</slot>
+	<slot GFXBG1 1.0>
+	</slot>
+</frame>
+<frame lesson29-3>
+	<slot Object1 1.0>
+		ビール 1.0
+		酒 1.0
+		コーラ 1.0
+	</slot>
+	<slot Particle1 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		飲ます 1.0
+	</slot>
+	<slot GFXBG1 1.0>
+	</slot>
+</frame>
+<frame lesson29-4>
+	<slot Object1 1.0>
+		妻 1.0
+		夫 1.0
+		犬 1.0
+		泥棒 1.0
+		彼 1.0
+		彼女 1.0
+		サリー 1.0
+	</slot>
+	<slot Particle1 1.0>
+		に 1.0
+	</slot>
+	<slot Verb1 1.0>
+		逃げる 1.0
+	</slot>
+	<slot GFXBG1 1.0>
+	</slot>
+</frame>
+<frame lesson29-5>
+	<slot Object1 1.0>
+		彼 1.0
+		彼女 1.0
+		友達 1.0
+		泥棒 1.0
+		サリー 1.0
+	</slot>
+	<slot Particle1 1.0>
+		に 1.0
+	</slot>
+	<slot Object2 1.0>
+		バッグ 1.0
+		指輪 1.0
+	</slot>
+	<slot Particle2 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		盗む 1.0
+		取る 1.0
+	</slot>
+	<slot GFXBG1 1.0>
+	</slot>
+</frame>
+<frame lesson29-6>
+	<slot Subject1 1.0>
+		[name] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		は 1.0
+	</slot>
+	<slot Object1 1.0>
+		先生 1.0
+	</slot>
+	<slot Particle2 1.0>
+		に 1.0
+	</slot>
+	<slot Object2 1.0>
+		漢字 1.0
+	</slot>
+	<slot Particle3 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		覚えさせる 1.0
+	</slot>
+	<slot GFXBG1 1.0>
+	</slot>
+</frame>
+# Lesson 29 END
+# Lesson 30 BEGIN
+<frame lesson30-1>
+	<slot Object1 1.0>
+		[edible] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		めしあがる 1.0
+		いただく 1.0
+	</slot>
+</frame>
+<frame lesson30-2>
+	<slot Object1 1.0>
+		お待ちください 1.0
+	</slot>
+</frame>
+<frame lesson30-3>
+	<slot Object1 1.0>
+		[getin_loc] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		に 1.0
+	</slot>
+	<slot Verb1 1.0>
+		いらっしゃる 1.0
+		おいでになる 1.0
+		お越しになる 1.0
+		お見えになる 1.0
+		まいる 1.0
+	</slot>
+</frame>
+<frame lesson30-4>
+	<slot Object1 1.0>
+		[getin_loc] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		うかがう 1.0
+	</slot>
+</frame>
+<frame lesson30-5>
+	<slot Object1 1.0>
+		[readable] 1.0
+	</slot>
+	<slot Particle1 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		ご覧になる 1.0
+	</slot>
+</frame>
+<frame lesson30-6>
+	<slot Object1 1.0>
+		手紙 1.0
+		案内 1.0
+		招待状 1.0
+	</slot>
+	<slot Particle1 1.0>
+		を 1.0
+	</slot>
+	<slot Verb1 1.0>
+		お送りする 1.0
+	</slot>
+</frame>
+<frame lesson30-7>
+	<slot Verb1 1.0>
+		行く 1.0
+		知る 1.0
+		見る 1.0
+	</slot>
+	<slot Particle1 1.0>
+		と 1.0
+	</slot>
+	<slot Verb2 1.0>
+		おっしゃる 1.0
+		申し上げる 1.0
+	</slot>
+</frame>
+<frame lesson30-8>
+	<slot Time1 1.0>
+		明日 1.0
+		明後日 1.0
+		今日 1.0
+		来週 1.0
+		来月 1.0
+	</slot>
+	<slot Verb1 1.0>
+		行く 1.0
+		来る 1.0
+	</slot>
+	<slot Particle1 1.0>
+		と 1.0
+	</slot>
+	<slot Verb2 1.0>
+		おっしゃる 1.0
+		申し上げる 1.0
+	</slot>
+</frame>
+# Lesson 30 END
+-eof

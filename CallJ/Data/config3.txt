@@ -1,0 +1,74 @@
+#
+# CallJ Config file (1.5 - December 2009)
+#
+#################################
+#
+#
+-session 13
+#
+-debugLevel General 1
+-debugLevel Usage 3
+-debugLevel Concept 1
+-debugLevel G.Rules 1
+-debugLevel V.Rules 1
+-debugLevel A.Rules 1
+-debugLevel C.Rules 1
+-debugLevel Lesson 1
+-debugLevel Lexicon 1
+-debugLevel IO 1
+-debugLevel Image 3
+-debugLevel Database 1
+-debugLevel Debug 1
+-debugLevel Config 1
+-debugLevel Diagram 3
+-debugLevel Sentence 3
+-debugLevel Hints 1
+-debugLevel Student 1
+-debugLevel Stack 1
+-debugLevel NNet 1
+-debugLevel Errors 1
+-debugLevel Costs 1
+-debugLevel UI 1
+#
+#
+-practiceQuestions -1
+#
+# Hint Cost Parameters
+#==================
+-hintGrammarBias 50
+-hintLevelBias 25
+-hintWordLearningImpact 50
+-hintWordLearningRate 50
+-hintWordLearningBiasLT 50
+-hintWordLearningBiasMT 50
+-hintWordLearningBiasST 50
+-hintCostAutoBalance 1
+-hintSTErrorImpact 50
+-hintLTErrorImpact 50
+#
+-enableWordExperience
+#-disableWordExperience
+#
+-showInactiveLessons
+#-hideInactiveLessons
+#
+#
+#-disableHintCosts
+-enableHintCosts
+#
+#-disableHintChoice
+-enableHintChoice
+#
+#-disableDiagramMarkers
+-enableDiagramMarkers
+#
+#
+-useKanji
+#
+#
+#
+# LESSON SPECIFIC SETTINGS - NOT CHANGED BY SYSTEM
+# ====================================================================================
+#
+-eof
+#

@@ -1,0 +1,41 @@
+# Student Config File
+#
+-id 11
+-name vidu
+-password vidu
+-email vidu@abc.com
+#
+-lessonHistory 1 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 2 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 3 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 4 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 5 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 6 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 7 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 8 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 9 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 10 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 11 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 12 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 13 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 14 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 15 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 16 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 17 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 18 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 19 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 20 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 21 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 22 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 23 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 24 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 25 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 26 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 27 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 28 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 29 0 0 0 0 0 0 0 0 0 0 0 0 0
+-lessonHistory 30 0 0 0 0 0 0 0 0 0 0 0 0 0
+#
+#
+-eof
+#
