@@ -1,0 +1,65 @@
+    mkbinhmm
+
+MKBINHMM(1)                                                        MKBINHMM(1)
+
+
+
+’D’D
+           mkbinhmm
+          - ’B’B‘¢’B’B‘¨ HMM ’D‘¢’E
+
+’E‘¤’G‘¤
+       mkbinhmm [-htkconf HTKConfigFile] {hmmdefs_file} {binhmm_file}
+
+DESCRIPTION
+       mkbinhmm ’B‘­’N‘ºHTK’B‘¬’B‘ ’B‘·’B’B‘º’D‘»‘ ’D‘º’B‘¬HMM’D‘¬’F‘¼‘§’B’B‘Ÿ’B‘¢’B‘©’B’N‘ºJulius’F‘¦’B‘¬’B’B‘¢’B
+       ’B‘¨’D‘»‘ ’D‘º’B‘¶’D‘¢’E’B’B‘¼’B’N‘º’B’B’B’C‘»‘½’B’B’B‘¦’B‘¥ Julius’B‘¬’G‘³‘µ’D’B’H‘©’H’D’B’B’B’B‘¦’B’B‘¥’B’B‘¼’B’N‘º
+
+       ’B’B‘¬’H‘±’H‘½’B‘ ’B’B‘©’B‘¬’F‘·’D‘¼‘²’E‘»’D‘¸’E‘Ÿ’C‘¹‘´’B’D‘¸’D’B’B‘Ÿ’B‘¢’B‘©’B‘¬’B’B’B’B‘©’D’B’G‘¼‘º’B’B’B‘¦’B’B‘¥’B
+       ’B‘¼’B’N‘º’D’B’G‘¼‘º’B’B‘©’B‘­’N‘º’D‘¤’F‘½’E’B‘©’F‘·’D‘¼‘²’H’E‘»’D‘¸’B‘©’F‘¦’B’B HTK Config ’B’B‘Ÿ’B‘¢’B‘©’B "-htkconf"
+       ’B‘¥’E’D‘¬’B’B‘¼’B’N‘º’B’B’B’B‘©’E‘»’D‘¸’E‘Ÿ’C‘¹‘´’B’D’B’G‘¼‘º’B’B’B‘¦’B‘¥’N‘º ’G‘¨’Gâ€
+       ’E’B‘©’G‘¨’D’F’B‘©’D‘½’G‘¤’B‘¨’F‘·’D‘¼‘²’E‘»’D‘¸’B’B‘§’B‘Ÿ’B‘º’B‘½’B’B‘¹’B’B’B’B’B’B‘¬’B‘¥’N‘º’C‘¼‘½’D‘§’B‘¥’B’N‘º
+
+       ’D‘£’D’B‘¦’B’B‘¤’N‘ºHTK’B‘ ’B‘·’B’B‘º’D‘»‘ ’D‘º’B‘¬’B‘¹’B’B‘©’N‘º’E‘ ’B‘©’D‘¢’E’E‘¶’B‘½’B‘¬Julius’F‘¦’B’B‘¢’B’B‘¨HMM
+       ’B’C‘¶’B’B’B’B‘¦’B’B‘¥’B’B‘¼’B’N‘º-htkconf ’B‘¦’C‘»‘³’F‘¦’B’B’B‘®’N‘º ’E‘ ’Dâ€
+       ’B‘¬’B’B‘¢’B’B‘¨HMM’B‘©’F‘·’D‘¼‘²’H’E‘»’D‘¸’E‘Ÿ’C‘¹‘´’B’B‘§’B‘Ÿ’B‘º’B‘½’B’D’B’G‘¼‘º’B’B’B‘¦’B’B‘¥’B’B‘¼’B’N‘º
+
+       mkbinhmm ’B‘­ gzip ’D‘¥’F‘¶‘¬’B’B’BHMM’D‘¬’F‘¼‘§’B’B‘Ÿ’B‘¢’B‘©’B’B’B‘¬’B‘¼’B‘¼’G‘¨’B‘½’G‘¼‘º’B’B‘¼’B’N‘º
+
+OPTIONS
+        -htkconf  HTKConfigFile
+           ’D‘¤’F‘½’E’B‘©’F‘·’D‘¼‘²’H’E‘»’D‘¸’B‘©’C‘»‘½’F‘¦’B’BHTK Config’B’B‘Ÿ’B‘¢’B‘©’B’E’D‘¬’B’B’N‘º’E’D‘¬’B
+           ’B’B’D ‘²’D’N‘º’B’B‘¬’C‘¶’B‘¬’G‘¦’D‘¬’D‘¢’B’D‘¸’D’B’B‘Ÿ’B‘¢’B‘©’B‘¬’B’B’B’B‘©’D’B’G‘¼‘º’B‘¼’B’B’N‘º
+           ’D‘£’D’B‘©’E‘ ’B‘©’B’B’B’B’B’B’D ‘²’D’C‘¶’E‘¶’B’B’B’B’N‘º
+
+       hmmdefs_file
+           ’D‘¢’E’D’B‘¬’H‘±’H‘½’B‘ ’B’B‘©’D‘¬’F‘¼‘§’B’B‘Ÿ’B‘¢’B‘© (MMF)’N‘ºHTK ASCII ’D‘»‘ ’D‘º’N‘º’B’B’B’B‘­ Julius
+           ’B’B‘¢’B’B‘¨’D‘»‘ ’D‘º’N‘º
+
+       hmmdefs_file
+           Julius’F‘¦’B’B‘¢’B’B‘¨’D‘»‘ ’D‘º’B’B‘Ÿ’B‘¢’B‘©’B‘¬’D‘¸’D’D’N‘º
+
+EXAMPLES
+       HTK ASCII ’D‘»‘ ’D‘º’B‘¬ HMM ’D‘¬’F‘¼‘§’B’B’B‘¢’B’B‘¨’D‘»‘ ’D‘º’B‘©’D‘¢’E’B’B’N‘º
+       HTK’B‘¬’G‘¦’D‘¬’B’B‘Ÿ’B‘¢’B‘© Config ’B‘¬’D’D‘¬‘·’B’B’B’B’B‘©’E‘¶’B’G‘¼‘º’B’B‘¥’D‘¸’D’N‘º
+       ’D‘¢’B’B’B‘¢’B’B‘¨’D‘»‘ ’D‘º’B’B‘Ÿ’B‘¢’B‘©’B‘©’B’B’B’E’D ‘¯’B ’B’G‘½‘»’D ’B’B’N‘º
+
+SEE ALSO
+        julius ( 1 ) ,
+        mkbingram ( 1 )
+
+COPYRIGHT
+       Copyright (c) 1991-2013 ’C‘¸‘ª’H‘»’D‘¢‘¥’D‘¤ ’E‘°‘±’D’F ’F‘§‘´’D‘¬‘¢
+
+       Copyright (c) 1997-2000 ’E’D ‘¯’D‘¤’F’E‘­’G’C‘¸’E‘£’D’C‘º(IPA)
+
+       Copyright (c) 2000-2005 ’D‘£’G‘­’D’F‘©‘­’F‘¥’D‘¤’E’G‘Ÿ’D‘¢‘¥’D‘¤’H‘ ’D‘¢‘¥’D‘¤ ’H‘·‘½’H’F ’F‘§‘´’D‘¬‘¢
+
+       Copyright (c) 2005-2013 ’D’D‘¢’D‘¯’D‘µ‘£’E‘£’D‘¢‘¥’D‘¤ Julius’H’F‘¸’B’B‘º’B
+
+LICENSE
+       Julius ’B‘¬’C‘»‘½’F‘¦’G‘¦‘¯’G‘©‘¼’B‘©’E‘¸’B’B‘¼’B’N‘º
+
+
+
+                                  19/12/2013                       MKBINHMM(1)

@@ -1,0 +1,74 @@
+    generate
+
+GENERATE(1)                                                        GENERATE(1)
+
+
+
+’D’D
+           generate
+          - ’E’E‘±’B’B’E’B’B‘§’B‘±’B’B ’F’E’B’B
+
+’E‘¤’G‘¤
+       generate [-v] [-t] [-n num] [-s spname] {prefix}
+
+DESCRIPTION
+       generate ’B‘­’E’E‘±’B‘©’D‘¼’B‘¡’B‘¤’E’B’B‘§’B‘±’B’B ’B‘©’F’E’B’B‘¼’B’N‘º
+
+       ’D‘¬’G‘Ÿ’B‘©’B‘­ .dfa, .dict, .term ’B‘¬’D’B’B‘Ÿ’B‘¢’B‘©’B’D‘½’G‘¤’B‘¥’B’N‘º ’B’B’B’B’B mkdfa.pl
+       ’B‘¥’F’E’B’B‘¤’B’B’B‘¤’C‘¶’B’B’N‘º
+
+OPTIONS
+        -t
+           ’D’G‘¨’B‘¥’B‘­’B‘¨’B’B‘©’B’B‘²’B‘¨’D’B‘¥’D‘¸’D’B’B’N‘º
+
+        -n  num
+           ’F’E’B’B’E’B‘¬’E‘®’B’E’D‘¬’B’B (default: 10)
+
+        -s  spname
+           ’F’E’B‘©’B’B’B‘¤’B‘·’B’B’B’B’B‘·’B’B‘µ’B‘¥’B‘º’B’B’B‘º’B‘¸’D’G‘¨’B‘¬’D’D’B’E’D‘¬’B’B’N‘º (default: "sp")
+
+        -v
+           ’B’B’B’B‘®’D‘¸’D’N‘º
+
+EXAMPLES
+       vfr (’B’B‘¡’B’B’B‘¡’B‘±’B‘®’B‘½’B‘·’B‘­’F‘¦’E’E‘±) ’B‘¥’B‘¬’D‘¬’G‘Ÿ’C‘¼’N‘º
+
+           % generate vfr
+           Reading in dictionary...done
+           Reading in DFA grammar...done
+           Mapping dict item <-> DFA terminal (category)...done
+           Reading in term file (optional)...done
+           42 categories, 99 words
+           DFA has 135 nodes and 198 arcs
+            -----
+           silB ’B’B’B‘¼’B silE
+           silB ’F‘³’C‘¸’B’B‘¼’B silE
+           silB ’B‘µ’B‘¡’B ’B ’B‘·’B‘º’B ’B‘¦ ’F‘³‘¯’C‘¶’B’B‘¤ ’C‘¶’B’B silE
+           silB ’B‘·’B‘º’B ’B ’B‘©’B’B‘½’B‘º ’B‘¦ ’D’B ’G‘° ’B‘© ’F‘³‘¯’C‘¶’B’B‘¤ ’C‘¶’B’B silE
+           silB ’C‘¸‘¢’E’B’B‘¤ ’C‘¶’B’B silE
+           silB ’B’B ’B ’G‘¤’B’B‘¤’B’B’B‘¤ ’C‘¶’B’B silE
+           silB ’G‘¤’B’B‘¤’B’B’B‘¤ ’C‘¶’B’B silE
+           silB ’E‘¹’B‘¡’B‘¤ ’C‘¶’B’B silE
+           silB ’B‘·’B‘º’B ’B ’B‘µ’B‘¡’B ’B‘¦ ’F‘³‘¯’C‘¶’B’B‘¤ ’C‘¶’B’B silE
+           silB ’C‘¶’F ’B ’E‘§ ’B‘© ’B’B‘¤ ’C‘¶’B’B silE
+
+
+SEE ALSO
+        mkdfa.pl ( 1 ) ,
+        generate-ngram ( 1 )
+
+COPYRIGHT
+       Copyright (c) 1991-2013 ’C‘¸‘ª’H‘»’D‘¢‘¥’D‘¤ ’E‘°‘±’D’F ’F‘§‘´’D‘¬‘¢
+
+       Copyright (c) 1997-2000 ’E’D ‘¯’D‘¤’F’E‘­’G’C‘¸’E‘£’D’C‘º(IPA)
+
+       Copyright (c) 2000-2005 ’D‘£’G‘­’D’F‘©‘­’F‘¥’D‘¤’E’G‘Ÿ’D‘¢‘¥’D‘¤’H‘ ’D‘¢‘¥’D‘¤ ’H‘·‘½’H’F ’F‘§‘´’D‘¬‘¢
+
+       Copyright (c) 2005-2013 ’D’D‘¢’D‘¯’D‘µ‘£’E‘£’D‘¢‘¥’D‘¤ Julius’H’F‘¸’B’B‘º’B
+
+LICENSE
+       Julius ’B‘¬’C‘»‘½’F‘¦’G‘¦‘¯’G‘©‘¼’B‘©’E‘¸’B’B‘¼’B’N‘º
+
+
+
+                                  19/12/2013                       GENERATE(1)

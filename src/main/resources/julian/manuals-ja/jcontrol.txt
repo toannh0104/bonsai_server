@@ -1,0 +1,177 @@
+    jcontrol
+
+JCONTROL(1)                                                        JCONTROL(1)
+
+
+
+’D’D
+           jcontrol
+          - Julius’B‘ ’B‘¶’B‘£’B‘º’B‘©’B‘ ’B‘º’B’F‘¦’B‘¬’B‘³’B‘±’B’B‘©’B‘­’B‘§’B‘¢’B‘ ’B‘±’B
+
+’E‘¤’G‘¤
+       jcontrol {hostname} [portnum]
+
+DESCRIPTION
+       jcontrol ’B‘­’N‘º’B‘ ’B‘¶’B‘£’B‘º’B‘©’B‘ ’B‘º’B’B‘¥’D’C‘»’B’B‘¤’B’B julius ’B‘©’E‘£’F‘´’B’N‘ºAPI’B’C‘¹’B
+       ’B‘¤’B‘±’B‘±’B’B’B‘º’B‘©’B’B’F‘®‘Ÿ’D’B‘¨’B‘±’B‘±’B‘»’B‘º’B‘©’B’B’B‘®’B‘§’B ’B‘¥’B’N‘ºJulius ’B‘¶’B‘¬’C‘¶’E’D’E‘ 
+       ’B’D’H’B‘¨’B‘§’B‘¬’B‘±’B’B‘±’B’B‘¬’H’C‘½‘Ÿ’N‘º’B’B’B‘± Julius ’B’B’B‘¬’G‘¨’G’F‘³’E’B’H‘±’D‘¡‘®’B‘¢’B’B‘±’B’B‘¬
+       ’B‘Ÿ’B’B‘¹’B‘º’B‘¶’D’C‘½‘Ÿ’B’G‘Ÿ’B’B’B‘¦’B’B‘¥’B’B‘¼’B’N‘º
+
+       ’G‘³‘µ’D’D‘¼’N‘ºjcontrol ’B‘­’N‘º’E’D‘¬’B’B‘·’B’C‘¶’B‘©’B’B’B‘¤’B’B‘ ’B‘¶’B‘£’B‘º’B‘©’B‘ ’B‘º’B’B’B‘¥’D’C‘»’C‘¶ ’B‘¬Julius
+       ’B‘©’D‘­‘¼’B’N‘º’E‘£’F‘´’B’G‘§‘¤’B‘½’B‘¼’B’N‘º’E‘£’F‘´’F‘ ‘¸’F‘©’D‘¼’N‘ºjcontrol ’B‘­’B‘¤’B‘º’B‘´’B‘º’B’B’B‘¬
+       ’B‘±’B’B‘±’B’D‘£’D’B’B’B‘±’B‘Ÿ’B’B‘¹’B‘º’B‘¶’D’C‘½‘Ÿ’D‘¼’B‘Ÿ’F‘´’E’B‘¦’B‘¨’B’B‘¼’B’N‘º
+
+       jcontrol ’B‘­ ’B‘¤’B‘º’B‘´’B‘º’B’D‘£’D’B’B’B‘±’B’B‘±’B’B’G‘¥‘¡’H’B’N‘º’D‘­‘¼’D‘½’B’BAPI’B‘±’B’B‘±’B’B Julius
+       ’B‘¶’H’C‘½‘Ÿ’B’B‘¼’B’N‘º’B‘¼’B’N‘ºJulius ’B’B’G‘¨’G’F‘³’E’B’D‘£’D’B’B‘¨’B‘ª’E’D ‘¯ ’B‘¨’B‘§
+       ’B‘¬’B‘Ÿ’B’B‘¹’B‘º’B‘¶’B’H’C‘½‘Ÿ’B’B’B‘¤’B’B’B‘¦’B’B‘­’N‘º’B’B‘¬’D’D‘¬‘·’B’E‘¦’E‘¸’D‘¸’D’B‘¶’E‘¶’B’D‘¸’B’B‘¼’B’N‘º
+
+       ’B‘ ’B‘¶’B‘£’B‘º’B‘©’B‘ ’B‘º’B’B‘¬’C‘¹’E‘¥’B‘©’B‘¢’B’B‘¤’B‘­’N‘º’H‘ ’H‘¡’E’E‘¶’B’B’G‘¤‘¥’C‘¶’B’B’N‘º
+
+OPTIONS
+        hostname
+           ’E‘£’F‘´’D’B‘¬’B’B‘·’B’D
+
+        portnum
+           ’B’B‘º’B’F‘¨’D‘µ’N‘º’B’B’B‘§’B‘©’B’N‘º10500’N‘º
+
+COMMANDS
+       jcontrol ’B‘­’E‘¦’E‘¸’D‘£’D’B’B1’G‘Ÿ’B’B‘¢’B‘±’B’B‘±’B’E’D’D’B’D’B’D’B’N‘º ’B‘±’B’B‘±’B’B‘¬’C‘¶’G‘¤‘¥’B‘­’C‘¹‘£’C‘¶’B‘¬’H’B’N‘º
+
+   ’D’C‘»’D‘´’D‘¼‘Ÿ
+       pause
+           Julius’B‘¬’G‘¨’G’D’C‘»’B’C‘¶’E’B’B’N‘º’C‘¶’E’D’E‘ ’F‘´’E’B‘©’F‘¥‘¹’G‘Ÿ’B’B’B’N‘º’C‘¶’E’D’E‘ ’F‘´
+           ’E’B‘©’B’BJulius’B‘­’N‘º’B’B‘¦’B’H‘±’D‘¡‘®’D‘£’D’B’B’B‘¡’B‘¤’B’G‘¨’G’D‘¤’F’B’G‘Ÿ’B’B‘¨’B’N‘º ’B’B’D‘¸’H’B‘¬’H‘±’D‘¡‘®’G‘¨’Gâ€
+           ’D‘¤’F’B‘¬’H’C‘¶’B‘¥’B’B‘¬’B‘±’B’B‘±’B’B’D’B’D’B‘¡’B’D ‘²’D’N‘º Julius ’B‘­’B’B‘¬’G‘¨’Gâ€
+           ’D‘¤’F’B’F‘³’C‘¸’B’B’D‘¼’N‘º’C‘¶’E’D’E‘ ’F‘´’E’B‘©’F‘¥‘¹’G‘Ÿ’B’B’N‘º
+
+       terminate
+
+           pause’B‘¦’D’B’B’N‘ºJulius’B‘¬’G‘¨’G’D’C‘»’B’C‘¶’E’B’B’N‘º ’C‘¶’E’D’Eâ€
+           ‘ ’F‘´’E’B‘©’F‘¥‘¹’G‘Ÿ’B’B’B’N‘º’B’B’D‘¸’H’B‘¬’H‘±’D‘¡‘®’G‘¨’G’D‘¤’F’B‘¬’H’C‘¶’B‘¥’B’B‘¬’B‘±
+           ’B’B‘±’B’B’D’B’D’B‘¡’B’D ‘²’D’N‘º’B’B‘¬’D‘£’D’B’F ‘²’E‘¡’B’B‘¤’D‘±’D‘¸‘¥’B‘©’C‘¶’E’D’E‘ ’F‘´’E’B‘© ’F‘¥‘¹’G‘Ÿ’B’B’N‘º
+
+       resume
+           Julius ’B’C‘¶’E’D’E‘ ’F‘´’E’B’B’H’D‘¶‘¶’F‘´’E’B‘¶’F‘¥‘¹’G‘Ÿ’B’B’N‘º’G‘¨’G’B’D’H’B’B’B’N‘º
+
+       inputparam arg
+           ’E’E‘±’D’B’E‘½’B’E’B‘©’H‘±’D‘¡‘®’D‘£’D’B‘¥’B’B‘¡’B’D ‘²’D’B‘¬’D‘£’D’C‘¶’H‘±’D‘¡‘®’B‘¬’E‘¯’B’B’E’D‘¬’N‘º "TERMINATE",
+           "PAUSE", "WAIT"’B‘¬’B’B‘Ÿ’B’B’B’B’B’E’D‘¬’N‘º
+
+       version
+           Julius ’B‘©’B’B‘º’B‘¶’B‘¥’B‘±’E’D’D’B’G‘½’B’B’B’N‘º
+
+       status
+           Julius ’B’B’B‘µ’B‘·’B’B ’B‘¬’F‘´’E (active / sleep) ’B’D ‘¯’D’B’B’B’N‘º
+
+   ’E’E‘±’B‘¹’D’G‘¨’G‘¨’G’H‘ ’H‘¡
+       graminfo
+           ’B‘©’B‘ª’B‘±’B’B’B’B‘¹’B‘·’B’C‘½’E’B’B‘¤’B’B’E’E‘±’B‘¬’C‘¶’G‘¤‘¥’B’B‘­’B‘§’B‘¢’B‘ ’B‘±’B’B‘¶’D‘¸’D’B’B’B’N‘º
+
+       changegram prefix
+           ’B‘©’B‘ª’B‘±’B’B’B’B‘¹’B‘·’B‘¬’G‘¨’G’E’E‘±’B "prefix.dfa" ’B‘¦ "prefix.dict"
+           ’B‘©’D‘£’B’E‘½’B’B’N‘º’B‘©’B‘ª’B‘±’B’B’B ’B‘¹’B‘·’D’B‘¬’E’E‘±’B‘­’D‘¦’B‘¤’E‘´’D‘¹’B’B’N‘º’E’D‘¬’B’B’B’E’E‘±’B‘©’F‘»‘¬’B’E’B’B’N‘º
+
+           ’B‘©’B‘ª’B‘±’B’B’B’B‘¹’B‘·’B’D‘¢’F‘©’D’G‘¨’G‘¨’G’B‘¬’D ‘²’D’N‘º "prefix" ’B‘¬’D‘¢’B’B’B‘©’G‘¼’E‘¶’B’B‘Ÿ’B‘¢’B‘©’B‘¬’B‘½’B
+           "filename.dict" ’B‘¬’D‘»‘ ’B‘¥’E’D‘¬’B’B’N‘º
+
+       addgram prefix
+           ’G‘¨’G’E’E‘±’B‘¦’B’B‘¤ "prefix.dfa" ’B‘¦ "prefix.dict" ’B’B‘©’B‘ª’B‘±’B’B’B’B‘¹’B‘·’B‘©’G‘½‘»’D ’B’B’N‘º
+
+           ’B‘©’B‘ª’B‘±’B’B’B’B‘¹’B‘·’B’D‘¢’F‘©’D’G‘¨’G‘¨’G’B‘¬’D ‘²’D’N‘º "prefix" ’B‘¬’D‘¢’B’B’B‘©’G‘¼’E‘¶’B’B‘Ÿ’B‘¢’B‘©’B‘¬’B‘½’B
+           "filename.dict" ’B‘¬’D‘»‘ ’B‘¥’E’D‘¬’B’B’N‘º
+
+       deletegram gramlist
+           ’B‘©’B‘ª’B‘±’B’B’B’B‘¹’B‘·’B’B’E’D‘¬’B’B’B’E’E‘±’B’D’H‘¢’B’B’N‘º’E’E‘±’B‘¬’E’D‘¬’B‘­’N‘º’E ’E‘±’D’N‘º’G‘½‘»’D ’E’B‘¬
+           prefix’N‘º’B’N‘º’B’B’B’B‘­ Julius ’B’B’H’B’B’B GRAMINFO’D’B‘©’B’B’E’E‘± ID
+           ’B‘¥’E’D‘¬’B’B’N‘º’G‘¢’E‘®’B‘¬’E’E‘±’B’D’H‘¢’B’B’B’D ‘²’D’B‘­’N‘º’E’E‘±’D’B’B’B’B‘­ID’B’B‘©
+           ’B‘±’B’B‘¥’D‘¸’D’B‘¡’B‘¤’G‘¢’E‘®’E’D‘¬’B’B’N‘ºID’B‘¦’E’E‘±’D’B’E‘µ‘µ’D‘¦’B’B‘¤’B’B’B’N‘º’N‘º
+
+       deactivategram gramlist
+           ’B‘©’B‘ª’B‘±’B’B’B’B‘¹’B‘·’B‘¬’E’D‘¬’B’B’B’E’E‘±’B’C‘¶’E’F’B‘©’F‘Ÿ’D‘·’B‘©’B’B’N‘º’F‘Ÿ’D‘·’B‘©’B’B’B
+           ’E’E‘±’B‘­’N‘º’B‘¦’B‘±’B‘¶’B‘±’D’B‘©’C‘½’E’B’B’B’B‘¼’B‘¼’N‘º’G‘¨’G’D‘¤’F’B’B’B‘­’C‘¶’E’F’B‘©’H‘¢’D‘¢’B’B’B’N‘º
+           ’F‘Ÿ’D‘·’D’B’B’B’E’E‘±’B‘­ activategram ’B‘¥’D’B‘±’E’D‘·’D’B‘¥’B’B’N‘º
+
+           ’E’E‘±’B‘¬’E’D‘¬’B‘­’N‘º’E’E‘±’D’N‘º’G‘½‘»’D ’E’B‘¬ prefix’N‘º’B’N‘º’B’B’B’B‘­Julius ’B’B’H’B ’B’B
+           GRAMINFO’D’B‘©’B’B’E’E‘± ID ’B‘¥’E’D‘¬’B’B’N‘º’G‘¢
+           ’E‘®’B‘¬’E’E‘±’B’E’D‘¬’B’B’B’D ‘²’D’B‘­’N‘º’E’E‘±’D’B’B’B’B‘­ID’B’B‘©’B‘±’B’B‘¥’D‘¸’D’B‘¡’B‘¤
+           ’G‘¢’E‘®’E’D‘¬’B’B’N‘ºID’B‘¦’E’E‘±’D’B’E‘µ‘µ’D‘¦’B’B‘¤’B’B’B’N‘º’N‘º
+
+       activategram gramlist
+           ’B‘©’B‘ª’B‘±’B’B’B’B‘¹’B‘·’B‘¥’F‘Ÿ’D‘·’D’B’B’B‘¤’B’B’E’E‘±’B’E’D‘·’D’B’B’N‘º ’E’E‘±’B‘¬’E’D‘¬’B‘­’N‘º’E’E‘±’D’N‘º’G‘½‘»’D ’E’B‘¬
+           prefix’N‘º’B’N‘º’B’B’B’B‘­Julius ’B’B’H’B ’B’B GRAMINFO’D’B‘©’B’B’E’E‘± ID ’B‘¥’E’D‘¬’B’B’N‘º’G‘¢
+           ’E‘®’B‘¬’E’E‘±’B’E’D‘¬’B’B’B’D ‘²’D’B‘­’N‘º’E’E‘±’D’B’B’B’B‘­ID’B’B‘©’B‘±’B’B‘¥’D‘¸’D’B‘¡’B‘¤
+           ’G‘¢’E‘®’E’D‘¬’B’B’N‘ºID’B‘¦’E’E‘±’D’B’E‘µ‘µ’D‘¦’B’B‘¤’B’B’B’N‘º’N‘º
+
+       addword grammar_name_or_id dictfile
+           dictfile ’B‘¬’C‘¶’G‘¸‘©’B’N‘º’B‘©’B‘ª’B‘±’B’B’B’B‘¹’B‘·’B‘¬’E’D‘¬’B’B’B’E’E‘±’B‘©’G‘½‘»’D ’B’B’N‘º
+
+       syncgram
+           addgram ’B deletegram ’B‘¨’B‘§’B‘©’B’B’E’E‘±’B‘¬’E‘²’E‘®’B’D‘±’E’B‘©’G‘Ÿ’B’N‘º ’D’E’F‘ ‘¸’G‘¨’F‘¦’B‘¥’B’B’N‘º
+
+   ’B’B’B‘¹’B‘·’H‘ ’H‘¡’B‘¬’B‘±’B’B‘±’B
+       Julius-4 ’B‘¥’B‘­’G‘¢’E‘®’B‘ ’B’B‘©’B‘¬’D’E’G‘¨’G’B’G‘Ÿ’B’B’N‘º’B’B‘¬’D ‘²’D’N‘º ’G‘¨’G’B’B’B‘¹’B‘· ("-SR"
+       ’B‘¥’E’D‘¬’B’B’B’G‘¨’G’D‘¤’F’B‘¢’B‘±’B‘·’B‘½’B‘±’B‘·)
+       ’B’B‘¦’B‘©’B‘ ’B‘¶’B‘£’B‘º’B‘©’B‘­’B‘§’B‘¢’B‘ ’B‘±’B’B’B’E’C‘»’B’G‘Ÿ’B’B’B‘¦’B’B‘¥’B’B’N‘º
+
+       ’B‘­’B‘§’B‘¢’B‘ ’B‘±’B’B’B’B‘­’B‘§’B’B’C‘¶’B‘¢’B‘¬’B’B’B‘¹’B‘·’B’B’B‘©’B‘ª’B‘±’B’B’B’B‘¹’B‘·’B’B‘¦’B’B‘¤
+       ’D‘°’B’D‘»’B‘¤’B’B’B’N‘º’E’E‘±’H‘ ’H‘¡’B‘¬’D‘»’C‘¹‘¢’B‘­’B‘©’B‘ª’B‘±’B’B’B’B‘¹’B‘·’B‘©’D‘­‘¼’B’B‘¤’G‘Ÿ’B’B’B’N‘º
+
+       listprocess
+           Julius ’B‘©’F‘¼’D‘¦’B‘¦’B‘±’B‘¶’B‘±’B‘©’B’B’G‘¨’G’B’B’B‘¹’B‘·’B‘¬’C‘¶’G‘¤‘¥’B’H’C‘½‘Ÿ’B’B’B’N‘º
+
+       currentprocess procname
+           ’B‘©’B‘ª’B‘±’B’B’B’B‘¹’B‘·’B’E’D‘¬’B’B’B’D’D’B‘¬’B’B’B‘¹’B‘·’B‘©’D’B’E‘½’B’B’N‘º
+
+       shiftprocess
+           ’B‘©’B‘ª’B‘±’B’B’B’B‘¹’B‘·’B’D‘¼‘¨’F‘®’D’B’E‘½’B’B’B’N‘º’D‘º’B‘®’B’B’B’B‘±’B‘©’B’B‘¬’E‘ª‘Ÿ’B‘¬’B’B’B‘¹’B‘·’B‘© ’B‘©’B‘ª’B‘±’B’B’Bâ€
+           ’B‘¹’B‘·’B’D’B’E‘½’B’B’N‘º
+
+       addprocess jconffile
+           ’B‘¦’B‘±’B‘¶’B‘±’B‘©’G‘¨’G’B’B’B‘¹’B‘·’B’E‘®’B’B‘©’G‘½‘»’D ’B’B’N‘º’C‘¶’B’B jconffile
+           ’B‘­’N‘º’H’D‘¶‘¶’B‘¬’B’B‘¬’B‘¦’H’B’N‘º ’B’B ’C‘¶’F‘¦‘¬’H‘Ÿ’B‘¬ LM ’G‘¦â€
+           ’D‘¬’B’D‘©’B’B’B‘¬’B‘¥’B’B’D‘½’G‘¤’B’B’B’N‘º’B‘¼’B’N‘º’D‘¬’H’B‘©’H’B’B’B ’B‘¬’B‘­’B’B‘·’D’B‘¬’B‘½’B‘¥’B’B’N‘º’B’B‘Ÿ’B‘¢’B‘©’G‘¨â€
+           ’B‘½’G‘¼‘º’B‘½’B‘­Julius’D‘²’B‘¥’G‘Ÿ’B’B’B’B’B’N‘º ’B’B‘Ÿ’B‘¢’B‘©’B’B‘·’B‘­ Julius
+           ’B’B’G‘¤’B’B’D ‘²’E’B’E’D‘¬’B’B’D‘½’G‘¤’B’E’B’N‘º
+
+           ’G‘½‘»’D ’B’B’B LM ’B’B’B‘±’G‘¨’G’B’B’B‘¹’B‘·’B‘­’N‘ºjconffile ’B‘¬’D’D’B ’B’B’B‘¹’B‘·’D’B‘¦’B‘¨’B’N‘º
+
+       delprocess procname
+           ’E’D‘¬’B’B’B’D’D’B‘¬’G‘¨’G’B’B’B‘¹’B‘·’B’B‘¦’B‘±’B‘¶’B‘±’B’B’D’H‘¢’B’B’N‘º
+
+       deactivateprocess procname
+           ’E’D‘¬’B’B’B’D’D’B‘¬’G‘¨’G’B’B’B‘¹’B‘·’B’N‘º’C‘¶’E’F’B‘©’F‘Ÿ’D‘·’D’B’B’N‘º’F‘Ÿ’D‘·’D’B’B ’B’B’Bâ€
+           ’B‘¹’B‘·’B‘­’E‘ª‘Ÿ’D’C‘¹‘£’H’B‘¬’D‘£’D’B‘©’D‘­‘¼’B’B‘¤’G‘¨’G’D‘¤’F’B’B’B‘·’B’B’B’B’B’B’N‘º ’F‘Ÿ’D‘·’D’B’B’B’B’B’B‘¹’B‘·’B‘­
+           activateprocess ’B‘¥ ’D’B‘±’E’D‘·’D’B‘¥’B’B’N‘º
+
+       activateprocess procname
+           ’E’D‘¬’B’B’B’D’D’B‘¬’G‘¨’G’B’B’B‘¹’B‘·’B’E’D‘·’D’B’B’N‘º
+
+EXAMPLES
+       Julius ’B’B’B‘¬’B‘Ÿ’B’B‘¹’B‘º’B‘¶’B‘­ "> " ’B’G‘Ÿ’B‘¬’D’H ’B‘©’B‘¢’B’B‘¤’B’B‘¬’B‘¼’B‘¼’E‘¦’E‘¸’D‘¸’D’B‘©’D‘¸’D
+       ’B’B’B‘¼’B’N‘º’C‘¹‘£’C‘¶’B‘­’D‘¬’G‘Ÿ’C‘¼’B‘¥’B’N‘º
+       ’C‘¶’G‘¦’B‘¬’B’B’B‘©’B’B‘¤ Julius ’B’B‘ ’B‘¶’B‘£’B‘º’B‘©’B‘ ’B‘º’B’B‘¥’G‘³‘µ’D’B’B’D‘¼’N‘º jcontrol
+       ’B’B’B‘¬’B’B‘·’B’D’B’E’D‘¬’B’B‘¤’G‘³‘µ’D’B’B‘¼’B’N‘º
+       ’H‘±’D‘¡‘®’D‘£’D’B’G‘Ÿ’B’B‘®’N‘º’B‘¢’B’B‘±’B’D’D‘¬‘·’B’F‘³’E’B jcontrol ’D‘²’B‘©’H’C‘½‘Ÿ’B’B’B‘¼’B’N‘º jcontrol
+       ’B‘©’D‘­‘¼’B’B‘¤’B‘±’B’B‘±’B’B’D‘£’D’B’B’N‘º’E’D‘¼’B‘© Enter ’B’E‘º’B’N‘º’B‘¦’N‘º Julius
+       ’B‘©’B‘±’B’B‘±’B’B’H’C‘½‘Ÿ’B’B’N‘ºJulius ’B’D‘´’D‘¼‘Ÿ’B’B’B‘¼’B’N‘º
+
+       ’G‘§‘±’B’B’B’B’B’B‘±’B‘©’B‘©’B‘¢’B’B‘¤’B‘­’N‘º’H‘ ’H‘¡’E’E‘¶’B’D’F‘¥’B’B‘¤’B’B ’B’B’N‘º
+
+SEE ALSO
+        julius ( 1 )
+
+COPYRIGHT
+       Copyright (c) 1991-2013 ’C‘¸‘ª’H‘»’D‘¢‘¥’D‘¤ ’E‘°‘±’D’F ’F‘§‘´’D‘¬‘¢
+
+       Copyright (c) 1997-2000 ’E’D ‘¯’D‘¤’F’E‘­’G’C‘¸’E‘£’D’C‘º(IPA)
+
+       Copyright (c) 2000-2005 ’D‘£’G‘­’D’F‘©‘­’F‘¥’D‘¤’E’G‘Ÿ’D‘¢‘¥’D‘¤’H‘ ’D‘¢‘¥’D‘¤ ’H‘·‘½’H’F ’F‘§‘´’D‘¬‘¢
+
+       Copyright (c) 2005-2013 ’D’D‘¢’D‘¯’D‘µ‘£’E‘£’D‘¢‘¥’D‘¤ Julius’H’F‘¸’B’B‘º’B
+
+LICENSE
+       Julius ’B‘¬’C‘»‘½’F‘¦’G‘¦‘¯’G‘©‘¼’B‘©’E‘¸’B’B‘¼’B’N‘º
+
+
+
+                                  19/12/2013                       JCONTROL(1)

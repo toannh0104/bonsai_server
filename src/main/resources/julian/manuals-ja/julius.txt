@@ -1,0 +1,1002 @@
+    julius
+
+JULIUS(1)                                                            JULIUS(1)
+
+
+
+’D’D
+           julius
+          - ’D‘¢‘¥’G‘¨’D‘»’H‘¡’F‘´’H‘±’D‘¡‘®’G‘¨’G’B‘¦’B‘±’B‘¶’B‘±
+
+’E‘¤’G‘¤
+       julius [-C jconffile] [options...]
+
+’D’D‘¬‘·
+       Julius ’B‘­’E‘®’C‘¶’G‘¨’B’D‘­‘¼’G‘¯‘Ÿ’B‘¦’B’B’D‘¢‘¥’G‘¨’D‘»’H‘¡’F‘´’H‘±’D‘¡‘®’G‘¨’G’B’G‘Ÿ’B’B’B‘¦’B‘¬’B‘¥’B’B’B’B‘¨’B‘º ’B‘¬’G‘¨’Gâ€
+       ’B‘¦’B‘±’B‘¶’B‘±’B‘¥’B’N‘º’D’G‘¨N-gram’B’F‘¦’B’B2’B’B‘·’E‘¥’E’B‘¬’E‘¬‘³’H’F’E‘ ’F‘²‘ ’B‘©’B’B’H‘©’F‘°‘¼ ’D‘¸‘¤’B‘¨’G‘¨’Gâ€
+       ’B’G‘Ÿ’B’B’B‘¦’B’B‘¥’B’B‘¼’B’N‘º’B‘¼’B’N‘º’D‘®’G‘¤’E‘¦‘Ÿ’G‘¨’D‘»’B‘¬’B’B’B‘¬’E’E‘±’B’B‘º’B‘·’B‘¬’G‘¨’G ’B’D’D’G‘¨’G‘¨’Gâ€
+       ’B’G‘Ÿ’B’B’B‘¦’B’B‘¥’B’B‘¼’B’N‘º’G‘¨’G’D‘­‘¼’G‘¯‘Ÿ’B‘¦’B’B‘¤’B’B‘¢’B‘­’D‘£’D’N‘º’H‘°’H‘±’E‘¶’B‘½’B‘¬
+       ’H‘±’D‘¡‘®’E‘±‘ ’D‘»‘ ’B’B‘Ÿ’B‘¢’B‘©’N‘º’F‘·’D‘¼‘²’E‘»’D‘¸’B’B’B’B‘§’B‘Ÿ’B‘º’B‘½’B’B‘Ÿ’B‘¢’B‘©’B‘¨’B‘§’B‘©’D‘­‘¼’D‘½’B’B‘¤’B’B‘¼’B’N‘º
+
+       ’B‘±’B‘ ’B‘¬’G‘¨’G’D‘¤’F’B‘­’N‘º’D‘¦’B‘¤ JuliusLib ’B‘§’B‘¢’B’B‘§’B‘¨’B‘¦’B’B‘¤’E’C‘¼’B’B’B‘¤’B’B‘¼’B’N‘º
+       Julius’B‘­JuliusLib’B’F‘¦’B’B’H‘±’D‘¡‘®’B‘ ’B’B‘¨’B‘¯’B‘º’B‘µ’B‘¥’B‘±’B‘¬’C‘¶’B‘¢’B‘¥’B’N‘º
+
+       Julius ’B’F‘¦’B’B‘¤’H‘±’D‘¡‘®’G‘¨’G’B’G‘Ÿ’B’B‘©’B‘­’N‘º’H‘±’H‘½’B‘ ’B’B‘©’N‘º’D’G‘¨’G‘¼’E‘¶’N‘º’B’B’B‘±’G‘¦’G‘¨’B‘ 
+       ’B’B‘©’B’D‘½’G‘¤’B‘¥’B’N‘º
+
+’G‘¦’D‘¬
+       Julius ’B’B’B‘± JuliusLib ’B‘±’B‘ ’B‘¦’B‘±’B‘¶’B‘±’B‘¬’G‘¦’D‘¬’N‘º’D’C‘»’H‘¶’E’N‘º’G‘¦’D‘¬’N‘º’B‘ ’B’B‘©’E’D‘¬’N‘º
+       ’B’B‘§’B‘Ÿ’B‘º’B‘½’D‘¢’E‘²’B‘¨’B‘§’N‘º’B‘­’N‘º’B’B‘·’B‘¤’B’B’B‘¥’G‘¨‘ª’E’B’B’B’B‘¨’B’B‘µ’B‘¥’B‘±’B’B‘¥’E’D‘¬’B’B’N‘º Julius
+       ’B‘©’D‘­‘¼’B’B‘¤’B‘­’N‘º’B’B’B’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B’B‘±’B’B‘±’B’B‘§’B‘¢’B‘±’D‘º’E‘®’B‘¦’B’B‘¤’F‘²’E‘£’E ’D‘¬’B’B’B’N‘º’B’B’B’B‘­’B’Bâ€
+       ’B‘·’B’B’B‘Ÿ’B‘¢’B‘©’D’B‘©’G‘¦’G‘½‘®’B’B’B’B‘¬’B "-C" ’B‘©’B‘¢’B‘£’B’B‘¤’E’D‘¬’B’B’N‘º’B’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B’G‘¦’G‘½‘®’B’B’B’Bâ€
+       ’B‘·’B’B’B‘Ÿ’B‘¢’B‘©’B‘­ "jconf ’G‘¦’D‘¬’B’B‘Ÿ’B‘¢’B‘©" ’B‘¦’D‘º’B‘®’B’B’N‘º
+
+       JuliusLib ’B’F‘¦’B’B’C‘¹’B‘¬’B‘ ’B’B‘¨’B‘¯’B‘º’B‘µ’B‘¥’B‘±’B‘©’B’B’B‘¤’B’N‘ºJuliusLib’D’B‘¬’G‘¨’G
+       ’B‘¦’B‘±’B‘¶’B‘±’B‘¶’B‘¬’D’C‘»’E’D‘¬’B‘­’N‘º’D’E‘¥’B‘©’B’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’F‘¼‘¢’B‘¥’G‘Ÿ’B’N‘ºjconf ’G‘¦’D‘¬’B’B‘Ÿ’B‘¢’B‘©
+       ’B‘©’G‘¦’D‘¬’D’D‘¬‘·’B’G‘¦’G‘½‘®’B’B‘¤’N‘º’B’B’B’B‘Ÿ’B‘¢’B‘±’H‘ ’E‘®’B‘¬’E’D’B‘¥ j_config_load_file_new(char
+       *jconffile); ’B‘¥’D‘º’B‘±’D‘¸ ’B’B’B‘¦’B‘¥’N‘ºJuliusLib ’D’B‘¬’G‘¨’G’B‘¦’B‘±’B‘¶’B‘±’B‘©’G‘¦â€
+       ’D‘¬’B’B‘¹’B’B’B’B’B’B‘¦’B’B‘¥’B’B’N‘º
+
+       ’B‘¨’B’N‘ºjconf ’G‘¦’D‘¬’B’B‘Ÿ’B‘¢’B‘©’D’B‘¥’B‘­’N‘º’F‘¶’D‘­‘¼’B’B‘Ÿ’B‘¢’B‘©’B’B‘·’B‘­’B’B‘¬ jconf ’B’B‘Ÿ’B‘¢’B‘©
+       ’B‘¬’C‘»’F‘»‘¬’B’B’B‘¬’F‘¶’D‘­‘¼’B’B‘·’B‘¦’B’B‘¤’G‘¥‘¡’H’B’B’B’N‘º’B‘©’B‘ª’B‘±’B’B’B‘¡’B‘ª’B‘­’B’B‘¨’B‘¥’B‘­’B‘¨’B’N‘º’N‘º
+       ’E‘±‘¦’E’B’B’B’B’N‘º
+
+       ’C‘¹‘£’C‘¶’B‘©’D’B‘¨’B’B‘µ’B‘¥’B‘±’B’G‘¥‘¡’G‘¨‘ª’B’B’N‘º
+
+   Julius ’B‘ ’B’B‘¨’B‘¯’B‘º’B‘µ’B‘¥’B‘±’B‘¨’B’B‘µ’B‘¥’B‘±
+       JuliusLib ’B‘¦’B‘­’F‘ª’F‘©’B’B’N‘º’B‘ ’B’B‘¨’B‘¯’B‘º’B‘µ’B‘¥’B‘±’B‘¦’B’B‘¤’B‘¬ Julius ’B‘¬’E‘§’G‘»’B‘©’H‘ ’B’B
+       ’B‘¨’B’B‘µ’B‘¥’B‘±’B‘¥’B’B’N‘º’G‘¨’G’F‘³’E’B‘¬’D‘¸’D’N‘º’E’D’B‘±’B‘º’B’D‘¢’E’N‘º’B’B‘®’B‘¬’G‘¦’D‘¬’N‘º’B‘ ’B‘¶’B‘£’B‘º
+       ’B‘©’B‘ ’B‘º’B’B‘¨’B‘§’B’D‘©’B’N‘º’B’B’B’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B‘­’N‘ºJuliusLib ’B’F‘³’B‘½’G‘¼‘º’B’B ’C‘¹’B‘¬’B‘ 
+       ’B’B‘¨’B‘¯’B‘º’B‘µ’B‘¥’B‘±’B‘¥’B‘­’C‘»‘½’F‘¦’B‘¥’B’B‘¨’B’B‘¬’B‘¥’E‘±‘¦’E’B’B’B’B‘¦’N‘º
+
+        -outfile
+           ’G‘¨’G’F‘³’E’B’D’D‘£’B‘¬’B’B‘Ÿ’B‘¢’B‘©’B‘©’D‘¸’D’B’B’N‘º’D‘£’D’B’B‘Ÿ’B‘¢’B‘©’B’B‘¦’B‘¬’G‘¨’G’F‘³’E’B’N‘º ’B’B‘¬’E‘Ÿ’D‘º‘³’D’B
+           ".out" ’B‘©’D‘¢’B’B’B’B‘Ÿ’B‘¢’B‘©’B‘©’C‘½’D’B’B’N‘º (rev. 4.0)
+
+        -separatescore
+           ’G‘¨’G’F‘³’E’B‘¥’G‘¦’G‘¨’B‘·’B‘±’B‘ ’B‘¦’H‘±’H‘½’B‘·’B‘±’B‘ ’B’D’D‘£’B‘©’D‘¸’D’B’B’N‘º’E’D‘¬’B’B‘¨’B’D ‘² ’D’N‘º’D’B‘¬’D‘¢’B’G‘¨’Gâ€
+           ’F‘³’E’B‘¬’B‘·’B‘±’B‘ ’B‘¦’B’B‘¤’D‘¸’D’B’B’B’N‘º
+
+        -callbackdebug
+           ’B‘±’B‘º’B‘©’B’B’B‘­’BJuliusLib’B’B’D‘º’B‘®’B’B’B‘¦’B’B‘©’B‘±’B‘º’B‘©’B’B’B‘­’D’B
+           ’E‘¦’E‘¸’D‘¸’D’B‘©’D‘¸’D’B’B’N‘º’B’B’B’B‘®’F‘¦’B‘¥’B’B’N‘º(rev.4.0)
+
+        -charconv  from to
+           ’D‘¸’D’B‘¥’E’D’B‘±’B‘º’B’B‘¬’D‘¢’E’B’G‘Ÿ’B’N‘ºfrom ’B‘­’G‘¦’G‘¨’B‘ ’B’B‘©’B‘¬’E’D’B‘¹’B’B’B’N‘ºto ’B‘­’D‘¸ ’D’B‘¬’E’Dâ€
+           ’B‘¹’B’B’B’E’D‘¬’B’B’N‘º’E’D’B‘¹’B’B’B‘­’N‘ºLinux ’B‘¥’B‘­ iconv ’B‘¥’F‘¦’B’B’B’B’B‘±’B‘º’B’D’B‘¥’B’B’N‘ºWindows
+           ’B‘¥’B‘­’N‘º’B‘±’B‘º’B’B’B‘º’B‘¶’F‘¨’D‘µ’B’B’B’B‘­’B’B’B‘©’F‘¢‘¸’B’B‘±’B‘º’B’D’B‘¬’B‘§’B’B’B‘¥’B’B’N‘º ansi, mac, oem,
+           utf-7, utf-8, sjis, euc’N‘º
+
+        -nocharconv
+           ’E’D’B‘±’B‘º’B’D‘¢’E’B’G‘Ÿ’B’B‘¨’B’N‘º-charconv ’B‘¬’E’D‘¬’B ’B‘¨’B‘¹’B’B’B’B’N‘º
+
+        -module  [port]
+           Julius ’B’B’B‘³’B‘º’B’B‘ ’B‘¶’B‘£’B‘º’B‘©’B‘ ’B‘º’B’B’B‘¥’G‘³‘µ’D’B’B’N‘ºTCP/IP ’F‘³’F‘¯’B‘¥’B‘­
+           ’B‘§’B‘¢’B‘ ’B‘±’B‘¦’B’B’B‘¦’B’B’N‘º’D‘¤’F’B‘¬’D‘´’D‘¼‘Ÿ’B’G‘¨’G’F‘³’E’B‘¹’B‘¢’B’B‘±’B’B‘¬’H’F‘£’B’G‘Ÿ ’B’B’N‘ºport
+           ’B‘­’B’B‘º’B’F‘¨’D‘µ’B‘¥’B’B’N‘º’F’F‘£’E’B‘­ 10500 ’B’F‘¦’B’B’B’B’N‘º
+
+        -record  dir
+           ’D‘¸’H’E‘¢’D‘¸’B’B’B’D‘£’D’H‘±’D‘¡‘®’B’B’B‘Ÿ’B‘¢’B‘©’B‘©’H’E‘ª‘Ÿ’C‘½’D’B’B’N‘º dir’B‘­’C‘½’Dâ€
+           ’B’B’B’B‘¡’B‘ª’B‘­’B’B‘¨’B’E’D‘¬’B’B’N‘º ’B’B‘Ÿ’B‘¢’B‘©’D’B‘­’N‘º’B’B’B’B’B‘¬’D‘¤’F’F‘³’C‘¸’E’B‘¬’B‘µ’B‘·’B’B ’E’H’B’B
+           YYYY.MMDD.HHMMSS.wav’B‘¬’D‘»‘ ’B‘¥’C‘½’D’B’B’B’N‘º’B’B‘Ÿ ’B‘¢’B‘©’D‘»‘ ’D‘º’B‘­16bit,
+           1’B’B‘¡’B‘±’B’B‘©’B‘¬WAV’D‘»‘ ’D‘º’B‘¥’B’B’N‘º ’B‘¨’B’N‘º’D‘£’D’BGMM’F’B‘©’B’B‘¡’B‘¤’E‘¡’D‘²’B’B’B’D ‘²’D’B’G‘¦’H‘°’B’B’B’N‘º
+
+        -logfile  file
+           ’H’D‘¶‘¶ Julius ’B‘­’D‘¦’B‘¤’B‘¬’B’B‘®’D‘¸’D’B’E‘¦’E‘¸’D‘¸’D’B‘©’D‘¸’D’B’B’N‘º
+           ’B’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B’E’D‘¬’B’B’B’B‘¦’B‘¥’N‘º’B’B’B’B‘¬’D‘¸’D’B’E’D‘¬’B’B‘Ÿ’B‘¢’B‘©’B‘©
+           ’D’E‘½’B’B’B’B‘¦’B’B‘¥’B’B’N‘º(Rev.4.0)
+
+        -nolog
+           ’B’B‘®’D‘¸’D’B’F‘¤’E‘ ’B’B’N‘º’E‘¦’E‘¸’D‘¸’D’B‘©’B‘­’C‘»’B’D‘¸’D’B’B’B‘¨’B’B‘¨’B’N‘º (Rev.4.0)
+
+        -help
+           ’B‘¦’B‘±’B‘¶’B‘±’G‘¦’D‘¬’N‘º’B‘¨’B’B‘µ’B‘¥’B‘±’C‘¶’G‘¤‘¥’B‘¨’B‘§’B‘¬’B’B‘©’B’B’D‘¸’D’B’B‘¤’F‘³’C‘¸’B’B’N‘º
+
+   ’D‘¦’C‘»’B‘¨’B’B‘µ’B‘¥’B‘±
+       ’D‘¦’C‘»’B‘¨’B’B‘µ’B‘¥’B‘±’B‘­’N‘º’B‘ ’B’B‘©’B’E‘ ’F‘²‘ ’C‘¹‘£’D‘¢’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B‘¥’B’B’N‘º
+       ’H‘±’D‘¡‘®’D‘£’D’B‘¹’H‘±’E‘¢’D‘¸’B‘¹GMM’B‘¹’B’B‘§’B‘®’B‘¢’B‘±’B‘¹’B’B‘¬’C‘¹’B‘¬’G‘¦’D‘¬’B’D‘©’B’N‘º ’D‘¦’C‘»’B‘¨’B’B‘µ’B‘¥’B‘±’B‘­’N‘º
+       ’H‘±’H‘½’B‘ ’B’B‘©(-AM)’B‘¹’G‘¦’G‘¨’B‘ ’B’B‘©(-LM)’B‘¹’B
+       ’B‘±’B‘º’B(-SR)’B‘¨’B‘§’B‘¬’B‘¹’B‘­’B‘µ’B‘¥’B‘±’D‘¬’F‘¼‘§’B‘¬’D’B‘©’D‘¬’F‘¼‘§’B’B’B’N‘º -GLOBAL ’B‘¬’B’B‘¦’B‘©’E’D‘¬’B’B’N‘º
+
+       ’B‘¨’B‘º’B’B‘¡’B‘¨’D‘£’D
+            -input
+           {mic|rawfile|mfcfile|outprob|adinnet|vecnet|stdin|netaudio|esd|alsa|oss}
+               ’H‘±’D‘¡‘®’D‘£’D’B‘»’B‘º’B‘·’B’H‘¶’E’B’B’N‘º’H‘±’D‘¡‘®’E‘±‘ ’D‘»‘ ’B’B‘Ÿ’B‘¢’B‘©’B‘¬’D ‘²’D’B‘­
+               file’B’B’B’B‘­rawfile’B’E’D‘¬ ’B’B’N‘ºHTK ’D‘»‘ ’D‘º’B‘¬ ’F‘·’D‘¼‘²’H’B’B‘Ÿ’B‘¢’B‘©’B’G‘¨’Gâ€
+               ’B’B’D ‘²’D’B‘­htkparam’B’B’B ’B‘­mfcfile ’B’E’D‘¬’B’B’N‘ºHTK’B’B‘§’B‘Ÿ’B‘º’B‘½’B’B‘Ÿ’B‘¢’B‘©
+               ’B’D‘¸’D’F‘ ‘¸’F’B’B‘­’B’B‘©’B‘¦’B’B‘¤’G‘¨’B‘½’G‘¼‘º’B’D ‘²’D’B‘­ outprob’B’E’D‘¬’B’B’N‘º’G‘³‘µ’D’D‘¼’B‘©’B’Bâ€
+               ’B‘±’B’B’B’G‘Ÿ‘¦’B ’B’B‘¬’B‘¥’N‘º’B’B’B‘©’D‘­‘¼’B’B‘¤’B’B‘Ÿ’B‘¢’B‘©’D’B’D‘£’D’B’B’N‘º adinnet ’B‘¥’B‘­’N‘º
+               adintool ’B‘¨’B‘§’B‘¬’B‘­’B‘§’B‘¢’B‘ ’B‘±’B’B’B’B‘¹’B‘·
+               ’B’B’H‘±’D‘¡‘®’B’B‘º’B‘½’B’B’B’B’B‘­’B‘º’B‘­’F‘³’F‘¯’B‘¥’D’B’D’B’B’B‘¦’B’B‘¥’B’B’N‘º
+               vecnet’B‘¥’B‘­’N‘ºHTK’F‘·’D‘¼‘²’H/’D‘¸’D’F‘ ‘¸’F’B’B‘­’B’B‘©’B’B’B
+               ’B’B‘­’B‘º’B‘­’F‘³’F‘¯’B‘¥’D’B’D’B’B’B‘¦’B’B‘¥’B’B’N‘º netaudio ’B‘­DatLink’B‘¬’B‘³’B‘º’B’B’B’N‘º
+               stdin’B‘­’E‘¦’E‘¸’D‘£’D’B’B’B‘¬’H‘±’D‘¡‘®’D‘£’D’B’G‘¨’G’B’B’N‘º
+               esd’B‘­’N‘º’H‘±’D‘¡‘®’B’B’B‘¢’B‘·’B‘¬’D‘¯’E’E’E‘¬‘³’B‘¦’B’B‘¤’D‘¢’B’B‘¬
+               Linux’B‘¬’B’B‘·’B‘­’B’B’B’F‘®’D‘ ’B‘¥’D‘§’F‘¦’B’B’B‘¤’B’B EsounD daemon ’B’B’B‘¬’D‘£ ’D’B’G‘¨’G’B’B’N‘º
+
+            -filelist  filename
+               (-input rawfile|mfcfile|outprob ’E) filename’D’B‘©’D’E’B’B’B‘¤’B’B’D‘¦’B‘¤’B‘¬’B’B‘Ÿ
+               ’B‘¢’B‘©’B‘©’B‘¢’B’B‘¤’G‘¨’G’B’H ’E‘ª‘Ÿ’G‘Ÿ’B’N‘º filename’B‘©’B‘­’G‘¨’G’B’B’D‘£’D’B’B‘Ÿ’B‘¢’B‘©’D
+               ’B1’G‘Ÿ’B‘©1’B‘¢’B’B‘¢’G‘¦’G‘½‘®’B’B’N‘º
+
+            -notypecheck
+               ’D‘£’D’B‘¬’F‘·’D‘¼‘²’H’B’B‘­’B’B‘©’B‘¬’D’B’B‘¥’B’B‘­’B’F‘Ÿ’D‘·’B‘©’B’B’N‘º’H’D‘¶‘¶ Julius ’B‘­’D‘£
+               ’D’B‘¬’D’B’H‘±’H‘½’B‘ ’B’B‘©’B‘¦’B’B’B’B’B’B’B‘§’B’B’B’B’B‘¥’B’B‘­’B’N‘º’B’B’B’B’B‘¨’B
+               ’B‘¦’B‘¦’B‘§’B‘º’F‘³’C‘¸’B’B’N‘º’B’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B‘­’B’B‘¬’B’B‘¥’B’B‘­’B’D’H‘½’B’B’N‘º’B‘¨’B’B’B’B‘¬
+               ’F’F‘¯’B‘¥’D’B’B‘¥’B’B‘­’B’B’B‘¼’B’D’C‘»’B’B‘¨’B’B‘¦’B’B‘©’C‘»‘½’F‘¦’B’B’N‘º
+
+            -48
+               48kHz’B‘¥’D‘£’D’B’G‘Ÿ’B’N‘º16kHz’B‘©’B’B‘¤’B‘±’B‘³’B‘±’B’B‘¨’B‘±’B‘®’B’B‘¨’B’B’G‘¨’G’B’B’N‘º ’B’B’B‘­ 16kHz
+               ’B‘¬’B‘ ’B’B‘©’B’C‘»‘½’F‘¦’B’B‘¤’B’B’B‘¦’B’B‘¬’B‘½’E’D‘·’B‘¥’B’B’N‘º ’B’B‘¤’B‘±’B’B‘±’B’B‘¨’B‘±’B‘®’B‘¬’D’H‘¦’E‘§’G‘»’B‘­
+               sptk ’B’B ’F‘¥‘¹’E‘¢’B’B’B’N‘º (Rev. 4.0)
+
+            -NA  devicename
+               DatLink ’B‘³’B‘º’B’B‘¬’B’B’B‘¢’B‘·’D (-input netaudio).
+
+            -adport  port_number
+
+               -input adinnet ’C‘»‘½’F‘¦’E’N‘º’E‘£’F‘´’B’D’B’C‘¹’B’B adinnet
+               ’B‘¬’B’B‘º’B’F‘¨’D‘µ’B’E’D‘¬’B’B’N‘º(default: 5530)
+
+            -nostrip
+               ’H‘±’D‘¡‘®’D’B’G‘¼‘º’B‘½’E’N‘º’B’B’B‘¢’B‘·’B’B’B‘Ÿ’B‘¢’B‘©’B‘©’B’B‘¡’B‘¤’B‘­’N‘º’H‘±’D‘¡‘®’E‘±‘ ’D‘»‘ ’C‘¶’B‘©’E‘­’D‘· ’B
+               "0" ’B‘¦’B‘¨’B’B’B‘ª’B‘º’B ’B’D’D‘¦’B’B’B’B‘¦’B’B’B’N‘ºJulius ’B‘­’H’D‘¶‘¶’N‘º’H‘±’D‘¡‘®
+               ’D‘£’D’B‘©’D‘©’B‘¼’B’B’B’B‘¬’B’B’B‘¨’B’B‘ª’B‘º’B ’B’H‘¢’D‘¹’B’B’N‘º’B’B‘¬’H‘´’B‘³’B‘±’B’B‘©’H‘¢’D‘¹’B
+               ’B’B‘¼’B’D’B’B‘¨’B’D ‘²’D’N‘º’B’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B’E’D‘¬’B’B’B’B‘¦’B‘¥’G‘¨’D’E‘´’D‘¹’B
+               ’F‘Ÿ’D‘·’D’B’B’B’B‘¦’B’B‘¥’B’B’N‘º
+
+            -zmean ,  -nozmean
+               ’D‘£’D’H‘±’D‘¡‘®’B‘·’B’B‘¨’B‘º’B ’B‘©’D‘­‘¼’B’B‘¤’F‘²’E‘³’E’D’H‘¢’D‘¹’B’G‘Ÿ’B’N‘º’D‘¦’B‘¤’B‘¬’H‘±’D‘¡‘®’D‘¤’F’B‘¬
+               ’B‘¬’D’E‘¬‘³’B‘¦’B’B‘¤’D‘¤’F’B’B’B’N‘º -zmeansource’B‘¨’B’B‘µ’B‘¥’B‘±’B’G‘¤’B’N‘º
+
+            -lvscale  factor
+               ’H‘±’D‘¡‘®’D‘£’D’B‘¬’E‘­’D‘·’B‘¬’C‘¸’D‘¼’B‘·’B‘¯’B‘º’B‘¨’B‘±’B‘®
+
+            -chunk_size
+               ’H‘±’D‘¡‘®’D‘£’D’B‘¬’B’B’B’B‘Ÿ’H‘µ’B’B‘³’B‘±’B’B‘©’E‘®’B‘¥’E’D‘¬’D‘­’G‘»’N‘º’B’B’B‘§’B‘©’B’N‘º1000’N‘º’N‘º’B’B‘¬’D‘¢’B’D‘®’B’B’B’B’B‘¦’H’D‘¹‘´’B’D‘®’B’B’B‘¥’B’B’B’N‘º’D‘®’B’B’B’B’B‘¦’C‘¶’D‘¬’D‘¬’B‘©’B‘¨’B’N‘º
+
+       ’B‘ª’B’B‘©’B‘¦’H‘´’C‘¸‘¢’D‘µ‘¬’B‘©’B’B’D‘£’D’E‘¢’F‘£
+            -cutsilence ,  -nocutsilence
+               ’B‘ª’B’B‘©’B‘¦’H‘´’C‘¸‘¢’D‘µ‘¬’B‘©’B’B’D‘£’D’E‘¢’F‘£’B’G‘Ÿ’B’B’B‘§’B’B’B’E’D‘¬’B’B’N‘º’B’B’B‘§’B‘©
+               ’B’B‘­’N‘º’B‘¨’B‘ ’B‘©’B‘½’B‘¢’B ’G‘¨’G’N‘º’B’B’B‘¢’B‘·’F‘²’E‘£’D‘£’D’B’B’B‘±’B’B’B’B‘­’B‘º’B‘­’D‘£’D’N‘º ’B‘¥’B‘­ on,
+               ’B’B‘Ÿ’B‘¢’B‘©’D‘£’D’B‘¥’B‘­ off ’B‘¥’B’B’N‘º’B’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B’E’D‘¬’B’B
+               ’B’B‘¦’B‘¥’N‘º’C‘¼’B’B‘®’H‘µ’E’H’H‘°’H‘±’B’B’B’H‘±’D‘¡‘®’B’B‘Ÿ’B‘¢’B‘©’B‘©’D‘­‘¼’B’B‘¤’H‘±’D‘¡‘®’D‘¸’H’E‘¢’D‘¸
+               ’B’G‘Ÿ’B’B‘¨’B’B’G‘¨’G’B’G‘Ÿ’B’B’B‘¦’B’B‘¥’B’B’N‘º
+
+            -lv  thres
+               ’E‘­’D‘·’B‘ª’B’B‘©’B‘¬’B’B’B’D‘¢’N‘º’D‘¢’B‘­ 0 ’B’B 32767 ’B‘¬’F‘­’D‘°’B‘¥’E’D‘¬’B’B’N‘º (default:
+               2000)
+
+            -zc  thres
+               ’H‘´’C‘¸‘¢’D‘µ‘¬’E‘®’B‘¬’B’B’B’D‘¢’N‘º’D‘¢’B‘­’N‘º’F‘¥’B’B’B’B‘¬’C‘¸‘¢’D‘µ‘¬’E‘®’B‘¥’E’D‘¬’B’B’N‘º (default: 60)
+
+            -headmargin  msec
+               ’H‘±’D‘¡‘®’D‘¸’H’H’D‘¥’H‘¦’B‘¬’B’B‘º’B‘¶’B‘±’N‘º’D’C‘»’B‘­’B’B‘¨’F‘¥’N‘º (default: 300)
+
+            -tailmargin  msec
+               ’H‘±’D‘¡‘®’D‘¸’H’F‘³’C‘¸’H‘¦’B‘¬’B’B‘º’B‘¶’B‘±’N‘º’D’C‘»’B‘­’B’B‘¨’F‘¥’N‘º (default: 400)
+
+       ’D‘£’D’E‘¡’D‘²
+           ’D‘£’D’H‘µ’N‘º’B’B’B’B‘­’D‘·‘±’D’B’B‘­’B‘º’B‘©’B’B’D‘£’D’B‘¬’C‘¸’D‘¼’E‘¡’D‘²’B’G‘Ÿ’B’B’N‘º
+           ’D‘·‘±’D’B’B‘­’B‘º’B‘©’B’B’E‘¡’D‘²’B‘­’N‘º’B’B’B‘§’B‘©’B’B‘¥’B‘­’F‘Ÿ’D‘·’D’B’B’B‘¤’B’B’N‘º’B‘»’B‘º’B‘·’B’B’B‘±’B‘±’B’B‘¢
+           ’B‘©’B’B’H’B‘© configure’B‘© --enable-power-reject ’B’E’D‘¬’B’B’B’B‘¦’B‘¥’E’D‘·’B‘¦’B‘¨’B’N‘º
+           ’B‘¨’B‘ ’B‘©’B‘½’B‘¢’B ’G‘¨’G’E’B‘¥’N‘º’B’B‘¢’F‘·’D‘¼‘²’H’B‘¥’B’B‘­’B‘º’H ’B’E’B‘¢’D ‘²’D’B‘¬’B‘½’C‘»‘½’F‘¦’B‘¥’B’B’N‘º
+
+            -rejectshort  msec
+               ’E‘¢’D‘¸’B’B’B’D‘¸’H’H‘µ’Bmsec’C‘¹‘£’C‘¶’B‘¬’D‘£’D’B ’E‘¡’D‘²’B’B’N‘º’B’B‘¬’D‘¸’H’B‘¬’G‘¨’G’B‘­’C‘¶’Eâ€
+               ’B‘¹’F ‘²’E‘¡’B’B’B’N‘º
+
+            -rejectlong  msec
+               ’E‘¢’D‘¸’B’B’B’D‘¸’H’H‘µ’Bmsec’B’B’H‘µ’B’D‘£’D’B ’E‘¡’D‘²’B’B’N‘º’B’B‘¬’D‘¸’H’B‘¬’G‘¨’G’B‘­’C‘¶’E’B‘¹’F ‘²’E‘¡’B’B’B’N‘º
+
+            -powerthres  thres
+               ’D’B’D‘¸’B’D‘¸’H’B‘¬’D‘·‘±’D’B’B‘­’B‘º’B‘¬’B’B’B’D‘¢’N‘º(Rev.4.0)
+
+               ’B’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B‘­’B‘±’B‘±’B’B‘¢’B‘©’E’B‘© --enable-power-reject’B’E’D‘¬’B’B’B’B‘¦’B’B‘©
+               ’E’D‘·’B‘¦’B‘¨’B’N‘º
+
+       GMM / GMM-VAD
+            -gmm  hmmdefs_file
+               GMM’D‘¬’F‘¼‘§’B’B‘Ÿ’B‘¢’B‘©’N‘º3’F‘´’E’N‘º’D‘¸’D’F‘´’E’B’N‘º’B‘¢’B‘¬’B‘½’N‘º’B‘¬HMM’B‘¦’B’B‘¤’D‘¬’F‘¼‘§’B
+               ’B’N‘º’D‘»‘ ’D‘º’B‘­HTK’D‘»‘ ’D‘º’B‘¥’C‘¶’B’B’N‘º’D‘»‘ ’D‘º’B’C‘»‘½’F‘¦’B‘¥’B’B’F‘·’D‘¼‘²’H’B‘¬’D‘´’H’B‘­’H‘±’H‘½
+               ’B‘ ’B’B‘©’B‘¦’D’B’B‘¥’B’B’N‘º ’B‘¨’B’N‘ºGMM’B‘¥’F‘¦’B’BMFCC’F‘·’D‘¼‘²’H’B‘¬’G‘¦’D‘¬’B‘­’N‘º
+               -AM_GMM’B‘¬’B’B‘¦’B‘©’H‘±’H‘½’B‘ ’B’B‘©’B‘¦’D’E‘¥’B‘©’E’D‘¬’B’B’N‘º’B ’B‘¬’F‘·’D‘¼‘²’H’G‘¦â€
+               ’D‘¬’B‘­’H‘±’H‘½’B‘ ’B’B‘©’B‘¦’D‘£’B‘©’N‘º’E’F‘¢‘¸’F’B‘©’E’D‘¬’B’B’D‘½’G‘¤’B’B’B’B’B‘¦ ’B‘©’E‘±‘¦’E’B’D‘½’G‘¤’B‘¥’B’B’N‘º
+
+            -gmmnum  number
+               GMM’E’D‘¬’E’N‘º’G‘¦’F‘¬’B’B’B‘ª’B‘¤’B‘·’D’D‘¶’E‘®’B’E’D‘¬’B’B’N‘º’B’B‘ª’B‘º’B ’B’B‘¦’B‘©GMM’B‘¬
+               ’D‘¸’D’F‘ ‘¸’F’B’E‘¯’B’B’H’N‘º’D’B‘ ’B’B‘©’B‘¥’D‘¬’F‘¼‘§’B’B’B‘¤’B’B’E‘µ‘µ’D’B‘ª’B‘¤’B‘·’D’D‘¶’B‘¬’B
+               ’B‘Ÿ’N‘º’B’B‘¬number’B‘¥’E’D‘¬’B’B’E‘®’B‘¬’C‘¶’C‘»’B‘ª
+               ’B‘¤’B‘·’D’D‘¶’B‘¬’F‘ ‘¸’F’B‘¬’B‘½’B’G‘¦’F‘¬’B’B’N‘º’D‘®’B’B‘¨’D‘¢’B’E’D‘¬’B’B’B‘¹’B‘§GMM’B‘¬’G‘¦’F‘¬
+               ’H’B’D’E‘¶’B‘¥’B’B’B’N‘º’G‘¦’F‘¬’F‘°‘¼’D‘¸‘¤’B’E‘¨’B’B‘¨’B’N‘º(default: 10)
+
+            -gmmreject  string
+               GMM’B‘¥’D‘¬’F‘¼‘§’B’B’B‘¤’B’B’B‘ ’B’B‘©’D’B‘¬’B’B‘Ÿ’N‘º’H’H‘±’D‘¡‘®’B‘¦’B’B‘¤’E‘¡’D‘²’B’B‘·’B’B‘ ’B
+               ’B‘©’B‘¬’D’F‘¥‘®’B’E’D‘¬’B’B’N‘º’B‘ ’B’B‘©’D’B’G‘¢’E‘®’E’D‘¬’B’B’B’B‘¦’B’B‘¥’B’B’N‘º’G‘¢’E‘®’E
+               ’D‘¬’B’B’D ‘²’D’B‘­’N‘º’F‘§‘¸’F‘»’B’D‘£’B’B’B‘±’B‘±’B’B‘¥’D‘¸’D’B‘¡’B‘¤’C‘¶’B‘¢’B‘¬ string’B‘¦’B’B‘¤’E’D‘¬’B’B’N‘º
+
+            -gmmmargin  frames
+               (GMM_VAD) GMM VAD ’B‘©’B’B’D‘¸’H’E‘¢’D‘¸’B‘¬’H’D‘¥’H‘¦’B’B‘º’B‘¶’B‘±’N‘º’D’C‘»’B‘­’B’B‘ª’B‘º
+               ’B ’E‘®’B‘¥’E’D‘¬’B’B’N‘º(default: 20) (Rev. 4.0)
+
+               ’B’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B‘­--enable-gmm-vad’C‘¹’B’B‘¥’B‘±’B‘±’B’B‘¢’B‘© ’B’B’B’B‘¦’B’B‘©’E’D‘·’B‘¦’B‘¨’B’N‘º
+
+            -gmmup  value
+               (GMM_VAD) ’H‘±’D‘¡‘®’D‘¸’H’B‘¬’H’D‘¥’B‘¦’B‘½’B‘¨’B VAD ’B‘·’B‘±’B‘ ’B‘¬’H‘¼’D‘¢’N‘ºVAD’B‘·’B‘±’B‘ ’B‘­
+               (’H‘±’D‘¡‘®GMM’B‘¬’E’D‘¢‘¥’D‘®‘¢’D‘¸‘¤ - ’H’H‘±’D‘¡‘®HMM’B‘¬’E’D‘¢‘¥’D‘®‘¢’D‘¸‘¤) ’B‘¥’G‘Ÿ‘¦’B’B’B’N‘º
+               (Default: 0.7) (Rev.4.1)
+
+               ’B’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B‘­--enable-gmm-vad’C‘¹’B’B‘¥’B‘±’B‘±’B’B‘¢’B‘© ’B’B’B’B‘¦’B’B‘©’E’D‘·’B‘¦’B‘¨’B’N‘º
+
+            -gmmdown  value
+               (GMM_VAD) ’H‘±’D‘¡‘®’D‘¸’H’B‘¬’F‘³’C‘¸’B‘¦’B‘½’B‘¨’B VAD ’B‘·’B‘±’B‘ ’B‘¬’H‘¼’D‘¢’N‘ºVAD’B‘·’B‘±’B‘ ’B‘­
+               (’H‘±’D‘¡‘®GMM’B‘¬’E’D‘¢‘¥’D‘®‘¢’D‘¸‘¤ - ’H’H‘±’D‘¡‘®HMM’B‘¬’E’D‘¢‘¥’D‘®‘¢’D‘¸‘¤) ’B‘¥’G‘Ÿ‘¦’B’B’B’N‘º
+               (Default: -0.2) (Rev.4.1)
+
+               ’B’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B‘­--enable-gmm-vad’C‘¹’B’B‘¥’B‘±’B‘±’B’B‘¢’B‘© ’B’B’B’B‘¦’B’B‘©’E’D‘·’B‘¦’B‘¨’B’N‘º
+
+       ’B’B‘±’B‘º’B’B‘¡’B‘±’B‘®’B‘¨’B’B‘µ’B‘¥’B‘±
+           ’B’B‘±’B‘º’B’B‘¡’B‘±’B‘®’B‘¨’B’B‘µ’B‘¥’B‘±’B‘­’N‘º’C‘»‘½’F‘¦’B’B’G‘¨’G’B‘ ’B‘©’B‘²’B‘¨’B‘¸’B ’B‘©’H‘ ’B’B’G‘¦’D‘¬’B’G‘Ÿ’B
+           ’B‘¨’B’B‘µ’B‘¥’B‘±’B‘¥’B’B’N‘º’B’B‘¬’G‘¦’D‘¬’B‘­’B‘¦’B‘±’B‘¶’B‘±’D‘¦’C‘»’B‘©’D‘­‘¼’B’B’G‘¦’D‘¬’B‘¥’B’B’N‘º’D‘¦’B‘¤’B‘¬’G‘¨’G
+           ’D‘¤’F’B‘¢’B‘±’B‘·’B‘½’B‘±’B‘·’B‘¥’D‘¯’H’B‘¬’G‘¦’D‘¬’B‘¦’B‘¨’B’N‘º’E‘ ’F‘²‘ ’B‘¬’D‘·’B’G‘¦’G‘¨’H’B‘½’B‘¨’B‘§’B‘¬’D’B’B‘¬’B’B‘±’B‘º
+           ’B’B‘¡’B‘±’B‘®’G‘¦’D‘¬’B‘©’B‘¢’B’B‘¤’B‘­’N‘º’G‘¨’G’D‘¤’F’B‘¢’B‘±’B‘·’B‘½’B‘±’B‘·’B’B‘¦’B‘©’E’D‘¬’B’B’N‘º
+
+            -realtime ,  -norealtime
+               ’D‘£’D’B‘¦’C‘¶‘¤’G‘Ÿ’B’B‘¤’B‘¨’B‘ ’B‘©’B‘½’B‘¢’B ’G‘¨’G’B’G‘Ÿ’B’B’B‘§’B’B’B’E’F‘¢‘¸’F’B‘©’E’D‘¬’B’B’N‘º
+               ’B’B’B‘§’B‘©’B’B‘¬’G‘¦’D‘¬’B‘­’D‘£’D’B’B’B‘¢’B‘·’B‘©’C‘¼’D’B’N‘º’B’B‘¢’B‘­’B’B’B‘§’B‘±’F’B‘¬’B’B ’B‘¢’B‘·’F‘²’E‘£’G‘¨’Gâ€
+               ’N‘º’B’B’B’B‘­’B‘º’B‘­’D‘£’D’N‘º’B’B’B‘± DatLink/NetAudio ’D‘£’D’B‘¬ ’D ‘²’D’B‘­ ON,
+               ’B’B‘Ÿ’B‘¢’B‘©’D‘£’D’B’F‘·’D‘¼‘²’H’D‘£’D’B‘©’B‘¢’B’B‘¤’B‘­OFF’B‘¦’B‘¨’B‘¡’B‘¤’B’B’N‘º
+
+       ’B’B‘¬’C‘¹
+            -C  jconffile
+               jconf’G‘¦’D‘¬’B’B‘Ÿ’B‘¢’B‘©’B’G‘¨’B‘½’G‘¼‘º’B’N‘º’B’B‘Ÿ’B‘¢’B‘©’B‘¬’D’D‘¬‘·’B’B’B‘¬’D ‘²’E’B‘©’D‘¯’H’B’B’B’N‘º
+
+            -version
+               ’B’B‘º’B‘¶’B‘¥’B‘±’E’D ‘¯’B’E‘¦’E‘¸’B‘¦’B‘§’B‘º’D‘¸’D’B‘©’D‘¸’D’B’B‘¤’F‘³’C‘¸’B’B’N‘º
+
+            -setting
+               ’B‘¦’B‘±’B‘¶’B‘±’G‘¦’D‘¬’E’D ‘¯’B’E‘¦’E‘¸’B‘¦’B‘§’B‘º’D‘¸’D’B‘©’D‘¸’D’B’B‘¤’F‘³’C‘¸’B’B’N‘º
+
+            -quiet
+               ’D‘¸’D’B’E’D‘´’B’B’N‘º’G‘¨’G’F‘³’E’B‘­’D’G‘¨’D’B‘¬’B‘½’B’D‘¸’D’B’B’B’N‘º
+
+            -debug
+               (’B’B’B’B‘®’F‘¦) ’B‘ ’B’B‘©’B‘¬’G‘§‘±’F‘²‘®’B’E‘ ’F‘²‘ ’H’F‘¦’B‘¬’G‘¦’H‘°’B‘¨’B‘§’N‘º’E‘¥’B’B‘¨ ’B’B’B’B‘®’E’D ‘¯’B’Bâ€
+               ’B‘®’B‘©’D‘¸’D’B’B’N‘º
+
+            -check  {wchmm|trellis|triphone}
+               ’B’B’B’B‘®’F‘¦’B‘¬’B’B‘¥’B’B‘­’B‘ ’B‘º’B’B‘©’D‘£’B’N‘º
+
+            -plugindir  dirlist
+               ’B’B‘§’B‘®’B‘¢’B‘±’B’G‘¨’B‘½’G‘¼‘º’B’B’B‘¡’B‘ª’B‘­’B’B‘¨’B’E’D‘¬’B’B’N‘º’G‘¢’E‘®’B‘¬’D ‘²’D’B‘­ ’B‘±’Bâ€
+               ’B‘±’B‘¥’D‘¸’D’B‘¡’B‘¤’C‘¶‘¤’B‘·’B‘¤’E’D‘¬’B’B’N‘º
+
+            -outprobout  file
+               ’G‘¦’F‘¬’B’B’B’D‘¸’D’F‘ ‘¸’F’G‘Ÿ’D’BHTK’D‘»‘ ’D‘º’B’B‘Ÿ’B‘¢’B‘©’B‘©’C‘½’D’N‘ºdebug’N‘º’N‘º
+
+   ’G‘¢’E‘®’B‘ ’B’B‘©’G‘¨’G’B‘¬’B’B’B‘¬’B‘¢’B‘±’B‘·’B‘½’B‘±’B‘·’D‘¬‘¡’G‘¦
+        -AM  name
+           ’H‘±’H‘½’B‘ ’B’B‘©’B‘¢’B‘±’B‘·’B‘½’B‘±’B‘·’B’E‘®’B’B‘©’D‘¬‘¡’G‘¦’B’B’N‘º’C‘¹‘£’H’B‘¬’H‘±’H‘½’B‘ ’B’B‘©’B‘©’H‘ ’B ’B’G‘¦â€
+           ’D‘¬’B‘­’B’B‘¬’B‘¢’B‘±’B‘·’B‘½’B‘±’B‘·’B‘©’D‘­‘¼’B’B’B’B‘¬’B‘¦’G‘¥‘¡’H’B’B’B’N‘º name
+           ’B‘©’B‘­’B‘¢’B‘±’B‘·’B‘½’B‘±’B‘·’B‘©’B‘¢’B’B’D’D’B
+           ’E’D‘¬’B’B’N‘º’E‘ ’B‘©’B’B’H‘±’H‘½’B‘ ’B’B‘©’B‘¢’B‘±’B‘·’B‘½’B‘±’B‘·’B‘¦’D’B’D’D’B‘¥’B’B‘¡’B‘¤’B‘­’B ’B’B‘¨’B’N‘º.
+           (Rev.4.0)
+
+        -LM  name
+           ’G‘¦’G‘¨’B‘ ’B’B‘©’B‘¢’B‘±’B‘·’B‘½’B‘±’B‘·’B’E‘®’B’B‘©’D‘¬‘¡’G‘¦’B’B’N‘º’C‘¹‘£’H’B‘¬’G‘¦’G‘¨’B‘ ’B’B‘©’B‘©’H‘ ’B ’B’G‘¦â€
+           ’D‘¬’B‘­’B’B‘¬’B‘¢’B‘±’B‘·’B‘½’B‘±’B‘·’B‘©’D‘­‘¼’B’B’B’B‘¬’B‘¦’G‘¥‘¡’H’B’B’B’N‘º name
+           ’B‘©’B‘­’B‘¢’B‘±’B‘·’B‘½’B‘±’B‘·’B‘©’B‘¢’B’B’D’D’B
+           ’E’D‘¬’B’B’N‘º’E‘ ’B‘©’B’B’G‘¦’G‘¨’B‘ ’B’B‘©’B‘¢’B‘±’B‘·’B‘½’B‘±’B‘·’B‘¦’D’B’D’D’B‘¥’B’B‘¡’B‘¤’B‘­’B ’B’B‘¨’B’N‘º.
+           (Rev.4.0)
+
+        -SR  name am_name lm_name
+           ’G‘¨’G’D‘¤’F’B‘¢’B‘±’B‘·’B‘½’B‘±’B‘·’B’E‘®’B’B‘©’D‘¬‘¡’G‘¦’B’B’N‘º’C‘¹‘£’H’B‘¬’G‘¨’G’D‘¤’F’B’E‘ ’F‘²‘ ’B‘©’H‘  ’B’B’G‘¦â€
+           ’D‘¬’B‘­’B’B‘¬’B‘¢’B‘±’B‘·’B‘½’B‘±’B‘·’B‘©’D‘­‘¼’B’B’B’B‘¬’B‘¦’G‘¥‘¡’H’B’B’B’N‘º name
+           ’B‘©’B‘­’B‘¢’B‘±’B‘·’B‘½’B‘±’B‘·’B‘©’B‘¢’B’B’D’D’B ’E’D‘¬’B’B’N‘º’E‘ ’B‘©’B’B’G‘¨’Gâ€
+           ’D‘¤’F’B‘¢’B‘±’B‘·’B‘½’B‘±’B‘·’B‘¦’D’B’D’D’B‘¥’B’B‘¡’B‘¤’B‘­’B’B ’B‘¨’B’N‘º’N‘ºam_name, lm_name
+           ’B‘©’B‘­’B’B’B’B’B’B‘¬’B‘¢’B‘±’B‘·’B‘½’B‘±
+           ’B‘·’B’C‘»‘½’F‘¦’B’B’H‘±’H‘½’B‘ ’B’B‘©’B‘¦’G‘¦’G‘¨’B‘ ’B’B‘©’B‘¬’B‘¢’B‘±’B‘·’B‘½’B‘±’B‘·’B’D’D’N‘º’B’B’B ’B‘­ ID
+           ’F‘¨’D‘µ’B‘¥’E’D‘¬’B’B’N‘º(Rev.4.0)
+
+        -AM_GMM
+           GMM’C‘»‘½’F‘¦’E’B‘©’N‘ºGMM’G‘¦’F‘¬’B‘¬’B’B’B‘¬’F‘·’D‘¼‘²’H’E‘»’D‘¸’B’B‘§’B‘Ÿ’B‘º’B‘½’B’N‘º’B’B‘¬’D‘¬‘¡’G‘¦’B‘¬
+           ’B’B‘¦’B‘©’E’D‘¬’B’B’N‘º’B’B GMM ’C‘»‘½’F‘¦’E’B‘©’B’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B‘¥GMM’F‘¦’B‘¬’F‘·’D‘¼‘²’H
+           ’B’B‘§’B‘Ÿ’B‘º’B‘½’B’E’D‘¬’B’B‘¨’B’B‘¡’B’D ‘²’D’N‘º’E’D‘¼’B‘©’E’D‘¬’B’B’H‘±’H‘½’B‘ ’B’B‘©’F‘¦’B‘¬’F‘·
+           ’D‘¼‘²’H’B’B’B‘¬’B‘¼’B‘¼’F‘¦’B’B’B’B’N‘º (Rev.4.0)
+
+        -GLOBAL
+           ’D‘¦’C‘»’B‘¨’B’B‘µ’B‘¥’B‘±’F‘¦’B‘¬’B‘¹’B‘­’B‘µ’B‘¥’B‘±’B’H’D‘¥’B’B’N‘º-AM, -LM, -SR ’B‘¨’B‘§’B‘¬’B‘¢’B‘±’B‘·’B‘½’B‘±’B‘·
+           ’D‘¬‘¡’G‘¦’B’F‘¦’B’B’D ‘²’D’N‘º’H‘±’D‘¡‘®’D‘£’D’G‘¦’D‘¬’B‘¨’B‘§’B‘¬’D‘¦’C‘»’B‘¨’B’B‘µ’B‘¥’B‘±’B‘­’N‘º’B’B’B’B‘¬
+           ’D‘¦’B‘¤’B‘¬’B‘¢’B‘±’B‘·’B‘½’B‘±’B‘·’D‘¬’F‘¼‘§’B’B’B’D’B’N‘º’B’B’B’B‘­’B’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B‘¬
+           ’B’B‘¦’B‘©’E’D‘¬’B’B’D‘½’G‘¤’B’B’B’N‘º’B’B‘¬’D‘¦’C‘»’B‘¨’B’B‘µ’B‘¥’B‘±’F‘¦’B‘¬’B‘¹’B‘­’B‘µ’B‘¥’B‘±’B‘­’N‘º jconf
+           ’D’B‘¥’C‘»’D’F‘¼’B’B‘¤’B’G‘­’B’N‘º (Rev.4.1)
+
+        -nosectioncheck ,  -sectioncheck
+           ’G‘¢’E‘®’B‘¢’B‘±’B‘·’B‘½’B‘±’B‘·’B’F‘¦’B’B jconf ’B‘©’B’B’B‘¤’N‘º’B‘¨’B’B‘µ’B‘¥’B‘±’B‘¬’C‘»’F‘»‘¬’B’B‘¥’B
+           ’B‘­’B‘¬’E’D‘·’B‘¹’F‘Ÿ’D‘·’B’E’D‘¬’B’B’N‘º’E’D‘·’B‘¥’B’B’D ‘²’D’N‘º’B’B’F‘¦‘¬’H‘Ÿ’B‘¬’B‘¢’B‘±’B‘·’B‘½’B‘±
+           ’B‘·’B‘¬’D‘¬‘¡’G‘¦’B’B’B’B’B’B‘¦’B‘­’N‘º’C‘¹’B‘¬’B‘¢’B‘±’B‘·’B‘½’B‘±’B‘·’D‘¬‘¡’G‘¦’B’F‘¼’B’B’B‘¼’B‘¥’N‘º’B’B‘¬
+           ’B‘¢’B‘±’B‘·’B‘½’B‘±’B‘·’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B’B’E’D‘¬’B‘¥’B’B‘¨’B’N‘º’C‘¼’N‘º -AM ’B‘¬’B’B‘¦’N‘º’C‘¹’B‘¬ -AM’B
+           -LM’B‘¨’B‘§’B’F‘¼’B’B’B‘¼’B‘¥’N‘º’H‘±’H‘½’B‘ ’B’B‘©’B‘¨’B’B‘µ’B‘¥’B‘±’B’B
+           ’E’D‘¬’B‘¥’B’B‘¨’B’N‘º’C‘¹’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B’B’B’B’B’B’D ‘²’D’B‘­’B‘¦’B‘§’B‘º’B‘¦’B‘¨’B’N‘º’N‘º
+           ’B‘¼’B’N‘º’D‘¦’C‘»’B‘¨’B’B‘µ’B‘¥’B‘±’B‘­’D‘¦’B‘¤’B‘¬’B‘ ’B’B‘©’B‘¢’B‘±’B‘·’B‘½’B‘±’B‘·’B‘¬’D’B‘©’E’D‘¬’B’B’D‘½
+           ’G‘¤’B’B’B’N‘º’B’B’B‘§’B‘©’B’B‘¥’B‘­’E’D‘·’B‘©’B‘¨’B‘¡’B‘¤’B’B’N‘º(Rev.4.1)
+
+   ’G‘¦’G‘¨’B‘ ’B’B‘© (-LM)
+       ’B’B‘¬’B‘®’B‘©’B‘º’B’B‘©’B‘­’N‘º’D’B‘ ’B’B‘©’B‘½’B‘¢’B’B’B‘¦’B‘©’E’D‘¬’B’B’B‘¨’B’B‘µ’B‘¥’B‘±’B’D‘©’B‘¼’B’B‘¤’B’B’N‘º
+       ’C‘¶’B‘¢’B‘¬’B‘¢’B‘±’B‘·’B‘½’B‘±’B‘·’B‘©’B‘­’C‘¶’B‘¢’B‘¬’B‘ ’B’B‘©’B‘½’B‘¢’B’B ’B’B’E’D‘¬’D‘­’G‘»’B‘¥’B’B’N‘º
+
+       N-gram
+            -d  bingram_file
+               ’C‘»‘½’F‘¦’B’BN-gram’B’B’B‘¢’B’B‘¨’B’B‘Ÿ’B‘¢’B‘©’D‘»‘ ’D‘º’B‘¥’E’D‘¬’B’B’N‘º ’B’B‘¢’B’B‘¨’D‘»‘ ’D‘º’B‘¶’B‘¬’D‘¢’E’B‘­
+               mkbingram ’B ’C‘»‘½’F‘¦’B’B’N‘º
+
+            -nlr  arpa_ngram_file
+               ’D’D’B (left-to-right) ’B‘¬N-gram ’G‘¦’G‘¨’B‘ ’B’B‘©’B’E’D‘¬’B’B’N‘º arpa_ngram_file
+               ’B‘­ARPA’E‘¦’E‘¸’D‘»‘ ’D‘º’B‘¬’B’B‘Ÿ ’B‘¢’B‘©’B‘¥’B’B’D‘½’G‘¤’B’B’B’N‘º
+
+            -nrl  arpa_ngram_file
+               ’D‘¼’B’D’B (right-to-left) ’B‘¬N-gram ’G‘¦’G‘¨’B‘ ’B’B‘©’B’E’D‘¬’B’B’N‘º
+               arpa_ngram_file ’B‘­ARPA’E‘¦’E‘¸’D‘»‘ ’D‘º’B‘¬’B’B‘Ÿ ’B‘¢’B‘©’B‘¥’B’B’D‘½’G‘¤’B’B’B’N‘º
+
+            -v  dict_file
+               N-gram’N‘º’B‘¼’B’B‘­’E’E‘±’F‘¦’B‘¬’D’G‘¨’G‘¼’E‘¶’B’B‘Ÿ’B‘¢’B‘©’B’E’D‘¬’B’B’N‘º
+
+            -silhead  word_string  -siltail  word_string
+               ’H‘±’D‘¡‘®’D‘£’D’C‘¶‘Ÿ’F‘©‘­’B‘¬’F‘Ÿ’H‘±’D‘¸’H’B‘©’F‘¶’D‘»’B’B’B’F‘Ÿ’H‘±’D’G‘¨’B’B‘¦’B‘±’B’B‘¨’B’E’D‘¬’B’B’N‘º
+               ’D’G‘¨’B‘¬’G‘¨’B‘½’N‘ºN-gram’B‘¦’B‘±’B’B‘¨’D’N‘º’N‘º’B’B’B’B‘­"#"+’D’G‘¨’F‘¨’D‘µ’N‘º’G‘¼’E‘¶’B’B‘Ÿ
+               ’B‘¢’B‘©’B‘¬’G‘Ÿ’F‘¨’D‘µ-1’N‘º’B‘¥’E’D‘¬’B’B’N‘º’B’B’B‘§’B‘©’B’B‘­’B’B’B’B "<s>", "</s>" ’B‘¥’B’B’N‘º
+
+            -mapunk  word_string
+               unknown ’B‘©’D‘­‘¼’D‘½’B’B’D’G‘¨’D’B’E’D‘¬’B’B’N‘º’B’B’B‘§’B‘©’B’B‘­’N‘º "<unk>" ’B’B’B’B‘­ "<UNK>"
+               ’B‘¥’B’B’N‘º’B’B‘¬’D’G‘¨’B‘­’N‘º ’G‘¨’G’G‘¼’E‘¶’B‘©’B’B’B‘¤ N-gram
+               ’B‘©’B‘¨’B’D’G‘¨’B’E’D‘¬’B’B’D ‘²’D’B‘©’B’B’B’B‘±’B‘®’B’B ’B’D’G‘¨’B‘¥’B’B’N‘º
+
+            -iwspword
+               ’B’B‘º’B‘¸’B‘©’D‘­‘¼’D‘½’B’B’F‘Ÿ’H‘±’D’G‘¨’B’G‘¼’E‘¶’B‘©’G‘½‘»’D ’B’B’N‘º’G‘½‘»’D ’B’B’B’D’G‘¨’B‘¬’D’D‘¬‘·’B‘­
+               ’B‘¨’B’B‘µ’B‘¥’B‘±-iwspentry’B‘¥’D‘¢’E‘²’B‘¥’B’B’N‘º
+
+            -iwspentry  word_entry_string
+
+               -iwspword’E’D‘¬’E’B‘©’G‘½‘»’D ’B’B’B’D’G‘¨’B‘¦’B‘±’B’B‘¨’B‘¬’D’D‘¬‘·
+               ’B’E’D‘¬’B’B’N‘º’G‘¼’E‘¶’B‘¦’B‘±’B’B‘¨’B‘¦’D’B’D‘»‘ ’D‘º’B‘¥’E’D‘¬’B’B’N‘º(default: "<UNK> [sp] sp
+               sp")
+
+            -sepnum  number
+               ’E‘¦’E‘¥’H ’D’G‘¼’E‘¶’B‘¬’E‘¥’F‘­’E’B‘©’F‘µ’D‘»‘ ’F‘¹’H‘°’B’B’D’G‘¨’E‘®’B’E’D‘¬’B’B’N‘º(default: 150)
+
+            -adddict  dicfile
+               ’G‘³‘µ’D’E’B‘©’G‘¼’E‘¶’B’G‘½‘»’D ’B‘¥’G‘¨’B‘½’G‘¼‘º’B’N‘º
+
+            -addword  entry_string
+               ’G‘³‘µ’D’E’B‘©’D’G‘¨’B‘¦’B‘±’B’B‘¨’B’G‘½‘»’D ’B‘¥’G‘¨’B‘½’G‘¼‘º’B’N‘º
+
+       ’E’E‘±
+           -gram’B-gramlist’B‘¥’E’E‘±’B’G‘¢’E‘®’D’E’D‘¬’B
+           ’B’B’B‘¦’B‘¥’N‘º’C‘¶’B‘¢’B‘¬’B‘¢’B‘±’B‘·’B‘½’B‘±’B‘·’D’B‘¥’G‘¢’E‘®’B‘¬’E’E‘±’B’F‘¦’B’B’B’B‘¦’B’B‘¥’B’B’N‘º
+           ’N‘º’E‘¥Julius’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘± -dfa, -v ’B‘¬ ’F‘³’D’B’B‘­’D’C‘¶’B‘¬’E’E‘±’B‘¬’B‘½’E’D‘¬’D‘­’G‘»’B‘¥’B’B’N‘º
+
+            -gram  gramprefix1[,gramprefix2[,gramprefix3,...]]
+               ’G‘¨’G’B‘©’C‘»‘½’F‘¦’B’B’E’E‘±’B’E’D‘¬’B’B’N‘º’E’E‘±’B‘­’B’B‘Ÿ’B‘¢’B‘©’N‘º’G‘¼’E‘¶’B’B’B‘±’E‘¥’E’D‘´’F‘²
+               ’E’H’B‘¨’B‘º’B’B’B’B‘±’N‘º’B‘¬’B’B‘ª’B’B‘¡’B’B‘­’B‘·’B‘¥’E’D‘¬’B’B’N‘º’B’B‘¨’B’B‘Ÿ’N‘º’B’B’G‘¨ ’Gâ€
+               ’F‘¦’E’E‘±’Bdir/foo.dict’B‘¦ dir/foo.dfa ’B‘¦’B’B‘¤’B’B’B‘¦’B’N‘º
+               dir/foo’B‘¬’B’B’B‘©’E‘Ÿ’D‘º‘³’D’B’F’B’B’D’D’B‘¥’E’D‘¬’B’B’N‘º
+               ’E’E‘±’B‘­’B‘±’B‘±’B’B‘¥’D‘¸’D’B‘¡’B‘¤’G‘¢’E‘®’E’D‘¬’B’B’B’B‘¦’B’B‘¥’B’B’N‘º’B‘¼’B’F‘·‘®’B’G‘½’B
+               ’C‘»‘½’F‘¦’B’B’B’B‘¦’B‘¥’B’G‘¢’E‘®’E’D‘¬’B‘¥’B’B’N‘º
+
+            -gramlist  list_file
+               ’G‘¨’G’B‘©’C‘»‘½’F‘¦’B’B’E’E‘±’B‘¬’B‘¨’B‘·’B’B’B’B‘Ÿ’B‘¢’B‘©’B‘¥’E’D‘¬’B’B’N‘º list_file’B‘©’B‘­’N‘º -gram
+               ’B‘¦’D’E‘¥’B‘¬’E’E‘±’B’B‘ª’B’B‘¡’B’B‘­’B‘·’B1’G‘Ÿ’B‘©’N‘º’B‘¢’B
+               ’B‘¢’G‘¦’G‘½‘®’B’B’N‘º’B‘¼’B’N‘º’B’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B’F‘·‘®’B’G‘½’B’C‘»‘½’F‘¦’B’B’B’B‘¦’B‘¥’N‘º’G‘¢’E‘®
+               ’B‘¬’B‘¨’B‘·’B’B’B‘Ÿ’B‘¢’B‘©’B’E’D‘¬’B‘¥’B’B’N‘º’B‘¨’B’N‘º’B‘¨’B‘·’B’D’B‘¥’E’E‘±’B’F‘¶’D‘­‘¼’B’B‘·’B‘¥
+               ’E’D‘¬’B’B’D ‘²’D’N‘º’B’B’B‘­’N‘º’B’B‘¬’B‘¨’B‘·’B’B’B‘Ÿ’B‘¢’B‘©’B’B’B‘¬’F‘¶’D‘­‘¼’B’B‘·’B‘¦’B’B‘¤’G‘¥‘¡
+               ’H’B’B’B’B’B‘¦’B‘©’E‘±‘¦’E’B’D‘½’G‘¤’B‘¥’B’B’N‘º
+
+            -dfa  dfa_file  -v  dict_file
+               ’G‘¨’G’B‘©’C‘»‘½’F‘¦’B’B’E’E‘±’B‘¬’E‘¥’E’D‘´’F‘²’B‘¨’B‘º’B’B’B’B‘±’B‘¦’G‘¼’E‘¶’B’B’B’B’B’E’D‘¬’B’B’N‘º (Julius-3.x
+               ’B‘¦’B‘¬’C‘¸’E’E‘¥’B‘¬’B’B’B‘¬’D‘¢’B’B‘¨’B’B‘µ’B‘¥’B‘±’B‘¥’B’B’N‘º’C‘»‘½’F‘¦’B’B‘·’B’B‘¥’B‘¨’B’N‘º
+
+            -nogram
+               ’B’B’B‘¼’B‘¥’B‘© -gram’N‘º-gramlist’N‘º -dfa ’B’B’B‘± -v ’B‘¥
+               ’E’D‘¬’B’B’B’E’E‘±’B‘¬’B‘¨’B‘·’B’B’B‘­’B‘¨’B‘ ’B’N‘º’E’E‘±’B‘¬’E’D‘¬’B‘¨’B’B‘¬’F‘´’E ’B‘©’B’B’N‘º
+
+            -adddict  dicfile
+               ’G‘³‘µ’D’E’B‘©’G‘¼’E‘¶’B’G‘½‘»’D ’B‘¥’G‘¨’B‘½’G‘¼‘º’B’N‘º
+
+            -addword  entry_string
+               ’G‘³‘µ’D’E’B‘©’D’G‘¨’B‘¦’B‘±’B’B‘¨’B’G‘½‘»’D ’B‘¥’G‘¨’B‘½’G‘¼‘º’B’N‘º
+
+       ’D’D’G‘¨
+            -w  dict_file
+               ’D’D’G‘¨’G‘¨’G’B‘¥’F‘¦’B’B’D’G‘¨’G‘¼’E‘¶’B’E’D‘¬’B’B’N‘º’B’B‘Ÿ’B‘¢’B‘©’D‘»‘ ’D‘º’B‘­’D’G‘¨N-gram
+               ’B’E’E‘±’B‘¦’D’C‘¶’B‘¥’B’B’N‘º’G‘¼’E‘¶’C‘¶’B‘¬’D‘¦’B‘¤’B‘¬’D’G‘¨’B’G‘¨’G’D‘­‘¼’G‘¯‘Ÿ’B‘¦’B‘¨’B’N‘º (Rev.4.0)
+
+            -wlist  list_file
+               ’D’G‘¨’G‘¼’E‘¶’B‘¬’B‘¨’B‘·’B’B’E’D‘¬’B’B’N‘ºlist_file
+               ’B‘©’B‘­1’G‘Ÿ’B‘©’C‘¶’B‘¢’B’B‘¢’N‘º’C‘»‘½’F‘¦’B’B’D’G‘¨’G‘¼’E‘¶’B‘¬’B’B‘·’B’G‘¦’G‘½‘®’B’B’N‘º’F‘¶’D‘­‘¼’B’B‘·’B
+               ’F‘¦’B’B’D ‘²’D’N‘º’B’B’B‘­’B’B‘¬list_file’B’B ’B‘¬’F‘¶’D‘­‘¼’B’B‘·’B‘¦’B’B‘¤’G‘¥‘¡’H’B’B’B’N‘º (Rev.4.0)
+
+            -nogram
+               ’B’B’B‘¼’B‘¥’B‘© -w ’B’B’B’B‘­ -wlist’B‘¥
+               ’E’D‘¬’B’B’B’G‘¼’E‘¶’B‘¬’B‘¨’B‘·’B’B’B‘­’B‘¨’B‘ ’B’N‘º’E’D‘¬’B‘¨’B’B‘¬’F‘´’E’B‘©’E‘¹’B’N‘º
+
+            -wsil  head_sil_model_name tail_sil_model_name sil_context_name
+               ’D’D’G‘¨’G‘¨’G’E’N‘º’H‘±’D‘¡‘®’D‘£’D’B‘¬’C‘¶‘Ÿ’F‘©‘­’B‘¬’F‘Ÿ’H‘±’B‘ ’B’B‘©’B’B’B‘±’B’B‘¬’B‘±’B‘±’B’B’B‘·’B ’D’B’E’D‘¬’B’B’N‘º
+               sil_context_name’B‘¦’B’B‘¤ NULL’B’E’D‘¬’B’B’D ‘²’D’N‘º’D’B‘ ’B’B‘©’D’B’B’B‘¬’B‘¼’B‘¼ ’B‘±’B‘±’B’Bâ€
+               ’B‘·’B’B‘¦’B’B‘¤’F‘¦’B’B’B’B’N‘º
+
+            -adddict  dicfile
+               ’G‘³‘µ’D’E’B‘©’G‘¼’E‘¶’B’G‘½‘»’D ’B‘¥’G‘¨’B‘½’G‘¼‘º’B’N‘º
+
+            -addword  entry_string
+               ’G‘³‘µ’D’E’B‘©’D’G‘¨’B‘¦’B‘±’B’B‘¨’B’G‘½‘»’D ’B‘¥’G‘¨’B‘½’G‘¼‘º’B’N‘º
+
+       User-defined LM
+            -userlm
+               ’B’B’B‘®’B‘§’B ’C‘¶’B‘¬’B‘¤’B‘º’B‘´’D‘¬’F‘¼‘§’G‘¦’G‘¨’B‘·’B‘±’B‘ ’G‘¦’F‘¬’H‘ ’E‘®’B’C‘»‘½’F‘¦’B’B’B’B‘¦’B’D‘¬‘¡’G‘¦
+               ’B’B’N‘º(Rev.4.0)
+
+       ’B’B‘¬’C‘¹’B‘¬’G‘¦’G‘¨’B‘ ’B’B‘©’H‘ ’H‘¡
+            -forcedict
+               ’D’G‘¨’G‘¼’E‘¶’G‘¨’B‘½’G‘¼‘º’B‘½’E’B‘¬’B‘¦’B‘§’B‘º’B’F‘Ÿ’G‘¤’B’B’N‘º’H’D‘¶‘¶Julius’B‘­’D’G‘¨’G‘¼’E‘¶’D’B‘©
+               ’B‘¦’B‘§’B‘º’B’B’B‘¡’B’D ‘²’D’B’B’B‘¥’D’C‘»’B’D’E‘ ’B’B’B’N‘º’B’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B
+               ’E’D‘¬’B’B’B’B‘¦’B‘¥’N‘º’B‘¦’B‘§’B‘º’B‘¬’F’B’B’D’G‘¨’B’B‘·’B’B’B’B’B‘¤’D‘¤’F’B’F‘´’G‘Ÿ’B’B ’B’B‘¦’B’B‘¥’B’B’N‘º
+
+   ’H‘±’H‘½’B‘ ’B’B‘©’B‘¹’F‘·’D‘¼‘²’H’E‘»’D‘¸ (-AM) (-AM_GMM)
+       ’H‘±’H‘½’B‘ ’B’B‘©’B‘¨’B’B‘µ’B‘¥’B‘±’B‘­’N‘º’H‘±’H‘½’B‘ ’B’B‘©’B’B’B‘±’F‘·’D‘¼‘²’H’E‘»’D‘¸’B‘¹’B’B’B‘±’B’B‘¦’B‘±’B’D‘¤’F ’B‘©’H‘ ’B’B’G‘¦â€
+       ’D‘¬’B’G‘Ÿ’B’N‘º’F‘·’D‘¼‘²’H’E‘»’D‘¸’N‘º’E‘¡’G‘¤’D’D‘¤’F’N‘º’B‘·’B’B‘­’B’B‘©’B‘³’B’B’B‘§’B‘­’B‘µ’B‘¥’B‘±’B‘¬ ’E’D‘¬’B’B’B’B‘¥’G‘Ÿ’B’N‘º
+
+       ’H‘±’H‘½HMM’H‘ ’H‘¡
+            -h  hmmdef_file
+               ’C‘»‘½’F‘¦’B’BHMM’D‘¬’F‘¼‘§’B’B‘Ÿ’B‘¢’B‘©’N‘º HTK ’B‘¬ ASCII ’D‘»‘ 
+               ’D‘º’B’B‘Ÿ’B‘¢’B‘©’N‘º’B’B’B’B‘­Julius ’B’B‘¢’B’B‘¨’D‘»‘ ’D‘º’B‘¬’B’B‘Ÿ’B‘¢’B‘©’B‘¬’B‘§’B‘Ÿ’B’B’B
+               ’E’D‘¬’B’B’N‘º’B’B‘¢’B’B‘¨’D‘»‘ ’D‘º’B‘¶’B‘­ mkbinhmm ’B‘¥ ’D‘¢’E’B‘¥’B’B’N‘º
+
+            -hlist  hmmlist_file
+               HMMlist’B’B‘Ÿ’B‘¢’B‘©’B’E’D‘¬’B’B’N‘º’B’B’B‘·’B’D‘»‘ ’D‘º’N‘º’B’B’B’B‘­’B’B‘¢’B’B‘¨’D‘»‘ ’D‘º
+               ’B‘¬’B‘§’B‘Ÿ’B’B’B’E’D‘¬’B’B’N‘º’B’B‘¢’B’B‘¨’D‘»‘ ’D‘º’B‘¶’B‘­ mkbinhmmlist ’B‘¥’D‘¢’E’B‘¥’B’B’N‘º
+
+            -tmix  number
+               Gaussianpruning ’B‘¬’G‘¦’F‘¬’F‘´’E’E‘®’B’E’D‘¬’B’B’N‘º’D‘®’B
+               ’B’B‘¹’B‘§’G‘¦’F‘¬’B’H’B’B‘¨’B’B’N‘º’H‘±’H‘½’D‘®‘¢’D‘¸‘¤’B‘¬’G‘¨‘¢’D‘µ‘¬’B’D‘¢‘¥’B’B’B‘¨’B’N‘ºSee also
+               -gprune. (default: 2)
+
+            -spmodel  name
+               ’E’C‘¶’B‘¬’B‘µ’B‘¥’B‘º’B’B’B‘º’B‘¸’B‘©’D‘­‘¼’D‘½’B’B’H‘±’H‘¹HMM’B‘¬’D’D’B’E’D‘¬’B’B’N‘º’B’B‘¬’B’B‘º’B‘¸
+               ’B‘ ’B’B‘©’D’B‘­’N‘º-iwsp, -spsegment,
+               -pausemodels’B‘©’H‘ ’C‘½’B’B’N‘º’B‘¼’B’N‘º’E’E‘±’C‘»‘½’F‘¦’E’B‘© ’B‘·’Bâ€
+               ’B’B’D‘­’G‘»’B‘¨’B’B‘º’B‘¸’D’G‘¨’B‘¦’B‘±’B’B‘¨’B‘¬’G’D‘£’B‘©’B’F‘¦’B’B’B’B’N‘º (default: "sp")
+
+            -multipath   -nomultipath
+               ’F‘´’E’H’H‘µ’F‘¥‘¹’B’E‘Ÿ’D‘º‘³’B’B’B’B‘©’B’B’B‘·’B‘ ’B‘º’B’B’E’D‘·’B‘©’B’B’N‘º’B‘¨’B’B‘µ’B‘¥’B‘±’E
+               ’D‘¬’B’B‘¨’B’D ‘²’D’N‘ºJulius ’B‘­’H‘±’H‘½’B‘ ’B’B‘©’B‘¬’H‘µ’F‘¥‘¹’B’B’B‘¥’B’B‘­’B’N‘º’D‘½’G‘¤’B‘¥’B
+               ’B’B‘®’G‘¨’D’F’B‘©’B’B‘©’B’B’B‘·’B‘ ’B‘º’B’B’E’D‘·’B‘©’B’B’N‘º’B’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B‘­’N‘º’B‘¤’B‘º
+               ’B‘´’B’E’F‘¢‘¸’F’B‘©’B‘ ’B‘º’B’B’E’D‘¬’B’B’B’D ‘²’D’B‘©’C‘»‘½’F‘¦’B’B’N‘º
+
+               ’B’B‘¬’E‘§’G‘»’B‘­ 3.x ’B‘¥’B‘­’B‘±’B‘±’B’B‘¢’B‘©’E’B‘¨’B’B‘µ’B‘¥’B‘±’B‘¥’B’B‘¡’B’B’N‘º4.0 ’B’B
+               ’D‘¬’G‘Ÿ’E’B‘¨’B’B‘µ’B‘¥’B‘±’B‘¦’B‘¨’B‘¡’B’N‘º(rev.4.0)
+
+            -gprune  {safe|heuristic|beam|none|default}
+               ’C‘»‘½’F‘¦’B’B Gaussian pruning ’B‘ ’B‘©’B‘²’B‘¨’B‘¸’B ’B’H‘¶’E’B’B’N‘º none’B’E’D‘¬’B’B’B‘¦
+               Gaussian pruning ’B’F‘Ÿ’D‘·’D ’B’B’B‘·’B‘¤’B‘¬’B‘ª’B‘¤’B‘·’D’D‘¶’B‘©’B‘¢’B’B‘¤’D‘±’D‘­’B‘©’G‘¦’F‘¬’B’B’N‘º
+               safe ’B‘­’C‘¶’C‘» N ’D’B’G‘¦’F‘¬’B’B’N‘º heuristic ’B‘¦ beam ’B‘­safe
+               ’B‘©’E‘­’B‘·’B‘¤’B’B’F‘§’E‘£‘³’F’B‘¨’E’D’B’B’G‘Ÿ’B’B’B’G‘¦’F‘¬’H’D’E‘¶’B‘¬’D‘·’E’B’D‘¢‘¥’B’B’B’N‘º ’G‘¨’Gâ€
+               ’F‘°‘¼’D‘¸‘¤’B‘¬’C‘»’C‘¶’B’E’B’D‘­’G‘»’E‘¥’B’B’B’N‘ºdefault’B
+               ’E’D‘¬’B’B’B’D ‘²’D’N‘º’B’B’B‘§’B‘©’B’B‘¬’E’E‘±’B’C‘»‘½’B’N‘º(default: tied-mixture model
+               ’B‘¬’D ‘²’D’N‘ºstandard ’G‘¦’D‘¬’B‘¥’B‘­safe’N‘ºfast’G‘¦ ’D‘¬’B‘¥’B‘­beam’N‘ºtied-mixture
+               ’B‘¥’B‘¨’B’D ‘²’D none).
+
+            -iwcd1  {max|avg|best number}
+               ’F‘ª‘ª1’B’B‘·’B‘¬’D’G‘¨’H’B’B‘§’B‘¢’B’B‘§’B‘±’G‘¦’F‘¬’E‘±’B’E’D‘¬’B’B’N‘º max ’E’D‘¬’E’N‘º’D’B’B‘±’B‘±’B’Bâ€
+               ’B‘·’B’B‘¬’B’B‘§’B‘¢’B’B‘§’B‘±’H’D’B‘¬ ’D‘¦’D‘®‘¢’D‘¸‘¤’B‘¬’E’D‘¢‘¥’D‘¢’B’G‘½’C‘º‘º’D‘®‘¢’D‘¸‘¤’B‘¦’B’B‘¤’F‘¦’B’B’N‘ºavg
+               ’B‘­ ’D‘¦’D‘®‘¢’D‘¸‘¤’B‘¬’D‘·‘±’D’D‘¢’B’F‘¦’B’B’N‘ºbest number ’B‘­’C‘¶’C‘» N ’D’B‘¬
+               ’B’B‘§’B‘¢’B’B‘§’B‘±’B‘¬’D‘·‘±’D’D‘¢’B’F‘¦’B’B’N‘º
+               ’B’B’B‘§’B‘©’B’B‘­’N‘º’C‘¶’F‘µ’B‘©’C‘»‘½’F‘¦’B’B’B’G‘¦’G‘¨’B‘ ’B’B‘©’B‘©’C‘¼’D’B’B’N‘ºN-gram’C‘»‘½’F‘¦ ’E’B‘©’B‘­
+               best 3’N‘º’E’E‘±’C‘»‘½’F‘¦’E’B‘­ avg’B‘¦’B‘¨’B’N‘º’B’B’B’B‘¬’H‘±’H‘½’B‘ ’B’B‘©’B’F‘®’B‘¨’B’B‘½’B‘¢’B’B‘¬
+               ’G‘¢’E‘®’B‘¬’G‘¦’G‘¨’B‘ ’B’B‘©’B‘¥’D‘¯’E’B’B’B’D ‘²’D’B‘­’N‘º’D‘¼’B‘©’D‘¬’F‘¼‘§’B’B’B’B‘¹’B’B‘¬’B’B’B‘§’B‘©’B’B
+               ’B’B’B‘§’B‘©’B’D‘¢’B‘¦’B’B‘¤’F‘¦’B’B’B’B’N‘º
+
+            -iwsppenalty  float
+
+               -iwsp’B‘©’B’B‘¡’B‘¤’E‘©’D‘®‘¼’B‘©’C‘¹’D ’B’B’B’D’G‘¨’E‘©’B‘µ’B‘¥’B‘º’B’B’B‘º
+               ’B‘¸’B‘¬’E‘½’D‘£’B’B’B‘©’B’B‘¡’N‘º’B’B’B‘¥’E’D‘¬’B’B’D‘¢’B’N‘º’H’D‘¶‘¶’D’G‘¨’B‘¬’E‘©’D‘®‘¼’B’B’D’G‘¨
+               ’E‘©’B‘µ’B‘¥’B‘º’B’B’B‘º’B‘¸’B‘¶’B‘¬’H‘µ’F‘¥‘¹’B‘©’G‘½‘»’D ’B’B’B’N‘º
+
+            -gshmm  hmmdef_file
+               Gaussian Mixture Selection ’F‘¦’B‘¬’B‘ ’B’B’B‘§’B‘±’H‘±’H‘½’B‘ ’B’B‘©’B’E’D‘¬’B’B’N‘º
+               GMS’F‘¦’B‘ ’B’B’B‘§’B‘±’B‘­’H’D‘¶‘¶’B‘¬’B‘ ’B’B’B‘§’B‘±’B’B mkgshmm ’B‘©’B’B‘¡’B‘¤’F’E’B‘¥’B’B’N‘º
+
+            -gsnum  number
+               GMS ’C‘»‘½’F‘¦’E’N‘º’D‘­‘¼’D‘½’B’B’B’B‘§’B‘¢’B’B‘§’B‘±’B’G‘§‘±’F‘²‘®’G‘¦’F‘¬’B’B’B‘ ’B’B’B‘§’B‘±’B‘¬
+               ’F‘´’E’B‘¬’E‘®’B’E’D‘¬’B’B’N‘º (default: 24)
+
+       ’F‘·’D‘¼‘²’H’E‘»’D‘¸’B’B‘§’B‘Ÿ’B‘º’B‘½
+            -smpPeriod  period
+               ’H‘±’D‘¡‘®’B‘¬’B‘³’B‘±’B’B‘¨’B‘±’B‘®’D‘¦’E’B’E’D‘¬’B’B’N‘º’D’C‘»’B‘­’N‘º100’B’B’F‘¥’B‘¬’D’C‘»’B‘¥’E
+               ’D‘¬’B’B’N‘º’B‘³’B‘±’B’B‘¨’B‘±’B‘®’D‘¦’E’B‘­ -smpFreq ’B‘¥’B’E’D‘¬ ’D‘­’G‘»’N‘º(default: 625)
+
+               ’B’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B‘­ HTK ’B‘¬ SOURCERATE ’B‘©’D‘­‘¼’D‘½’B’B’N‘º’D’B’D‘¢’B’E’D‘¬’B‘¥’B’B’N‘º
+
+               ’G‘¢’E‘®’B‘¬’H‘±’H‘½’B‘ ’B’B‘©’B’F‘¦’B’B’D ‘²’D’N‘º’D‘¦’B‘¢’B‘±’B‘·’B‘½’B‘±’B‘·’B‘¥’D‘¯’H’B‘¬’D‘¢’B’E’D‘¬’B’B’D‘½’G‘¤
+               ’B’B’B’N‘º
+
+            -smpFreq  Hz
+               ’H‘±’D‘¡‘®’B‘¬’B‘³’B‘±’B’B‘¨’B‘±’B‘®’D‘¦’E‘±‘ ’E‘® (Hz) ’B’E’D‘¬’B’B’N‘º(default: 16,000)
+
+               ’G‘¢’E‘®’B‘¬’H‘±’H‘½’B‘ ’B’B‘©’B’F‘¦’B’B’D ‘²’D’N‘º’D‘¦’B‘¢’B‘±’B‘·’B‘½’B‘±’B‘·’B‘¥’D‘¯’H’B‘¬’D‘¢’B’E’D‘¬’B’B’D‘½’G‘¤
+               ’B’B’B’N‘º
+
+            -fsize  sample_num
+               ’F‘¨’B‘³’B‘¢’B‘¸’B’B‘³’B‘±’B’B‘©’E‘®’B‘¥’E’D‘¬ (default: 400)’N‘º
+
+               ’B’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B‘­ HTK ’B‘¬ WINDOWSIZE
+               ’B‘©’D‘­‘¼’D‘½’B’B’N‘º’B’B ’B’D‘¢’B‘­HTK’B‘¦’F‘®’B‘¨’B’N‘º(HTK’B‘¬’D‘¢ / smpPeriod) ’B‘¦’B‘¨’B’N‘º
+
+               ’G‘¢’E‘®’B‘¬’H‘±’H‘½’B‘ ’B’B‘©’B’F‘¦’B’B’D ‘²’D’N‘º’D‘¦’B‘¢’B‘±’B‘·’B‘½’B‘±’B‘·’B‘¥’D‘¯’H’B‘¬’D‘¢’B’E’D‘¬’B’B’D‘½’G‘¤
+               ’B’B’B’N‘º
+
+            -fshift  sample_num
+               ’B’B‘ª’B‘º’B ’B‘µ’B’B’D‘·’B’B‘³’B‘±’B’B‘©’E‘®’B‘¥’E’D‘¬ (default: 160)’N‘º
+
+               ’B’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B‘­ HTK ’B‘¬ TARGETRATE
+               ’B‘©’D‘­‘¼’D‘½’B’B’N‘º’B’B ’B’D‘¢’B‘­HTK’B‘¦’F‘®’B‘¨’B’N‘º(HTK’B‘¬’D‘¢ / smpPeriod) ’B‘¦’B‘¨’B’N‘º
+
+               ’G‘¢’E‘®’B‘¬’H‘±’H‘½’B‘ ’B’B‘©’B’F‘¦’B’B’D ‘²’D’N‘º’D‘¦’B‘¢’B‘±’B‘·’B‘½’B‘±’B‘·’B‘¥’D‘¯’H’B‘¬’D‘¢’B’E’D‘¬’B’B’D‘½’G‘¤
+               ’B’B’B’N‘º
+
+            -preemph  float
+               ’B’B‘¨’B‘¦’B‘±’B’B‘Ÿ’B‘µ’B‘·’C‘½’E‘® (default: 0.97)
+
+               ’B’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B‘­ HTK ’B‘¬ PREEMCOEF ’B‘©’D‘­‘¼’D‘½’B’B’N‘º’D’B’D‘¢’B’E’D‘¬’B‘¥’B’B’N‘º
+
+            -fbank  num
+               ’B’B‘¡’B‘©’B‘½’B’B‘±’B‘­’B’B‘¡’B‘±’B’B‘©’E‘®’N‘º(default: 24)
+
+               ’B’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B‘­ HTK ’B‘¬ NUMCHANS
+               ’B‘©’D‘­‘¼’D‘½’B’B’N‘º’D’B’D‘¢’B’E’D‘¬’B‘¥’B’B’N‘º’E’D‘¬’B’B‘¨’B’B‘¦’B’B‘¬’B’B’B‘§’B‘©’B’D‘¢’B
+               HTK’B‘¦’F‘®’B‘¨’B‘¡’B‘¤’B’B’B’B‘¦’B‘©’E‘±‘¦’E’N‘ºHTK’B‘¥’B‘­22’N‘º’N‘º
+
+            -ceplif  num
+               ’B‘¯’B’B‘·’B’B‘§’B ’B‘¬’B‘¨’B’B‘½’B‘¨’B‘±’B‘®’C‘½’E‘®. (default: 22)
+
+               ’B’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B‘­ HTK ’B‘¬ CEPLIFTER ’B‘©’D‘­‘¼’D‘½’B’B’N‘º’D’B’D‘¢’B’E’D‘¬’B‘¥’B’B’N‘º
+
+            -rawe ,  -norawe
+               ’B‘¦’B’B‘©’B‘¬’B‘º’H ’B‘¬’D‘¢’B‘¦’B’B‘¤’N‘º’B’B‘¨’B‘¦’B‘±’B’B‘Ÿ’B‘µ’B‘·’D’B‘¬ raw energy ’B’C‘»‘½’F‘¦ ’B’B /
+               ’B’B‘¨’B (default: disabled=’C‘»‘½’F‘¦’B’B‘¨’B)
+
+               ’B’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B‘­ HTK ’B‘¬ RAWENERGY ’B‘©’D‘­‘¼’D‘½’B’B’N‘º
+               ’E’D‘¬’B’B‘¨’B’B‘¦’B’B‘¬’B’B’B‘§’B‘©’B’BHTK’B‘¦’F‘®’B‘¨’B‘¡’B‘¤’B’B’B’B‘¦’B‘©’E‘±‘¦’E’N‘ºHTK’B‘¥
+               ’B‘­enabled)’N‘º
+
+            -enormal ,  -noenormal
+               ’B‘¦’B’B‘©’B‘¬’B‘º’H ’B‘¬’D‘¢’B‘¦’B’B‘¤’N‘º’F‘¸’G‘§‘¯’D‘¦’C‘»’B‘¬’D‘·‘±’D’B‘¥’E‘¡’G‘¤’D’B’B’E‘¡’G‘¤’D’B‘¦’B’B‘©’B‘¬’B‘º
+               ’B’F‘¦’B’B’B’B‘§’B’B’B’E’D‘¬’B’B’N‘º(default: -noenormal)
+
+               ’B’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B‘­ HTK ’B‘¬ ENORMALISE ’B‘©’D‘­‘¼’D‘½’B’B’N‘º
+               ’E’D‘¬’B’B‘¨’B’B‘¦’B’B‘¬’B’B’B‘§’B‘©’B’BHTK’B‘¦’F‘®’B‘¨’B‘¡’B‘¤’B’B’B’B‘¦’B‘©’E‘±‘¦’E’N‘ºHTK’B‘¥
+               ’B‘­enabled)’N‘º
+
+            -escale  float_scale
+               ’B‘¦’B’B‘©’B‘¬’B‘º’E‘¡’G‘¤’D’E’B‘¬’N‘º’D‘­‘¼’E‘®’B‘¦’B’B‘©’B‘¬’B‘º’H ’B‘¬’B‘·’B‘¯’B‘º’B‘¨’B‘±’B‘®’C‘½’E‘®’N‘º
+               (default: 1.0)
+
+               ’B’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B‘­ HTK ’B‘¬ ESCALE
+               ’B‘©’D‘­‘¼’D‘½’B’B’N‘º’B’B’B‘§’B‘©’B’D‘¢’BHTK’B‘¦’F‘®’B‘¨’B‘¡’B‘¤’B’B’B’B‘¦’B‘©’E‘±‘¦’E’N‘ºHTK’B‘¥’B‘­ 0.1’N‘º’N‘º
+
+            -silfloor  float
+               ’B‘¦’B’B‘©’B‘¬’B‘º’E‘¡’G‘¤’D’E’B‘¬’N‘º’F‘Ÿ’H‘±’H‘¦’B‘¬’B‘¦’B’B‘©’B‘¬’B‘º’B‘¬’B’B’B‘ ’B‘¨’B‘±’B‘®’D‘¢’N‘º (default:
+               50.0)
+
+               ’B’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B‘­ HTK ’B‘¬ SILFLOOR ’B‘©’D‘­‘¼’D‘½’B’B’N‘º’D’B’D‘¢’B’E’D‘¬’B‘¥’B’B’N‘º
+
+            -delwin  frame
+               ’C‘¶’E‘ª‘Ÿ’D‘µ‘¬’D’G‘¦’F‘¬’F‘¦’B‘¬’B‘¤’B‘¡’B‘±’B’B‘¤’B’B‘ª’B‘º’B ’D‘·’N‘º(default: 2)
+
+               ’B’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B‘­ HTK ’B‘¬ DELTAWINDOW ’B‘©’D‘­‘¼’D‘½’B’B’N‘º’D’B’D‘¢’B’E’D‘¬’B‘¥’B’B’N‘º
+
+            -accwin  frame
+               ’C‘¸’E‘ª‘Ÿ’D‘µ‘¬’D’G‘¦’F‘¬’F‘¦’B‘¬’B‘¤’B‘¡’B‘±’B’B‘¤’B’B‘ª’B‘º’B ’D‘·’N‘º(default: 2)
+
+               ’B’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B‘­ HTK ’B‘¬ ACCWINDOW ’B‘©’D‘­‘¼’D‘½’B’B’N‘º’D’B’D‘¢’B’E’D‘¬’B‘¥’B’B’N‘º
+
+            -hifreq  Hz
+               MFCC’B‘¬’B’B‘¡’B‘©’B‘½’B’B‘±’B‘­’G‘¦’F‘¬’E’B‘©’B’B’B’B’B‘±’B’D‘´’H’B’E’D‘·’D’B’B’N‘º’B’B‘¬
+               ’B‘¨’B’B‘µ’B‘¥’B‘±’B‘¥’B‘­’B‘©’B’B’B‘¨’B’D‘¦’E‘±‘ ’E‘®’B‘¬’C‘¶’H’D‘¢’B’E’D‘¬’B’B’N‘º -1
+               ’B’E’D‘¬’B’B’B’B‘¦’B‘¥’F‘Ÿ’D‘·’D’B‘¥’B’B’N‘º(default: -1)
+
+               ’B’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B‘­ HTK ’B‘¬ HIFREQ ’B‘©’D‘­‘¼’D‘½’B’B’N‘º’D’B’D‘¢’B’E’D‘¬’B‘¥’B’B’N‘º
+
+            -lofreq  Hz
+               MFCC’B‘¬’B’B‘¡’B‘©’B‘½’B’B‘±’B‘­’G‘¦’F‘¬’E’B‘©’B’B’B’B’B‘±’B’D‘´’H’B’E’D‘·’D’B’B’N‘º’B’B‘¬
+               ’B‘¨’B’B‘µ’B‘¥’B‘±’B‘¥’B‘­’B‘©’B’B’B‘¨’B’D‘¦’E‘±‘ ’E‘®’B‘¬’C‘¶’H’D‘¢’B’E’D‘¬’B’B’N‘º -1
+               ’B’E’D‘¬’B’B’B’B‘¦’B‘¥’F‘Ÿ’D‘·’D’B‘¥’B’B’N‘º(default: -1)
+
+               ’B’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B‘­ HTK ’B‘¬ LOFREQ ’B‘©’D‘­‘¼’D‘½’B’B’N‘º’D’B’D‘¢’B’E’D‘¬’B‘¥’B’B’N‘º
+
+            -zmeanframe ,  -nozmeanframe
+               ’F‘¨’D’C‘»’B‘¬’F‘²’E‘³’E’D’H‘¢’D‘¹’B’E’D‘·’D’N‘º’F‘Ÿ’D‘·’D’B’B’N‘º (default: disabled)
+
+               ’B’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B‘­ HTK ’B‘¬ ZMEANSOURCE ’B‘©’D‘­‘¼’D‘½’B’B’N‘º-zmean ’B’D’F‘¥’B‘¬’B’B‘¦’N‘º
+
+            -usepower
+               ’B’B‘¡’B‘©’B‘½’B’B‘±’B‘­’G‘¥‘¡’E’B‘¥’E‘­’D‘·’B‘¬’C‘¹‘¡’B’B’B‘©’B’B‘­’B‘º’B’C‘»‘½’B’N‘º(default: disabled)
+
+       ’E‘¡’G‘¤’D’D‘¤’F
+            -cvn
+               ’B‘¯’B’B‘·’B’B‘§’B ’D’E‘¡’E‘¡’G‘¤’D (cepstral variance normalization; CVN)
+               ’B’E’D‘·’B‘©’B’B’N‘º’B’B‘Ÿ’B‘¢’B‘©’D‘£’D’B‘¥’B‘­’N‘º’D‘£’D’D‘¦’C‘»’B‘¬’D’E‘¡’B‘©’D‘¸’B‘£’B’B‘¤’E‘¡’G‘¤’D
+               ’B’G‘Ÿ’B’B’B’N‘º’F‘²’E‘£’D‘£’D’B‘¥’B‘­’B’B’B’B’B’D’E‘¡’B’D‘¼’B’B’B‘¨’B’B’B’N‘º’E’D‘¼’B‘¬
+               ’D‘£’D’B‘¬’D’E‘¡’B‘¥’C‘¹‘¡’F‘¦’B’B’B’N‘º’H‘±’D‘¡‘®’C‘½‘Ÿ’D‘µ’D‘£’D’B‘¥’B‘¬’B‘½’E’D‘·’B‘¥’B’B’N‘º
+
+            -vtln  alpha lowcut hicut
+               ’D‘¦’E‘±‘ ’E‘®’B‘­’B‘º’B’B‘±’B‘®’B’G‘Ÿ’B’N‘º’D‘¡‘®’H’H‘µ’E‘¡’G‘¤’D (vocal tract length
+               normalization; VTLN) ’B‘©’C‘»‘½’F‘¦’B‘¥’B’B’N‘º’D‘º’E‘®’B‘­’B’B’B’B’B‘­’B‘º’B’B‘±’B‘®
+               ’C‘½’E‘®’N‘º’D‘¦’E‘±‘ ’E‘®’C‘¶’F‘©‘­’N‘º’D‘¦’E‘±‘ ’E‘®’C‘¶’F‘©‘­’B‘¥’B’B’N‘ºHTK’G‘¦’D‘¬’B‘¬
+               WARPFREQ’N‘ºWARPHCUTOFF ’B’B’B‘± WARPLCUTOFF ’B‘©’D‘­‘¼’D‘½’B’B’N‘º
+
+            -cmnload  file
+               ’G‘³‘µ’D’E’B‘©’B‘¯’B’B‘·’B’B‘§’B ’D‘·‘±’D’B’B‘­’B’B‘©’B file’B’B’G‘¨’B‘½’G‘¼‘º’B’N‘º’B’B‘Ÿ’B‘¢’B‘©’B‘­ -cmnsave
+               ’B‘¥’C‘½’D’B’B’B’B’B‘Ÿ’B‘¢’B‘©’B’E’D‘¬’B’B’N‘º’B’B ’B‘­ MAP-CMN
+               ’B‘©’B’B’B‘¤’N‘º’G‘³‘µ’D’D‘¼’E’D’B‘¬’F‘¸’G‘§‘¯’B‘©’B’B’B‘¤’B‘¯’B’B‘·’B’B‘§’B ’D‘·‘±’D
+               ’B‘¬’D’E’D‘¢’B‘¦’B’B‘¤’F‘¦’B’B’B’B’N‘º’H’D‘¶‘¶’N‘º2’F‘¸’G‘§‘¯’F‘¬’C‘¹‘£’H’B‘­’D’E’D‘¢’B‘­’N‘º’F‘²’D’B‘¬
+               ’D‘£’D’B‘¬’D‘·‘±’D’B‘©’E‘²’E‘®’B’B’B’B’N‘º-cmnnoupdate’B’E’D‘¬
+               ’B’B’B’D ‘²’D’N‘º’D‘¶‘¶’B‘©’B’B‘¬’B’B‘Ÿ’B‘¢’B‘©’B‘¬’D‘¢’B’D’F‘¸’G‘§‘¯’B‘¬’D’E’D‘¢’B‘¦’B’B‘¤’F‘¦’B’B’B ’B’N‘º
+
+            -cmnsave  file
+               ’G‘¨’G’C‘¶’B‘©’G‘¦’F‘¬’B’B’B‘¯’B’B‘·’B’B‘§’B ’D‘·‘±’D’B’B‘­’B’B‘©’B file’B‘¶’C‘½’D’B’B’N‘º’B’B‘¥’B‘©’B’B‘Ÿ’B‘¢’B‘©’B’B
+               ’B’D ‘²’D’B‘­’C‘¶’E‘¶’B’B’B’B’N‘º’B’B‘¬’C‘½’D’B‘­’H‘±’D‘¡‘®’D‘£’D’B’G‘Ÿ’B’B’B’B’B‘±’B‘©’C‘¶’E‘¶’B’B‘¥ ’G‘Ÿ’B’B’B’N‘º
+
+            -cmnupdate   -cmnnoupdate
+               ’D‘¬’E’H’G‘¨’G’E’N‘º’D’E’B‘¯’B’B‘·’B’B‘§’B ’D‘·‘±’D’B’D‘£’D’B’B‘¦’B‘©’E‘²’E‘®’B’B’B’B‘§’B’B
+               ’B’E’D‘¬’B’B’N‘º’H’D‘¶‘¶’B‘­’E’D‘· (-cmnupdate) ’B‘¥’B’B’N‘º
+               ’H’D‘¹5’F‘¥’H’B‘¬’D‘£’D’B‘¬’D‘·‘±’D’B’D’E’D‘¢’B‘¦’B’B‘¤’E‘²’E‘®’B’B’N‘º -cmnnoupdate
+               ’B’E’D‘¬’B’B’B’D ‘²’D’N‘º’E‘²’E‘®’B‘­’G‘Ÿ’B’B’B’N‘º ’D’E’D‘¢’B‘­’G‘³‘µ’D’E’B‘¬’D‘¢’B‘©’D‘¸’D‘¬’B’B’B’N‘º-cmnload
+               ’B‘¥’D’E’D‘¢ ’B’E’D‘¬’B’B’B’B‘¦’B‘¥’N‘º’D‘¶‘¶’B‘©’D’B’D’E’D‘¢’B’C‘»‘½’B’B’B’B‘©’B’B’B’B‘¦’B’B‘¥’B’B’N‘º
+
+            -cmnmapweight  float
+               MAP-CMN ’B‘¬’D’E’B‘¯’B’B‘·’B’B‘§’B ’D‘·‘±’D’B‘¶’B‘¬’H’B‘½’B’E’D‘¬’B’B’N‘º’D‘¢’B’D‘¢‘¥’B’B’B‘¹
+               ’B‘§’D’E’D‘¢’B‘©’H‘µ’E’H’C‘¼’D’B’N‘º’D‘®’B’B’B‘¹’B‘§’E‘§’B’F‘¼’D‘£’D’B‘¬’B‘¯’B’B‘·’B’B‘§’B ’D‘·‘±’D
+               ’B’F‘¦’B’B’B’B’B‘©’B‘¨’B’N‘º(default: 100.0)
+
+       ’B’B’B‘±’B’B‘¦’B‘±’B’D‘¤’F
+            -sscalc
+               ’D‘£’D’D’H ’B‘¬’F‘Ÿ’H‘±’H‘¦’B’F‘¦’B’B‘¤’N‘º’D‘£’D’D‘¦’C‘»’B‘©’D‘­‘¼’B’B‘¤’B‘·’B’B‘­’B’B‘©’B‘³’B’B’B‘§’B‘­
+               ’B‘µ’B‘¥’B‘±’B’G‘Ÿ’B’N‘º’D’H ’H‘¦’B‘¬’H‘µ’B’B‘­-sscalclen’B‘¥’E’D‘¬’B’B’N‘º
+               ’B’B‘Ÿ’B‘¢’B‘©’D‘£’D’B‘©’D‘­‘¼’B’B‘¤’B‘¬’B‘½’E’D‘·’B‘¥’B’B’N‘º-ssload ’B‘¦ ’D’E’B‘©’E’D‘¬’B‘¥’B’B‘¨’B’N‘º
+
+            -sscalclen  msec
+
+               -sscalc’B‘¨’B’B‘µ’B‘¥’B‘±’E’D‘¬’E’N‘º’D’B’B‘Ÿ’B‘¢’B‘©’B‘©’B’B’B‘¤
+               ’B’B‘¢’B‘¸’B‘·’B’B‘­’B’B‘©’B‘¬’E‘¦’D‘¬’B‘©’F‘¦’B’B’H‘µ’B’B’B’B‘¨’F‘¥’B‘¥’E’D‘¬’B’B’N‘º(default: 300)
+
+            -ssload  file
+               ’B’B‘¢’B‘¸’B‘·’B’B‘­’B’B‘©’Bfile’B’B’G‘¨’B‘½’G‘¼‘º’B ’B‘¥’B‘·’B’B‘­’B’B‘©’B‘³’B’B’B‘§’B‘­’B‘µ’B‘¥’B‘±’B’G‘Ÿ’B’N‘º
+               file’B‘­’B’B’B’B’B mkss’B‘¥’C‘»’E’B’B’N‘º’B’B‘¢’B‘­’D‘£’D’B‘¹’B’B’B’B‘­’B‘º’B‘­’D‘£
+               ’D’B‘¨’B‘§’B‘¬’B‘¨’B‘±’B‘§’B‘¢’B‘±’D‘£’D’B‘¥’B’H‘§’F‘¦’B‘¥’B’B’N‘º-sscalc’B‘¦ ’D’E’B‘©’E’D‘¬’B‘¥’B’B‘¨’B’N‘º
+
+            -ssalpha  float
+
+               -sscalc’B’B’B‘±-ssload’F‘¦’B‘¬
+               ’E‘¶’F‘¬’C‘½’E‘®’B’E’D‘¬’B’B’N‘º’B’B‘¬’D‘¢’B’D‘¢‘¥’B’B’B‘¹’B‘§’D‘º‘µ’B’B‘·’B’B‘­’B’B‘©’E‘¶’F‘¬’B’G‘Ÿ’B’B’N‘º
+               ’E‘¶’F‘¬’D‘¼’B‘¬’C‘½‘Ÿ’D‘µ’B‘¬’E‘¨’B’D‘¢‘¥’B’B’B‘¨’B’N‘º(default: 2.0)
+
+            -ssfloor  float
+               ’B‘·’B’B‘­’B’B‘©’B‘³’B’B’B‘§’B‘­’B‘µ’B‘¥’B‘±’B‘¬’B’B’B‘ ’B‘¨’B‘±’B‘®’C‘½’E‘®’B’E’D‘¬’B’B’N‘º’B‘·’B’B‘­
+               ’B’B‘©’E‘¶’F‘¬’E’N‘º’G‘¦’F‘¬’B‘¬’F‘³’E’B’B‘­’B‘º’B‘·’B’B‘­’B’B‘©’B’G‘° ’B‘¦’B‘¨’B‘¡’B‘¤’B’B‘¼’B’D‘¶‘­’D’B‘©
+               ’D‘­‘¼’B’B‘¤’B‘­’N‘º’D’C‘½‘Ÿ’D‘µ’B‘©’B’B‘¬’C‘½’E‘®’B’C‘·’B’B’B‘·’B’B‘­’B’B‘©’B’D‘°’B’D‘»’B‘¤’B’B’B’N‘º (default:
+               0.5)
+
+       ’B’B‘¬’C‘¹’B‘¬’H‘±’H‘½’B‘ ’B’B‘©’H‘ ’H‘¡’B‘¨’B’B‘µ’B‘¥’B‘±
+            -htkconf  file
+
+               HTK Config ’B’B‘Ÿ’B‘¢’B‘©’B’G‘¥‘¡’E’B’B‘¤’N‘º’D‘­‘¼’D‘½’B’B’F‘·’D‘¼‘²’H’E‘»’D‘¸’B‘¨’B’B‘µ’B‘¥’B‘±’B Julius
+               ’B‘©’G‘¨’D’G‘¦’D‘¬’B’B’N‘ºfile ’B‘­ HTK ’B‘¥’H‘±’H‘½’B‘ ’B’B‘©’D‘¤’F‘½’E’B‘©’C‘»‘½’F‘¦’B’B Config
+               ’B’B‘Ÿ’B‘¢’B‘©’B’E’D‘¬’B’B’N‘º’B‘¨’B’N‘º Julius ’B‘¦ HTK
+               ’B‘¥’B‘­’B’B‘§’B‘Ÿ’B‘º’B‘½’B‘¬’B’B’B‘§’B‘©’B’D‘¢’B’C‘¶’H‘¦’F‘®’B‘¨’B’B’N‘º
+               ’B’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B’C‘»‘½’F‘¦’B’B’D ‘²’D’N‘º’B’B’B‘§’B‘©’B’D‘¢’B HTK ’B‘¬’B’B’B‘§’B‘©’B ’B‘©’D’E‘½’B’B’B’B’B’N‘º
+
+   ’G‘¨’G’D‘¤’F’B‘¹’E‘ ’F‘²‘  (-SR)
+       ’G‘¨’Gâ€
+       ’D‘¤’F’B‘¹’E‘ ’F‘²‘ ’B‘¨’B’B‘µ’B‘¥’B‘±’B‘­’N‘º’F‘ª‘ª1’B’B‘·’B‘¹’F‘ª‘ª2’B’B‘·’F‘¦’B‘¬’B’B‘º’B ’D‘·’B’G‘¦’G‘¨’H’B‘½’B‘¬’B’B‘§’B‘Ÿ’B‘º’B‘½’N‘º’B‘µ’B‘¥’B‘º’B’B’B‘º’B‘¸’B‘¹’B‘®’B‘Ÿ’B‘±’B’B‘º’B‘µ’B‘¥’B‘±’B‘¬’G‘¦â€
+       ’D‘¬’N‘º’D’G‘¨’B‘§’B’B‘¡’B‘·’B‘¹CN ’D‘¸’D’F‘¦’G‘¦’D‘¬’N‘ºforced alignment ’B‘¬’E’D‘¬’N‘º’B’B‘¬’C‘¹’B‘¬’G‘¨’Gâ€
+       ’D‘¤’F’B‘¦’F‘³’E’D‘¸’D’B‘©’H‘ ’B’B’B’B‘§’B‘Ÿ’B‘º’B‘½’B’D‘©’B’N‘º
+
+       ’F‘ª‘ª1’B’B‘·’B’B‘§’B‘Ÿ’B‘º’B‘½
+            -lmp  weight penalty
+               (N-gram’C‘»‘½’F‘¦’E) ’F‘ª‘ª1’B’B‘·’F‘¦’B‘¬’G‘¦’G‘¨’B‘·’B‘±’B‘ ’H’B‘½’B’B’B‘±’E‘½’D‘£’B’B’B‘©’B’B‘¡’N‘º
+               ’B’B’B‘©’B’B‘¡’B‘­’G‘° ’B‘¥’B’B’B‘®’D’G‘¨’E‘½’D‘£’B’E’D‘´’B’N‘º’E‘¡’B‘¥’B’B’B‘®’D’G‘¨’E‘½’D‘£’B’C‘½ ’H‘°’B’B’N‘º
+
+            -penalty1  penalty
+               (’E’E‘±’C‘»‘½’F‘¦’E) ’F‘ª‘ª1’B’B‘·’F‘¦’B‘¬’D’G‘¨’E‘½’D‘£’B’B’B‘©’B’B‘¡’N‘º (default: 0.0)
+
+            -b  width
+               ’F‘ª‘ª1’B’B‘·’E‘ ’F‘²‘ ’B‘¬’E’D’B (rank pruning) ’B‘¬’B’B‘º’B ’D‘·’B’E’D‘¬’B’B’N‘º’D’C‘» ’B‘­ HMM
+               ’B’B‘º’B’E‘®’B‘¥’B’B’N‘º ’B’B’B‘§’B‘©’B’D‘¢’B‘­’H‘±’H‘½’B‘ ’B’B‘©’B’B‘¦’B‘±’B‘¶’B‘±’B‘¬’G‘¦’D‘¬’B‘©’B’B’N‘º’B‘ ’B’B’B‘§’B‘±
+               ’C‘»‘½’F‘¦’E’B‘­400, ’B’B‘§’B‘¢’B’B‘§’B‘±’C‘»‘½’F‘¦’E’B‘­800’N‘º’B’B‘§’B‘¢’B’B‘§’B‘±’B‘¥’B’B‘¢ setup=v2.1
+               ’B‘¬’B‘¦’B’B‘­ 1000 ’B‘¦’B‘¨’B’N‘º
+
+            -bs  width
+               ’F‘ª‘ª1’B’B‘·’B‘¬score pruning’B‘¬’B‘·’B‘±’B‘ ’D‘·’B’E’D‘¬’B’B’N‘ºrank pruning’N‘º-b
+               width’N‘º’B‘¦’C‘»‘³’F‘¦’D‘­’G‘»’N‘º’B’B’B‘§’B‘©’B’B‘­’B‘¨’B’N‘º
+
+            -nlimit  num
+               ’F‘ª‘ª1’B’B‘·’B‘¥’B’B‘º’B’B’B‘¦’B‘©’C‘½’E’B’B’C‘¹‘¬’G‘¨‘ª’B’B‘º’B‘­’B‘±’B‘¬’E’D‘¢‘¥’E‘®’N‘º’H’D‘¶‘¶’B‘­ 1 ’B‘¥
+               ’D‘¸’D‘¬’B’B’B‘¤’B’B’D‘¢’E‘²’B‘¥’B’B‘¨’B’N‘º’B‘±’B‘±’B’B‘¢’B‘©’E’B‘© configure’B‘¥
+               --enable-wpair’B’B’B‘± --enable-wpair-nlimit ’B’E’D‘¬’B’B’B‘¤’B’B’B‘¦’B
+               ’B‘¬’B‘½’D‘¢’E‘²’B‘¥’B’B’N‘º
+
+            -progout
+               ’F‘ª‘ª1’B’B‘·’B‘¥’N‘º’C‘¶’D‘¬’E’H’B’B’B‘©’B’B‘¬’E’F‘·’B‘¥’B‘¬’E’D‘®‘¢’C‘¹‘¬’G‘¨‘ª’F‘±‘¹’D’B’D‘¸’D’B’B’N‘º
+
+            -proginterval  msec
+
+               -progout’B‘¬’D‘¸’D’B‘¢’B‘±’B‘½’B‘º’B’B‘©’B’B’B‘¨’F‘¥’B‘¥’E’D‘¬’B’B’N‘º (default: 300)
+
+       ’F‘ª‘ª2’B’B‘·’B’B‘§’B‘Ÿ’B‘º’B‘½
+            -lmp2  weight penalty
+               (N-gram’C‘»‘½’F‘¦’E) ’F‘ª‘ª2’B’B‘·’F‘¦’B‘¬’G‘¦’G‘¨’B‘·’B‘±’B‘ ’H’B‘½’B’B’B‘±’E‘½’D‘£’B’B’B‘©’B’B‘¡’N‘º
+               ’B’B’B‘©’B’B‘¡’B‘­’G‘° ’B‘¥’B’B’B‘®’D’G‘¨’E‘½’D‘£’B’E’D‘´’B’N‘º’E‘¡’B‘¥’B’B’B‘®’D’G‘¨’E‘½’D‘£’B’C‘½ ’H‘°’B’B’N‘º
+
+            -penalty2  penalty
+               (’E’E‘±’C‘»‘½’F‘¦’E) ’F‘ª‘ª2’B’B‘·’F‘¦’B‘¬’D’G‘¨’E‘½’D‘£’B’B’B‘©’B’B‘¡’N‘º (default: 0.0)
+
+            -b2  width
+               ’F‘ª‘ª2’B’B‘·’E‘ ’F‘²‘ ’B‘©’B’B’B’C‘¹‘¬’G‘¨‘ª’D‘¯’H’D’E‘®’B‘¬’C‘¶’H’B’E’D‘¬’B’B’N‘º’D’C‘»’B‘­
+               ’C‘¹‘¬’G‘¨‘ª’E‘®’N‘º(default: 30)
+
+            -sb  float
+               ’F‘ª‘ª2’B’B‘·’B‘¬’C‘¹‘¬’G‘¨‘ª’D‘®‘¢’D‘¸‘¤’G‘¦’F‘¬’E’B‘¬’B‘·’B‘±’B‘ ’D‘·’B’E’D‘¬’B’B’N‘º’D’C‘»’B‘­’D‘­‘¼’E‘®’D‘®‘¢’D‘¸‘¤’D‘µ‘¬
+               ’B‘¥’B’B’N‘º(default: 80.0)
+
+            -s  num
+               ’C‘¹‘¬’G‘¨‘ª’B‘¬’B‘·’B‘½’B’B‘­’B‘³’B‘¢’B‘¸’B’E’D‘¬’B’B’N‘º(default: 500)
+
+            -n  num
+
+               num’D’B‘¬’E’C‘¹‘¬’G‘¨‘ª’E‘®’B’G‘¤’C‘¹’B’B’B‘¼’B‘¥’E‘ ’F‘²‘ ’B
+               ’G‘Ÿ’B’N‘º’D‘¼’B’B’B’C‘¹‘¬’G‘¨‘ª’B‘­’B‘·’B‘±’B‘ ’B‘¥’B‘»’B‘º’B’B’B’B‘¤’D‘¸’D’B’B’B
+               ’N‘º-output’B’G‘¤’B’N‘º’N‘º’B’B’B‘§’B‘©’B’D‘¢’B‘­’B‘±’B‘±’B’B‘¢’B‘©’E ’B‘¬’B‘¦’B‘±’B‘¶’B‘±’G‘¦â€
+               ’D‘¬’B‘©’B’B‘¡’B‘¤’D‘¢’B’B’N‘ºfast ’F’B‘¥’B‘­ 1, standard’F’B‘¥’B‘­10 ’B‘¥’B’B’N‘º
+
+            -output  num
+               ’G‘¤’B‘¢’B’B‘¡’BN-best’D’G‘¡’B‘¬’B’B‘Ÿ’N‘º’F‘³’E’B‘¦’B’B‘¤’D‘¸’D’B’B’E’C‘¹‘¬’G‘¨‘ª’B‘¬’E‘®’B
+               ’E’D‘¬’B’B’N‘º-n’B’D’F‘¥’B‘¬’B’B‘¦’N‘º(default: 1)
+
+            -m  count
+               ’E‘ ’F‘²‘ ’E’B‘Ÿ’D’B’B‘¬’B’B’B‘¬’C‘¹‘¬’G‘¨‘ª’D‘¯’H’D’E‘®’B‘¬’B’B’B’D‘¢’B’E’D‘¬’B’B’N‘º (default: 2000)
+
+            -lookuprange  frame
+               ’F‘ª‘ª2’B’B‘·’B‘¬’D’G‘¨’D‘¯’H’E’B‘©’N‘º’E‘£’F‘´’B’B’B’E‘ª‘Ÿ’D’G‘¨’D’G‘¡’B’G‘¤’C‘¹’B’B’B’B’B‘¬
+               ’F‘³’F‘©‘­’E’D‘¹’B‘¬’G‘¦‘¯’D‘¬‘·’D‘·’B’B’B‘ª’B‘º’B ’E‘®’B‘¥’E’D‘¬’B’B’N‘º’D‘¢’B’D‘¢‘¥’B’B’B’B’B‘¹’B‘§
+               ’B’B‘¬’D‘¦’G‘¼‘¸’B‘¬’D‘¢’B’B‘¬’C‘¹‘¬’G‘¨‘ª’B’E‘ª‘Ÿ’D’G‘¨’D’G‘¡’B‘¦’B’B‘¤’C‘¹‘¬’G‘¨‘ª’D‘¯’H’B’G‘Ÿ’B’B’B’B’B’B‘©
+               ’B‘¨’B’B’N‘º’E‘ ’F‘²‘ ’B’D’B‘©’H‘°’B‘½’B‘©’B’B’B‘¨’B’B’B‘¦’B’B’B’N‘º(default: 5)
+
+            -looktrellis
+               ’C‘¹‘¬’G‘¨‘ª’D‘¯’H’B’F‘ª‘ª1’B’B‘·’B‘¬’F‘³’E’D’G‘¨’B’B‘ª’B‘¨’B‘·’C‘¶’B‘©’F‘³’B’N‘º
+
+       ’B‘µ’B‘¥’B‘º’B’B’B‘º’B‘¸’B‘¹’B‘®’B‘Ÿ’B‘±’B’B‘º’B‘µ’B‘¥’B‘±
+            -spsegment
+               ’B‘µ’B‘¥’B‘º’B’B’B‘º’B‘¸’B‘¹’B‘®’B‘Ÿ’B‘±’B’B‘º’B‘µ’B‘¥’B‘±’B’E’D‘·’B‘©’B’B’N‘º (Rev.4.0)
+
+            -spdur  frame
+               ’F‘Ÿ’H‘±’D‘¸’H’D‘¢’D‘¬’B‘¬’B’B’B‘¬’B’B’B’D‘¢’B’E’D‘¬’B’B’N‘º’F‘Ÿ’H‘±’D’G‘¨’B’C‘¶’C‘»’C‘¹‘¬’G‘¨‘ª’B‘¦’B‘¨
+               ’B’B’B‘ª’B‘º’B ’B’B’B‘¬’D‘¢’C‘¹‘£’C‘¶’F‘´’B’B’B‘¦’B’N‘º’F‘Ÿ’H‘±’D‘¸’H’B‘¦’B’B‘¤’D‘£’D’B’D‘¸’D’B’B ’B’N‘º(default:
+               10)
+
+            -pausemodels  string
+               ’B’F‘Ÿ’H‘±’D’G‘¨’B’B’D‘¬’F‘¼‘§’B’B’B’B’B‘¬’H‘±’H‘½’B‘ ’B’B‘©’B‘©’B’B’B’F‘Ÿ’H‘±’B‘ ’B’B‘©’B‘¬’D’D
+               ’B’E’D‘¬’B’B’N‘º’B‘±’B‘±’B’B‘¥’D‘¸’D’B‘¡’B‘¤’G‘¢’E‘®’B‘¬’D’D’B’E’D‘¬’B‘¥’B’B’N‘º
+               ’B’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B’E’D‘¬’B’B’B‘¨’B’D ‘²’D’N‘º’E’E‘±’B’F‘¦’B’B’G‘¨’G’B‘¥’B‘­ -spmodel
+               ’B‘¥’E’D‘¬’B’B’B’B‘ ’B’B‘©’B‘¬’B‘½’B’G‘¨’B‘½’B‘¦’B’B’D
+               ’G‘¨’B’F‘Ÿ’H‘±’D’G‘¨’B‘¦’B’B’B’N‘º’B‘¼’B’N‘ºN-gram’B‘¥’B‘­’B’B’B‘©’D ’B’B‘¤ -silhead ’B’B’B‘±
+               -siltail ’B‘¥ ’E’D‘¬’B’B’B’D’G‘¨’B’F‘Ÿ’H‘±’D’G‘¨’B‘¦’B’B‘¤’E‘¯’B’B’B’N‘º(Rev.4.0)
+
+            -spmargin  frame
+               ’B’B‘±’B‘º’B’B’B‘º’B‘·VAD’B‘©’B’B’B‘¤’N‘º’B‘ ’B’B’B’B‘¨’B‘ª’E’B‘¬’D‘µ‘¹’E‘¹’B’D‘·’B’B’B‘ª’B‘º’B
+               ’E‘®’B‘¥’E’D‘¬’B’B’N‘º(Rev.4.0)
+
+               ’B’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B‘­configure’B‘©
+               --enable-decoder-vad’B’C‘¹’B’B‘¤’B‘±’B‘±’B’B‘¢’B‘©’B’B’B‘¦’B ’B‘¬’B‘½’E’D‘·’B‘¥’B’B’N‘º
+
+            -spdelay  frame
+               ’B’B‘±’B‘º’B’B’B‘º’B‘·VAD’B‘©’B’B’B‘¤’N‘º’B‘ ’B’B’B’B‘¨’B‘ª’D‘¢’D‘¬’B‘¬’H’D‘¹‘´’D‘·’B’B’B‘ª’B‘º’B
+               ’E‘®’B‘¥’E’D‘¬’B’B’N‘º(Rev.4.0)
+
+               ’B’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B‘­configure’B‘©
+               --enable-decoder-vad’B’C‘¹’B’B‘¤’B‘±’B‘±’B’B‘¢’B‘©’B’B’B‘¦’B ’B‘¬’B‘½’E’D‘·’B‘¥’B’B’N‘º
+
+       ’D’G‘¨’B‘§’B’B‘¡’B‘· / confusion network ’D‘¸’D
+            -lattice ,  -nolattice
+               ’D’G‘¨’B‘®’B‘§’B’N‘º’B‘§’B’B‘¡’B‘·’N‘º’B‘¬’D‘¸’D’B’E’D‘·’D/’F‘Ÿ’D‘·’D’B’B’N‘º
+
+            -confnet ,  -noconfnet
+               Confusion network ’B‘¬’D‘¸’D’B’E’D‘·’D/’F‘Ÿ’D‘·’D’B’B’N‘ºconfusion network
+               ’B‘­’D’G‘¨’B‘®’B‘§’B’B’B’F’E’B’B’B’B’B’N‘º’E’D‘·’E’B‘­’D’E’B‘© -lattice ’B’E’D‘·’D’B’B’B’N‘º(Rev.4.0)
+
+            -graphrange  frame
+               ’B‘®’B‘§’B’F’E’B‘©’B’B’B‘¤’G‘½’D’B‘¬’D’C‘¶’D’G‘¨’C‘¹‘¬’G‘¨‘ª’B’B’B‘º’B‘¶’B’B’N‘º’H’D‘¥’B’B‘ª’B‘º’B
+               ’B’B’B‘±’F‘³’C‘¸’B’B‘ª’B‘º’B ’B‘¬’C‘»’F‘»‘¬’B‘¬’D‘µ‘¬’B’B’B’B’B
+               frame’C‘¹‘£’C‘¶’B‘¬’D’C‘¶’D’G‘¨’C‘¹‘¬’G‘¨‘ª’B‘©’B‘¢’B’B‘¤’B’B‘º
+               ’B‘¶’B’B’N‘º’B’B‘¬’H’N‘º’B‘·’B‘±’B‘ ’B‘­’H‘©’B’B‘¹’B’B‘¬’B’B‘¬’B’E‘¬’B’B’B’N‘º’D‘¢’B -1 ’B‘¬’D ‘²
+               ’D’N‘º’B’B‘º’B‘¶’B‘­’C‘¶’D’G‘Ÿ’B’B’B‘¨’B’N‘º’D‘¢’B’D‘¢‘¥’B’B’B’B’B‘¹’B‘§’B‘±’B‘±’B’B‘­’B’B‘¨’B‘®’B‘§
+               ’B’B’F’E’B’B’B’B’N‘º’B‘·’B‘±’B‘ ’B‘¬’G‘¨‘¢’D‘µ‘¬’B’D‘¢‘¥’B’B’B‘¨’B’N‘º’B’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B‘­
+               -confnet’B‘©’B’D‘»‘¯’H‘½’B’B’N‘º(default: 0)
+
+            -graphcut  depth
+               ’F’E’B’B’B’B‘®’B‘§’B’B‘©’D‘­‘¼’B’B‘¤’N‘º’E‘µ‘¯’B’B‘©’B’B’B‘©’B’B’B‘¨’B’B’G‘Ÿ’B’N‘º
+               depth’B‘­’N‘º’B’B’B’B‘ª’B‘º’B ’B‘©’B’B’B‘¤’D’D‘¦’D‘­ ’G‘»’B‘¨’D’G‘¨’E‘®’B‘¬’C‘¶’H’B’E’D‘¬’B’B’N‘ºJulius
+               ’B‘¥’B‘­’N‘º’F‘ª‘ª2’B’B‘·’B‘¬’E‘ ’F‘²‘ ’B’C‘¶’D‘¬’D‘¬
+               ’B‘¨’D ‘²’D’N‘º’C‘¶’H‘¦’D’B’E‘£‘³’F‘©‘­’B‘©’E‘µ‘¯’B’B‘®’B‘§’B’B’F’E’B’B’B’B’B‘¦’B’F‘¦’B‘©’B’B’N‘º’B
+               ’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B‘©’B’B‘¡’B‘¤’B’B’B’E’D‘´’B’B’B’B‘¦’B’B‘¥’B’B’N‘º-1 ’B’E’D‘¬’B’B
+               ’B’B‘¦’B‘¥’B’B‘¬’E‘§’G‘»’B‘­’F‘Ÿ’D‘·’D’B’B’B’N‘º(default: 80)
+
+            -graphboundloop  count
+               ’C‘¸’D‘¼’F’B‘©’G‘Ÿ’B’B’B’D’G‘¨’B‘®’B‘§’B’B‘¬’D‘ ’F’E’H’G‘¨‘½’E‘²’B‘©’B’B’B‘¤’N‘º’E‘­’D’B‘©’B’B
+               ’F‘Ÿ’H’B‘©’B‘º’B’B’H‘°’B’B’B’B‘¬’E’B‘Ÿ’D’B’D‘¢’B’E’D‘¬’B’B’N‘º(default: 20)
+
+            -graphsearchdelay ,  -nographsearchdelay
+               ’D‘µ‘¦’D‘¢‘¥’B‘®’B‘§’B’F’E’F‘¦’B‘©’B‘ ’B‘©’B‘²’B‘¨’B‘¸’B ’B’B’B‘£’B‘º’B’B‘±’B‘®’B’B’N‘º’B’B‘¬’B‘¨’B’B‘µ’B‘¥
+               ’B‘±’B’E’D‘·’E’N‘ºJulius ’B‘­’F‘ª‘ª1’E’C‘¹‘¬’G‘¨‘ª’B’G‘¤’B‘¢’B’B’D’B‘¬’B‘®’B‘§’B’F’E’E’B‘¬’C‘¹‘¬’G‘¨‘ª ’C‘¶’Eâ€
+               ’B’G‘Ÿ’B’B‘¨’B’B’B’B‘©’N‘º’B‘®’B‘§’B’F’E’B‘ ’B‘©’B‘²’B‘¨’B‘¸’B ’B’D‘¢’E‘²’B’B’N‘º’B’B’B‘­’N‘º
+               ’B’B‘º’B ’D‘·’B’E‘ ’F‘²‘ ’F‘­’D‘°’B’E‘£‘³’F‘©‘­’B‘©’D‘¢‘¥’B’B’B’B‘¤’D‘µ‘¦’D‘¢‘¥’B‘¨’B‘­’B‘º’B’B‘®’B‘§’B’B’F’E’B
+               ’B’B’B‘¦’B’B’B‘¦’B’B‘©’N‘º’B‘®’B‘§’B’B‘¬’F‘°‘¼’D‘¸‘¤’B’E‘·’D’B’B’B’B‘¦’B’B’B’N‘º(default: disabled)
+
+       ’G‘¢’E‘®’E’E‘±/’G‘¢’E‘®’G‘¼’E‘¶’G‘¨’G
+           ’E’E‘±’B’D’D’G‘¨’G‘¨’G’B‘©’B’B’B‘¤’N‘º’C‘¶’B‘¢’B‘¬’B‘¢’B‘±’B‘·’B‘½’B‘±’B‘·’B‘¥’G‘¢’E‘®’B‘¬’E’E‘±’B’G‘¼’E‘¶’B’F‘¦’B’B
+           ’D ‘²’D’B‘©’E’D‘¬’B‘¥’B’B’B‘¨’B’B‘µ’B‘¥’B‘±’B‘¥’B’B’N‘º
+
+            -multigramout ,  -nomultigramout
+               ’G‘¢’E‘®’E’E‘±’B’B’B’B‘­’G‘¢’E‘®’G‘¼’E‘¶’B’F‘¦’B’B‘¤’G‘¨’G’B’G‘Ÿ’B’D ‘²’D’N‘º’H’D‘¶‘¶’B‘¬ Julius
+               ’B‘­’D‘¦’B‘¤’B‘¬’E’E‘±/’G‘¼’E‘¶’B‘¬’C‘¶’B’B’E’D‘®‘¢’C‘¹‘¬’G‘¨‘ª’B’D‘¸’D’B’B’N‘º’B’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B
+               ’E’D‘¬’B’B’B’B‘¦’B‘¥’N‘º’C‘¶’B’B’B’B’D’B’B‘¬’E’E‘±/’G‘¼’E‘¶’B’B‘¦’B‘©’C‘¶’C‘»’C‘¹‘¬’G‘¨‘ª’B
+               ’D‘¸’D’B’B’B’B‘¦’B’B‘¥’B’B’N‘º(default: disabled)
+
+       Forced alignment
+            -walign
+               ’G‘¨’G’F‘³’E’B’F‘¦’B’B‘¤’N‘º’D‘£’D’B‘©’D‘­‘¼’B’B’D’G‘¨’D’C‘»’B‘¬ forced alignment ’B’G‘Ÿ
+               ’B’N‘º’D’G‘¨’B‘¬’D‘ ’F’B’B‘ª’B‘º’B ’B‘¦’D‘·‘±’D’H‘±’H‘½’D‘®‘¢’D‘¸‘¤’B’D‘¸’D’B’B’B’N‘º
+
+            -palign
+               ’G‘¨’G’F‘³’E’B’F‘¦’B’B‘¤’N‘º’D‘£’D’B‘©’D‘­‘¼’B’B’H‘±’F‘² ’D’C‘»’B‘¬ forced alignment ’B’G‘Ÿ
+               ’B’N‘º’H‘±’F‘² ’B’B‘¦’B‘¬’D‘ ’F’B’B‘ª’B‘º’B ’B‘¦’D‘·‘±’D’H‘±’H‘½’D‘®‘¢’D‘¸‘¤’B’D‘¸’D’B’B’B’N‘º
+
+            -salign
+               ’G‘¨’G’F‘³’E’B’F‘¦’B’B‘¤’N‘º’D‘£’D’B‘©’D‘­‘¼’B’BHMM’B‘¬’F‘´’E’D’C‘»’B‘¬ forced alignment
+               ’B’G‘Ÿ’B’N‘º’F‘´’E’B’B‘¦’B‘¬’D‘ ’F’B’B‘ª’B‘º’B ’B‘¦’D‘·‘±’D’H‘±’H‘½’D‘®‘¢’D‘¸‘¤’B’D‘¸’D’B’B’B’N‘º
+
+       ’B’B‘¬’C‘¹
+            -inactive
+               ’G‘¨’G’D‘¤’F’B‘¢’B‘±’B‘·’B‘½’B‘±’B‘·’B’C‘¶’E’D’E‘ ’F‘´’E (inactive state) ’B‘¥’G‘³‘µ’D’B’B’N‘º
+               (Rev.4.0)
+
+            -1pass
+               ’F‘ª‘ª1’B’B‘·’B‘¬’B‘½’B’D‘¬’G‘Ÿ’B’B’N‘º’B’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B’E’D‘¬’B’B’D ‘²’D’N‘º’F‘ª‘ª2’B’B‘·’B‘­
+               ’D‘¬’G‘Ÿ’B’B’B‘¨’B’N‘º
+
+            -fallback1pass
+               ’H’D‘¶‘¶’N‘º’F‘ª‘ª2’B’B‘·’B‘¬’E‘ ’F‘²‘ ’B’D‘¢‘¯’E’B’B’B‘¦’B’N‘ºJulius ’B‘­’G‘¨’G’F‘³’E’F‘Ÿ’B’B‘¥’F‘³’C‘¸
+               ’B’B’N‘º’B’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B’E’D‘¬’B’B’B’B‘¦’B‘¥’N‘º’B’B‘¬’B’B’B‘¨’F‘ª‘ª2’B’B‘·’B‘¬’D‘¢‘¯’E’E’B‘©’N‘º
+               ’F‘ª‘ª1’B’B‘·’B‘¬’E’D‘®‘¢’C‘¹‘¬’G‘¨‘ª’B’E’F‘³’F‘³’E’B‘¦’B’B‘¤’D‘¸’D’B’B’B’B‘¦’B’B‘¥’B’B’N‘º
+               ’N‘º’B’B’B‘­Julius-3.x’B‘¥’B‘¬’B’B’B‘§’B‘©’B’B‘¬’E‘­’B’G’B’B‘¥’B’B’N‘º
+
+            -no_ccd ,  -force_ccd
+               ’H‘±’H‘½’B‘ ’B’B‘©’B’H‘±’F‘² ’B‘±’B‘±’B’B’B‘·’B’C‘¼’D’B‘ ’B’B‘©’B‘¦’B’B‘¤’E‘¯’B’B’B‘§’B’B’B’E’F‘¢‘¸
+               ’F’B‘©’E’D‘¬’B’B’N‘º’B’B’B‘§’B‘©’B’B‘­HMM’C‘¶’B‘¬’B‘ ’B’B‘©’D’B’B’G‘¨’D’D‘¢’E’B’B’B’N‘º
+
+
+            -cmalpha  float
+               ’F‘ ‘¸’C‘½‘Ÿ’D‘¸‘¤’G‘¦’F‘¬’B‘¬’B’B’B‘¬’B‘·’B‘±’B‘ ’B‘¬’B‘·’B ’B‘º’B‘¶’B‘±’B‘®’C‘½’E‘®’N‘º(default: 0.05)
+
+            -iwsp
+               ’N‘º’B’B‘©’B’B’B‘·’B‘ ’B‘º’B’E’B‘¬’B‘½’E’D‘·’N‘º’D’G‘¨’H’B‘©’B‘µ’B‘¥’B‘º’B’B’B‘º’B‘¸’B‘ ’B’B‘©’B ’E’B‘½’G‘¼‘º’B’B ’G‘¨’Gâ€
+               ’D‘¤’F’B’G‘Ÿ’B’N‘º’B’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B’E’D‘¬’B’B’B‘¦’N‘º’G‘¼’E‘¶’C‘¶’B‘¬ ’D‘¦’D’G‘¨’B‘¬’E‘©’D‘®‘¼’B‘©’N‘º’B‘·’Bâ€
+               ’B’B’D‘­’G‘»’B‘¨’B‘µ’B‘¥’B‘º’B’B’B‘º’B‘¸’B‘ ’B’B‘©’B’C‘¹’D ’B’B’B’N‘º
+               ’B’B‘¬’B‘µ’B‘¥’B‘º’B’B’B‘º’B‘¸’B‘ ’B’B‘©’B‘­’B‘±’B‘±’B’B’B‘·’B’B’G’E‘¬’B’B’N‘º’B‘¼’B’D’D‘¼’B‘¬ ’H‘±’F‘² ’B‘¬’B‘±’B‘±’B’Bâ€
+               ’B‘·’B’B‘©’B’G‘Ÿ‘¦’B’B‘¨’B’N‘º’C‘¹’D ’B’B’B‘µ’B‘¥’B‘º’B’B’B‘º’B‘¸’B‘ ’B’B‘©’B‘­ -spmodel ’B‘¥’E’D‘¬’B‘¥’B’B’N‘º
+
+            -transp  float
+               ’H’H’D’G‘¨’B‘©’D‘­‘¼’B’B’G‘½‘»’D ’B‘¬’E‘½’D‘£’B’B’B‘©’B’B‘¡’B’E’D‘¬’B’B’N‘º(default: 0.0)
+
+            -demo
+
+               -progout -quiet’B‘¦’D’F’N‘º
+
+            -mbr
+
+            -nombr
+
+            -mbr_wwer
+
+            -mbr_weight
+
+ENVIRONMENT VARIABLES
+        ALSADEV
+           (’B’B‘¢’B‘­’D‘£’D’B‘¥ alsa ’B’B’B‘¢’B‘·’C‘»‘½’F‘¦’E) ’H‘°’H‘±’B’B’B‘¢’B‘·’D’B’E’D‘¬’B’B’N‘º ’E’D‘¬’B’B‘¨’B’D ‘²’D’B‘­
+           "default"’N‘º
+
+        AUDIODEV
+           (’B’B‘¢’B‘­’D‘£’D’B‘¥ oss ’B’B’B‘¢’B‘·’C‘»‘½’F‘¦’E) ’H‘°’H‘±’B’B’B‘¢’B‘·’D’B’E’D‘¬’B’B’N‘º ’E’D‘¬’B’B‘¨’B’D ‘²’D’B‘­
+           "/dev/dsp"’N‘º
+
+        PORTAUDIO_DEV
+           (portaudio V19 ’C‘»‘½’F‘¦’E) ’H‘°’H‘±’B’B’B‘¢’B‘·’D’B’E’D‘¬’B’B’N‘º ’D‘µ’C‘»’F’B‘¨’E’D‘¬’E‘·’E‘±’B‘­ adinrec
+           ’B‘¬’D’E’D’E’B‘©’B’B‘®’B‘©’D‘¸’D’B’B’B’B‘¬’B‘¥’D’F‘¥’B‘¬’B’B‘¦’N‘º
+
+        LATENCY_MSEC
+           Linux (alsa/oss) ’B’B’B‘± Windows ’B‘¥’N‘º’B’B‘¢’B‘­’D‘£’D’E’B‘¬’H’D‘¹‘´’E’H’B’B
+           ’B‘¨’F‘¥’D’C‘»’B‘¥’E’D‘¬’B’B’N‘º’F’B’D‘¢’B’G‘¦’D‘¬’B’B’B’B‘¦’B‘¥’D‘£’D’H’D‘¹‘´’B’D‘®’B’B’B‘¥’B ’B’B’N‘ºCPU
+           ’B‘¬’G‘° ’G‘µ’B’D‘¢‘¥’B’B’B‘¨’B’N‘º’B‘¼’B’F‘®’D‘ ’B‘©’B’B‘¡’B‘¤’B‘­’B’B’B‘¹’B‘·’BOS’B‘¬
+           ’E’D’B’C‘¶’D‘¬’D‘¬’B‘©’B‘¨’B’B’B‘¦’B’B’B’N‘º’E’H‘§’B‘¨’D‘¢’B‘­OS ’B’B’B’B‘¢’B‘·’B‘©’D‘¢‘¥’B’B ’C‘¼’Dâ€
+           ’B’B’N‘º’B’B’B‘§’B‘©’B’D‘¢’B‘­’D’C‘»’F‘®’D‘ ’B‘©’C‘¼’D’B’B’N‘º
+
+EXAMPLES
+       ’C‘»‘½’F‘¦’C‘¼’B‘©’B‘¢’B’B‘¤’B‘­’C‘¹’D‘¯’B‘¬’B’B‘£’B‘º’B’B‘¨’B‘ ’B‘©’B’B’G‘¤‘¥’C‘¶’B’B’N‘º
+
+SEE ALSO
+       julian(1), jcontrol(1), adinrec(1), adintool(1), mkbingram(1),
+       mkbinhmm(1), mkgsmm(1), wav2mfcc(1), mkss(1)
+
+       http://julius.sourceforge.jp/[1]
+
+DIAGNOSTICS
+       ’E‘¡’D‘¶‘¶’F‘³’C‘¸’B’B’D ‘²’D’N‘ºJulius ’B‘­ exit status ’B‘¦’B’B‘¤ 0
+       ’B’G‘½’B’B‘¼’B’N‘º’B‘¦’B‘§’B‘º’B’G‘¤’C‘¹’B’B‘¡’B’D ‘²’D’B‘­’F‘®’D‘¶‘¶’F‘³’C‘¸’B’N‘º exist status ’B‘¦’B’B‘¤ 1
+       ’B’G‘½’B’B‘¼’B’N‘º ’D‘£’D’B’B‘Ÿ’B‘¢’B‘©’B’G‘¤’B‘¢’B’B’B‘¨’B’D ‘²’D’B’B’B‘¼’B’G‘¨’B‘½’G‘¼‘º’B’B‘¨’B’B‘¡’B’D ‘²’D’B‘­’N‘º’B’B‘¬’B’B‘Ÿ
+       ’B‘¢’B‘©’B‘©’D‘­‘¼’B’B’D‘¤’F’B’B‘·’B’B’B’B’B‘¼’B’N‘º
+
+BUGS
+       ’C‘»‘½’F‘¦’B‘¥’B’B’B‘ ’B’B‘©’B‘©’B‘­’B‘³’B‘¢’B‘¸’B’B‘½’B‘¢’B’B‘©’G‘£’D‘·‘°’B‘¬’D‘´’H’B’B’B’B‘¼’B’N‘º’G‘§‘±’B’B
+       ’B‘­’B’B’B‘¯’B‘º’B‘¶’B‘©’C‘¹’D‘¯’B‘¬’B’B’B‘£’B‘Ÿ’B‘±’B’B’D’F‘¥’B’B‘¤’B’B ’B’B’N‘º ’B’B‘®’D ‘¯’D’B‘¹’D’B’D’B’B’B‘¹’B‘±’B‘Ÿ’B‘±’B’B‘¨’B‘§’B‘­
+       julius-info at lists.sourceforge.jp ’B‘¼’B‘¥’B’H‘Ÿ’B’B’B‘¼’B’N‘º
+
+COPYRIGHT
+       Copyright (c) 1991-2013 ’C‘¸‘ª’H‘»’D‘¢‘¥’D‘¤ ’E‘°‘±’D’F ’F‘§‘´’D‘¬‘¢
+
+       Copyright (c) 1997-2000 ’E’D ‘¯’D‘¤’F’E‘­’G’C‘¸’E‘£’D’C‘º(IPA)
+
+       Copyright (c) 2000-2005 ’D‘£’G‘­’D’F‘©‘­’F‘¥’D‘¤’E’G‘Ÿ’D‘¢‘¥’D‘¤’H‘ ’D‘¢‘¥’D‘¤ ’H‘·‘½’H’F ’F‘§‘´’D‘¬‘¢
+
+       Copyright (c) 2005-2013 ’D’D‘¢’D‘¯’D‘µ‘£’E‘£’D‘¢‘¥’D‘¤ Julius’H’F‘¸’B’B‘º’B
+
+AUTHORS
+       Rev.1.0 (1998/02/20)
+           ’G‘¦’G‘¦’N‘º’E‘°‘±’D’H’C‘·’B‘¦’E ’E’C‘º‘¶ (’C‘¸‘ª’H‘»’D‘¢‘¥’D‘¤)
+
+           ’D‘¬’G‘¡’N‘º’E ’E’C‘º‘¶ (’C‘¸‘ª’H‘»’D‘¢‘¥’D‘¤)
+
+       Rev.1.1 (1998/04/14), Rev.1.2 (1998/10/31), Rev.2.0 (1999/02/20),
+       Rev.2.1 (1999/04/20), Rev.2.2 (1999/10/04), Rev.3.0 (2000/02/14),
+       Rev.3.1 (2000/05/11)
+           ’D‘¬’G‘¡’N‘º’E ’E’C‘º‘¶ (’C‘¸‘ª’H‘»’D‘¢‘¥’D‘¤)
+
+       Rev.3.2 (2001/08/15), Rev.3.3 (2002/09/11), Rev.3.4 (2003/10/01),
+       Rev.3.4.1 (2004/02/25), Rev.3.4.2 (2004/04/30)
+           ’D‘¬’G‘¡’N‘º’E ’E’C‘º‘¶ (’D‘£’G‘­’D’F‘©‘­’F‘¥’D‘¤’E’G‘Ÿ’D‘¢‘¥’D‘¤’H‘ ’D‘¢‘¥’D‘¤)
+
+       Rev.3.5 (2005/11/11), Rev.3.5.1 (2006/03/31), Rev.3.5.2 (2006/07/31),
+       Rev.3.5.3 (2006/12/29), Rev.4.0 (2007/12/19), Rev.4.1 (2008/10/03),
+       Rev.4.1.5 (2010/06/04), Rev.4.2 (2011/05/01), Rev.4.2.1 (2011/12/25),
+       Rev.4.2.2 (2012/08/01), Rev.4.2.3 (2013/06/30), Rev.4.3 (2013/12/25)
+           ’D‘¬’G‘¡’N‘º’E ’E’C‘º‘¶ (’D’D‘¢’D‘¯’D‘µ‘£’E‘£’D‘¢‘¥’D‘¤)
+
+THANKS TO
+       ’B’B‘¬’B’B’B‘®’B‘§’B ’B‘­ Rev.3.1 ’B‘¼’B‘¥’N‘º’E’D ‘¯’D‘¤’F’E‘­’G’C‘¸’E‘£’D’C‘º(IPA)’F‘ª’D‘³’F’E’D ‘¯’E’G‘Ÿ’G‘° ’E’C‘¸’E‘£â€
+       ’B’E‘£’E‘ª’G‘¨’B’B‘¡’B‘­’B’B‘º’B‘µ’B‘¥’B‘±’B‘¬’D‘¸’E‘ª’B‘»’B’B’B‘¤’B‘¥’B‘ ’B‘¬’H’F‘¸’B(’C‘¹‘¡’G‘Ÿ‘¦’G’N‘º’H‘·‘½’H ’E‘¶’D‘¬
+       ’D‘£’G‘­’D’F‘©‘­’F‘¥’D‘¤’E’G‘Ÿ’D‘¢‘¥’D‘¤’H‘ ’D‘¢‘¥’D‘¤’E’E)’B‘¬’E‘²’D‘§’B’D’B’B‘¤’G‘Ÿ’B’B’B‘¼’B’B’N‘º
+       Rev.3.4.2’B‘¼’B‘¥’B‘­’B’E’D ‘¯’D‘¤’F’D‘¤’C‘º ’H‘¡’F‘´’H‘±’D‘¡‘®’G‘¨’G’B‘±’B‘±’B‘»’B‘º’B‘µ’B‘ ’B ’B’B‘©’B’B’B‘¤’D‘ª’H’B
+       ’B’B‘¼’B’B’N‘º
+
+       3.x ’E’C‘¹‘¡’B‘¬’B’B‘©’B’B’B‘§’B’B’B’B‘§’B‘º’B  DLL’F ’B‘­’N‘º’E‘½’H’F‘¥’E‘¦‘·’E‘®(’F‘¼’D’D’D‘¢‘¥’D‘¤)’B‘¬’E
+       ’B‘©’B’B‘¡’B‘¤’C‘»’E’B‘¹’D‘ª’H’B’B’B‘¼’B’B’N‘º’B‘¼’B’N‘ºWindows Microsoft Speech API’D‘­‘¼’D‘½’F’B‘­
+       ’C‘»’D’G‘°‘²’D‘½’E‘®(’C‘¸‘ª’H‘»’D‘¢‘¥’D‘¤’B‘¹’D‘»’E)’B‘¬’E’B‘©’B’B’B’B‘¬’B‘¥’B’N‘º
+
+       ’B’B‘¬’B‘¹’B’N‘º’C‘¶’G‘¦’B‘¬’D’D’B‘¹’G‘°‘ ’F‘¬’B’B‘¤’B’B ’B’B‘¡’B’E‘·’B’N‘º’B’B’B‘±’B’B‘¼’B’B‘¼’B‘¨’D‘§’G‘¦’B‘¹’B‘±
+       ’B‘Ÿ’B‘±’B’B’B’B’B ’B’H‘ ’C‘½’G’D’C‘»’B‘©’E‘µ‘¯’B’E’G‘ª’B’B’B’B‘¼’B’N‘º
+
+’E‘±‘¦’G‘¦
+        1. http://julius.sourceforge.jp/
+           http://julius.sourceforge.jp/en/
+
+
+
+                                  19/12/2013                         JULIUS(1)

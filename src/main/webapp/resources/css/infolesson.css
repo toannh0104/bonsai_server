@@ -1,0 +1,213 @@
+.wrapper {
+	height: 100%;
+	width: 100%;
+}
+
+div#header {
+	/* height: 9%; */
+	width: 100%;
+}
+
+div#info-lesson {
+	width: 100%;
+	border-top: 1px solid #444;
+	overflow: hidden;
+}
+
+div#scenario {
+	min-height: 35%;
+	width: 100%;
+	border-top: 1px solid #444;
+	overflow: hidden;
+}
+
+div#vocabulary {
+	min-height: 35%;
+	width: 100%;
+	border-top: 1px solid #444;
+	overflow: hidden;
+}
+
+.wrapper-info-lesson {
+	width: 99%;
+	padding: 5px;
+	font-size: 99%;
+	overflow: hidden;
+}
+
+.col4 {
+	width: 80%;
+	float: left;
+	position: relative;
+}
+
+.col1 {
+	width: 20%;
+	float: left;
+	position: relative;
+}
+
+.col2 {
+	width: 40%;
+	float: left;
+	position: relative;
+}
+
+.col3 {
+	width: 60%;
+	float: left;
+	position: relative;
+}
+
+.col5 {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+.col2 img {
+	height: 20;
+    max-width: 20px;
+    vertical-align: middle;
+    border: 0;
+}
+.mar-bot5 {
+	margin-bottom: 5px;
+}
+
+.pad-left5 {
+	padding-left: 5px;
+	width: 19%;
+}
+
+.row {
+	overflow: hidden;
+	display: inline-block;
+	width: 100%;
+	margin-left: 0px !important;
+}
+
+#modal_dialog {
+	background-color: #FFF;
+	position: fixed;
+	border: 1px solid #000;
+	display: none;
+	z-index: 5000;
+}
+
+#overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 3000;
+	display: none;
+	background-color: #444;
+}
+
+#modal_dialog_title {
+	width: 100%;
+	background-color: #A5A2A2;
+	color: #fff;
+	padding: 10px;
+	margin-bottom: 10px;
+	font-size: 125%;
+}
+
+.lessonNoDialog, .practice, .test {
+	padding-left: 15px;
+	padding-right: 15px;
+	overflow: hidden;
+}
+
+.lessonNoDialog span, .practice span, .test span {
+	display: inline-block;
+	float: left;
+	width: 100%;
+	margin-bottom: 20px;
+	font-size: 115%;
+}
+
+.lessonNoDialog span input, .practice span input, .test span input, .wrap-for-dialog span input  {
+	width: 50%;
+	border: none;
+	border-bottom: 1px solid #444;
+	margin-left: 10px;
+	font-size: 115%;
+	float: right;
+}
+
+p {
+	/* clear: both; */
+	float: left;
+	position: relative;
+}
+.lessonNoDialog span p, .practice span p, .test span p {
+	clear: none;
+	float: left;
+	position: relative;
+}
+
+p.pos-right {
+	float: right;
+	padding-right: 10px;
+	border-right: 1px solid #444;
+	margin-bottom: 5px;
+}
+
+.lessonNoDialog span p.float-right, .practice span p.float-right, .test span p.float-right {
+	float: right;
+	clear: none;
+}
+
+.mar-left {
+    float: left;
+}
+
+.mar-right {
+    float: right;
+}
+
+.width-10 {
+    width: 10%;
+}
+
+.width-15 {
+    width: 15%;
+}
+
+.col3 p {
+    width: 98%;
+}
+
+.width-30 {
+    width: 29%;
+}
+
+.width-7 {
+    width: 8%;
+}
+
+.active {
+    color: red;
+}
+
+span.mar-left-10 {
+    margin-left: 10px;
+}
+span.mar-left-2-per {
+    margin-left: 2%;
+}
+span.mar-left-8-per {
+    margin-left: 8%;
+}
+span.mar-left-10-per {
+    margin-left: 10%;
+}
+span.mar-left-14-per {
+    margin-left: 14%;
+}
+span.mar-left-23-per {
+    margin-left: 23%;
+}

@@ -1,0 +1,69 @@
+    mkdfa.pl
+
+MKDFA.PL(1)                                                        MKDFA.PL(1)
+
+
+
+’D’D
+           mkdfa.pl
+          - Julius ’D‘»‘ ’D‘º’B‘¬’E’E‘±’B’B‘¨’B‘º’B’B’B’B‘±’B‘©’D‘¢’E’B’B’B‘±’B‘±’B’B‘¢’B‘§
+
+’E‘¤’G‘¤
+       mkdfa.pl [options...] {prefix}
+
+DESCRIPTION
+       mkdfa.pl ’B‘­ Julius ’B‘¬’E’E‘±’B‘±’B‘±’B’B‘¢’B‘§’B‘¥’B’N‘º’G‘¦’G‘½‘®’B’B’B’E’E‘±’B’B‘Ÿ’B‘¢’B‘© (.grammar)
+       ’B‘¦’G‘¨’D‘»’B’B‘Ÿ’B‘¢’B‘© (.voca) ’B’B’N‘ºJulius’F‘¦’B‘¬’E’H’F‘´’E’B‘¨’B‘º’B’B’B’B‘± ’B’B‘Ÿ’B‘¢’B‘© (.dfa)
+       ’B’B’B‘±’G‘¨’G’G‘¼’E‘¶ (.dict) ’B’F’E’B’B‘¼’B’N‘º’B‘©’B’B‘²’B‘¨’D’B‘¦’F’E ’D‘¼’B‘¬’D’B’B‘Ÿ’B‘¢’B‘©’B‘¥’F‘¦’B’B’B’B’B‘©’B’B‘²’B‘¨
+       ID ’F‘¨’D‘µ’B‘¦’B‘¬’D‘­‘¼’D‘½’B .term ’B’B‘Ÿ’B‘¢’B‘©’B‘¦ ’B’B‘¤’D‘¸’D’B’B’B‘¼’B’N‘º
+
+       ’D’B’B‘Ÿ’B‘¢’B‘©’D‘»‘ ’D‘º’B‘¬’G‘§‘±’F‘²‘®’B‘©’B‘¢’B’B‘¤’B‘­’N‘º’D‘£’H’B’B’B‘£’B‘Ÿ’B‘±’B’B’B’G‘¤‘¥’C‘¶’B’B’N‘º
+
+       prefix ’B‘­’N‘º.grammar ’B’B‘Ÿ’B‘¢’B‘©’B’B’B‘± .voca’B’B‘Ÿ’B‘¢’B‘©’B‘¬
+       ’B’B‘ª’B’B‘¡’B’B‘­’B‘·’B’D‘º’E‘®’B‘¦’B’B‘¤’C‘¶’B’B‘¼’B’N‘ºprefix.grammar’B‘¦ prefix.voca’B’Bprefix.dfa’N‘º
+       prefix.dict’B’B’B‘± prefix.term’B’F’E’B’B’B‘¼’B’N‘º
+
+       ’B’B‘º’B‘¶’B‘¥’B‘± 3.5.3 ’C‘¹‘£’H’B‘¬ Julius ’B‘©’C‘¹’D‘¯’B‘¬ mkdfa.pl ’B‘­’N‘º dfa_minimize
+       ’B’D’H‘¦’B‘¥’G‘¨’D’F’B‘©’D‘º’B‘±’D‘¸’B’B‘¬’B‘¥’N‘º ’D‘¸’D’B’B’B .dfa ’B‘­’D‘¶‘¶’B‘©’E’D‘®’D’B’B’B‘¤’B’B‘¼’B’N‘º
+
+OPTIONS
+        -n
+           ’G‘¼’E‘¶’B’D‘¸’D’B’B‘¨’B’N‘º.voca ’F‘Ÿ’B’B‘¥ .grammar ’B‘¬’B‘½’B .dfa ’B‘©’D‘¢’E’B’B ’B’B‘¦’B’B‘¥’B’B’N‘º
+
+ENVIRONMENT VARIABLES
+        TMP ’B‘¼’B’B‘­ TEMP
+           ’D‘¢’E’C‘¶’B‘©’C‘¶’E’B’B‘Ÿ’B‘¢’B‘©’B’F‘»‘¬’B’B’B‘¡’B‘ª’B‘­’B’B‘¨’B’E’D‘¬’B’B’N‘º ’E’D‘¬’B’F‘Ÿ’B’D ‘²’D’N‘º /tmp,
+           /var/tmp, /WINDOWS/Temp, /WINNT/Temp
+           ’B‘¬’H ’B‘¥’E’D’B‘©’G‘¤’B‘¢’B’B‘¡’B’D ‘²’E’B’C‘»‘½’F‘¦’B’B’B’N‘º
+
+EXAMPLES
+       ’E’E‘±’B’B‘Ÿ’B‘¢’B‘© foo.grammar, foo.voca’B‘© ’D‘­‘¼’B’B‘¤’C‘¹‘£’C‘¶’B’D‘¬’G‘Ÿ’B’B’B’B‘¦’B‘¥ foo.dfa’B‘¦
+       foo.voca’B’B’B‘±foo.term’B’D‘¸’D’B’B’B’N‘º
+
+SEE ALSO
+        julius ( 1 ) ,
+        generate ( 1 ) ,
+        nextword ( 1 ) ,
+        accept_check ( 1 ) ,
+        dfa_minimize ( 1 )
+
+DIAGNOSTICS
+       mkdfa.pl ’B‘­’D’H‘¦’B‘¥ mkfa ’B’B’B‘± dfa_minimize
+       ’B’D‘º’B‘±’D‘¸’B’B‘¼’B’N‘º’D‘¬’G‘Ÿ’E’N‘º’B’B’B’B‘¬’D‘¬’G‘Ÿ’B’B‘Ÿ ’B‘¢’B‘©’B’N‘º’B’B‘¬ mkdfa.pl
+       ’B‘¦’D’B’B’B‘¡’B‘ª’B‘­’B’B‘¨’B‘©’F‘»‘¬’B’B‘¤’B’B’D‘½’G‘¤’B’B’B’B‘¼’B’N‘º ’B’B’B’B‘­Julius ’B‘©’D’E‘ ‘¯’B’B’B‘¤’B’B‘¼’B’N‘º
+
+COPYRIGHT
+       Copyright (c) 1991-2013 ’C‘¸‘ª’H‘»’D‘¢‘¥’D‘¤ ’E‘°‘±’D’F ’F‘§‘´’D‘¬‘¢
+
+       Copyright (c) 1997-2000 ’E’D ‘¯’D‘¤’F’E‘­’G’C‘¸’E‘£’D’C‘º(IPA)
+
+       Copyright (c) 2000-2005 ’D‘£’G‘­’D’F‘©‘­’F‘¥’D‘¤’E’G‘Ÿ’D‘¢‘¥’D‘¤’H‘ ’D‘¢‘¥’D‘¤ ’H‘·‘½’H’F ’F‘§‘´’D‘¬‘¢
+
+       Copyright (c) 2005-2013 ’D’D‘¢’D‘¯’D‘µ‘£’E‘£’D‘¢‘¥’D‘¤ Julius’H’F‘¸’B’B‘º’B
+
+LICENSE
+       Julius ’B‘¬’C‘»‘½’F‘¦’G‘¦‘¯’G‘©‘¼’B‘©’E‘¸’B’B‘¼’B’N‘º
+
+
+
+                                  19/12/2013                       MKDFA.PL(1)

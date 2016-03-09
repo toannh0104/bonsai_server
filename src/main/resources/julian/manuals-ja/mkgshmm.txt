@@ -1,0 +1,50 @@
+    mkgshmm
+
+MKGSHMM(1)                                                          MKGSHMM(1)
+
+
+
+’D’D
+           mkgshmm
+          - ’B‘ ’B’B’B‘§’B‘±HMM’B GMS ’F‘¦’B‘©’D‘¢’E’B’B
+
+’E‘¤’G‘¤
+       mkgshmm {monophone_hmmdefs}
+                 >
+                  {outputfile}
+
+DESCRIPTION
+       mkgshmm ’B‘­HTK’D‘»‘ ’D‘º’B‘¬monophone HMM’B Julius ’B‘¬ Gaussian Mixture Selection
+       (GMS) ’F‘¦’B‘©’D‘¢’E’B’Bperl’B‘·’B‘­’B‘¨’B’B’B‘¥’B’N‘º
+
+       GMS’B‘­Julius-3.2’B’B’B‘³’B’B‘º’B’B’B’B‘¤’B’B’H‘±’H‘½’D‘®‘¢’D‘¸‘¤’G‘¦’F‘¬’B‘¬’H‘©’H’D’E’E‘±’B‘¥’B’N‘º ’B’B‘ª’B‘º’B ’B’B‘¦’B‘©
+       monophone ’B‘¬’F‘´’E’D‘®‘¢’D‘¸‘¤’B‘©’D‘¸’B‘£’B’B‘¤triphone’BPTM’B‘¬’F‘´’E’B’C‘¸
+       ’D’H‘¶’E’B’B’B’B‘¦’B‘¥’N‘º’H‘±’H‘½’D‘®‘¢’D‘¸‘¤’G‘¦’F‘¬’B’H‘©’H’D’B’B’B‘¼’B’N‘º
+
+EXAMPLES
+       ’B‘¼’B’B‘½’B‘º’B‘°’B’B’B‘¦’B’Btriphone’BPTM’B‘©’D‘­‘¼’B’B‘¤’N‘º’D’B’B‘±’B‘º’B’B‘·’B‘¥’D‘¤’F‘½’B’B monophone
+       ’B‘ ’B’B‘©’B’F‘¦’E’B’B‘¼’B’N‘º
+
+       ’E‘ª‘Ÿ’B‘©’B’B‘¬monophone’B‘ ’B’B‘©’B mkgshmm ’B’F‘¦’B’B‘¤ GMS ’F‘¦’B‘©’D‘¢’E’B’B‘¼’B’N‘º
+       ’B’B’B Julius ’B‘¥ "-gshmm" ’B‘¥’E’D‘¬’B’B‘¼’B’N‘º
+       GMS’F‘¦’B‘ ’B’B‘©’B‘­triphone’BPTM’B‘¦’D’C‘¶’B‘¬’B‘±’B‘º’B’B‘·’B’B’C‘»’E’B’B’D‘½’G‘¤’B’B’B’F‘·’B‘©’E‘±‘¦
+       ’E’B’B‘¤’B’B ’B’B’N‘ºgshmm ’B’B’B‘·’B’B’B’B ’B‘¦’H‘¶’E’G‘¨‘¢’B’B’F’B’N‘º’E‘¥’G‘»’B’D‘¡’D’B’B‘¼’B’N‘º
+
+SEE ALSO
+        julius ( 1 )
+
+COPYRIGHT
+       Copyright (c) 1991-2013 ’C‘¸‘ª’H‘»’D‘¢‘¥’D‘¤ ’E‘°‘±’D’F ’F‘§‘´’D‘¬‘¢
+
+       Copyright (c) 1997-2000 ’E’D ‘¯’D‘¤’F’E‘­’G’C‘¸’E‘£’D’C‘º(IPA)
+
+       Copyright (c) 2000-2005 ’D‘£’G‘­’D’F‘©‘­’F‘¥’D‘¤’E’G‘Ÿ’D‘¢‘¥’D‘¤’H‘ ’D‘¢‘¥’D‘¤ ’H‘·‘½’H’F ’F‘§‘´’D‘¬‘¢
+
+       Copyright (c) 2005-2013 ’D’D‘¢’D‘¯’D‘µ‘£’E‘£’D‘¢‘¥’D‘¤ Julius’H’F‘¸’B’B‘º’B
+
+LICENSE
+       Julius ’B‘¬’C‘»‘½’F‘¦’G‘¦‘¯’G‘©‘¼’B‘©’E‘¸’B’B‘¼’B’N‘º
+
+
+
+                                  19/12/2013                        MKGSHMM(1)

@@ -1,0 +1,78 @@
+    accept_check
+
+ACCEPT_CHECK(1)                                                ACCEPT_CHECK(1)
+
+
+
+’D’D
+           accept_check
+          - ’E’E‘±’B‘©’B’B’B’D’G‘¨’D’B‘¬’D’F/’H’D’F’B’B‘¥’B’B‘­
+
+’E‘¤’G‘¤
+       accept_check [-t] [-s spname] [-v] {prefix}
+
+DESCRIPTION
+       accept_check ’B‘­’N‘º’E’E‘±’B‘¥’E’B‘¬’D’F’B‘¹’H’D’F’B’D‘¢’D‘¬’B’B’B’B‘º’B‘©’B‘¥’B’N‘º’E’B‘­’E‘¦’E‘¸
+       ’D‘£’D’B’B’C‘¶’B’B‘¼’B’N‘º’D’F’B’B‘·’B’E’B’C‘¶’G‘Ÿ’B’B‘¢’B’B’B‘·’B’B’B‘Ÿ’B‘¢’B‘©’B‘©’B‘¼’B‘¦’B’B‘¤’E‘¶’B
+       ’B‘¤’B’B’N‘º’B’B’Baccept_check ’B‘¬’E‘¦’E‘¸’D‘£’D’B‘©’C‘¶’B’B’B’B‘¦’B‘¥’N‘º’B’B‘¬’E’E‘± (prefix.dfa ’B’B’B‘±
+       prefix.dict) ’B‘©’B’B’B‘¤’F‘¬’F’B‘¬’E’B’D’F’B’B’B’B’B‘§’B’B’B’B’B’B’F’B‘©’B’B‘¥’B’B‘­’B‘¥’B’B‘¼’B’N‘º
+
+       ’D‘¬’G‘Ÿ’B‘©’B‘­ .dfa, .dict, .term ’B‘¬’D’B’B‘Ÿ’B‘¢’B‘©’B’D‘½’G‘¤’B‘¥’B’N‘º ’B’B’B’B’B mkdfa.pl
+       ’B‘¥’F’E’B’B‘¤’B’B’B‘¤’C‘¶’B’B’N‘º
+
+       ’D‘­‘¼’G‘¯‘Ÿ’B‘¦’B’B’E’B‘­’N‘º’E’E‘±’B‘¬’G‘¨’D‘»’D’C‘»(.voca’B‘¬’F‘ª‘ª1’B’B‘¡’B‘º’B‘©’B)’B‘¥’F‘§‘¸’F‘»’B‘¥’D‘¸’D’B‘¡’B‘¤’C‘¶
+       ’B’B‘¼’B’N‘º’E’D’B‘¦’E’D‘¼’B‘©’B‘­’D‘¢’B’B‘¬’D ‘²’D silB, silE ’B’D‘½’G‘¤’B‘¥’B’B’B’B‘¦’B‘©’E‘®’B’B‘¢’B’B‘¤’C‘¶’B’B’N‘º’B‘¼’B’N‘º
+       ’B‘µ’B‘¥’B‘º’B’B’B‘º’B‘¸’D’G‘¨’B‘­’E’B‘©’D‘©’B’B‘¨’B’B‘¥’B’B ’B’B’N‘º
+
+       ’D’C‘¶’G‘Ÿ‘¦’G‘¦’B‘¬’D’G‘¨’B’G‘¢’E‘®’B’B’D ‘²’D’N‘ºaccept_check ’B‘­’B’B‘¬’D‘­’G‘»’B‘¨’G‘¥‘¡’H’B‘¬’D‘¦’B‘¤’B‘¬’F‘³
+       ’B‘½’D’B’B’B‘©’B‘¢’B’B‘¤’G‘¨‘½’B‘·’N‘º’B‘§’B’B’N‘º’B‘¢’B‘¬’B’B‘½’B‘º’B‘±’B‘¥’B’D’F’D‘­’G‘»’B‘¥’B’B’B‘®’D’F’N‘º’B
+       ’B‘·’B‘¤’B‘¬’B’B‘½’B‘º’B‘±’B‘¥’D’F’C‘¶’D‘­’G‘»’B‘¥’B’B’B‘®’D’F’C‘¶’D‘­’G‘»’B‘¦’B’B‘¼’B’N‘º
+
+OPTIONS
+        -t
+           ’D’G‘¨’B‘¥’B‘­’B‘¨’B’B‘©’B’B‘²’B‘¨’D’B‘¥’D‘£’D’B‘¹’D‘¸’D’B’B’N‘º
+
+        -s  spname
+           ’B‘·’B’B’B’B’B‘·’B’B‘µ’B‘¥’B‘º’B’B’B‘º’B‘¸’D’G‘¨’B‘¬’D’D’B’E’D‘¬’B’B’N‘º (default: "sp")
+
+        -v
+           ’B’B’B’B‘®’D‘¸’D’N‘º
+
+EXAMPLES
+       vfr (’B’B‘¡’B’B’B‘¡’B‘±’B‘®’B‘½’B‘·’B‘­’F‘¦’E’E‘±) ’B‘¥’B‘¬’D‘¬’G‘Ÿ’C‘¼’N‘º
+
+           % accept_check vfr
+           Reading in dictionary...done
+           Reading in DFA grammar...done
+           Mapping dict item <-> DFA terminal (category)...done
+           Reading in term file (optional)...done
+           42 categories, 99 words
+           DFA has 135 nodes and 198 arcs
+           -----
+           please input word sequence>silB ’F‘» ’B‘© ’B’B‘¤ ’C‘¶’B’B silE
+           wseq: silB ’F‘» ’B‘© ’B’B‘¤ ’C‘¶’B’B silE
+           cate: NS_B COLOR_N (NI|NI_AT) SURU_V KUDASAI_V NS_E
+           accepted
+           please input word sequence>
+
+
+SEE ALSO
+        mkdfa.pl ( 1 ) ,
+        generate ( 1 ) ,
+        nextword ( 1 )
+
+COPYRIGHT
+       Copyright (c) 1991-2013 ’C‘¸‘ª’H‘»’D‘¢‘¥’D‘¤ ’E‘°‘±’D’F ’F‘§‘´’D‘¬‘¢
+
+       Copyright (c) 1997-2000 ’E’D ‘¯’D‘¤’F’E‘­’G’C‘¸’E‘£’D’C‘º(IPA)
+
+       Copyright (c) 2000-2005 ’D‘£’G‘­’D’F‘©‘­’F‘¥’D‘¤’E’G‘Ÿ’D‘¢‘¥’D‘¤’H‘ ’D‘¢‘¥’D‘¤ ’H‘·‘½’H’F ’F‘§‘´’D‘¬‘¢
+
+       Copyright (c) 2005-2013 ’D’D‘¢’D‘¯’D‘µ‘£’E‘£’D‘¢‘¥’D‘¤ Julius’H’F‘¸’B’B‘º’B
+
+LICENSE
+       Julius ’B‘¬’C‘»‘½’F‘¦’G‘¦‘¯’G‘©‘¼’B‘©’E‘¸’B’B‘¼’B’N‘º
+
+
+
+                                  19/12/2013                   ACCEPT_CHECK(1)

@@ -1,0 +1,2 @@
+-dfa ../grammar/sample.dfa
+-v ../grammar/sample.dict

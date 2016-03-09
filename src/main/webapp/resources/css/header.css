@@ -1,0 +1,188 @@
+.group1 {
+	width: 39%;
+	float: left;
+}
+
+ .group2 {
+	width: 30%;
+	float: left;
+}
+
+.separator {
+	width: 1%;
+	float: left;
+	padding-top: 12px;
+}
+
+.lessioninfo {
+	clear: both;
+}
+
+.group3 {
+	float: left;
+	width: 24%;
+}
+
+.group4 {
+	padding-top: 12px;
+	float: right;
+}
+
+.border_top {
+	border-top: 1px solid #CCC;
+}
+
+.namedag, .methoddag, .leveldag, .administratordag {
+	padding-left: 15px;
+	padding-right: 15px;
+	overflow: hidden;
+}
+
+.namedag span input, .methoddag span input, .leveldag span input,
+	.administratordag span input {
+	width: 60%;
+	border: none;
+	border-bottom: 1px solid #444;
+	margin-left: 10px;
+	font-size: 115%;
+	float: right;
+}
+
+.namedag span, .methoddag span, .leveldag span {
+	display: inline-block;
+	float: left;
+	width: 100%;
+	margin-bottom: 20px;
+	font-size: 115%;
+}
+
+.administratordag input {
+	width: 100%;
+	margin-bottom: 10px;
+	font-size: 110%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.comp_ave {
+	/* padding-left: 112px; */
+	font-size: 10px;
+	position: fixed;
+	left: 10%;
+	bottom: -5px;
+}
+
+.wrapper-header {
+	/* height: 92%; */
+	width: 99%;
+	padding: 5px;
+	font-size: 99%;
+	overflow: hidden;
+}
+.method, .name, .level {
+	/* min-height: 20%; */
+}
+.group3 .group3-col-half {
+    width: 49.5%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.group3 .group3-col-40 {
+    width: 40%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.group3 .group3-col-30 {
+    width: 30%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.group3 .group3-col-35 {
+    width: 35%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.group3 .group3-col-20 {
+    width: 20%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.bor-left {
+    border-left: 1px solid #444;
+}
+
+.group3 .group3-col-60 {
+    width: 60%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.group3 .group3-row {
+    width: 100%;
+    float: left;
+    min-height: 24px;
+    position: relative;
+    overflow: hidden;
+}
+
+.bor-left {
+	border-left: 1px soild #444
+}
+
+.special {
+    width: auto !important;
+    float: left;
+}
+div#loader {
+	 height: 100%;
+	 width: 100%;
+	 position: fixed;
+	 background-color: #fff;
+	 top: 0px;
+	 opacity: 0.5;
+	 z-index: 9999;
+}
+
+.loading {
+	height: 100px;
+	-webkit-animation:spin 2s linear infinite;
+	-moz-animation:spin 2s linear infinite;
+	animation:spin 2s linear infinite;
+	margin: 0 auto;
+}
+@-moz-keyframes spin { 100% {
+	-moz-transform:rotate(360deg);
+	}
+}
+@-webkit-keyframes spin { 100% {
+	-webkit-transform:rotate(360deg);
+	}
+}
+@keyframes spin { 100% {
+	-webkit-transform:rotate(360deg);
+	transform:rotate(360deg);
+	}
+}
+.wrapper-loading img {
+	position: fixed;
+	top: 45%;
+	left: 45%;
+}
+
+.mar-top-12 {
+    margin-top: 12px;
+}
+
+.wall {
+    word-wrap: break-word;
+}

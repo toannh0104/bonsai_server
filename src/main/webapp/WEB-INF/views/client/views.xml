@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+	<definition name="client/start" extends="defaultClient">
+		<put-attribute name="title" value="Client" />
+		<put-attribute name="header" value="/WEB-INF/views/client/header.jsp" />
+		<put-attribute name="infolesson" value="/WEB-INF/views/client/lesson.jsp" />
+		<put-attribute name="scenario" value="/WEB-INF/views/client/scenario.jsp" />
+		<put-attribute name="vocabulary" value="/WEB-INF/views/client/vocabulary.jsp" />
+	</definition>
+	<definition name="client/lesson/list" extends="temp">
+		<put-attribute name="title" value="List Lesson" />
+		<put-attribute name="body" value="/WEB-INF/views/client/listLesson.jsp" />
+	</definition>
+	<definition name="client/security/list" extends="temp">
+		<put-attribute name="title" value="List Lesson" />
+		<put-attribute name="body" value="/WEB-INF/views/client/listSecurity.jsp" />
+	</definition>
+</tiles-definitions>

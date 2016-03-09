@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+	<definition name="lesson/start" extends="default">
+		<put-attribute name="title" value="Admin" />
+		<put-attribute name="header" value="/WEB-INF/views/admin/header.jsp" />
+		<put-attribute name="infolesson" value="/WEB-INF/views/admin/lesson.jsp" />
+		<put-attribute name="scenario" value="/WEB-INF/views/admin/scenario.jsp" />
+		<put-attribute name="vocabulary"
+			value="/WEB-INF/views/admin/vocabulary.jsp" />
+	</definition>
+	<definition name="lesson/list" extends="temp">
+		<put-attribute name="title" value="List Lesson" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/listLesson.jsp" />
+	</definition>
+	<definition name="security/list" extends="temp">
+		<put-attribute name="title" value="List Lesson" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/admin/listSecurity.jsp" />
+	</definition>
+	<definition name="login" extends="temp">
+		<put-attribute name="title" value="List Lesson" />
+		<put-attribute name="body" value="/WEB-INF/views/layout/login.jsp" />
+	</definition>
+	<definition name="log" extends="temp">
+		<put-attribute name="title" value="List Lesson" />
+		<put-attribute name="body" value="/WEB-INF/views/layout/log.jsp" />
+	</definition>
+</tiles-definitions>

@@ -1,0 +1,66 @@
+    mkbinhmmlist
+
+MKBINHMMLIST(1)                                                MKBINHMMLIST(1)
+
+
+
+’D’D
+           mkbinhmmlist
+          - HMMList ’B’B‘Ÿ’B‘¢’B‘©’B’B’B‘¢’B’B‘¨’D‘»‘ ’D‘º’B‘©’D‘¢’E
+
+’E‘¤’G‘¤
+       mkbinhmmlist {hmmdefs_file} {HMMList_file} {output_binhmmlist_file}
+
+DESCRIPTION
+       mkbinhmmlist ’B‘­’N‘º’C‘¶‘¹’B‘©’B’B‘§’B‘¢’B’B‘§’B‘±’B‘¦’B‘¦’B’B‘©’C‘»‘½’F‘¦’B’B’B HMMList ’B’B‘Ÿ’B‘¢’B‘©’B
+       ’B’B‘¢’B’B‘¨’D‘»‘ ’D‘º’B‘©’D‘¢’E’B’B‘¼’B’N‘º’H’D‘¶‘¶’B‘¬’B’B’B‘·’B’D‘»‘ ’D‘º’B‘¬’C‘¹‘¡’B’B’B‘©’B’B’B’C‘»‘½’B’B’B‘¦’B‘¥
+       Julius’B‘¬’G‘³‘µ’D’B’H‘©’H’D’B’B’B’B‘¦’B’B‘¥’B’B‘¼’B’N‘º
+
+       ’D‘¢’E’B‘©’B‘­’N‘ºHMMList ’B’B‘Ÿ’B‘¢’B‘©’B‘¬’B‘¹’B’B‘©’N‘º’C‘¶’F‘µ’B‘©’C‘»‘½’B’H‘±’H‘½’B‘ ’B’B‘©’D‘¬’F‘¼‘§’B’B‘Ÿ’B‘¢’B‘©
+       hmmdefs_file ’B’D‘½’G‘¤’B‘¥’B’N‘ºHTK ASCII’D‘»‘ ’D‘º / Julius’B’B‘¢’B’B‘¨’D‘»‘ ’D‘º’B‘¬’B‘§’B‘Ÿ’B’B’D‘­’N‘º’N‘º
+
+       Julius ’B‘¥’C‘»‘½’F‘¦’B’B’H’B‘©’B‘­’N‘º’H’D‘¶‘¶’B‘¬’B’B’B‘·’B’D‘»‘ ’D‘º’B‘¦’D’B’B "-hlist"
+       ’B‘¨’B’B‘µ’B‘¥’B‘±’B‘¥’E’D‘¬’B’B‘¼’B’N‘º ’B’B’B‘·’B’D‘»‘ ’D‘º’B’B’B‘¢’B’B‘¨’D‘»‘ ’D‘º’B’B‘¬’D‘¢’D‘¬’B‘­ Julius
+       ’D‘²’B‘¥’G‘¨’D’F’B‘©’G‘Ÿ’B’B’B‘¼’B’N‘º
+
+       ’B’B‘º’B‘¶’B‘¥’B‘± 4.2’B’B’H‘±’H‘½’B‘ ’B’B‘©’B’B’E‘»’D‘¸’B’B pseudo phone ’E’D ‘¯’B’E‘¶’B’B ’B
+       ’B’B’B‘©’B‘¨’B’B‘¼’B’B’N‘º’B’B’B‘©’B’BJulius’B‘¬’G‘³‘µ’D’B’H‘©’H’D’B’B’B’B‘¦’B’B‘¥’B’B‘¼’B’N‘º’B
+       ’B ’B’C‘»’E’B’B’H‘±’H‘½’B‘ ’B’B‘©’B‘¦’B‘¹’B’B’B‘¥’C‘»‘½’F‘¦’B’B’D‘½’G‘¤’B’B’B’B‘¼’B’N‘º’B‘¼’B’N‘º’B’B‘¬’B’B‘º ’B‘¶’B‘¥’B‘±’C‘¹‘£’H’B‘¬
+       mkbinhmmlist ’B‘¥’C‘»’E’B’B binhmmlist ’B’B‘Ÿ’B‘¢’B‘©’B‘­’C‘¹‘£’D’B‘¬’B’B‘º’B‘¶’B‘¥
+       ’B‘±’B‘¥’B‘­’C‘»‘½’F‘¦’B‘¥’B’B‘¼’B’B’N‘º
+
+       mkbinhmmlist ’B‘­ gzip ’D‘¥’F‘¶‘¬’B’B’B’B’B‘Ÿ’B‘¢’B‘©’B’B’B‘¬’B‘¼’B‘¼’G‘¨’B‘½’G‘¼‘º’B’B‘¼’B’N‘º
+
+OPTIONS
+       hmmdefs_file
+           ’H‘±’H‘½’B‘ ’B’B‘©’D‘¬’F‘¼‘§’B’B‘Ÿ’B‘¢’B‘©’N‘ºHTK ASCII ’D‘»‘ ’D‘º’N‘º’B’B’B’B‘­Julius ’B’B‘¢’B ’B‘¨’D‘»‘ ’D‘º’N‘º
+
+       HMMList_file
+           ’D‘¢’E’D‘­‘¼’G‘¯‘Ÿ’B‘¬ HMMList ’B’B‘Ÿ’B‘¢’B‘©’N‘º
+
+       output_binhmmlist_file
+           ’D‘¸’D’D’B‘¦’B‘¨’BJulius’F‘¦’B’B‘¢’B’B‘¨’D‘»‘ ’D‘ºHMMList’B’B‘Ÿ’B‘¢’B‘©’N‘º’B’B‘¥’B‘©
+           ’B’B’D ‘²’D’B‘­’C‘¶’E‘¶’B’B’B’B’N‘º
+
+EXAMPLES
+       HMMList ’B’B‘Ÿ’B‘¢’B‘© logicalTri’B’B’B‘¢’B’B‘¨’D‘»‘ ’D‘º’B‘©’D‘¢’E’B’B‘¤ logicalTri.bin ’B‘©’C‘½’D’B’B’N‘º
+
+SEE ALSO
+        julius ( 1 ) ,
+        mkbinhmm ( 1 )
+
+COPYRIGHT
+       Copyright (c) 1991-2013 ’C‘¸‘ª’H‘»’D‘¢‘¥’D‘¤ ’E‘°‘±’D’F ’F‘§‘´’D‘¬‘¢
+
+       Copyright (c) 1997-2000 ’E’D ‘¯’D‘¤’F’E‘­’G’C‘¸’E‘£’D’C‘º(IPA)
+
+       Copyright (c) 2000-2005 ’D‘£’G‘­’D’F‘©‘­’F‘¥’D‘¤’E’G‘Ÿ’D‘¢‘¥’D‘¤’H‘ ’D‘¢‘¥’D‘¤ ’H‘·‘½’H’F ’F‘§‘´’D‘¬‘¢
+
+       Copyright (c) 2005-2013 ’D’D‘¢’D‘¯’D‘µ‘£’E‘£’D‘¢‘¥’D‘¤ Julius’H’F‘¸’B’B‘º’B
+
+LICENSE
+       Julius ’B‘¬’C‘»‘½’F‘¦’G‘¦‘¯’G‘©‘¼’B‘©’E‘¸’B’B‘¼’B’N‘º
+
+
+
+                                  19/12/2013                   MKBINHMMLIST(1)

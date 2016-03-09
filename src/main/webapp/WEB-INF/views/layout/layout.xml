@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+	<!-- default layout -->
+	<definition name="default" template="/WEB-INF/views/layout/default.jsp">
+		<put-attribute name="title" value="Bonsai" />
+		<put-attribute name="css" value="/WEB-INF/views/layout/css.jsp" />
+		<put-attribute name="infolesson" value="" />
+		<put-attribute name="scenario" value="" />
+		<put-attribute name="vocabulary" value="" />
+		<put-attribute name="js" value="/WEB-INF/views/layout/js.jsp" />
+	</definition>
+
+	<definition name="defaultClient" template="/WEB-INF/views/layout/defaultClient.jsp">
+		<put-attribute name="title" value="Bonsai" />
+		<put-attribute name="css" value="/WEB-INF/views/layout/css.jsp" />
+		<put-attribute name="infolesson" value="" />
+		<put-attribute name="scenario" value="" />
+		<put-attribute name="vocabulary" value="" />
+		<put-attribute name="jsClient" value="/WEB-INF/views/layout/jsClient.jsp" />
+	</definition>
+
+	<definition name="temp" template="/WEB-INF/views/layout/temp.jsp">
+		<put-attribute name="title" value="List Lesson" />
+		<put-attribute name="body" value="" />
+	</definition>
+</tiles-definitions>

@@ -1,0 +1,299 @@
+.Lesson,.LearningSyntax,.ContenWho,.ContenYou,.Name,.LanguageScenario,.Information {
+	width: 100%;
+	overflow: hidden;
+}
+
+.ContenWho {
+	margin-bottom: 1%;
+}
+
+#lessonInforArea {
+	width: 75%;
+	float: left;
+}
+
+#practiceInforArea {
+	width: 25%;
+	float: right;
+}
+
+#lessonTitle {
+	float: left;
+}
+
+#lessonName {
+	width: 20%;
+	float: left;
+}
+
+#lessonNameEn {
+	width: 25%;
+	float: left;
+}
+
+#lessonNamelanguage {
+	width: 30%;
+	float: left;
+}
+
+#practiceTitleBefor {
+	float: left;
+}
+
+#practiceInforArea .practiceLimitText {
+	width: 15%;
+	float: left;
+}
+
+#practiceTitleAfter {
+	width: 12%;
+	float: right;
+}
+
+#syntaxTitle {
+	float: left;
+}
+
+#syntaxText {
+	width: 70%;
+	float: left;
+}
+
+.LanguageAdmin {
+	float: left;
+	width: 40%;
+	margin-left: 20%;
+}
+
+.LanguageQuestion {
+	float: left;
+	width: 40%;
+	margin-left: 10%;
+}
+
+.LanguageAnswer {
+	float: left;
+	width: 40%;
+	margin-left: 5%;
+}
+
+.LanguageAdmin div {
+	float: left;
+	width: 33%;
+}
+
+.LanguageQuestion div {
+	float: left;
+	width: 33%;
+}
+
+.LanguageAnswer div {
+	float: left;
+	width: 33%;
+}
+
+.ContenWhoLable {
+	float: left;
+	width: 10%;
+	margin-left: 10%;
+	margin-top: 1%;
+}
+
+.ContenWhoLableAdmin {
+	float: left;
+	width: 40%;
+}
+
+.ContenWhoLableJp {
+	margin-left:10%;
+	float: left;
+	width: 40%;
+}
+
+.ContenWhoLableLn {
+	margin-left:5%;
+	float: left;
+	width: 40%;
+}
+
+.ContenYouLable {
+	float: left;
+	width: 10%;
+	margin-left: 10%;
+	margin-top: 1%;
+}
+
+.ContenYouLableAdmin {
+	float: left;
+	width: 40%;
+}
+
+.ContenYouLableJp {
+	margin-left:10%;
+	float: left;
+	width: 40%;
+}
+
+.ContenYouLableLn {
+	margin-left:5%;
+	float: left;
+	width: 40%;
+}
+
+.NameScenario {
+	font-size: 10px;
+	width: 90%;
+	margin-left: 10%;
+}
+
+#content-dialog {
+	margin-left: 15px;
+	margin-bottom: 20px;
+	margin-right: 15px;
+}
+
+#textSyntax, #methodtext, #leveltext, #selAllSentences{
+	width: 60%;
+	border: none;
+	border-bottom: 1px solid #444;
+	margin-left: 10px;
+	font-size: 115%;
+	float: right;
+	border-radius: 0px;
+}
+
+#practiceNumber {
+	width: 60%;
+	border: none;
+	border-bottom: 1px solid #444;
+	margin-left: 10px;
+	font-size: 115%;
+	float: right;
+}
+
+.wrapper-scenario {
+	height: auto;
+	width: 99%;
+	padding: 5px;
+	font-size: 99%;
+}
+
+.areaScenario .personname {
+    width: 20%;
+    border: none;
+    border-bottom: 1px solid #444;
+    margin-left: 0px;
+    font-size: 115%;
+    float: left;
+}
+.scenarioImg {
+/* 	height: 90%; */
+}
+
+.scenarioImg img {
+	margin: 0 auto;
+	/* height: 100%; */
+	display: block;
+	height: auto;
+}
+
+.IndexQuestion {
+	margin-top:5px;
+	width: 5%;
+	float: left;
+	margin-left: 10%;
+}
+
+.InforQuestion {
+	margin-top:5px;
+	width: 25%;
+	float: left;
+}
+
+.IndexAnswer {
+	margin-top:5px;
+	width: 2%;
+	float: left;
+	margin-left: 5%;
+}
+
+.InforAnswer {
+	margin-top:3px;
+	width: 50%;
+	float: left;
+}
+
+.colhalf {
+	width: 49%;
+	float: left;
+	padding-left: 1%;
+}
+
+.areaScenario {
+	min-height: 100px;
+	overflow: hidden;
+	font-size: 115%;
+	margin-top: 1%;
+}
+
+.areaScenario input {
+	width: 60%;
+	border: none;
+	border-bottom: 1px solid #444;
+	margin-left: 10px;
+	font-size: 115%;
+	float: right;
+}
+
+.areaScenario a {
+	margin-right: 10%;
+}
+
+.scenarioNameText {
+    float: left;
+}
+
+.syntaxText {
+    overflow: hidden;
+    float: left;
+}
+
+.numberPractice {
+	float: left;
+}
+
+#practiceScenarioClientTitleBefor{
+	width: 60%;
+}
+
+#practiceScenarioClientTitleBefor div{
+	float:left;
+	width: 50%;
+}
+
+.Information {
+	margin-top: 2%;
+}
+.categoryPopup {
+	cursor: pointer;
+	color: #FF0000;
+	margin: 0px 10px 0px 10px;
+	background: url("../images/underline.png") repeat-x bottom left;
+	text-decoration: none !important;
+}
+.categoryPopup:hover {
+	color: #FF0000;
+}
+.categoryPopup:visited {
+	color: #FF0000;
+}
+.categoryPopup:focus {
+	color: #FF0000;
+}
+.whorow, .yourow {
+    min-height: 6%;
+}
+
+rt {
+    color: #000 !important;
+}

@@ -1,0 +1,173 @@
+@font{
+
+}
+.group1 {
+	width: 45%;
+	float: left;
+}
+
+.group2 {
+	width: 53%;
+	float: left;
+	margin-left: 10px;
+}
+
+.group3 {
+	width: 100%;
+	float: left;
+	margin-bottom: 10px;
+}
+
+.btn-primary {
+	width: 13%;
+	float: right;
+}
+
+a {
+	color: blue;
+}
+
+.f12 {
+	font-size: 12px;
+}
+
+.current {
+	color: red;
+}
+
+.f13 {
+	font-size: 13px;
+}
+
+h3 {
+	font-weight: bold;
+}
+
+label {
+	font-size: 11px;
+	font-weight: bold;
+}
+
+#logFormLogin .log-title, #data .log-title {
+	width: 35%;
+	text-align: right;
+	float: left;
+	padding-top: 8px;
+	margin-right: 13px;
+	max-width: 100px;
+}
+
+#logFormLogin .log-from {
+	width: 47%;
+	text-align: right;
+	float: left;
+	padding-top: 8px;
+	margin-right: 13px;
+	max-width: 140px;
+}
+
+#logFormLogin .log-select, #data .log-select {
+	width: 37%;
+	float: left;
+	margin-bottom: 10px;
+	max-width: 115px;
+}
+
+#logFormLogin .form-group, #data .form-group {
+	margin-bottom: 0px !important;
+	clear: both;
+}
+
+#logFormLogin .log-input, #data .log-input {
+	float: left;
+	width: 50%;
+	margin-bottom: 10px;
+}
+
+#logFormLogin .log-date {
+	float: left;
+	width: 49%;
+	margin-bottom: 10px;
+	max-width: 150px;
+}
+
+#logFormLogin .log-button {
+	clear: both;
+	width: 35%;
+	float: right;
+}
+
+.center {
+	text-align: center !important;
+}
+
+.col_start_time, .col_end_time {
+	width: 12% !important;
+}
+
+.col_user_name {
+	width: 8% !important;
+}
+
+.col_lesson_no, .col_scenario_or_word, .col_score,.col_answer{
+	width: 11% !important;
+}
+.col_time{
+	width: 8% !important;
+}
+.col_device_name{
+	width: 5% !important;
+}
+.col_device_version {
+	width: 8% !important;
+}
+
+.col_mode_practice_or_test, .col_mode_skill, .col_mode_learning {
+	width: 10% !important;
+}
+
+.col_no, .col_practice_times {
+	width: 6% !important;
+}
+
+.col_location {
+	width: 23% !important;
+}
+
+.col_course {
+	width: 15% !important;
+}
+
+.color {
+	background-color: #696969;
+	color: #F8F8FF;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus
+	{
+	background-color: #99bfe6;
+	color: #F8F8FF;
+}
+
+.pt18 {
+	padding-top: 17px !important;
+}
+
+.pagination {
+	float: inherit;
+}
+.table > thead > tr > th {
+    vertical-align: inherit !important;
+}
+#logFormLogin #logLogin_wrapper{
+	clear: both;
+}
+#logFormLogin #logLogin_length{
+	float: left;
+}
+.col-sm-6{
+	clear: both;
+}
+#logData_length{
+	float: left;
+}

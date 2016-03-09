@@ -1,0 +1,237 @@
+* {
+	font-family: "ArialMT", "HirakakuProN", "ヒラギノ角ゴ ProN W3", "メイリオ",
+		"sans-serif";
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: 'fontello';
+	src: url('./font/fontello.eot?59467206');
+	src: url('./font/fontello.eot?59467206#iefix')
+		format('embedded-opentype'), url('./font/fontello.woff?59467206')
+		format('woff'), url('./font/fontello.ttf?59467206') format('truetype'),
+		url('./font/fontello.svg?59467206#fontello') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+div#demo-detail {
+	width: 100%;
+}
+
+div#demo-detail-top {
+	height: 19px;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid;
+}
+
+div#demo-detail-top h2 {
+	line-height: 20px;
+}
+
+div#mid-action {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+div#action-body {
+	width: 100%;
+}
+
+div#demo-detail-mid {
+	padding-left: 10px;
+	padding-right: 10px;
+	overflow: hidden;
+}
+
+.body-col {
+	width: 50%;
+	float: left;
+	position: relative;
+}
+
+.col-left {
+	float: left;
+	position: relative;
+}
+
+.col-right {
+	float: left;
+	position: relative;
+}
+
+.col-right p {
+	margin-left: 10px;
+	height: 13px;
+	padding: 5px;
+	border: 1px solid;
+	width: 150px;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+div#mid-content {
+	overflow: hidden;
+	width: 100%;
+}
+
+.title-left {
+	width: 70%;
+	float: left;
+}
+
+.title-right {
+	width: 30%;
+	float: left;
+}
+
+div#content-title {
+	width: 100%;
+	overflow: hidden;
+}
+
+.content-body {
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+
+.body-left {
+	width: 15%;
+	float: left;
+}
+
+.body-mid {
+	width: 70%;
+	float: left;
+}
+
+.body-right {
+	width: 15%;
+	float: left;
+}
+
+div#demo-detail-bot {
+	width: 100%;
+	height: 30px;
+	text-align: center;
+}
+
+.speech {
+	font-weight: bold;
+	clear: both;
+	float: left;
+}
+
+#modal_dialog {
+	background-color: #FFF;
+	position: fixed;
+	border: 1px solid #000;
+	display: none;
+	z-index: 5000;
+}
+
+#overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 3000;
+	display: none;
+	background-color: #444;
+}
+
+#modal_dialog_title {
+	width: 100%;
+	background-color: #A5A2A2;
+	color: #fff;
+	padding: 10px;
+	margin-bottom: 10px;
+	font-size: 125%;
+}
+
+#dialog-action input {
+	width: 100%;
+	margin-bottom: 10px;
+	font-size: 110%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+div#dialog-action {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.invisible {
+	display: none;
+}
+/*bootbox */
+div.bootbox.modal.fade.in {
+	z-index: 1070;
+}
+
+div.bootbox.modal.fade.in+div {
+	z-index: 1060;
+}
+
+.selectBox {
+	margin-bottom:5%;
+	height: 24px;
+	width: 80%;
+	padding-left: 5px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+
+.textBox {
+	margin-bottom:5%;
+	height: 24px;
+	width: 70%;
+	padding-left: 5px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+
+.bootbox-body {
+	padding-left: 15px;
+	padding-right: 15px;
+	overflow: hidden;
+}
+
+.bootbox-body span p {
+	clear: none;
+	float: left;
+	position: relative;
+}
+
+.bootbox-body p.float-right {
+	float: right;
+	clear: none;
+}
+
+.bootbox-body span input {
+	width: 55%;
+	border: none;
+	border-bottom: 1px solid #444;
+	margin-left: 10px;
+	font-size: 115%;
+	float: right;
+}
+
+.glyphicon-ok {
+	color: green;
+}
+
+.glyphicon-remove, .red {
+	color: red;
+}

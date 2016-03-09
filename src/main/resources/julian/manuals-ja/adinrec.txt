@@ -1,0 +1,132 @@
+    adinrec
+
+ADINREC(1)                                                          ADINREC(1)
+
+
+
+’D’D
+           adinrec
+          - ’N‘º’F‘¸’G‘§‘¯’B‘¬’H‘±’D‘¡‘®’D‘£’D’B’B‘º’B‘½’B’B’B‘Ÿ’B‘¢’B‘©’B‘©’G‘¦’H‘°’B’B
+
+’E‘¤’G‘¤
+       adinrec [options...] {filename}
+
+DESCRIPTION
+       adinrec ’B‘­’N‘º’H‘±’D‘¡‘®’D‘¸’H’B’C‘¶’D‘¬’E’H’D’B‘¬’H‘´’C‘¸‘¢’D‘µ‘¬’E‘®’B‘¦’B’B‘­’B‘º’N‘º’E‘­’D‘·’B‘ª’B’B‘©’N‘º’B‘¬’B’B
+       ’B’D‘¢’B‘©’D‘¸’B‘£’B’B‘¤’D’B’D‘¸’B’N‘º’B’B‘Ÿ’B‘¢’B‘©’B‘©’G‘¦’H‘°’B’B’N‘º’B’B’B‘§’B‘©’B’B‘¥’B‘­’E‘¦’E‘¸’B’B’B‘¢’B‘·
+       ’B’F‘¦’B’B‘¤’B’B‘¢’B‘­’D‘£’D’B’B’H‘°’H‘±’B’B’B’N‘º-input ’B‘¨’B’B‘µ’B‘¥’B‘±’B‘¥
+       ’B’B’B‘¢’B‘·’B’H‘¶’E’D‘­’G‘»’B‘¥’B’B’N‘º’B‘¼’B’B’B‘§’B‘®’B‘¢’B‘±’D‘£’D’B’H‘¶’E’B‘¥’B’B’N‘º
+
+       ’B‘³’B‘±’B’B‘¨’B‘±’B‘®’D‘¦’E‘±‘ ’E‘®’B‘­’C‘¹‘¹’E’B‘©’G‘¦’D‘¬’D‘­’G‘»’B‘¥’B’B’N‘º’H‘°’H‘±’D‘»‘ ’D‘º’B‘­ 16bit, 1 channel
+       ’B‘¥’B’B’N‘º’E‘¶’B’D‘¸’B’B’B’B’B‘Ÿ’B‘¢’B‘©’D‘»‘ ’D‘º’B‘­ Microsoft WAV ’D‘»‘ ’D‘º’B‘¥’B’B’N‘º
+       ’E‘ ’B‘©’D’B’D’D’B‘¬’B’B‘Ÿ’B‘¢’B‘©’B’D’D‘¦’B’B’D ‘²’D’B‘­’C‘¶’E‘¶’B’B’B’B’N‘º
+
+       ’B’B‘Ÿ’B‘¢’B‘©’D’B‘© "-" ’B’E’D‘¬’B’B’B‘¦’D’B’G‘¼‘º’B’B ’H‘±’D‘¡‘®’B’B‘º’B‘½’B’E‘¦’E‘¸’D‘¸’D’B‘¶’D‘¸
+       ’D’B’B’N‘º’B’B‘¬’D ‘²’D’B’B‘º’B‘½’D‘»‘ ’D‘º’B‘­ RAW ’D‘»‘ ’D‘º’B‘©’B‘¨’B’N‘º
+
+OPTIONS
+       Julius ’B‘¬’D‘¦’B‘¤’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B’E’D‘¬’D‘­’G‘»’B‘¥’B’B’N‘º’E’D‘¬’B’B’B’B’B‘¬’B‘¬’B’B‘Ÿ’N‘º
+       ’H‘±’D‘¡‘®’D‘£’D’B‘©’H‘ ’C‘½’B’B’B‘¨’B’B‘µ’B‘¥’B‘±’B‘¬’B‘½’E‘¯’B’B’B’N‘º’C‘¹‘£’C‘¶’B‘©’N‘ºadinrec ’F‘ª’G‘¨’B‘¬
+       ’B‘¨’B’B‘µ’B‘¥’B‘±’B‘¦’H‘ ’C‘½’B’B Julius ’B‘¨’B’B‘µ’B‘¥’B‘±’B‘©’D’B’B‘¤’G‘¥‘¡’G‘¨‘ª’B’B’N‘º
+
+   adinrec specific options
+        -freq  Hz
+           ’H‘±’D‘¡‘®’B‘¬’B‘³’B‘±’B’B‘¨’B‘±’B‘®’D‘¦’E‘±‘ ’E‘® (Hz) ’B’E’D‘¬’B’B’N‘º(default: 16,000)
+
+        -raw
+           RAW’B’B‘Ÿ’B‘¢’B‘©’D‘»‘ ’D‘º’B‘¥’D‘¸’D’B’B’N‘º
+
+   Concerning Julius options
+        -input  {mic|rawfile|adinnet|stdin|netaudio|esd|alsa|oss}
+           ’H‘±’D‘¡‘®’D‘£’D’B‘»’B‘º’B‘·’B’H‘¶’E’B’B’N‘º’H‘±’D‘¡‘®’E‘±‘ ’D‘»‘ ’B’B‘Ÿ’B‘¢’B‘©’B‘¬’D ‘²’D’B‘­ file’B’B’B’B‘­rawfile’B’E
+           ’D‘¬’B’B’N‘º’G‘³‘µ’D’D‘¼’B‘©’B’B’B‘±’B’B’B’G‘Ÿ‘¦’B’B’B‘¬’B‘¥’N‘º’B’B’B‘©’D‘­‘¼’B’B‘¤’B’B‘Ÿ’B‘¢ ’B‘©’D’B’D‘£’D’B’B’N‘ºadinnet
+           ’B‘¥’B‘­’N‘º adintool ’B‘¨’B‘§’B‘¬’B‘­’B‘§’B‘¢’B‘ ’B‘±’B’B’B’B‘¹’B‘·’B’B’H‘±’D‘¡‘®
+           ’B’B‘º’B‘½’B’B’B’B’B‘­’B‘º’B‘­’F‘³’F‘¯’B‘¥’D’B’D’B’B’B‘¦’B’B‘¥’B’B’N‘º netaudio ’B‘­DatLink’B‘¬’B‘³’B‘º’B’B’B’N‘º
+           stdin’B‘­’E‘¦’E‘¸’D‘£’D’B’B’H‘±’D‘¡‘®’D‘£’D’B’G‘Ÿ’B’N‘º
+           esd’B‘­’N‘º’H‘±’D‘¡‘®’B’B’B‘¢’B‘·’B‘¬’D‘¯’E’E’E‘¬‘³’B‘¦’B’B‘¤’D‘¢’B’B‘¬
+           Linux’B‘¬’B’B‘·’B‘­’B’B’B’F‘®’D‘ ’B‘¥’D‘§’F‘¦’B’B’B‘¤’B’B EsounD daemon ’B’B’D‘£’D’B’B’N‘º
+
+        -lv  thres
+           ’E‘­’D‘·’B‘ª’B’B‘©’B‘¬’B’B’B’D‘¢’N‘º’D‘¢’B‘­ 0 ’B’B 32767 ’B‘¬’F‘­’D‘°’B‘¥’E’D‘¬’B’B’N‘º (default: 2000)
+
+        -zc  thres
+           ’H‘´’C‘¸‘¢’D‘µ‘¬’E‘®’B‘¬’B’B’B’D‘¢’N‘º’D‘¢’B‘­’N‘º’F‘¥’B’B’B’B‘¬’C‘¸‘¢’D‘µ‘¬’E‘®’B‘¥’E’D‘¬’B’B’N‘º (default: 60)
+
+        -headmargin  msec
+           ’H‘±’D‘¡‘®’D‘¸’H’H’D‘¥’H‘¦’B‘¬’B’B‘º’B‘¶’B‘±’N‘º’D’C‘»’B‘­’B’B‘¨’F‘¥’N‘º (default: 300)
+
+        -tailmargin  msec
+           ’H‘±’D‘¡‘®’D‘¸’H’F‘³’C‘¸’H‘¦’B‘¬’B’B‘º’B‘¶’B‘±’N‘º’D’C‘»’B‘­’B’B‘¨’F‘¥’N‘º (default: 400)
+
+        -zmean
+           ’D‘£’D’H‘±’D‘¡‘®’B‘·’B’B‘¨’B‘º’B ’B‘©’D‘­‘¼’B’B‘¤’F‘²’E‘³’E’D’H‘¢’D‘¹’B’G‘Ÿ’B’N‘º’D‘¦’B‘¤’B‘¬’H‘±’D‘¡‘®’D‘¤’F’B‘¬
+           ’B‘¬’D’E‘¬‘³’B‘¦’B’B‘¤’D‘¤’F’B’B’B’N‘º
+
+        -smpFreq  Hz
+           ’H‘±’D‘¡‘®’B‘¬’B‘³’B‘±’B’B‘¨’B‘±’B‘®’D‘¦’E‘±‘ ’E‘® (Hz) ’B’E’D‘¬’B’B’N‘º(default: 16,000)
+
+        -48
+           48kHz’B‘¥’D‘£’D’B’G‘Ÿ’B’N‘º16kHz’B‘©’B’B‘¤’B‘±’B‘³’B‘±’B’B‘¨’B‘±’B‘®’B’B’N‘º ’B’B’B‘­ 16kHz
+           ’B‘¬’B‘ ’B’B‘©’B’C‘»‘½’F‘¦’B’B‘¤’B’B’B‘¦’B’B‘¬’B‘½’E’D‘·’B‘¥’B’B’N‘º ’B’B‘¤’B‘±’B’B‘±’B’B‘¨’B‘±’B‘®’B‘¬’D’H‘¦’E‘§’G‘»’B‘­ sptk
+           ’B’B ’F‘¥‘¹’E‘¢’B’B’B’N‘º (Rev. 4.0)
+
+        -NA  devicename
+           DatLink ’B‘³’B‘º’B’B‘¬’B’B’B‘¢’B‘·’D (-input netaudio).
+
+        -adport  port_number
+
+           -input adinnet ’C‘»‘½’F‘¦’E’N‘º’E‘£’F‘´’B’D’B’C‘¹’B’B adinnet
+           ’B‘¬’B’B‘º’B’F‘¨’D‘µ’B’E’D‘¬’B’B’N‘º(default: 5530)
+
+        -nostrip
+           ’H‘±’D‘¡‘®’D’B’G‘¼‘º’B‘½’E’N‘º’B’B’B‘¢’B‘·’B’B’B‘Ÿ’B‘¢’B‘©’B‘©’B’B‘¡’B‘¤’B‘­’N‘º’H‘±’D‘¡‘®’E‘±‘ ’D‘»‘ ’C‘¶’B‘©’E‘­’D‘· ’B "0"
+           ’B‘¦’B‘¨’B’B’B‘ª’B‘º’B ’B’D’D‘¦’B’B’B’B‘¦’B’B’B’N‘ºJulius ’B‘­’H’D‘¶‘¶’N‘º’H‘±’D‘¡‘®
+           ’D‘£’D’B‘©’D‘©’B‘¼’B’B’B’B‘¬’B’B’B‘¨’B’B‘ª’B‘º’B ’B’H‘¢’D‘¹’B’B’N‘º’B’B‘¬’H‘´’B‘³’B‘±’B’B‘©’H‘¢’D‘¹’B
+           ’B’B‘¼’B’D’B’B‘¨’B’D ‘²’D’N‘º’B’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B’E’D‘¬’B’B’B’B‘¦’B‘¥’G‘¨’D’E‘´’D‘¹’B ’F‘Ÿ’D‘·’D’B’B’B’B‘¦’B’B‘¥’B’B’N‘º
+
+        -C  jconffile
+           jconf’G‘¦’D‘¬’B’B‘Ÿ’B‘¢’B‘©’B’G‘¨’B‘½’G‘¼‘º’B’N‘º’B’B‘Ÿ’B‘¢’B‘©’B‘¬’D’D‘¬‘·’B’B’B‘¬’D ‘²’E’B‘©’D‘¯’H’B’B’B’N‘º
+
+        -plugindir  dirlist
+           ’B’B‘§’B‘®’B‘¢’B‘±’B’G‘¨’B‘½’G‘¼‘º’B’B’B‘¡’B‘ª’B‘­’B’B‘¨’B’E’D‘¬’B’B’N‘º’G‘¢’E‘®’B‘¬’D ‘²’D’B‘­ ’B‘±’Bâ€
+           ’B‘±’B‘¥’D‘¸’D’B‘¡’B‘¤’C‘¶‘¤’B‘·’B‘¤’E’D‘¬’B’B’N‘º
+
+ENVIRONMENT VARIABLES
+        ALSADEV
+           (’B’B‘¢’B‘­’D‘£’D’B‘¥ alsa ’B’B’B‘¢’B‘·’C‘»‘½’F‘¦’E) ’H‘°’H‘±’B’B’B‘¢’B‘·’D’B’E’D‘¬’B’B’N‘º ’E’D‘¬’B’B‘¨’B’D ‘²’D’B‘­
+           "default"’N‘º
+
+        AUDIODEV
+           (’B’B‘¢’B‘­’D‘£’D’B‘¥ oss ’B’B’B‘¢’B‘·’C‘»‘½’F‘¦’E) ’H‘°’H‘±’B’B’B‘¢’B‘·’D’B’E’D‘¬’B’B’N‘º ’E’D‘¬’B’B‘¨’B’D ‘²’D’B‘­
+           "/dev/dsp"’N‘º
+
+        PORTAUDIO_DEV
+           (portaudio V19 ’C‘»‘½’F‘¦’E) ’H‘°’H‘±’B’B’B‘¢’B‘·’D’B’E’D‘¬’B’B’N‘º ’D‘µ’C‘»’F’B‘¨’E’D‘¬’E‘·’E‘±’B‘­ adinrec
+           ’B‘¬’D’E’D’E’B‘©’B’B‘®’B‘©’D‘¸’D’B’B’B’B‘¬’B‘¥’D’F‘¥’B‘¬’B’B‘¦’N‘º
+
+        LATENCY_MSEC
+           Linux (alsa/oss) ’B’B’B‘± Windows ’B‘¥’N‘º’B’B‘¢’B‘­’D‘£’D’E’B‘¬’H’D‘¹‘´’E’H’B’B
+           ’B‘¨’F‘¥’D’C‘»’B‘¥’E’D‘¬’B’B’N‘º’F’B’D‘¢’B’G‘¦’D‘¬’B’B’B’B‘¦’B‘¥’D‘£’D’H’D‘¹‘´’B’D‘®’B’B’B‘¥’B ’B’B’N‘ºCPU
+           ’B‘¬’G‘° ’G‘µ’B’D‘¢‘¥’B’B’B‘¨’B’N‘º’B‘¼’B’F‘®’D‘ ’B‘©’B’B‘¡’B‘¤’B‘­’B’B’B‘¹’B‘·’BOS’B‘¬
+           ’E’D’B’C‘¶’D‘¬’D‘¬’B‘©’B‘¨’B’B’B‘¦’B’B’B’N‘º’E’H‘§’B‘¨’D‘¢’B‘­OS ’B’B’B’B‘¢’B‘·’B‘©’D‘¢‘¥’B’B ’C‘¼’Dâ€
+           ’B’B’N‘º’B’B’B‘§’B‘©’B’D‘¢’B‘­’D’C‘»’F‘®’D‘ ’B‘©’C‘¼’D’B’B’N‘º
+
+SEE ALSO
+        julius ( 1 ) ,
+        adintool ( 1 )
+
+COPYRIGHT
+       Copyright (c) 1991-2013 ’C‘¸‘ª’H‘»’D‘¢‘¥’D‘¤ ’E‘°‘±’D’F ’F‘§‘´’D‘¬‘¢
+
+       Copyright (c) 1997-2000 ’E’D ‘¯’D‘¤’F’E‘­’G’C‘¸’E‘£’D’C‘º(IPA)
+
+       Copyright (c) 2000-2005 ’D‘£’G‘­’D’F‘©‘­’F‘¥’D‘¤’E’G‘Ÿ’D‘¢‘¥’D‘¤’H‘ ’D‘¢‘¥’D‘¤ ’H‘·‘½’H’F ’F‘§‘´’D‘¬‘¢
+
+       Copyright (c) 2005-2013 ’D’D‘¢’D‘¯’D‘µ‘£’E‘£’D‘¢‘¥’D‘¤ Julius’H’F‘¸’B’B‘º’B
+
+LICENSE
+       Julius ’B‘¬’C‘»‘½’F‘¦’G‘¦‘¯’G‘©‘¼’B‘©’E‘¸’B’B‘¼’B’N‘º
+
+
+
+                                  19/12/2013                        ADINREC(1)

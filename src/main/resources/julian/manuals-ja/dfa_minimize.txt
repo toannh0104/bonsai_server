@@ -1,0 +1,49 @@
+    dfa_minimize
+
+DFA_MINIMIZE(1)                                                DFA_MINIMIZE(1)
+
+
+
+’D’D
+           dfa_minimize
+          - ’E’H’B‘¨’B‘º’B’B’B’B‘±’E’E‘±’B’E’D‘®’D’B’B
+
+’E‘¤’G‘¤
+       dfa_minimize [-o outfile] {dfafile}
+
+DESCRIPTION
+       dfa_minimize ’B‘­’N‘º.dfa ’B’B‘Ÿ’B‘¢’B‘©’B’F’C‘¼‘Ÿ’B‘¨’E’D‘®’D’B‘¬ .dfa ’B’B‘Ÿ’B‘¢’B‘©’B‘©’D‘¢’E’B’N‘º
+       ’E‘¦’E‘¸’D‘¸’D’B‘©’D‘¸’D’B’B‘¼’B’N‘º’B‘¨’B’B‘µ’B‘¥’B‘± -o ’B‘¥’D‘¸’D’D’B ’E’D‘¬’B’B’B’B‘¦’B’B‘¥’B’B‘¼’B’N‘º
+
+       ’B’B‘º’B‘¶’B‘¥’B‘± 3.5.3 ’C‘¹‘£’H’B‘¬ Julius ’B‘©’C‘¹’D‘¯’B‘¬ mkdfa.pl ’B‘­’N‘º
+       ’B’B‘¬’B’B‘º’B‘©’B’D’H‘¦’B‘¥’G‘¨’D’F’B‘©’D‘º’B‘±’D‘¸’B’B‘¬’B‘¥’N‘º’D‘¸’D’B’B’B .dfa ’B‘­’D‘¶‘¶’B‘©’E’D‘®’D
+       ’B’B’B‘¤’B’B’N‘º’B’B’B’D’C‘»’B‘¥’D‘¬’G‘Ÿ’B’B’D‘½’G‘¤’B‘­’B’B’B‘¼’B’B’N‘º’B’B‘º’B‘¶’B‘¥’B‘± 3.5.2 ’C‘¹‘£’D’B‘¬ mkdfa.pl
+       ’B‘¥’D‘¸’D’B’B’B .dfa ’B‘­’E’D‘®’D’B’B’B‘¤’B’B‘¨’B’B‘¬’B‘¥’N‘º
+       ’B’B‘¬’B’B‘º’B‘©’B‘¥’E’D‘®’D’B’B’B‘¦’B‘³’B‘¢’B‘¸’B’E’H‘§’D’B’B’B’B‘¦’B’B‘¥’B’B‘¼’B’N‘º
+
+OPTIONS
+        -o  outfile
+           ’D‘¸’D’B’B‘Ÿ’B‘¢’B‘©’D’B’E’D‘¬’B’B’N‘º
+
+EXAMPLES
+       foo.dfa ’B’E’D‘®’D’B’B‘¤ bar.dfa ’B‘© ’C‘½’D’B’B’N‘º
+       ’D‘£’B‘¬’E‘·’E‘±’N‘º
+
+SEE ALSO
+        mkdfa.pl ( 1 )
+
+COPYRIGHT
+       Copyright (c) 1991-2013 ’C‘¸‘ª’H‘»’D‘¢‘¥’D‘¤ ’E‘°‘±’D’F ’F‘§‘´’D‘¬‘¢
+
+       Copyright (c) 1997-2000 ’E’D ‘¯’D‘¤’F’E‘­’G’C‘¸’E‘£’D’C‘º(IPA)
+
+       Copyright (c) 2000-2005 ’D‘£’G‘­’D’F‘©‘­’F‘¥’D‘¤’E’G‘Ÿ’D‘¢‘¥’D‘¤’H‘ ’D‘¢‘¥’D‘¤ ’H‘·‘½’H’F ’F‘§‘´’D‘¬‘¢
+
+       Copyright (c) 2005-2013 ’D’D‘¢’D‘¯’D‘µ‘£’E‘£’D‘¢‘¥’D‘¤ Julius’H’F‘¸’B’B‘º’B
+
+LICENSE
+       Julius ’B‘¬’C‘»‘½’F‘¦’G‘¦‘¯’G‘©‘¼’B‘©’E‘¸’B’B‘¼’B’N‘º
+
+
+
+                                  19/12/2013                   DFA_MINIMIZE(1)

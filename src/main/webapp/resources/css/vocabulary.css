@@ -1,0 +1,237 @@
+.LanguageVocabulary {
+	width: 100%;
+	overflow: hidden;
+}
+
+.LanguageVocabularyAdmin {
+	width: 80%;
+	float: left;
+	margin-left: 10%;
+}
+
+.LanguageVocabularyAdmin div {
+	width: 33%;
+	float: left;
+}
+
+.LessonVocabulary {
+	overflow: hidden;
+}
+
+.Conten {
+	width: 90%;
+	overflow: hidden;
+	margin-left: 10%;
+	min-height: 20%;
+}
+
+.row {
+	display: block;
+}
+
+.col-hafl {
+	float: left;
+	width: 50%;
+}
+
+.col-quater {
+	width: 21%;
+	float: right;
+	padding-left: 1%;
+}
+
+.col-three-quaters {
+	width: 79%;
+	float: left;
+	padding-left: 1%;
+}
+
+.areaVocabulary {
+	min-height: 100px;
+	overflow: hidden;
+	font-size: 115%;
+	margin-top: 1%;
+}
+
+.vocaKanji, .vocaHiragana, .vocaCategory, .vocaEnglish {
+	width: 22%;
+	border: none;
+	border-bottom: 1px solid #444;
+	margin-left: 10px;
+	font-size: 115%;
+	float: right;
+}
+
+.areaVocabulary a {
+	margin-right: 10%;
+}
+
+.vocabulary-column-title {
+	width: 72%;
+}
+
+#lessonVocabularyInforArea {
+	width: 75%;
+	float: left;
+}
+
+#practiceVocabularyInforArea {
+	width: 25%;
+	float: right;
+}
+
+#lessonVocabularyTitle {
+	float: left;
+}
+
+#lessonVocabularyName {
+	/* 	width: 20%; */
+	float: left;
+}
+
+#lessonVocabularyNameEn {
+	width: 30%;
+	float: left;
+}
+
+#lessonVocabularyNamelanguage {
+	width: 30%;
+	float: left;
+}
+
+#practiceVocabularyTitleBefor {
+	float: left;
+}
+
+#practiceVocabularyClientTitleBefor {
+	width:60%;
+	float: left;
+}
+
+#practiceVocabularyClientTitleBefor div{
+	float:left;
+	width: 50%;
+}
+
+#practiceVocabularyInforArea .practiceLimitText {
+	width: 15%;
+	float: left;
+}
+
+#practiceVocabularyTitleAfter {
+	width: 12%;
+	float: right;
+}
+
+#content-dialog {
+	margin-left: 15px;
+	margin-bottom: 20px;
+	margin-right: 15px;
+	overflow: hidden;
+}
+
+#practiceLimit {
+	width: 55%;
+	border: none;
+	border-bottom: 1px solid #444;
+	margin-left: 10px;
+	font-size: 115%;
+	float: right;
+}
+
+.wrapper-vocabulary {
+	height: auto;
+	width: 99%;
+	padding: 5px;
+	font-size: 99%;
+}
+
+.vocabularyImg {
+	/* height: 90%; */
+}
+
+.vocabularyImg img {
+	margin: 0 auto;
+	height: auto;
+	display: block;
+}
+
+.LanguageVocabularyQuestion {
+	width: 40%;
+	float: left;
+	margin-left: 10%;
+}
+
+.LanguageVocabularyQuestion div {
+	width: 33%;
+	float: left;
+}
+
+.LanguageVocabularyAnswer {
+	width: 40%;
+	float: left;
+	margin-left: 5%;
+}
+
+.LanguageVocabularyAnswer div {
+	width: 33%;
+	float: left;
+}
+
+.ContenClient {
+	margin-top: 2%;
+	width: 100%;
+	overflow: hidden;
+	min-height: 20%;
+}
+
+.IndexVocabularyQuestion {
+	margin-top:5px;
+	width: 5%;
+	float: left;
+	margin-left: 10%;
+}
+
+.InforVocabularyQuestion {
+	margin-top:5px;
+	width: 35%;
+	float: left;
+}
+
+.IndexVocabularyAnswer {
+	margin-top:5px;
+	width: 2%;
+	float: left;
+	margin-left: 5%;
+}
+
+.InforVocabularyAnswer {
+	margin-top:3px;
+	width: 35%;
+	float: left;
+}
+
+.ContenClientQuestion {
+	width: 40%;
+	float: left;
+	margin-left: 10%;
+}
+
+.ContenClientAnswer {
+	margin-left: 5%;
+	width: 40%;
+	float: left;
+
+}
+
+/* #numberPracticeVocabulary {
+	float: left;
+} */
+
+.theLessonVocabulary .Conten .row{
+	min-height: 6%;
+}
+
+.non-ruby {
+    padding-top: 1%;
+}

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/mvc"
+	xmlns:util="http://www.springframework.org/schema/util" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+
+	<!-- DispatcherServlet Context: defines this servlet's request-processing
+		infrastructure -->
+
+	<!-- Enables the Spring MVC @Controller programming model -->
+	<annotation-driven></annotation-driven>
+	<context:component-scan base-package="jp.co.gmo.rs.ghs.*" />
+	<tx:annotation-driven transaction-manager="transactionManager" />
+	<util:properties id="EN" location="classpath:/messages_en.properties" />
+	<util:properties id="VI" location="classpath:/messages_vi.properties" />
+	<util:properties id="AF" location="classpath:/messages_af.properties" />
+	<util:properties id="SQ" location="classpath:/messages_sq.properties" />
+	<util:properties id="AR" location="classpath:/messages_ar.properties" />
+	<util:properties id="HY" location="classpath:/messages_hy.properties" />
+	<util:properties id="AZ" location="classpath:/messages_az.properties" />
+	<util:properties id="EU" location="classpath:/messages_eu.properties" />
+	<util:properties id="BE" location="classpath:/messages_be.properties" />
+	<util:properties id="BN" location="classpath:/messages_bn.properties" />
+	<util:properties id="BG" location="classpath:/messages_bg.properties" />
+	<util:properties id="CA" location="classpath:/messages_ca.properties" />
+	<util:properties id="HR" location="classpath:/messages_hr.properties" />
+	<util:properties id="CS" location="classpath:/messages_cs.properties" />
+	<util:properties id="DA" location="classpath:/messages_da.properties" />
+	<util:properties id="NL" location="classpath:/messages_nl.properties" />
+	<util:properties id="ET" location="classpath:/messages_et.properties" />
+	<util:properties id="TL" location="classpath:/messages_tl.properties" />
+	<util:properties id="FI" location="classpath:/messages_fi.properties" />
+	<util:properties id="FR" location="classpath:/messages_fr.properties" />
+	<util:properties id="GL" location="classpath:/messages_gl.properties" />
+	<util:properties id="KA" location="classpath:/messages_ka.properties" />
+	<util:properties id="DE" location="classpath:/messages_de.properties" />
+	<util:properties id="EL" location="classpath:/messages_el.properties" />
+	<util:properties id="GU" location="classpath:/messages_gu.properties" />
+	<util:properties id="HT" location="classpath:/messages_ht.properties" />
+	<util:properties id="IW" location="classpath:/messages_iw.properties" />
+	<util:properties id="HI" location="classpath:/messages_hi.properties" />
+	<util:properties id="HU" location="classpath:/messages_hu.properties" />
+	<util:properties id="IS" location="classpath:/messages_is.properties" />
+	<util:properties id="ID" location="classpath:/messages_id.properties" />
+	<util:properties id="GA" location="classpath:/messages_ga.properties" />
+	<util:properties id="IT" location="classpath:/messages_it.properties" />
+	<util:properties id="KN" location="classpath:/messages_kn.properties" />
+	<util:properties id="KO" location="classpath:/messages_ko.properties" />
+	<util:properties id="LA" location="classpath:/messages_la.properties" />
+	<util:properties id="LV" location="classpath:/messages_lv.properties" />
+	<util:properties id="LN" location="classpath:/messages_ln.properties" />
+	<util:properties id="MK" location="classpath:/messages_mk.properties" />
+	<util:properties id="MS" location="classpath:/messages_ms.properties" />
+	<util:properties id="MT" location="classpath:/messages_mt.properties" />
+	<util:properties id="NO" location="classpath:/messages_no.properties" />
+	<util:properties id="FA" location="classpath:/messages_fa.properties" />
+	<util:properties id="PL" location="classpath:/messages_pl.properties" />
+	<util:properties id="PT" location="classpath:/messages_pt.properties" />
+	<util:properties id="RO" location="classpath:/messages_ro.properties" />
+	<util:properties id="RU" location="classpath:/messages_ru.properties" />
+	<util:properties id="SR" location="classpath:/messages_sr.properties" />
+	<util:properties id="SL" location="classpath:/messages_sl.properties" />
+	<util:properties id="ES" location="classpath:/messages_es.properties" />
+	<util:properties id="SW" location="classpath:/messages_sw.properties" />
+	<util:properties id="SV" location="classpath:/messages_sv.properties" />
+	<util:properties id="SK" location="classpath:/messages_sk.properties" />
+	<util:properties id="TA" location="classpath:/messages_ta.properties" />
+	<util:properties id="TE" location="classpath:/messages_te.properties" />
+	<util:properties id="TH" location="classpath:/messages_th.properties" />
+	<util:properties id="TR" location="classpath:/messages_tr.properties" />
+	<util:properties id="UK" location="classpath:/messages_uk.properties" />
+	<util:properties id="UR" location="classpath:/messages_ur.properties" />
+	<util:properties id="CY" location="classpath:/messages_cy.properties" />
+	<util:properties id="YI" location="classpath:/messages_yi.properties" />
+	<util:properties id="zh_CN" location="classpath:/messages_zh_CN.properties" />
+	<util:properties id="zh_TW" location="classpath:/messages_zh_TW.properties" />
+
+	<!-- Handles HTTP GET requests for /resources/** by efficiently serving
+		up static resources in the ${webappRoot}/resources directory -->
+	<resources mapping="/resources/**" location="/resources/" />
+
+	<!-- Tiles Configuration -->
+	<beans:bean class="org.springframework.web.servlet.view.UrlBasedViewResolver"
+		id="tilesViewResolver">
+		<beans:property name="viewClass"
+			value="org.springframework.web.servlet.view.tiles2.TilesView" />
+	</beans:bean>
+	<beans:bean
+		class="org.springframework.web.servlet.view.tiles2.TilesConfigurer"
+		id="tilesConfigurer">
+		<beans:property name="definitions">
+			<beans:list>
+				<beans:value>/WEB-INF/views/layout/layout.xml</beans:value>
+				<beans:value>/WEB-INF/views/**/views.xml</beans:value>
+			</beans:list>
+		</beans:property>
+	</beans:bean>
+	<!-- start config for i18n -->
+	<interceptors>
+		<beans:bean id="localeChangeInterceptor"
+			class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor">
+			<beans:property name="paramName" value="lang" />
+		</beans:bean>
+	</interceptors>
+	<beans:bean id="localeResolver"
+		class="org.springframework.web.servlet.i18n.CookieLocaleResolver">
+		<beans:property name="defaultLocale" value="ja" />
+	</beans:bean>
+	<beans:bean id="messageSource"
+		class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+		<beans:property name="basename" value="classpath:messages" />
+		<beans:property name="defaultEncoding" value="UTF-8" />
+	</beans:bean>
+	<!-- end config for i18n -->
+
+	<beans:bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<beans:property name="prefix" value="/WEB-INF/views/" />
+		<beans:property name="suffix" value=".jsp" />
+	</beans:bean>
+
+	<!-- DB configuration -->
+	<beans:bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<beans:property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<beans:property name="url"
+			value="jdbc:mysql://localhost:3306/bonsai?useUnicode=yes&amp;characterEncoding=UTF-8" />
+		<beans:property name="username" value="root" />
+		<beans:property name="password" value="123456" />
+	</beans:bean>
+
+	<beans:bean id="sessionFactory"
+		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<beans:property name="dataSource" ref="dataSource" />
+		<beans:property name="packagesToScan" value="jp.co.gmo.rs.ghs.model">
+		</beans:property>
+		<beans:property name="hibernateProperties">
+			<beans:props>
+				<beans:prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect
+				</beans:prop>
+				<beans:prop key="hibernate.show_sql">false</beans:prop>
+				<beans:prop key="hibernate.format_sql">false</beans:prop>
+				<!-- <beans:prop key="hibernate.hbm2ddl.auto">update</beans:prop> -->
+			</beans:props>
+		</beans:property>
+	</beans:bean>
+
+	<beans:bean id="transactionManager"
+		class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+		<beans:property name="sessionFactory" ref="sessionFactory" />
+	</beans:bean>
+
+	<beans:bean id="persistenceExceptionTranslationPostProcessor"
+		class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor" />
+
+	<beans:bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver" />
+
+</beans:beans>

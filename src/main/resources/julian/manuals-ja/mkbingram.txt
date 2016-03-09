@@ -1,0 +1,93 @@
+    mkbingram
+
+MKBINGRAM(1)                                                      MKBINGRAM(1)
+
+
+
+’D’D
+           mkbingram
+          - ’B’B‘¢’B’B‘¨ N-gram ’D‘¢’E
+
+’E‘¤’G‘¤
+       mkbingram [-nlr forward_ngram.arpa] [-nrl backward_ngram.arpa]
+                 [-d old_bingram_file] {output_bingram_file}
+
+DESCRIPTION
+       mkbingram ’B‘­’N‘ºARPA’D‘»‘ ’D‘º’B‘¬ N-gram ’D‘¬’F‘¼‘§’B’B‘Ÿ’B‘¢’B‘©’BJulius’F‘¦’B‘¬’B’B‘¢’B’B‘¨N-gram
+       ’B’B‘Ÿ’B‘¢’B‘©’B‘©’D‘¢’E’B’B’B’B‘º’B‘©’B‘¥’B’N‘º’B’B’B’B’B’D‘¢’E’B’B‘¤’B’B’B’B‘¦’B‘¥’N‘ºJulius’B‘¬’G‘³‘µ
+       ’D’B’D‘¢‘¥’D‘·’B‘©’H‘©’H’D’B‘¥’B’B‘¼’B’N‘º
+
+       Julius-4’B’B’N‘ºN-gram ’B‘­’D’D’B’N‘º’D‘¼’B’D’B’N‘º’B’B’B’B‘­’C‘¶‘Ÿ’E‘·’B’E’D‘¬’B‘¥’B’B’B’B
+       ’B‘©’B‘¨’B’B‘¼’B’B’N‘ºmkbingram ’B‘¥’B’N‘º’B‘§’B‘Ÿ’B’B’C‘¶’E‘·’B ’B’B‘¥’B’B‘¢’B’B‘¨N-gram’B’C‘»’E’B’B’B
+       ’B‘¦’B’B‘¥’B’B‘¼’B’N‘º’B‘¼’B’N‘º’C‘¶‘Ÿ’E‘·’B’E’D‘¬’B’B’D ‘²’D’B‘­’N‘º’B’B’B2’B‘¢’B‘¬N-gram’B‘­’C‘¶’B‘¢’B‘¬’B
+       ’B‘¢’B’B‘¨N-gram’B‘©’F‘³’D’B’B’B‘¼’B’N‘º
+
+       ’D’D’BN-gram’B‘¬’B‘½’B’E’D‘¬’B’B’B’B‘¦’B’N‘ºmkbingram ’B‘­ ’D’D’BN-gram’B ’B’B’B’B
+       ’B‘¢’B’B‘¨N-gram’B’F’E’B’B‘¼’B’N‘º’B’B‘¬’B’B‘¢’B’B‘¨N-gram’B’C‘»‘½’B’B‘¦’B’N‘ºJulius ’B‘­’B’B‘¬ ’C‘¶’B‘¬ 2-gram
+       ’B’C‘»‘½’B‘¡’B‘¤’F‘ª‘ª1’B’B‘·’B’G‘Ÿ’B’N‘º’F‘ª‘ª2 ’B ’B‘·’B‘¥’B‘­’B’B‘¬’D’D’B’F‘ ‘¸’F’B’B’D‘¼’D
+       ’B’B‘¬’F‘ ‘¸’F’B’N‘º’B’B‘¢’B‘¸’D’B‘©’D‘¼’B‘¡’B‘¤’F‘¬’D‘¸’B’B‘¨’B’B’G‘¨’G’B’G‘Ÿ’B’B‘¼’B’N‘º
+
+       ’D‘¼’D’BN-gram’B‘¬’B‘½’B’E’D‘¬’B’B’B’B‘¦’B’N‘ºmkbingram’B‘­’D‘¼’B’D’BN-gram’B ’B’B’B’B
+       ’B‘¢’B’B‘¨N-gram’B’F’E’B’B‘¼’B’N‘º’B’B‘¬’B’B‘¢’B’B‘¨N-gram’B’C‘»‘½’B’B‘¦’B’N‘ºJulius ’B‘­’B’B‘¬ ’C‘¶’B‘¬’D‘¼’D’B
+       2-gram ’B’B’B’B‘¢’B‘¸’D’B‘©’D‘¼’B‘¡’B‘¤’F‘¬’D‘¸’B’B‘¨’B’B’F‘ª‘ª1’B’B‘·’B‘¬’G‘¨’G’B’G‘Ÿ’B’N‘º ’F‘ª‘ª2’B’B‘·’B‘¥’B‘­’D‘¼’D’B
+       N-gram’B’C‘»‘½’B‘¡’B’G‘¨’G’B’G‘Ÿ’B’B‘¼’B’N‘º
+
+       ’C‘¶‘Ÿ’E‘·’B’E’D‘¬’B’B’B’B‘¦’B’B‘­’N‘º’D’D’BN-gram’C‘¶’B‘¬2-gram’B‘¦’D‘¼’D’BN-gram’B’F‘³‘¯’D’B’B
+       ’B’B’B‘¢’B’B‘¨N-gram’B’F’E’B’B’B‘¼’B’N‘ºJulius’B‘¥’B‘­’B’B‘¬’D’D’B2-gram’B‘¥’F‘ª‘ª1’B’B‘·’B
+       ’G‘Ÿ’B’N‘º’D‘¼’D’BN-gram’B‘¥’F‘ª‘ª2’B’B‘·’B’G‘Ÿ’B’B‘¼’B’N‘º’B‘¨’B’C‘¶‘Ÿ N-gram ’B‘­’D’C‘¶’B‘¬’B‘±’B‘º’B’B‘· ’B’B’D
+       ’C‘¶’B‘¬’E‘Ÿ’C‘¹‘´’N‘º’B‘©’B’B’B‘¨’B’D‘¢’N‘º’B’B’B‘­’B‘¨’B’G‘¦’F‘¬’E‘·’E‘±’F’N‘º’B‘¥’D‘¤’F‘½’B’B’B‘¤’B’B’N‘º
+       ’D’C‘¶’B‘¬’G‘¨’D‘»’B’E’B‘¡’B‘¤’B’B’D‘½’G‘¤’B’B’B’B‘¼’B’N‘º
+
+       ’B‘¨’B’N‘ºmkbingram ’B‘­ gzip ’D‘¥’F‘¶‘¬’B’B’B ARPA ’B’B‘Ÿ’B‘¢’B‘©’B’B’B‘¬’B‘¼’B‘¼’G‘¨’B‘½’G‘¼‘º’B’B‘¼’B’N‘º
+
+       ’B‘¼’B’N‘º’B’B‘º’B‘¶’B‘¥’B‘± 4.2.3’B’B’B’B‘¢’B’B‘¨N-gram’D’B‘¬’E’D’B‘±’B‘º’B’B‘¬’D‘¢’E’B’D‘­ ’G‘»’B‘©’B‘¨’B’B‘¼’B’B’N‘º
+
+       ’B’B‘º’B‘¶’B‘¥’B‘± 3.x ’C‘¹‘£’D’B‘¥’C‘»’E’B’B’B’B‘¢’B’B‘¨N-gram’B‘­’N‘º’B’B‘¬’B‘¼’B‘¼ 4.0 ’B‘¥’B’G‘¨’B’B‘¼
+       ’B’N‘ºmkbingram ’B‘© -d ’B‘¥’C‘¶’B’B’B’B‘¦’B‘¥’N‘º’D‘¢’B’B’B‘¢’B’B‘¨’D‘»‘ ’D‘º
+       ’B’E‘®’B’B’B’B‘¢’B’B‘¨’D‘»‘ ’D‘º’B‘©’D‘¢’E’B’B’B’B‘¦’B’B‘¥’B’B‘¼’B’N‘º’B‘¨’B’N‘º4.0 ’C‘¹‘£’H’B‘¬ mkbingram
+       ’B‘¥’C‘»’E’B’B’B’B‘¢’B’B‘¨N-gram’B’B‘Ÿ’B‘¢’B‘©’B‘­3.x ’C‘¹‘£’D’B‘¬’B’B‘º’B‘¶’B‘¥’B‘±’B‘¥’B‘­
+       ’C‘»‘½’B’B‘¼’B’B’B‘¬’B‘¥’B’E‘±‘¦’E’B’B ’B’B’N‘º
+
+OPTIONS
+        -nlr  forward_ngram.arpa
+           ’D’D’B’N‘ºleft-to-right’N‘º’B‘¬ARPA’D‘»‘ ’D‘º N-gram ’B’B‘Ÿ’B‘¢’B‘©’B’G‘¨’B‘½’G‘¼‘º’B
+
+        -nrl  backward_ngram.arpa
+           ’D‘¼’B’D’B’N‘ºright-to-left’N‘º’B‘¬ARPA’D‘»‘ ’D‘º N-gram ’B’B‘Ÿ’B‘¢’B‘©’B’G‘¨’B‘½’G‘¼‘º’B
+
+        -d  old_bingram_file
+           ’B’B‘¢’B’B‘¨N-gram’B’G‘¨’B‘½’G‘¼‘º’B’N‘º’D‘¢’B’B’B‘¢’B’B‘¨’D‘»‘ ’D‘º’B‘¬’D‘¢’E’F‘¦’N‘º
+
+        -swap
+           ’E’H ’G‘¦’D‘µ <s> ’B‘¦’E’E‘©’G‘¦’D‘µ </s> ’B’D‘£’B’E‘½’B’B’N‘º
+
+        -c  from to
+           ’B’B‘¢’B’B‘¨N-gram’D’B‘¬’E’D’B‘±’B‘º’B’B’D‘¢’E’B’B’N‘º’N‘ºfrom, to’B‘­’E’D’B‘±’B‘º’B’B’G‘Ÿ‘¦’B’E’D’D’N‘º
+
+       output_bingram_file
+           ’D‘¸’D’D’B‘¬’B’B‘¢’B’B‘¨N-gram’B’B‘Ÿ’B‘¢’B‘©’D
+
+EXAMPLES
+       ARPA’D‘»‘ ’D‘º’B‘¬ N-gram ’B’B’B‘¢’B’B‘¨’D‘»‘ ’D‘º’B‘©’D‘¢’E’B’B’N‘º’D’D’B+’D‘¼’B’D’B’N‘º’N‘º
+       ARPA’D‘»‘ ’D‘º’B‘¬’D’D’B 4-gram ’B’B’B‘¢’B’B‘¨’D‘»‘ ’D‘º’B‘©’D‘¢’E’B’B’N‘º’D’D’B’B‘¬’B‘½’N‘º’N‘º
+       ’D‘¢’B’B’B‘¢’B’B‘¨N-gram’B’B‘Ÿ’B‘¢’B‘©’B’F‘¼’D‘¦’B‘¬’D‘»‘ ’D‘º’B‘©’D‘¢’E’B’B’N‘º
+
+SEE ALSO
+        julius ( 1 ) ,
+        mkbinhmm ( 1 )
+
+COPYRIGHT
+       Copyright (c) 1991-2013 ’C‘¸‘ª’H‘»’D‘¢‘¥’D‘¤ ’E‘°‘±’D’F ’F‘§‘´’D‘¬‘¢
+
+       Copyright (c) 1997-2000 ’E’D ‘¯’D‘¤’F’E‘­’G’C‘¸’E‘£’D’C‘º(IPA)
+
+       Copyright (c) 2000-2005 ’D‘£’G‘­’D’F‘©‘­’F‘¥’D‘¤’E’G‘Ÿ’D‘¢‘¥’D‘¤’H‘ ’D‘¢‘¥’D‘¤ ’H‘·‘½’H’F ’F‘§‘´’D‘¬‘¢
+
+       Copyright (c) 2005-2013 ’D’D‘¢’D‘¯’D‘µ‘£’E‘£’D‘¢‘¥’D‘¤ Julius’H’F‘¸’B’B‘º’B
+
+LICENSE
+       Julius ’B‘¬’C‘»‘½’F‘¦’G‘¦‘¯’G‘©‘¼’B‘©’E‘¸’B’B‘¼’B’N‘º
+
+
+
+                                  19/12/2013                      MKBINGRAM(1)

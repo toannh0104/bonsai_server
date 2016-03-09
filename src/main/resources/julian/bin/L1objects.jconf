@@ -1,0 +1,8 @@
+-dfa ../../Data/JGrammar/L1/L1people.dfa
+-v ../../Data/JGrammar/L1/L1people.dict
+-C ../../julian/hmm_ptm.jconf
+-input rawfile 
+-filelist ../../wavlst
+#-outfile 
+#-filename result
+-logfile test.log

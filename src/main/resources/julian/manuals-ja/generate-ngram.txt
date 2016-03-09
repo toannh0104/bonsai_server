@@ -1,0 +1,60 @@
+    generate‐ngram
+
+GENERATE-NGRAM(1)                                            GENERATE-NGRAM(1)
+
+
+
+åå
+           generate-ngram
+          - N-gram ã«å¾ã£ã¦æãã©ã³ãã çæãã
+
+æ¦è¦
+       generate-ngram [options...] {binary_ngram}
+
+DESCRIPTION
+       generate-ngram ã¯ï¼ä¸ãããã N-gram ç¢ºçã«å¾ã£ã¦æãã©ã³ãã çæãã
+       ãã¼ã«ã§ãï¼binary_ngram ã«ã¯ï¼ ãã¤ããªå½¢å¼ã® N-gram ãã¡ã¤ã«ãæå®ãã¾ãï¼
+
+OPTIONS
+        -n  num
+           çæããææ°ãæå®ããï¼ããã©ã«ãï¼10ï¼
+
+        -N
+           ä½¿ç¨ãã N-gram
+           ã®é·ããå¶éããï¼ããã©ã«ãï¼ä¸ããããã¢ãã«ã§å®ç¾©ããã¦ããæå¤§å¤ï¼3-gram ãªã
+           3ï¼ï¼
+
+        -bos
+           æéå§è¨å·ãæå®ããï¼ããã©ã«ãï¼<s>ï¼
+
+        -eos
+           æçµäºè¨å·ãæå®ããï¼ããã©ã«ãï¼</s>ï¼
+
+        -ignore
+           åºåãã¦ã»ãããªãåèªãæå®ããï¼ããã©ã«ãï¼<UNK>ï¼
+
+        -v
+           åé·ãªåºåãè¡ãï¼
+
+        -debug
+           ãããã°ç¨åºåãè¡ãï¼
+
+SEE ALSO
+        julius ( 1 ) ,
+        mkbingram ( 1 )
+
+COPYRIGHT
+       Copyright (c) 1991-2013 äº¬é½å¤§å¦ æ²³åç ç©¶å®¤
+
+       Copyright (c) 1997-2000 æå ±å¦çæ¯èäºæ¥åä¼(IPA)
+
+       Copyright (c) 2000-2005 å¥è¯åç«¯ç§å¦æè¡å¤§å¦é¢å¤§å¦ é¹¿éç ç©¶å®¤
+
+       Copyright (c) 2005-2013 åå¤å±å·¥æ¥å¤§å¦ Juliuséçºãã¼ã
+
+LICENSE
+       Julius ã®ä½¿ç¨è¨±è«¾ã«æºãã¾ãï¼
+
+
+
+                                  19/12/2013                 GENERATE-NGRAM(1)

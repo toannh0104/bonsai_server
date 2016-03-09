@@ -1,0 +1,218 @@
+    adintool
+
+ADINTOOL(1)                                                        ADINTOOL(1)
+
+
+
+’D’D
+           adintool
+          - ’H‘±’D‘¡‘®’E‘±‘ ’D‘»‘ ’B’B‘º’B‘½’B‘¬’G‘¦’H‘°’B‘¹’D’D‘°’B‘¹’H’C‘½‘Ÿ’B‘¹’D’C‘½‘Ÿ’B’B‘º’B‘©
+
+’E‘¤’G‘¤
+       adintool {-in inputdev} {-out outputdev} [options...]
+
+DESCRIPTION
+       adintool ’B‘­’N‘º’H‘±’D‘¡‘®’E‘±‘ ’D‘»‘ ’B’B‘º’B‘½’C‘¶’B‘¬’H‘±’D‘¡‘®’D‘¸’H’B‘¬’E‘¢’D‘¸’B’B’B‘±’G‘¦’H‘°’B’H‘¡’F‘´’F’B‘©’G‘Ÿ
+       ’B’B’B‘º’B‘©’B‘¥’B’N‘º’D‘£’D’H‘±’D‘¡‘®’B‘©’D‘­‘¼’B’B‘¤’H‘´’C‘¸‘¢’D‘µ‘¬’E‘®’B‘¦’E‘­’D‘·’B‘ª’B’B‘©’B‘©’D‘¸’B‘£’B’H‘±’D‘¡‘®’D‘¸’H’E‘¢
+       ’D‘¸’B’H’E‘ª‘Ÿ’G‘Ÿ’B’N‘º’H‘±’D‘¡‘®’D‘¸’H’H‘¦’D’B’H‘¡’F‘´’D‘¸’D’B’B‘¼’B’N‘º
+
+       adintool ’B‘­ adinrec ’B‘¬’H‘©’E‘§’G‘»’F’B‘¥’B’N‘º’H‘±’D‘¡‘®’B’B‘º’B‘½’B‘¬’D‘£’D’D’B‘¦’B’B‘¤’N‘º’B’B‘¢’B‘­ ’D‘£’D’B‘¹
+       ’H‘±’D‘¡‘®’E‘±‘ ’D‘»‘ ’B’B‘Ÿ’B‘¢’B‘©’B‘¹’E‘¦’E‘¸’D‘£’D’B‘¹’B’B’B’B‘­’B‘º’B‘­’D‘£’D(adinnet ’B‘³’B‘º’B’B‘º
+       ’B‘ ’B‘º’B)’B’H‘¶’E’B‘¥’B’B‘¼’B’N‘ºJulius ’B‘¬ -input ’B‘¨’B’B‘µ’B‘¥’B‘±’B
+       ’C‘»‘½’F‘¦’D‘­’G‘»’B‘¥’N‘º’B’B‘§’B‘®’B‘¢’B‘±’D‘£’D’B’H‘¶’E’B‘¥’B’B‘¼’B’N‘º
+
+       ’D‘¸’D’D’B‘¦’B’B‘¤’N‘º’H‘±’D‘¡‘®’E‘±‘ ’D‘»‘ ’B’B‘Ÿ’B‘¢’B‘©’B‘¹’E‘¦’E‘¸’D‘¸’D’B‘¹’B’B’B’B‘­’B‘º’B‘­’D‘¸’D(adinnet ’B‘­
+       ’B‘§’B‘¢’B‘ ’B‘±’B’B‘ ’B‘º’B)’B’H‘¶’E’B‘¥’B’B‘¼’B’N‘º’F‘·’B‘©’B’B’B’B‘­’B‘º’B‘­’D‘¸’D’N‘ºadinnet ’B‘­’B‘§’B‘¢
+       ’B‘ ’B‘±’B’B‘ ’B‘º’B’N‘º’B‘¥’B‘­’N‘º julius ’B‘¶’B’B’B’B‘­’B‘º’B‘­’F‘³’F‘¯’B‘¥’H‘±’D‘¡‘®’B’H’C‘½‘Ÿ’B’B‘¤’H‘±’D‘¡‘®’G‘¨’G
+       ’B’B’B’B’B‘¦’B’B‘¥’B’B‘¼’B’N‘º
+
+       ’D‘£’D’H‘±’D‘¡‘®’B‘­’H‘±’D‘¡‘®’D‘¸’H’B’B‘¦’B‘©’G‘¨’D’D’D‘°’B’B’N‘º’H’E‘ª‘Ÿ’D‘¸’D’B’B’B‘¼’B’N‘º’H‘±’D‘¡‘®’D‘¸’H’B‘¬’D ’B’D‘¸’B’B‘©’B‘­
+       adinrec ’B‘¦’D’B’N‘º’C‘¶’D‘¬’E’H’D’B‘¬’H‘´’C‘¸‘¢’D‘µ‘¬’E‘®’B‘¦’B’B‘­’B‘º’N‘º’E‘­’D‘·’B‘ª’B’B‘©’N‘º
+       ’B‘¬’B’B’B’D‘¢’B’F‘¦’B’B‘¼’B’N‘º’H‘±’D‘¡‘®’D‘¸’H’H’D‘¥’B‘¦’D’E’B‘©’H‘±’D‘¡‘®’D‘¸’D’B’H’D‘¥’B’B’B‘¼’B’N‘º’D‘¸
+       ’D’B‘¦’B’B‘¤’B’B‘Ÿ’B‘¢’B‘©’D‘¸’D’B’H‘¶’B’B ’D ‘²’D’B‘­’N‘º’H‘¡’F‘¨’B’B‘Ÿ’B‘¢’B‘©’D’B‘¥’E‘¢’D‘¸’B’B’B’D‘¸’H’B’B‘¦ ’B‘©’C‘½’D’B’B‘¼’B’N‘º
+
+       ’B‘³’B‘±’B’B‘¨’B‘±’B‘®’D‘¦’E‘±‘ ’E‘®’B‘­’C‘¹‘¹’E’B‘©’G‘¦’D‘¬’D‘­’G‘»’B‘¥’B’N‘º’H‘°’H‘±’D‘»‘ ’D‘º’B‘­ 16bit, 1 channel
+       ’B‘¥’N‘º’E‘¶’B’D‘¸’B’B’B’B’B‘Ÿ’B‘¢’B‘©’D‘»‘ ’D‘º’B‘­ Microsoft WAV ’D‘»‘ ’D‘º’B‘¥’B’N‘º
+       ’E‘ ’B‘©’D’B’D’D’B‘¬’B’B‘Ÿ’B‘¢’B‘©’B’D’D‘¦’B’B’D ‘²’D’B‘­’C‘¶’E‘¶’B’B’B’B‘¼’B’N‘º
+
+OPTIONS
+       Julius ’B‘¬’D‘¦’B‘¤’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B’E’D‘¬’D‘­’G‘»’B‘¥’B’B’N‘º’E’D‘¬’B’B’B’B’B‘¬’B‘¬’B’B‘Ÿ’N‘º
+       ’H‘±’D‘¡‘®’D‘£’D’B‘©’H‘ ’C‘½’B’B’B‘¨’B’B‘µ’B‘¥’B‘±’B‘¬’B‘½’E‘¯’B’B’B’N‘º’C‘¹‘£’C‘¶’B‘©’N‘ºadintool ’B‘¬
+       ’B‘¨’B’B‘µ’B‘¥’B‘±’N‘º’B’B’B‘±’E’D‘·’B‘¨ Julius ’B‘¨’B’B‘µ’B‘¥’B‘±’B’G‘¥‘¡’G‘¨‘ª’B’B’N‘º
+
+   adintool specific options
+        -freq  Hz
+           ’H‘±’D‘¡‘®’B‘¬’B‘³’B‘±’B’B‘¨’B‘±’B‘®’D‘¦’E‘±‘ ’E‘® (Hz) ’B’E’D‘¬’B’B’N‘º(default: 16,000)
+
+        -in  inputdev
+           ’H‘±’D‘¡‘®’B’G‘¨’B‘½’G‘¼‘º’B’D‘£’D’B’B’B‘¢’B‘·’B’E’D‘¬’B’B’N‘º"mic" ’B‘¥’B’B‘¢’B‘­’D‘£’D’N‘º "file"
+           ’B‘¥’B’B‘Ÿ’B‘¢’B‘©’D‘£’D, "stdin" ’B‘¥’E‘¦’E‘¸’D‘£’D’B’B’H‘±’D‘¡‘®’B’G‘¨’B‘½’G‘¼‘º’B’N‘º
+           ’B’B‘Ÿ’B‘¢’B‘©’D‘£’D’B‘¬’D ‘²’D’N‘º’B’B‘Ÿ’B‘¢’B‘©’D’B‘­’G‘³‘µ’D’D‘¼’B‘©’D‘¸’B‘¤’B’B’B’B’B‘±’B’B’B‘©’D‘­‘¼
+           ’B’B‘¤’E’D‘¬’B’B’N‘º’B‘¼’B’N‘º"adinnet" ’B‘¥ adintool ’B‘­ adinnet ’B‘³’B‘º’B’B‘º
+           ’B‘¦’B‘¨’B’N‘ºadinnet ’B‘­’B‘§’B‘¢’B‘ ’B‘±’B’B’B’H‘±’D‘¡‘®’B’B‘º’B‘½’B tcp/ip ’F‘³’F‘¯’B‘¥
+           ’D’B’D’B’N‘º’B’B‘º’B’F‘¨’D‘µ’B‘­ 5530 ’B‘¥’B’B’N‘º"-inport" ’B‘¥’D‘¢’E‘²’D‘­’G‘»’N‘º’N‘º
+
+           ’D‘£’D’B’B’B‘¢’B‘·’B‘­’N‘º’B’B‘¬’B‘¹’B Julius ’B‘¬ "-input" ’B‘¨’B’B‘µ’B‘¥’B‘±’B‘¥’B’E’D‘¬’D‘­’G‘»
+           ’B‘¥’B’B’N‘º’B’B‘¬’D ‘²’D’N‘º’B’B‘§’B‘®’B‘¢’B‘±’B’B’B‘¬’D‘£’D’B’D‘­’G‘»’B‘¥’B’B’N‘º
+
+        -out  outputdev
+           ’H‘±’D‘¡‘®’B’D‘¸’D’B’B’B’B’B‘¢’B‘·’B’E’D‘¬’B’B’N‘º"file" ’B‘¥’B’B‘Ÿ’B‘¢’B‘©’D‘¸’D’N‘º stdout
+           ’B‘¥’E‘¦’E‘¸’D‘¸’D’B‘¶’D‘¸’D’B’B’N‘º’B’B‘Ÿ’B‘¢’B‘©’B‘¬’D ‘²’D’N‘º’D‘¸’D’B’B‘Ÿ’B‘¢’B‘©’D’B‘­ ’B‘¨’B’B‘µ’B‘¥’B‘±
+           "-filename" ’B‘¥’C‘¶’B’B’N‘º’D‘¸’D’B’B‘Ÿ’B‘¢’B‘© ’D‘»‘ ’D‘º’B‘­ 16bit WAV ’D‘»‘ ’D‘º’B‘¥’B’B’N‘º
+           ’B‘¼’B’N‘º"adinnet" ’B‘¥ adintool ’B‘­ adinnet ’B‘­’B‘§’B‘¢’B‘ ’B‘±’B ’B‘¦’B‘¨’B’N‘ºadinnet
+           ’B‘³’B‘º’B’B‘¶’D’B’G‘¼‘º’B’B ’H‘±’D‘¡‘®’B’B‘º’B‘½’B tcp/ip ’F‘³’F‘¯’B‘¥ ’H’C‘½‘Ÿ’B‘¥’B’B’N‘º’H’C‘½‘Ÿ’D’B’B‘·’B’B‘­
+           "-server" ’B‘¥’E’D‘¬’B’B’N‘º ’B’B‘º’B’F‘¨’D‘µ’B‘­ 5530 ’B‘¥’B’B’N‘º"-port" ’B‘¥’D‘¢’E‘²’D‘­’G‘»’N‘º’N‘º
+           "vecnet" ’B‘¥’B‘­’N‘º’H‘±’D‘¡‘®’D‘£’D’B’B’E‘»’D‘¸’B’B’F‘·’D‘¼‘²’H’B’B‘­’B’B‘©’B’B‘³’B‘º’B’B‘¶’H’C‘½‘Ÿ’B‘¥’B’B’N‘º
+
+        -inport  num
+           ’D‘£’D’B adinnet ’B‘¬’D ‘²’D (-in adinnet)’N‘º’E‘£’F‘´’B’D’B’B’B’B‘º’B’F‘¨’D‘µ
+           ’B’E’D‘¬’B’B’N‘º’E’D‘¬’B’B‘¨’B’D ‘²’D’B‘¬’B’B’B‘§’B‘©’B’B‘­ 5530 ’B‘¥’B’B’N‘º
+
+        -server  [host] [,host...]
+           ’D‘¸’D’B adinnet ’B‘¬’D ‘²’D (-out adinnet)’N‘º’H’C‘½‘Ÿ’D’B‘¬’B‘³’B‘º’B’D’B’E’D‘¬’B’B’N‘º
+           ’G‘¢’E‘®’B’B’D ‘²’D’B‘­’N‘º’B‘©’B‘±’B’B‘¥’D‘¸’D’B‘¡’B‘¤’E’D‘¬’B’B’N‘º
+
+        -port  [num] [,num...]
+           ’D‘¸’D’B adinnet ’B‘¬’D ‘²’D (-out adinnet)’N‘º’H’C‘½‘Ÿ’D’B‘¬’D’B‘³’B‘º’B’B‘¬’B’B‘º’B’F‘¨’D‘µ
+           ’B’E’D‘¬’B’B’N‘º’E’D‘¬’B’B‘¨’B’D ‘²’D’B‘¬’B’B’B‘§’B‘©’B’B‘­ 5530 ’B‘¥’B’B’N‘º -server
+           ’B‘¥’G‘¢’E‘®’B‘¬’B‘³’B‘º’B’B’E’D‘¬’B’B‘¤’B’B’D ‘²’D’N‘º
+           ’D‘¦’B‘¤’B‘©’B‘¢’B’B‘¤’E’F‘¢‘¸’F’B‘©’B’B‘º’B’F‘¨’D‘µ’B’E’D‘¬’B’B’D‘½’G‘¤’B’B’B’N‘º
+
+        -filename  file
+           ’B’B‘Ÿ’B‘¢’B‘©’D‘¸’D (-out file) ’E’N‘º’D‘¸’D’B’B‘Ÿ’B‘¢’B‘©’D’B
+           ’C‘¶’B’B’N‘º’B’B’B‘§’B‘©’B’B‘¥’B‘­’N‘º’E‘¢’D‘¸’B’B’B’H‘±’D‘¡‘®’D‘¸’H’E‘¢’D‘¸’B’B‘¦’B‘©’N‘º "file.0000.wav" ,
+           "file.0001.wav" ... ’B‘¬’B’B’B‘©’D‘¸’H’B’B‘¦’B‘©’H‘¡’F‘¨’B‘¥ ’G‘¦’H‘°’B’B’B’N‘º’F‘¨’D‘µ’B‘¬’D’E’D‘¢’B‘­ 0
+           ’B‘¥’B’B’N‘º-startid’B‘¥ ’D‘¢’E‘²’D‘­’G‘»’N‘º’N‘º’B‘¨’B’N‘º’B‘¨’B’B‘µ’B‘¥’B‘± -oneshot ’E’D‘¬’E’B‘­
+           ’E’D’B‘¬’D‘¸’H’B ’B’B "file" ’B‘¬’D’D’B‘¥’C‘½’D’B’B’B’N‘º
+
+        -startid  number
+           ’B’B‘Ÿ’B‘¢’B‘©’D‘¸’D’E’N‘º’G‘¦’H‘°’B’H’D‘¥’B’B’H‘¡’F‘¨’F‘¨’D‘µ’B‘¬’D’E’D‘¢’B’E’D‘¬’B’B’N‘º’N‘º ’B’B’B‘§’B‘©’B’N‘º0’N‘º
+
+        -oneshot
+           ’E’D’B‘¬’H‘±’D‘¡‘®’D‘¸’H’B’F‘³’C‘¸’B’B’B’F‘³’C‘¸’B’B’N‘º
+
+        -nosegment
+           ’D‘£’D’H‘±’D‘¡‘®’B‘¬’H‘±’D‘¡‘®’D‘¸’H’E‘¢’D‘¸’N‘º’F‘Ÿ’H‘±’B‘©’B’B’D‘¸’D’B’B‘¦’F‘Ÿ’H‘±’D‘¸’H’B‘¬’B‘·’B’B’B’N‘º’B ’G‘Ÿ’B’B‘¨’B’N‘º
+
+        -raw
+           RAW’B’B‘Ÿ’B‘¢’B‘©’D‘»‘ ’D‘º’B‘¥’D‘¸’D’B’B’N‘º
+
+        -autopause
+           ’D‘¸’D’B adinnet ’B‘¬’D ‘²’D’N‘º-out adinnet’N‘º’N‘º’H‘±’D‘¡‘®’D‘¸’H’B’F‘³’C‘¸’B’B’B’B‘± ’B‘©’D‘£’D’D’Eâ€
+           ‘ ’B‘¹’D’C‘»’D’E‘ ’F‘´’E’B‘©’F‘¥‘¹’G‘Ÿ’B’B’N‘º’D‘¸’D’D’B‘¬ adinnet ’B‘³’B‘º’B’B
+           ’B’D’C‘»’D’H’C‘½‘Ÿ’D‘µ’B’B’B’B‘¦’H‘±’D‘¡‘®’D‘£’D’B’D’H’B’B’N‘º
+
+        -loosesync
+           ’D‘¸’D’B adinnet ’N‘º-out adinnet’N‘º’B‘¥’G‘¢’E‘®’B‘¬’D‘¸’D’D’B‘³’B‘º’B’B‘¶’D‘¸’D’B’B‘¤’B’B
+           ’D ‘²’D’N‘º’D’C‘»’D’E‘ ’F‘´’E’B’B’D’C‘»’D’H’C‘½‘Ÿ’D‘µ’B‘©’B’B‘¡’B‘¤’D’C‘»’B’D’H’B’B’H’N‘ºadintool ’B‘­
+           ’B’B‘·’B‘¤’B‘¬’B‘³’B‘º’B’B’B’D’C‘»’D’H’C‘½‘Ÿ’D‘µ’B’D’B’B’B‘¼’B‘¥’D’C‘»’B’D’H’B’B‘¨’B’N‘º
+           ’B’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B’E’D‘¬’B’B’B‘¦’N‘º’D‘®’B‘¨’B’B‘¦’B’N‘º’B‘¢’B‘¬’B‘³’B‘º’B’B’B’D’H’C‘½‘Ÿ’D‘µ
+           ’B’B’B’B‘®’D’C‘»’B’D’H’B’B’B’B’B‘©’B‘¨’B’N‘º
+
+        -rewind  msec
+           ’D‘£’D’B’B’B‘¢’B‘­’B‘¬’B‘¦’B’N‘º’D’E‘ ’F‘´’E’B’B’D’C‘»’B’D’H’B’B’B‘¦’B’N‘º’D’E‘ ’C‘¶’B’B ’E’F‘´’B’B‘¤’H‘±’D‘¡‘®’D‘£’D’C‘¶â€
+           ’B ’B‘¡’B’D ‘²’D’N‘º’E’D‘¬’B’B’B’B’B‘¨’F‘¥’D’B ’B’B’B’B‘¬’B‘º’B‘¡’B‘¤ ’H‘°’H‘±’B’H’D‘¥’B’B’N‘º
+
+        -paramtype  parameter_type
+           ’D‘¸’D’B vecnet ’B‘¬’E’N‘º-out vecnet’N‘º’N‘º’E‘»’D‘¸’B’B’F‘·
+           ’D‘¼‘²’H’B‘¬’D’BHTK’D‘»‘ ’D‘º’B‘¥’E’D‘¬’B’B’N‘º’C‘¼:"MFCC_E_D_N_Z"’N‘º’N‘º
+
+        -veclen  vector_length
+           ’D‘¸’D’B vecnet ’B‘¬’E’N‘º-out vecnet’N‘º’N‘º’D‘¸’D’B’B’B ’B‘­’B’B‘©’H‘µ’N‘º’E‘ª‘Ÿ’D’E‘®’N‘º’B’E’D‘¬’B’B’N‘º
+
+   Concerning Julius options
+        -input  {mic|rawfile|adinnet|stdin|netaudio|esd|alsa|oss}
+           ’H‘±’D‘¡‘®’D‘£’D’B‘»’B‘º’B‘·’B’H‘¶’E’B’B’N‘º"-in" ’B‘¬’C‘¹‘¡’B’B’B‘©’B’B‘Ÿ’B’B’C‘»‘½’B’B’B‘¦’B
+           ’B‘¥’B’B’N‘º’E’D‘¼’B‘©’E’D‘¬’B’B’B‘¹’B’B’D‘¨’D’B’B’B’N‘º’N‘ºesd ’B’B’B‘§’B‘®’B‘¢’B‘±’D‘£’D’B ’E’D‘¬’D‘­’G‘»’B‘¥’B’B’N‘º
+
+        -lv  thres
+           ’E‘­’D‘·’B‘ª’B’B‘©’B‘¬’B’B’B’D‘¢’N‘º’D‘¢’B‘­ 0 ’B’B 32767 ’B‘¬’F‘­’D‘°’B‘¥’E’D‘¬’B’B’N‘º (default: 2000)
+
+        -zc  thres
+           ’H‘´’C‘¸‘¢’D‘µ‘¬’E‘®’B‘¬’B’B’B’D‘¢’N‘º’D‘¢’B‘­’N‘º’F‘¥’B’B’B’B‘¬’C‘¸‘¢’D‘µ‘¬’E‘®’B‘¥’E’D‘¬’B’B’N‘º (default: 60)
+
+        -headmargin  msec
+           ’H‘±’D‘¡‘®’D‘¸’H’H’D‘¥’H‘¦’B‘¬’B’B‘º’B‘¶’B‘±’N‘º’D’C‘»’B‘­’B’B‘¨’F‘¥’N‘º (default: 300)
+
+        -tailmargin  msec
+           ’H‘±’D‘¡‘®’D‘¸’H’F‘³’C‘¸’H‘¦’B‘¬’B’B‘º’B‘¶’B‘±’N‘º’D’C‘»’B‘­’B’B‘¨’F‘¥’N‘º (default: 400)
+
+        -zmean
+           ’D‘£’D’H‘±’D‘¡‘®’B‘·’B’B‘¨’B‘º’B ’B‘©’D‘­‘¼’B’B‘¤’F‘²’E‘³’E’D’H‘¢’D‘¹’B’G‘Ÿ’B’N‘º’D‘¦’B‘¤’B‘¬’H‘±’D‘¡‘®’D‘¤’F’B‘¬
+           ’B‘¬’D’E‘¬‘³’B‘¦’B’B‘¤’D‘¤’F’B’B’B’N‘º
+
+        -smpFreq  Hz
+           ’H‘±’D‘¡‘®’B‘¬’B‘³’B‘±’B’B‘¨’B‘±’B‘®’D‘¦’E‘±‘ ’E‘® (Hz) ’B’E’D‘¬’B’B’N‘º(default: 16,000)
+
+        -48
+           48kHz’B‘¥’D‘£’D’B’G‘Ÿ’B’N‘º16kHz’B‘©’B’B‘¤’B‘±’B‘³’B‘±’B’B‘¨’B‘±’B‘®’B’B’N‘º ’B’B’B‘­ 16kHz
+           ’B‘¬’B‘ ’B’B‘©’B’C‘»‘½’F‘¦’B’B‘¤’B’B’B‘¦’B’B‘¬’B‘½’E’D‘·’B‘¥’B’B’N‘º ’B’B‘¤’B‘±’B’B‘±’B’B‘¨’B‘±’B‘®’B‘¬’D’H‘¦’E‘§’G‘»’B‘­ sptk
+           ’B’B ’F‘¥‘¹’E‘¢’B’B’B’N‘º (Rev. 4.0)
+
+        -NA  devicename
+           DatLink ’B‘³’B‘º’B’B‘¬’B’B’B‘¢’B‘·’D (-input netaudio).
+
+        -adport  port_number
+
+           -input adinnet ’C‘»‘½’F‘¦’E’N‘º’E‘£’F‘´’B’D’B’C‘¹’B’B adinnet
+           ’B‘¬’B’B‘º’B’F‘¨’D‘µ’B’E’D‘¬’B’B’N‘º(default: 5530)
+
+        -nostrip
+           ’H‘±’D‘¡‘®’D’B’G‘¼‘º’B‘½’E’N‘º’B’B’B‘¢’B‘·’B’B’B‘Ÿ’B‘¢’B‘©’B‘©’B’B‘¡’B‘¤’B‘­’N‘º’H‘±’D‘¡‘®’E‘±‘ ’D‘»‘ ’C‘¶’B‘©’E‘­’D‘· ’B "0"
+           ’B‘¦’B‘¨’B’B’B‘ª’B‘º’B ’B’D’D‘¦’B’B’B’B‘¦’B’B’B’N‘ºJulius ’B‘­’H’D‘¶‘¶’N‘º’H‘±’D‘¡‘®
+           ’D‘£’D’B‘©’D‘©’B‘¼’B’B’B’B‘¬’B’B’B‘¨’B’B‘ª’B‘º’B ’B’H‘¢’D‘¹’B’B’N‘º’B’B‘¬’H‘´’B‘³’B‘±’B’B‘©’H‘¢’D‘¹’B
+           ’B’B‘¼’B’D’B’B‘¨’B’D ‘²’D’N‘º’B’B‘¬’B‘¨’B’B‘µ’B‘¥’B‘±’B’E’D‘¬’B’B’B’B‘¦’B‘¥’G‘¨’D’E‘´’D‘¹’B ’F‘Ÿ’D‘·’D’B’B’B’B‘¦’B’B‘¥’B’B’N‘º
+
+        -C  jconffile
+           jconf’G‘¦’D‘¬’B’B‘Ÿ’B‘¢’B‘©’B’G‘¨’B‘½’G‘¼‘º’B’N‘º’B’B‘Ÿ’B‘¢’B‘©’B‘¬’D’D‘¬‘·’B’B’B‘¬’D ‘²’E’B‘©’D‘¯’H’B’B’B’N‘º
+
+        -plugindir  dirlist
+           ’B’B‘§’B‘®’B‘¢’B‘±’B’G‘¨’B‘½’G‘¼‘º’B’B’B‘¡’B‘ª’B‘­’B’B‘¨’B’E’D‘¬’B’B’N‘º’G‘¢’E‘®’B‘¬’D ‘²’D’B‘­ ’B‘±’Bâ€
+           ’B‘±’B‘¥’D‘¸’D’B‘¡’B‘¤’C‘¶‘¤’B‘·’B‘¤’E’D‘¬’B’B’N‘º
+
+ENVIRONMENT VARIABLES
+        ALSADEV
+           (’B’B‘¢’B‘­’D‘£’D’B‘¥ alsa ’B’B’B‘¢’B‘·’C‘»‘½’F‘¦’E) ’H‘°’H‘±’B’B’B‘¢’B‘·’D’B’E’D‘¬’B’B’N‘º ’E’D‘¬’B’B‘¨’B’D ‘²’D’B‘­
+           "default"’N‘º
+
+        AUDIODEV
+           (’B’B‘¢’B‘­’D‘£’D’B‘¥ oss ’B’B’B‘¢’B‘·’C‘»‘½’F‘¦’E) ’H‘°’H‘±’B’B’B‘¢’B‘·’D’B’E’D‘¬’B’B’N‘º ’E’D‘¬’B’B‘¨’B’D ‘²’D’B‘­
+           "/dev/dsp"’N‘º
+
+        PORTAUDIO_DEV
+           (portaudio V19 ’C‘»‘½’F‘¦’E) ’H‘°’H‘±’B’B’B‘¢’B‘·’D’B’E’D‘¬’B’B’N‘º ’D‘µ’C‘»’F’B‘¨’E’D‘¬’E‘·’E‘±’B‘­ adinrec
+           ’B‘¬’D’E’D’E’B‘©’B’B‘®’B‘©’D‘¸’D’B’B’B’B‘¬’B‘¥’D’F‘¥’B‘¬’B’B‘¦’N‘º
+
+        LATENCY_MSEC
+           Linux (alsa/oss) ’B’B’B‘± Windows ’B‘¥’N‘º’B’B‘¢’B‘­’D‘£’D’E’B‘¬’H’D‘¹‘´’E’H’B’B
+           ’B‘¨’F‘¥’D’C‘»’B‘¥’E’D‘¬’B’B’N‘º’F’B’D‘¢’B’G‘¦’D‘¬’B’B’B’B‘¦’B‘¥’D‘£’D’H’D‘¹‘´’B’D‘®’B’B’B‘¥’B ’B’B’N‘ºCPU
+           ’B‘¬’G‘° ’G‘µ’B’D‘¢‘¥’B’B’B‘¨’B’N‘º’B‘¼’B’F‘®’D‘ ’B‘©’B’B‘¡’B‘¤’B‘­’B’B’B‘¹’B‘·’BOS’B‘¬
+           ’E’D’B’C‘¶’D‘¬’D‘¬’B‘©’B‘¨’B’B’B‘¦’B’B’B’N‘º’E’H‘§’B‘¨’D‘¢’B‘­OS ’B’B’B’B‘¢’B‘·’B‘©’D‘¢‘¥’B’B ’C‘¼’Dâ€
+           ’B’B’N‘º’B’B’B‘§’B‘©’B’D‘¢’B‘­’D’C‘»’F‘®’D‘ ’B‘©’C‘¼’D’B’B’N‘º
+
+EXAMPLES
+       ’B’B‘¢’B‘­’B’B’B‘¬’H‘±’D‘¡‘®’D‘£’D’B’N‘º’F‘¸’G‘§‘¯’B’B‘¦’B‘© "data.0000.wav" ’B’B’H ’B‘©’G‘¦’H‘°’B’B’N‘º
+       ’D‘µ‘¦’D‘¢‘¥’B‘¨’D’H‘°’H‘±’D‘¡‘®’B’B‘Ÿ’B‘¢’B‘© "foobar.raw" ’B’N‘º’H‘±’D‘¡‘®’D‘¸’H’B’B‘¦’B‘© "foobar.1500.wav"
+       "foobar.1501.wav" ... ’B‘©’D’D‘°’B’B’N‘º
+       ’B’B’B’B‘­’B‘º’B‘­’F‘³’F‘¯’B‘¥’H‘±’D‘¡‘®’B’B‘Ÿ’B‘¢’B‘©’B’G‘¹‘ ’H’B’B(’D‘¸’H’E‘¢’D‘¸’B‘¨’B)’N‘º
+       ’B’B‘¢’B‘­’B’B’B‘¬’D‘£’D’H‘±’D‘¡‘®’B Julius ’B‘¶’H’C‘½‘Ÿ’B’B‘¤’G‘¨’G’N‘º
+
+SEE ALSO
+        julius ( 1 ) ,
+        adinrec ( 1 )
+
+COPYRIGHT
+       Copyright (c) 1991-2013 ’C‘¸‘ª’H‘»’D‘¢‘¥’D‘¤ ’E‘°‘±’D’F ’F‘§‘´’D‘¬‘¢
+
+       Copyright (c) 1997-2000 ’E’D ‘¯’D‘¤’F’E‘­’G’C‘¸’E‘£’D’C‘º(IPA)
+
+       Copyright (c) 2000-2005 ’D‘£’G‘­’D’F‘©‘­’F‘¥’D‘¤’E’G‘Ÿ’D‘¢‘¥’D‘¤’H‘ ’D‘¢‘¥’D‘¤ ’H‘·‘½’H’F ’F‘§‘´’D‘¬‘¢
+
+       Copyright (c) 2005-2013 ’D’D‘¢’D‘¯’D‘µ‘£’E‘£’D‘¢‘¥’D‘¤ Julius’H’F‘¸’B’B‘º’B
+
+LICENSE
+       Julius ’B‘¬’C‘»‘½’F‘¦’G‘¦‘¯’G‘©‘¼’B‘©’E‘¸’B’B‘¼’B’N‘º
+
+
+
+                                  19/12/2013                       ADINTOOL(1)
